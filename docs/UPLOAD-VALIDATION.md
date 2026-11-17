@@ -11,7 +11,7 @@
 - 常见 GitHub/OpenAI/AWS 密钥和私钥格式扫描无发现，未收集用户照片、工程或 AppData。此扫描不是所有秘密格式的形式化保证。
 - 便携 ZIP 包含 91 个原运行文件；全部 CRC、大小与 SHA-256 校验通过。去除了安装器状态文件和卸载器，第三方许可文件保留。它是原运行文件的复制，而非通过恢复源码重新构建的二进制。
 
-GitHub 的 `Source snapshot checks` 将在 Linux 上重新验证源文件散列、语法与同一组选取测试。以实际工作流结果为准，不能把预定执行当作已通过。
+GitHub 的 [Source snapshot checks / 44082582460](https://github.com/shiyan688/mint-portrait-desktop/actions/runs/44082582460) 已在 Ubuntu 24.04、Node.js 25 完成：80 个文件散列校验通过、65 个 JavaScript 语法检查通过，所选核心测试 135/135 通过、0 失败。这一 Linux 结果不能替代 Windows 图形界面或导出验收，本机两项失败记录仍保留。
 
 ## 未执行或不代表
 
