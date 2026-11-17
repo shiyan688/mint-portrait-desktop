@@ -1,0 +1,35 @@
+{
+  "candidateOnly": true,
+  "productionIntegration": false,
+  "originalSource": {
+    "path": "/workspace/scratch/902a42ed06ad/mobile-oct22/\u8584\u8377\u4eba\u50cf/app/src/main/assets/image-overlay.js",
+    "sha256": "800751bc88f2539e51f742d57fe6287b44c2c2c8c74f958d297cf878790d579c"
+  },
+  "candidateSource": {
+    "path": "image-overlay.js",
+    "sha256": "be527c529e013f706bfdc39b6970bbed3d2b0e33f75ac1f7c016cf6576a33b87"
+  },
+  "originalMobileFixtures": {
+    "path": "/workspace/scratch/902a42ed06ad/mobile-oct22/\u8584\u8377\u4eba\u50cf/tests/image-overlay-core.test.cjs",
+    "sha256": "146597cee5dee072db3faff07ebb6db133dce0d8764efd5f9ea889780569d8bc",
+    "testCount": 27
+  },
+  "fixtureAdaptations": "Only 3 import/source-read paths and expected createProfile export enumeration. See mobile-fixture-adaptation.diff.",
+  "dependenciesInstalled": false,
+  "sourceDownloads": false,
+  "modelInference": false,
+  "releaseArtifacts": [
+    {
+      "path": "/workspace/scratch/902a42ed06ad/release-0.2.7/MintPortrait-Development-0.2.7-Setup.exe",
+      "bytes": 13903760,
+      "sha256": "28311eea899185f5a81798e1120f18376be4760622a1b6f6292fa3f42410aa73",
+      "matchedPreviouslyFrozenHash": true
+    },
+    {
+      "path": "/workspace/scratch/902a42ed06ad/release-0.2.7/MintPortrait-Development-0.2.7-Offline-Setup.exe",
+      "bytes": 125690581,
+      "sha256": "31e5bdb584285ed8e7cb2c2a97d08343bbf0afe0eb93da820cca7f142d757e24",
+      "matchedPreviouslyFrozenHash": true
+    }
+  ]
+}

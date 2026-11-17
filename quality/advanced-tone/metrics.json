@@ -1,0 +1,633 @@
+{
+  "scope": "Real shared advanced-tone core on private informational public NASA fixtures and synthetic hue ramps. Conventional8bit sRGB color control, not learned retouch or SOTA evaluation.",
+  "sourceCoreSha256": "bf2d10e8044856fbdaabcc24d4c6c43cf3d818a25127fc50c6299fa93eb61628",
+  "portraits": [
+    {
+      "fixture": "mukai",
+      "sourceRgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+      "sourceUnchanged": true,
+      "metrics": [
+        {
+          "recipe": {
+            "version": 1,
+            "enabled": true,
+            "strength": 1,
+            "curveMode": "monotone",
+            "curves": {
+              "rgb": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "red": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "green": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "blue": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ]
+            },
+            "hsl": [
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              }
+            ]
+          },
+          "width": 897,
+          "height": 1000,
+          "changedPixels": 0,
+          "alphaChanged": 0,
+          "pngSha256": "7b59ad1ca562db6d25080fe126d9cc31cb0899c529bb5ff9484df6b4a649d61b"
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "enabled": true,
+            "strength": 1,
+            "curveMode": "monotone",
+            "curves": {
+              "rgb": [
+                0,
+                0.2,
+                0.54,
+                0.81,
+                1
+              ],
+              "red": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "green": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "blue": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ]
+            },
+            "hsl": [
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              }
+            ]
+          },
+          "width": 897,
+          "height": 1000,
+          "changedPixels": 896993,
+          "alphaChanged": 0,
+          "pngSha256": "1da0e8bd56af215b726b5c89ba567bed8df2d7450e7bf5536a769493c47272ec"
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "enabled": true,
+            "strength": 1,
+            "curveMode": "monotone",
+            "curves": {
+              "rgb": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "red": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "green": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "blue": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ]
+            },
+            "hsl": [
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": -15,
+                "saturation": -25,
+                "luminance": -12
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              }
+            ]
+          },
+          "width": 897,
+          "height": 1000,
+          "changedPixels": 379658,
+          "alphaChanged": 0,
+          "pngSha256": "046d07adb1ab18c03f0389609eb46558f37fe66d8d5df82ae01b6df35739e43e"
+        }
+      ]
+    },
+    {
+      "fixture": "victor",
+      "sourceRgbaSha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+      "sourceUnchanged": true,
+      "metrics": [
+        {
+          "recipe": {
+            "version": 1,
+            "enabled": true,
+            "strength": 1,
+            "curveMode": "monotone",
+            "curves": {
+              "rgb": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "red": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "green": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "blue": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ]
+            },
+            "hsl": [
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              }
+            ]
+          },
+          "width": 646,
+          "height": 900,
+          "changedPixels": 0,
+          "alphaChanged": 0,
+          "pngSha256": "69e02cf98669b833acb85ea821237ddae4e45f8655bcb9bfd638204112361a4c"
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "enabled": true,
+            "strength": 1,
+            "curveMode": "monotone",
+            "curves": {
+              "rgb": [
+                0,
+                0.2,
+                0.54,
+                0.81,
+                1
+              ],
+              "red": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "green": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "blue": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ]
+            },
+            "hsl": [
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              }
+            ]
+          },
+          "width": 646,
+          "height": 900,
+          "changedPixels": 581400,
+          "alphaChanged": 0,
+          "pngSha256": "0579a0ced9483139d9ce8c77da3b7477a3d6f0fe4eb01e79e7e9f468a6e072b3"
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "enabled": true,
+            "strength": 1,
+            "curveMode": "monotone",
+            "curves": {
+              "rgb": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "red": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "green": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "blue": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ]
+            },
+            "hsl": [
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": -15,
+                "saturation": -25,
+                "luminance": -12
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              },
+              {
+                "hue": 0,
+                "saturation": 0,
+                "luminance": 0
+              }
+            ]
+          },
+          "width": 646,
+          "height": 900,
+          "changedPixels": 279602,
+          "alphaChanged": 0,
+          "pngSha256": "fde8b157106bd62021e253ac7a7c2d4439de0fe0504a130d348caf2ce4769c16"
+        }
+      ]
+    }
+  ],
+  "gradient": {
+    "recipe": {
+      "version": 1,
+      "enabled": true,
+      "strength": 1,
+      "curveMode": "monotone",
+      "curves": {
+        "rgb": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "red": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "green": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "blue": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ]
+      },
+      "hsl": [
+        {
+          "hue": -30,
+          "saturation": 100,
+          "luminance": -100
+        },
+        {
+          "hue": 30,
+          "saturation": -100,
+          "luminance": 100
+        },
+        {
+          "hue": -30,
+          "saturation": 100,
+          "luminance": -100
+        },
+        {
+          "hue": 30,
+          "saturation": -100,
+          "luminance": 100
+        },
+        {
+          "hue": -30,
+          "saturation": 100,
+          "luminance": -100
+        },
+        {
+          "hue": 30,
+          "saturation": -100,
+          "luminance": 100
+        },
+        {
+          "hue": -30,
+          "saturation": 100,
+          "luminance": -100
+        },
+        {
+          "hue": 30,
+          "saturation": -100,
+          "luminance": 100
+        }
+      ]
+    },
+    "rows": [
+      {
+        "band": "saturated",
+        "maxAdjacentCodeStep": 7,
+        "maxSourceDelta": 135
+      },
+      {
+        "band": "low-saturation",
+        "maxAdjacentCodeStep": 5,
+        "maxSourceDelta": 4
+      },
+      {
+        "band": "near-black-1-code",
+        "maxAdjacentCodeStep": 3,
+        "maxSourceDelta": 2
+      },
+      {
+        "band": "near-white-1-code",
+        "maxAdjacentCodeStep": 3,
+        "maxSourceDelta": 2
+      }
+    ]
+  },
+  "outputsAreNotUIScreenshots": true
+}

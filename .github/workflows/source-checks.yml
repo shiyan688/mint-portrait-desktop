@@ -1,0 +1,24 @@
+name: Source snapshot checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '25'
+      - name: Verify recovered installed source and assets
+        run: node tools/verify-upload-source.cjs
+      - name: Check application JavaScript syntax
+        run: node tools/check-upload-syntax.cjs
+      - name: Run selected dependency-free core tests
+        run: node --test tests/desktop-core.test.cjs tests/levels-core.test.cjs tests/light-balance-core.test.cjs tests/advanced-tone.test.cjs tests/export-size-core.test.cjs tests/photo-review.test.cjs

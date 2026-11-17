@@ -1,0 +1,5 @@
+{
+  "exitCode": 0,
+  "waitedProcessMaxRssKiB": 7353060,
+  "measurement": "Linux getrusage(RUSAGE_CHILDREN) after Node and its worker finish; high-water RSS, not a sum of concurrent process memory."
+}

@@ -1,0 +1,15 @@
+{
+  "source": {
+    "width": 1280,
+    "height": 960,
+    "rgbaSha256": "767f8632af2468ce5f6209bdf725e145fcf64cba23cdc7abc692bb17c771a9d0"
+  },
+  "output": {
+    "width": 2240,
+    "height": 1920,
+    "scaled": false,
+    "pngSha256": "372c2ada091b896c4b355cdda7bb13799b2e53431a2aeae96c823fc8ddc04fdb"
+  },
+  "contentOracle": "Every source row byte-equal at offset (480,480); no native source resampling.",
+  "displayOnlyBound": 1280
+}

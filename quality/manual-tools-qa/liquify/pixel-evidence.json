@@ -1,0 +1,46 @@
+{
+  "fixture": "Generated coordinate ramps and checkerboard; no personal or downloaded images.",
+  "size": [
+    257,
+    193
+  ],
+  "sourceRevision": "synthetic:original:v1",
+  "pushed": {
+    "totalSteps": 2,
+    "limitedSteps": 2,
+    "skippedSteps": 0,
+    "maxEdgeGradient": 0.43999987495025006,
+    "minJacobianLowerBound": 0.1426921987182524,
+    "maxDisplacement": 3.9956191971923896,
+    "changedPixels": 2170,
+    "estimatedWork": 1874952,
+    "estimatedMemoryBytes": 3488044,
+    "difference": {
+      "pixels": 2170,
+      "max": 170,
+      "mean": 1.1829129789049952
+    }
+  },
+  "restored": {
+    "totalSteps": 3,
+    "limitedSteps": 2,
+    "skippedSteps": 0,
+    "maxEdgeGradient": 0,
+    "minJacobianLowerBound": 1,
+    "maxDisplacement": 0,
+    "changedPixels": 0,
+    "estimatedWork": 3340787,
+    "estimatedMemoryBytes": 3488044,
+    "difference": {
+      "pixels": 0,
+      "max": 0,
+      "mean": 0
+    }
+  },
+  "hashes": {
+    "original": "5639d4a0f209a90b8fd8f3cb21a24832a9da8d356d27f1fc3511f133c42cf00f",
+    "selection": "8c89e9864027789f2ac6fbb9f9119799552e5e42cf8fe18b6f90c7c1f802d226",
+    "pushed": "185ec0f76830660edb44968a8f0bc5e03534f5c1ad302f3f6e254d36599693d8",
+    "restored": "5639d4a0f209a90b8fd8f3cb21a24832a9da8d356d27f1fc3511f133c42cf00f"
+  }
+}

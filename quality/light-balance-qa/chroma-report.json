@@ -1,0 +1,1042 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-22T15:10:55.194Z",
+  "decision": "Candidate approved for parent-led production promotion after both parent and worker visual review. Production/native integration verification is owned by the parent and not claimed by this report.",
+  "environment": "Direct candidate-core RGBA + Sharp PNG encode/decode on Linux. Not production export, app UI, Windows, Android, GPU or color-managed monitor QA.",
+  "privateInformationalQAOnly": true,
+  "rights": "Existing public NASA portrait fixtures. Not trained on, uploaded, marketed, shipped as product stock or used to imply endorsement.",
+  "baseline": {
+    "path": "quality/light-balance-qa/desaturating-tone-control.cjs",
+    "sha256": "b33b2cc55dbd5943dc07db4baf42f6af68e61c62951751c5dc5774063a272531"
+  },
+  "candidate": {
+    "path": "quality/light-balance-qa/chroma-candidate.cjs",
+    "sha256": "bfd8cb0be2fbdaea50ce59b5646cf6a99ae3a980fdb97cd554a901761860dac1",
+    "api": [
+      "LIMITS",
+      "defaults",
+      "validate",
+      "isActive",
+      "apply",
+      "deriveWhiteBalance"
+    ]
+  },
+  "changedPolicy": "Scale corrected linear RGB by target/current luminance; if any scaled channel exceeds 1, normalize every channel by the common maximum. Ratios preserved before quantization; out-of-gamut target luminance is not achieved.",
+  "saturationMetric": "1 - min(linear RGB) / max(linear RGB); synthetic diagnostic only, not a perceptual metric.",
+  "syntheticSkinColors": [
+    {
+      "inputRGB": [
+        68,
+        44,
+        32
+      ],
+      "inputLinearSaturation": 0.7501299869519079,
+      "variants": [
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            73,
+            52,
+            42
+          ],
+          "candidate": [
+            77,
+            50,
+            37
+          ],
+          "controlSaturation": 0.6524872046920962,
+          "candidateSaturation": 0.7507164723084779,
+          "controlSaturationLoss": 0.09764278225981171,
+          "candidateSaturationLoss": -0.0005864853565700212
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            80,
+            62,
+            54
+          ],
+          "candidate": [
+            89,
+            59,
+            44
+          ],
+          "controlSaturation": 0.5401454371688899,
+          "candidateSaturation": 0.7478760734064771,
+          "controlSaturationLoss": 0.20998454978301806,
+          "candidateSaturationLoss": 0.002253913545430808
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            98,
+            85,
+            81
+          ],
+          "candidate": [
+            118,
+            79,
+            60
+          ],
+          "controlSaturation": 0.32631787901767906,
+          "candidateSaturation": 0.7505787934436162,
+          "controlSaturationLoss": 0.42381210793422885,
+          "candidateSaturationLoss": -0.000448806491708309
+        }
+      ]
+    },
+    {
+      "inputRGB": [
+        105,
+        70,
+        50
+      ],
+      "inputLinearSaturation": 0.7742086226680122,
+      "variants": [
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            110,
+            79,
+            63
+          ],
+          "candidate": [
+            115,
+            77,
+            56
+          ],
+          "controlSaturation": 0.6812178971924443,
+          "candidateSaturation": 0.7693304866353925,
+          "controlSaturationLoss": 0.09299072547556786,
+          "candidateSaturationLoss": 0.004878136032619662
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            118,
+            91,
+            79
+          ],
+          "candidate": [
+            130,
+            87,
+            63
+          ],
+          "controlSaturation": 0.5684169239413994,
+          "candidateSaturation": 0.7773282227656506,
+          "controlSaturationLoss": 0.20579169872661274,
+          "candidateSaturationLoss": -0.003119600097638453
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            138,
+            118,
+            110
+          ],
+          "candidate": [
+            162,
+            111,
+            81
+          ],
+          "controlSaturation": 0.3864836561021615,
+          "candidateSaturation": 0.7722635950005766,
+          "controlSaturationLoss": 0.38772496656585065,
+          "candidateSaturationLoss": 0.0019450276674355393
+        }
+      ]
+    },
+    {
+      "inputRGB": [
+        150,
+        100,
+        75
+      ],
+      "inputLinearSaturation": 0.7693015661612954,
+      "variants": [
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            154,
+            109,
+            87
+          ],
+          "candidate": [
+            160,
+            107,
+            80
+          ],
+          "controlSaturation": 0.7050612114282397,
+          "candidateSaturation": 0.7717997692718451,
+          "controlSaturationLoss": 0.06424035473305567,
+          "candidateSaturationLoss": -0.0024982031105497127
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            161,
+            120,
+            103
+          ],
+          "candidate": [
+            173,
+            116,
+            87
+          ],
+          "controlSaturation": 0.6194352558969092,
+          "candidateSaturation": 0.7719289984743194,
+          "controlSaturationLoss": 0.14986631026438624,
+          "candidateSaturationLoss": -0.0026274323130239807
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            175,
+            145,
+            133
+          ],
+          "candidate": [
+            201,
+            136,
+            103
+          ],
+          "controlSaturation": 0.4528673156656199,
+          "candidateSaturation": 0.7677823293918056,
+          "controlSaturationLoss": 0.31643425049567553,
+          "candidateSaturationLoss": 0.00151923676948984
+        }
+      ]
+    },
+    {
+      "inputRGB": [
+        180,
+        130,
+        100
+      ],
+      "inputLinearSaturation": 0.7207830793664346,
+      "variants": [
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            183,
+            136,
+            108
+          ],
+          "candidate": [
+            186,
+            134,
+            104
+          ],
+          "controlSaturation": 0.6833161235726202,
+          "candidateSaturation": 0.7180738555697768,
+          "controlSaturationLoss": 0.03746695579381443,
+          "candidateSaturationLoss": 0.0027092237966578336
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            187,
+            144,
+            120
+          ],
+          "candidate": [
+            195,
+            141,
+            109
+          ],
+          "controlSaturation": 0.6220400453029462,
+          "candidateSaturation": 0.7197740566508815,
+          "controlSaturationLoss": 0.09874303406348839,
+          "candidateSaturationLoss": 0.0010090227155531428
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            195,
+            160,
+            143
+          ],
+          "candidate": [
+            213,
+            155,
+            120
+          ],
+          "controlSaturation": 0.49667399667089485,
+          "candidateSaturation": 0.7177271450994844,
+          "controlSaturationLoss": 0.22410908269553975,
+          "candidateSaturationLoss": 0.0030559342669501666
+        }
+      ]
+    },
+    {
+      "inputRGB": [
+        210,
+        160,
+        130
+      ],
+      "inputLinearSaturation": 0.653630729468058,
+      "variants": [
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            211,
+            161,
+            132
+          ],
+          "candidate": [
+            211,
+            161,
+            131
+          ],
+          "controlSaturation": 0.6457813146378413,
+          "candidateSaturation": 0.651575208330871,
+          "controlSaturationLoss": 0.007849414830216728,
+          "candidateSaturationLoss": 0.0020555211371869886
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            212,
+            164,
+            136
+          ],
+          "candidate": [
+            214,
+            163,
+            133
+          ],
+          "controlSaturation": 0.6260468653324345,
+          "candidateSaturation": 0.6511964175199958,
+          "controlSaturationLoss": 0.027583864135623526,
+          "candidateSaturationLoss": 0.0024343119480622066
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            214,
+            170,
+            145
+          ],
+          "candidate": [
+            220,
+            168,
+            137
+          ],
+          "controlSaturation": 0.5789253894544297,
+          "candidateSaturation": 0.6504672956329465,
+          "controlSaturationLoss": 0.07470534001362827,
+          "candidateSaturationLoss": 0.0031634338351115288
+        }
+      ]
+    },
+    {
+      "inputRGB": [
+        235,
+        190,
+        160
+      ],
+      "inputLinearSaturation": 0.5768592370426159,
+      "variants": [
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            234,
+            189,
+            160
+          ],
+          "candidate": [
+            234,
+            189,
+            160
+          ],
+          "controlSaturation": 0.5727531770911916,
+          "candidateSaturation": 0.5727531770911916,
+          "controlSaturationLoss": 0.0041060599514243235,
+          "candidateSaturationLoss": 0.0041060599514243235
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            233,
+            188,
+            158
+          ],
+          "candidate": [
+            233,
+            188,
+            158
+          ],
+          "controlSaturation": 0.5803941053850521,
+          "candidateSaturation": 0.5803941053850521,
+          "controlSaturationLoss": -0.003534868342436215,
+          "candidateSaturationLoss": -0.003534868342436215
+        },
+        {
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "control": [
+            229,
+            185,
+            156
+          ],
+          "candidate": [
+            229,
+            185,
+            156
+          ],
+          "controlSaturation": 0.5757045289434957,
+          "candidateSaturation": 0.5757045289434957,
+          "controlSaturationLoss": 0.0011547080991202163,
+          "candidateSaturationLoss": 0.0011547080991202163
+        }
+      ]
+    }
+  ],
+  "hueRampRegression": [
+    {
+      "recipe": {
+        "version": 1,
+        "shadows": 100,
+        "highlights": -100,
+        "whiteBalance": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        }
+      },
+      "originalRejectedControlPeak": 18,
+      "desaturatingControl": {
+        "maximumAdjacentCodeStep": 7,
+        "location": {
+          "pixel": 822,
+          "channel": "r"
+        }
+      },
+      "candidate": {
+        "maximumAdjacentCodeStep": 2,
+        "location": {
+          "pixel": 244,
+          "channel": "g"
+        }
+      },
+      "unchangedBound": 8
+    },
+    {
+      "recipe": {
+        "version": 1,
+        "shadows": -100,
+        "highlights": 100,
+        "whiteBalance": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        }
+      },
+      "originalRejectedControlPeak": 17,
+      "desaturatingControl": {
+        "maximumAdjacentCodeStep": 8,
+        "location": {
+          "pixel": 817,
+          "channel": "r"
+        }
+      },
+      "candidate": {
+        "maximumAdjacentCodeStep": 2,
+        "location": {
+          "pixel": 91,
+          "channel": "g"
+        }
+      },
+      "unchangedBound": 8
+    },
+    {
+      "recipe": {
+        "version": 1,
+        "shadows": 65,
+        "highlights": -55,
+        "whiteBalance": {
+          "r": 1.15,
+          "g": 0.95,
+          "b": 1.2
+        }
+      },
+      "originalRejectedControlPeak": 48,
+      "desaturatingControl": {
+        "maximumAdjacentCodeStep": 5,
+        "location": {
+          "pixel": 798,
+          "channel": "r"
+        }
+      },
+      "candidate": {
+        "maximumAdjacentCodeStep": 2,
+        "location": {
+          "pixel": 265,
+          "channel": "g"
+        }
+      },
+      "unchangedBound": 8
+    },
+    {
+      "recipe": {
+        "version": 1,
+        "shadows": 100,
+        "highlights": 100,
+        "whiteBalance": {
+          "r": 4,
+          "g": 0.25,
+          "b": 1
+        }
+      },
+      "originalRejectedControlPeak": 32,
+      "desaturatingControl": {
+        "maximumAdjacentCodeStep": 2,
+        "location": {
+          "pixel": 376,
+          "channel": "r"
+        }
+      },
+      "candidate": {
+        "maximumAdjacentCodeStep": 8,
+        "location": {
+          "pixel": 511,
+          "channel": "r"
+        }
+      },
+      "unchangedBound": 8
+    },
+    {
+      "recipe": {
+        "version": 1,
+        "shadows": -100,
+        "highlights": -100,
+        "whiteBalance": {
+          "r": 0.25,
+          "g": 4,
+          "b": 0.25
+        }
+      },
+      "originalRejectedControlPeak": 52,
+      "desaturatingControl": {
+        "maximumAdjacentCodeStep": 3,
+        "location": {
+          "pixel": 931,
+          "channel": "g"
+        }
+      },
+      "candidate": {
+        "maximumAdjacentCodeStep": 3,
+        "location": {
+          "pixel": 931,
+          "channel": "g"
+        }
+      },
+      "unchangedBound": 8
+    }
+  ],
+  "broader243CornerSweep": {
+    "recipes": 243,
+    "pixels": 373248,
+    "candidate": {
+      "maximumAdjacentCodeStep": 13,
+      "location": {
+        "pixel": 1023,
+        "channel": "g"
+      },
+      "recipe": {
+        "version": 1,
+        "shadows": 100,
+        "highlights": -100,
+        "whiteBalance": {
+          "r": 0.25,
+          "g": 4,
+          "b": 0.25
+        }
+      }
+    },
+    "desaturatingControl": {
+      "maximumAdjacentCodeStep": 15,
+      "location": {
+        "pixel": 908,
+        "channel": "r"
+      },
+      "recipe": {
+        "version": 1,
+        "shadows": -100,
+        "highlights": 100,
+        "whiteBalance": {
+          "r": 0.25,
+          "g": 4,
+          "b": 0.25
+        }
+      }
+    },
+    "limitation": "13-code candidate and 15-code control peaks remain explicit. No universal no-banding claim."
+  },
+  "photos": [
+    {
+      "name": "Victor Glover",
+      "sourceFile": "quality/levels-qa/victor-original.png",
+      "attributionFile": "quality/levels-qa/visual-evidence.json",
+      "sourceSha256": "8a7bca546361e7e506d458d184d198327633c84749e252c8a929621fd2e7aaf6",
+      "sourceRgbaSha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+      "width": 646,
+      "height": 900,
+      "variants": [
+        {
+          "label": "original",
+          "recipe": {
+            "version": 1,
+            "shadows": 0,
+            "highlights": 0,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+          "pngSha256": "69e02cf98669b833acb85ea821237ddae4e45f8655bcb9bfd638204112361a4c",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "control +25/-25",
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "b0ec8c9abf0810f5ccff5cecf616188ccbd3e3b51ccb6d51e6b488c7bd399817",
+          "pngSha256": "0e9f06d4e6b1dfa44157a81b8f76e4470a7658e14b2935a57807b4b9253191e8",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "candidate +25/-25",
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "00036c07a384f91949b2b71fa93d91f7c1c55bdc8adca82e6c07c15988e9c47f",
+          "pngSha256": "6fe7aa915afc5247897399080e51ee34211ce2981f244edca292837d9bfefbac",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "control +50/-50",
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "02f77a4ad0cf8a448a9f0ba8e9157969373ad5e2c97a544feb98bc87eb91e34c",
+          "pngSha256": "f193658de40f261699502b5f475f41f6e976faafb0f95f9d73579ef912962bfe",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "candidate +50/-50",
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "21861c6dcfef201c82ce74d28785336883e5c530ebe2dc9a5885e2e050540af9",
+          "pngSha256": "a5942ea219399ff48f1c311345c033cc5ca0853f0fa2227f29238678d630f237",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "control +100/-100",
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "e0965f52c95bbac87b5ea2b7ab139a505f7c98c3e8d5061fc62cf187bfb710c1",
+          "pngSha256": "95a9d083747a6f09a0a7ad14c7cab11fcd467d8d142f7e6d92bc570d0e5ca1d5",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "candidate +100/-100",
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "56f543cb70d6768a489d349afdd1be528d2fcc980049384d09cd5773f0862758",
+          "pngSha256": "0a911508ecbf0fb09b87f842fa1b94eac1b01f5a63aad599b623c3c9801e198f",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        }
+      ]
+    },
+    {
+      "name": "Chiaki Mukai",
+      "sourceFile": "quality/advanced-tone/mukai-0.png",
+      "attributionFile": "quality/advanced-tone/README.md",
+      "sourceSha256": "7b59ad1ca562db6d25080fe126d9cc31cb0899c529bb5ff9484df6b4a649d61b",
+      "sourceRgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+      "width": 897,
+      "height": 1000,
+      "variants": [
+        {
+          "label": "original",
+          "recipe": {
+            "version": 1,
+            "shadows": 0,
+            "highlights": 0,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+          "pngSha256": "7b59ad1ca562db6d25080fe126d9cc31cb0899c529bb5ff9484df6b4a649d61b",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "control +25/-25",
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "6a2a4e98de4a39083e7330bbb0a6881b20d48b8dce3749ffcb8a6798fde89d17",
+          "pngSha256": "61c0a57086785fd6e891744a2cfcda9841bcbb3106073932f747d21d5a9546db",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "candidate +25/-25",
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "efc90a78d1a67eb7290fbce8316521d20ff3809b92ac635486fb72e108912d2d",
+          "pngSha256": "055e5194f27071794460bdbbf9a6f122761154bc1a312ccdc80f42efd7ea6de4",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "control +50/-50",
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "44304f93679b3d2cf9b074fd84056902325b061ec8aef470d8a7c4cca1ba94a2",
+          "pngSha256": "f738309252de69b43c26f19d9bfd6d5218929b6b503423f87f4082f2fca11449",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "candidate +50/-50",
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "14e03f90089a3614335040fd0d90829a3bfca827e30796211c390f561838197c",
+          "pngSha256": "0d4593c374417c3c5cce9f91dbe657f238a6cfc2745c61745287d9c48894a7a3",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "control +100/-100",
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "1a74227cea5f3eacc68ef7b5b9dfbe06fea48871ba26b84ef318236aa3c0d287",
+          "pngSha256": "59ee881ff83d89fdb99472e06fe4a2315cbe5aa99364dac6f6958775d5af699c",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        },
+        {
+          "label": "candidate +100/-100",
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "rgbaSha256": "3c25e53b9e65ec983598bd11e6e2f469b946f2af9409adfb9a213246dd37599a",
+          "pngSha256": "5fbf2d391e1e71931ba2ba22a981329dc25b5328ac72590e8d828eb4a9d57cf6",
+          "pngReadbackExact": true,
+          "sourceUnchanged": true
+        }
+      ]
+    }
+  ],
+  "visualInspection": {
+    "performed": true,
+    "method": "Opened previous portrait-contact.png and candidate chroma-comparison.png through local image inspection at original detail. Opened the final reproduced PNG again after the standalone generator completed.",
+    "comparisonSha256": "4012013ce53ab7bf49aecee21e28f4b83434a68c25ad010948e401efa4cb6423",
+    "observations": [
+      "At +25/-25 and +50/-50, Victor candidate skin remains warm and clothing blue instead of acquiring the white-mix gray veil; inspected face-detail row confirms the cheek, jaw and neck difference.",
+      "Mukai moderate candidate panels likewise retain facial and clothing color; no new obvious white bands or spatial halos appeared in these two viewed portraits.",
+      "At +100/-100 the candidate is brighter and more vivid with reduced tonal depth; this is a strong adjustment, not acceptance as a natural-beauty default."
+    ],
+    "limits": "Only two public informational QA portraits. No broad demographic/lighting/camera aesthetic acceptance, perceptual-hue guarantee, native-pipeline parity or UI/device QA."
+  },
+  "comparison": {
+    "path": "quality/light-balance-qa/chroma-comparison.png",
+    "sha256": "4012013ce53ab7bf49aecee21e28f4b83434a68c25ad010948e401efa4cb6423",
+    "width": 1960,
+    "height": 1308
+  },
+  "limitations": [
+    "Only two existing public portrait fixtures, not a representative skin/lighting benchmark.",
+    "No perceptual hue guarantee, RAW reconstruction, semantic skin recognition, scene relighting or clipped-detail recovery.",
+    "Already gamut-bound saturated colors cannot brighten while preserving ratios.",
+    "Common normalization can flatten the requested brightness response and change luminance ordering across different chromaticities.",
+    "Maximum normalization has derivative kinks; 8-bit rounding and high relative gains can still band.",
+    "Production/native export parity requires rechecking after parent-approved integration."
+  ],
+  "reproduction": {
+    "command": "node quality/light-balance-qa/render-chroma-evidence.cjs",
+    "generatorSha256": "98098ce7b28c38e616c39619463c558d1190d9469805d9c414d80fb9e2a5082c",
+    "testFileSha256": "df4c13455876468bc5f9de7e25f03a7286ab83c617e17a3c6b77173e627d5dde",
+    "tests": 41,
+    "passed": 41,
+    "failed": 0,
+    "exitCode": 0,
+    "stdoutSha256": "ce676b2298ed0b261958b505cd4964364b170f9743c7707c4e0f347cfcad1145"
+  },
+  "prePromotionRegression": {
+    "command": "node --test tests/light-balance-chroma-candidate.test.cjs tests/light-balance-core.test.cjs tests/levels-core.test.cjs tests/advanced-tone.test.cjs",
+    "tests": 134,
+    "passed": 134,
+    "failed": 0,
+    "exitCode": 0,
+    "productionCoreAtThisTest": "b33b2cc55dbd5943dc07db4baf42f6af68e61c62951751c5dc5774063a272531"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "victor",
+  "source": {
+    "album": [
+      "Artemis_Team_Astronauts"
+    ],
+    "center": "HQ",
+    "date_created": "2020-09-15T00:00:00Z",
+    "description": "NASA astronaut Victor Glover poses for a portrait, Tuesday, Sept. 15, 2020, in the Blue Flight Control Room at NASA\u2019s Johnson Space Center in Houston. Photo Credit: (NASA/Bill Ingalls)",
+    "keywords": [
+      "Artemis",
+      "Astronaut",
+      "Blue Flight Control Room",
+      "Houston",
+      "Johnson Space Center (JSC)",
+      "Mission Control Center (MCC)",
+      "Texas",
+      "Victor Glover"
+    ],
+    "location": "NASA's Johnson Space Center",
+    "media_type": "image",
+    "nasa_id": "NHQ202009150002",
+    "photographer": "NASA/Bill Ingalls",
+    "title": "Portrait - Astronaut Victor Glover",
+    "id": "victor",
+    "source_api": "https://images-api.nasa.gov/search?nasa_id=NHQ202009150002",
+    "source_page": "https://images.nasa.gov/details/NHQ202009150002",
+    "source_file": "https://images-assets.nasa.gov/image/NHQ202009150002/NHQ202009150002~orig.jpg",
+    "sha256": "99df35026020072bd4e8abdecea056bd84f5ed30ffa15f5c5b9d52b483449b47",
+    "usage_guidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "usage": "Non-commercial factual software-testing illustration. Source NASA; no endorsement. Edited comparisons are software output, not NASA images. Do not reuse as promotional material or product assets."
+  },
+  "fixturePngSha256": "790bf7eee26069ce2a9222af8cebcf8782fc801beedf52ef46f2b3169f07cffe",
+  "roi": {
+    "x": 0,
+    "y": 0,
+    "width": 646,
+    "height": 783
+  },
+  "selection": {
+    "kind": "detected-face",
+    "faceId": "victor-face-0",
+    "revision": "790bf7eee26069ce2a9222af8cebcf8782fc801beedf52ef46f2b3169f07cffe"
+  },
+  "secondsIncludingLoad": 1.8909622799997123,
+  "coldModelLoad": true,
+  "outputDimensions": [
+    646,
+    783
+  ],
+  "outputBytes": 38442168,
+  "probabilitySumMaxError": 4.76837158203125e-07,
+  "inputUnchanged": true,
+  "classStats": {
+    "background": {
+      "argmaxPixels": 212569,
+      "meanProbability": 0.42114293575286865
+    },
+    "neck": {
+      "argmaxPixels": 28970,
+      "meanProbability": 0.05708899721503258
+    },
+    "skin": {
+      "argmaxPixels": 207475,
+      "meanProbability": 0.40882620215415955
+    },
+    "cloth": {
+      "argmaxPixels": 16291,
+      "meanProbability": 0.03214962035417557
+    },
+    "l_ear": {
+      "argmaxPixels": 5309,
+      "meanProbability": 0.01055045984685421
+    },
+    "r_ear": {
+      "argmaxPixels": 7851,
+      "meanProbability": 0.015588452108204365
+    },
+    "l_brow": {
+      "argmaxPixels": 3130,
+      "meanProbability": 0.006313558667898178
+    },
+    "r_brow": {
+      "argmaxPixels": 3416,
+      "meanProbability": 0.007017125375568867
+    },
+    "l_eye": {
+      "argmaxPixels": 812,
+      "meanProbability": 0.0016522743972018361
+    },
+    "r_eye": {
+      "argmaxPixels": 557,
+      "meanProbability": 0.0011300797341391444
+    },
+    "nose": {
+      "argmaxPixels": 13442,
+      "meanProbability": 0.02672305703163147
+    },
+    "mouth": {
+      "argmaxPixels": 0,
+      "meanProbability": 1.4441838567039178e-12
+    },
+    "l_lip": {
+      "argmaxPixels": 3171,
+      "meanProbability": 0.006307211704552174
+    },
+    "u_lip": {
+      "argmaxPixels": 2825,
+      "meanProbability": 0.005496244411915541
+    },
+    "hair": {
+      "argmaxPixels": 0,
+      "meanProbability": 1.3821957509208005e-05
+    },
+    "eye_g": {
+      "argmaxPixels": 0,
+      "meanProbability": 1.3018230590744473e-11
+    },
+    "hat": {
+      "argmaxPixels": 0,
+      "meanProbability": 4.7724109386582114e-11
+    },
+    "ear_r": {
+      "argmaxPixels": 0,
+      "meanProbability": 8.794293071545667e-10
+    },
+    "neck_l": {
+      "argmaxPixels": 0,
+      "meanProbability": 3.7474739977838567e-10
+    }
+  },
+  "provenance": {
+    "weightsSha256": "4d67ea7d8c33849272b293b421fa3d20d54d9987f1bca8c1ef0eebe4534993e8",
+    "codeRevision": "9416628e7b5a3e4b9a1068b8467bdc0cf0be7a7d",
+    "device": "cpu",
+    "inputSha256": "f3febe7a7c6f0e86cfd8d6889b0d95a166b6bb7a6e73d42b3d97cc4bf3483304",
+    "outputSha256": "eea55dd909e7e7e3dde4016eda7c54d83d7ca45fae513419b99c444e20ca0de7"
+  }
+}

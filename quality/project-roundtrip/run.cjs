@@ -1,0 +1,35 @@
+'use strict';
+// Actual public fixture, real alpha from a completed approved run; NO new inference.
+const fs = require('node:fs/promises'), path = require('node:path'), crypto = require('node:crypto'), assert = require('node:assert/strict');
+const root = path.resolve(__dirname, '../..');
+const P = require(path.join(root, 'src/project-document.cjs'));
+const A = require(path.join(root, 'src/learned-analysis.cjs'));
+const E = require(path.join(root, 'src/portrait-engine.cjs'));
+const { createProjectStore } = require(path.join(root, 'project-store.cjs'));
+const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+(async () => {
+ const sourcePath = path.join(root, 'quality/fixtures/suni.png'), source = await fs.readFile(sourcePath), sourceBefore = hash(source);
+ const pixels = new Uint8ClampedArray(await fs.readFile(path.join(root, 'quality/fixtures/suni.rgba'))), size = P.inspectImage(source, 'image/png');
+ const { width, height } = size, roi = { x: 0, y: 0, width, height };
+ const raw = await fs.readFile(path.join(root, 'quality/matting/suni-2048-bf16/alpha.f32'));
+ const alpha = new Float32Array(raw.buffer.slice(raw.byteOffset, raw.byteOffset + raw.byteLength));
+ const provenance = JSON.parse(await fs.readFile(path.join(root, 'quality/matting/suni-2048-bf16/response.json'))).provenance;
+ const strokes = JSON.parse(await fs.readFile(path.join(root, 'quality/matting/manual-correction/report.json'))).strokes;
+ const base = { ...P.DEFAULT_SETTINGS, spots: [] }, settings = { ...base, learnedMatteId: 'public-suni-matte', learnedMatteStrokes: strokes, bgMode: 'color', bgColor: '#0ca03c' };
+ const entry = { id: 'public-suni-matte', kind: 'matting', photoId: 'public-suni', sourceRevision: 'public-suni:source-0', originalSize: { width, height }, bytes: raw.length, result: { matte: { width, height, roi, space: 'roi-original-pixels', encoding: 'unit-float32', data: alpha }, provenance } };
+ const snapshot = { version: 1, currentId: 'public-suni', photos: [{ id: 'public-suni', name: 'public-NASA-suni.png', sourceRevision: 'public-suni:source-0', source: { bytes: source, mime: 'image/png', width, height, sha256: sourceBefore }, selected: true, settings, committed: settings, undo: [base], redo: [{ ...settings, exposure: 5 }], revision: 2, preset: null, learnedCache: [entry], latestMatteId: entry.id, lastSelectedMatteId: entry.id }] };
+ const target = path.join(__dirname, 'public-suni.mintproj');
+ const dialog = { showSaveDialog: async () => ({ canceled: false, filePath: target }), showOpenDialog: async () => ({ canceled: false, filePaths: [target] }) };
+ const store = createProjectStore({ dialog, decode: P.decode, inspectHeader: P.inspectHeader, maxBytes: P.MAX_CONTAINER_BYTES });
+ const bytes = await P.encode(snapshot); await store.save({ bytes, suggestedName: 'public-suni.mintproj' });
+ const read = await store.open(), restored = await P.decode(read.bytes), photo = restored.photos[0], restoredAlpha = photo.learnedCache[0].result.matte.data;
+ assert.deepEqual(Buffer.from(photo.source.bytes), source); assert.deepEqual(restoredAlpha, alpha);
+ assert.deepEqual(photo.settings, settings); assert.deepEqual(photo.undo, [base]); assert.deepEqual(photo.redo, snapshot.photos[0].redo);
+ const render = (mask, edits) => { const corrected = A.applyMaskStrokes({ width, height, data: mask }, { width, height }, edits); return { corrected, image: E.background({ width, height, data: pixels }, { mode: 'color', color: '#0ca03c', continuousAlpha: true, mask: corrected }) }; };
+ const before = render(alpha, strokes), after = render(restoredAlpha, photo.settings.learnedMatteStrokes);
+ assert.deepEqual(after.corrected.data, before.corrected.data); assert.deepEqual(after.image.data, before.image.data);
+ assert.equal(hash(await fs.readFile(sourcePath)), sourceBefore); assert.equal(hash(raw), hash(Buffer.from(alpha.buffer)));
+ const report = { fixture: 'Public NASA Suni, factual software QA only; no endorsement', scope: 'Real project codec + local filesystem store roundtrip + deterministic original-size composite, not browser/native Windows/inference', sourceBytes: source.length, sourceSha256: sourceBefore, width, height, projectBytes: bytes.length, projectSha256: hash(bytes), preservedOriginalBytes: true, sourceFileUnchanged: true, modelAlphaByteExact: true, settingsHistoryAndBrushesPreserved: true, correctedAlphaByteExact: true, compositeByteExact: true, compositeSha256: hash(after.image.data), correctedAlphaSha256: hash(Buffer.from(after.corrected.data.buffer)), rawAlphaSha256: hash(raw), model: provenance, sourceProcessingCapUnchanged: true };
+ await fs.writeFile(path.join(__dirname, 'report.json'), JSON.stringify(report, null, 2) + '\n');
+ console.log(JSON.stringify(report));
+})().catch(error => { console.error(error); process.exitCode = 1; });

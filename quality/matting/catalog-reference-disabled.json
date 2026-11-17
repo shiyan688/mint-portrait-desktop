@@ -1,0 +1,71 @@
+{
+  "id": "ZhengPeng7/BiRefNet_HR-matting",
+  "version": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+  "kind": "model",
+  "adapter": "birefnet",
+  "tasks": [
+    "matting"
+  ],
+  "weightsAsset": "weights",
+  "weightsSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55",
+  "modelRoot": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/backend/models/birefnet-hr-matting",
+  "assets": [
+    {
+      "name": "weights",
+      "relativePath": "model.safetensors",
+      "sha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55"
+    },
+    {
+      "name": "birefnetCode",
+      "relativePath": "birefnet.py",
+      "sha256": "2a45b4e0ece72d7c4212bca1a988e7d7e52bfe9f98ec59c58b8809c8a8b7a831"
+    },
+    {
+      "name": "birefnetConfig",
+      "relativePath": "BiRefNet_config.py",
+      "sha256": "e7b8c2a74f6cea6a59553d517f71d47f2c1d90e670a13416af17c25fe2f3dc52"
+    },
+    {
+      "name": "modelConfig",
+      "relativePath": "config.json",
+      "sha256": "d0b779ee9a76bf079673c5852c346f439591f016ca0d778a87bbd1dcbe24398a"
+    },
+    {
+      "name": "license",
+      "relativePath": "LICENSE-BiRefNet.txt",
+      "sha256": "92a7089e0915fc32bc40067560b398f1e6a7a5958abd7d04eda393629a5acefb"
+    }
+  ],
+  "devices": [
+    "cpu",
+    "cuda"
+  ],
+  "license": {
+    "id": "MIT",
+    "url": "https://github.com/ZhengPeng7/BiRefNet/blob/97e4f35d74043427b0e9ba935ca10991853a36bc/LICENSE",
+    "status": "approved"
+  },
+  "requiredPackages": [
+    "torch",
+    "torchvision",
+    "numpy",
+    "Pillow",
+    "timm",
+    "transformers",
+    "kornia",
+    "einops",
+    "safetensors"
+  ],
+  "enabled": false,
+  "config": {
+    "executionApproved": true,
+    "modelRevision": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+    "inputSize": 2048,
+    "precision": "bfloat16",
+    "threads": 4,
+    "sourceDir": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/backend/models/birefnet-hr-matting",
+    "foregroundRefinement": false
+  },
+  "qualityStatus": "blocked",
+  "disabledReason": "复杂衣物误删/发缘灰雾，尚未通过质量验收"
+}

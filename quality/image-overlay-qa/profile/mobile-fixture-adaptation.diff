@@ -1,0 +1,31 @@
+--- frozen-mobile/tests/image-overlay-core.test.cjs
++++ candidate-profile/tests/mobile-core-adapted.test.cjs
+@@ -3,7 +3,7 @@
+ const assert = require('node:assert/strict');
+ const fs = require('node:fs');
+ const vm = require('node:vm');
+-const core = require('../app/src/main/assets/image-overlay.js');
++const core = require('../image-overlay.js');
+ const { defaults, validate, validateAsset, encodeAsset, decodeAsset, layout, apply, LIMITS } = core;
+ const recipe = (p = {}) => ({ ...defaults(), ...p });
+ function image(w, h, pixels = [0, 0, 0, 0]) {
+@@ -65,8 +65,8 @@
+ 
+ test('API is frozen and UMD CommonJS, AMD, browser global agree', () => {
+   assert(Object.isFrozen(core)); assert(Object.isFrozen(LIMITS));
+-  assert.deepEqual(Object.keys(core).sort(), ['LIMITS','defaults','validate','validateAsset','encodeAsset','decodeAsset','layout','apply'].sort());
+-  const code = fs.readFileSync(__dirname + '/../app/src/main/assets/image-overlay.js', 'utf8');
++  assert.deepEqual(Object.keys(core).sort(), ['LIMITS','defaults','validate','validateAsset','encodeAsset','decodeAsset','layout','apply','createProfile'].sort());
++  const code = fs.readFileSync(__dirname + '/../image-overlay.js', 'utf8');
+   const globalContext = vm.createContext({}); vm.runInContext(code, globalContext);
+   assert.equal(typeof globalContext.MintImageOverlay.apply, 'function');
+   let amd; const define = (_, factory) => { amd = factory(); }; define.amd = {};
+@@ -304,7 +304,7 @@
+   let allocations=0,failAt=Infinity;
+   function instrument(Type){return new Proxy(Type,{construct(target,args){allocations++;if(allocations===failAt)throw new RangeError('simulated allocation failure');return Reflect.construct(target,args);}});}
+   const context={Object,Array,ArrayBuffer,Uint8Array:instrument(Uint8Array),Uint8ClampedArray:instrument(Uint8ClampedArray),Float64Array:instrument(Float64Array),module:{exports:{}}};
+-  vm.runInNewContext(fs.readFileSync(__dirname+'/../app/src/main/assets/image-overlay.js','utf8'),context);
++  vm.runInNewContext(fs.readFileSync(__dirname+'/../image-overlay.js','utf8'),context);
+   const c=context.module.exports,a=asset(2,2,[128,64,32,255]),target=image(2,2,[11,22,33,44]),before=bytes(target);
+   c.layout(2,2,a,recipe());assert.equal(allocations,0);
+   bad(()=>c.apply(target,{...a,data:'?'.repeat(a.data.length)},recipe(),{}));assert.equal(allocations,0);

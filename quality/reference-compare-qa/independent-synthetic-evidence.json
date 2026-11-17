@@ -1,0 +1,18 @@
+{
+  "evidenceType": "Synthetic native-raster algorithm evidence; NOT app screenshots or browser QA",
+  "width": 257,
+  "height": 256,
+  "alphaLevels": 256,
+  "acceptedRgbaSha256": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+  "frozenAfterMutationRgbaSha256": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+  "currentAfterMutationRgbaSha256": "9a7013786e3368e815455c87acaf3909a6cb880c172a5501bbdedc88a39c38ad",
+  "frozenMatchesAcceptedExactly": true,
+  "originalSourceRepaintCannotModifyFrozenReadback": true,
+  "rawReferenceBytes": 263168,
+  "visualEvidenceEncoder": "Installed Sharp encoding actual canvas getImageData RGBA, each PNG independently decoded and verified",
+  "nativeCanvasVersion": "0.1.100",
+  "sourcePreEncodedBeforeCapture": false,
+  "nativeToBufferDecodedRgbaSha256": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+  "nativeToBufferMatchesFrozenReadback": true,
+  "separateNativeDiscrepancyRecord": "independent-native-serialization.json: source pre-encoding can cause native PNG and subsequent drawImage consumption to disagree with readback. No browser/Electron DOM mount claim."
+}

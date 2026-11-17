@@ -1,0 +1,23 @@
+{
+  "width": 4000,
+  "height": 4000,
+  "center": [
+    225,
+    68,
+    88,
+    128
+  ],
+  "plan": {
+    "width": 4000,
+    "height": 4000,
+    "pixels": 16000000,
+    "strokeCount": 2,
+    "totalPoints": 4,
+    "eraseWorkPixels": 16000000,
+    "eraseTileCount": 16,
+    "maxTilePixels": 1000000
+  },
+  "wallMs": 262.45368099999996,
+  "rssBytes": 470478848,
+  "scope": "Linux NativeCanvas only, not Windows or memory guarantee"
+}

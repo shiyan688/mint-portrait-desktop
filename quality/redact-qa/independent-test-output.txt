@@ -1,0 +1,32 @@
+✔ independent scalar oracle proves exact hard-cover RGB/255, untouched outside bytes and source/metadata immutability (10.003826ms)
+✔ independent scalar oracle proves source-alpha-weighted mosaic, original alpha and layer order (11.074098ms)
+✔ independent coordinate oracle maps binary source selection across all 16 quarter-turn/flip permutations and asymmetric crop/padding (41.428039ms)
+✔ selected cover refuses feather and selected warp; project and native replay refuse stale binding (4.188737ms)
+✔ production app pointer preview is draft-only; pointerup commits one history item and keeps original intact (95.980852ms)
+✔ production app pointercancel discards an uncommitted stroke (24.848153ms)
+✔ production app lostpointercapture discards an uncommitted stroke (16.803411ms)
+✔ production app Escape discards an uncommitted stroke (27.55178ms)
+✔ production app blur discards an uncommitted stroke (27.225075ms)
+✔ production app compare discards an uncommitted stroke (21.259581ms)
+✔ production app source-view discards an uncommitted stroke (33.975443ms)
+✔ production app stale-recipe discards an uncommitted stroke (24.631161ms)
+✔ production app stale-source discards an uncommitted stroke (23.575156ms)
+✔ production app undo discards an uncommitted stroke (29.161371ms)
+✔ production app pagehide discards an uncommitted stroke (28.820704ms)
+✔ production app multipointer discards an uncommitted stroke (26.616452ms)
+✔ production app snapshots current selection and cannot silently replace it with a later selection (25.497237ms)
+✔ production app feathered selected cover refuses even starting a draft, without history changes (17.104304ms)
+✔ production app source inspection is explicitly unredacted and cannot start a cover; returning restores final cover (39.960481ms)
+✔ production app sync preserves target-owned redactions and never adds the source cover to an uncovered target (45.108693ms)
+✔ real Sharp PNG/JPEG native composition uses final cover after source effects, crop, padding and text; output resize is last (561.688662ms)
+✔ production app built-in preset preserves photo-owned cover instead of importing a cover field (21.807463ms)
+✔ missing production redaction adapter refuses publishing accepted preview rather than silently uncovering (9.276223ms)
+✔ actual app export orchestrates NativeCanvas text then Sharp native redaction and ignores in-progress pink guide (182.133262ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1928.069174

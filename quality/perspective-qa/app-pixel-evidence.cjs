@@ -1,0 +1,33 @@
+'use strict';
+// Actual current app event path under authored DOM/IPC and installed NativeCanvas.
+// This is a pixel contact sheet, not a browser/window screenshot.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const {harness,NativeQA}=require('./app-harness.cjs'),Q=require('../../src/perspective.cjs'),sharp=require('sharp'),{createExportRenderer}=require('../../export-renderer.cjs');
+const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
+(async()=>{
+ const W=400,H=300,recipe={version:1,quad:[{x:.14,y:.13},{x:.85,y:.055},{x:.94,y:.9},{x:.06,y:.83}],outputFraction:{width:.75,height:.8}},plan=Q.plan(W,H,recipe);
+ const source=NativeQA.Native.createCanvas(W,H),ctx=source.getContext('2d');ctx.fillStyle='#263940';ctx.fillRect(0,0,W,H);
+ const point=(x,y)=>Q.mapEdgePoint(plan,{x:x*plan.outputSize.width,y:y*plan.outputSize.height},'outputToSource');
+ const line=points=>{ctx.beginPath();points.forEach(([x,y],i)=>{const p=point(x,y);ctx[i?'lineTo':'moveTo'](p.x,p.y)});ctx.closePath();};
+ const colors=['#db645c','#edbc56','#8fbf88','#5aaab8','#8d79b0'];
+ for(let y=0;y<5;y++)for(let x=0;x<6;x++){line([[x/6,y/5],[(x+1)/6,y/5],[(x+1)/6,(y+1)/5],[x/6,(y+1)/5]]);ctx.fillStyle=colors[(x+y)%colors.length];ctx.fill();ctx.strokeStyle='#f7f0e3';ctx.lineWidth=2;ctx.stroke();}
+ const bytes=new Uint8Array(source.toBuffer('image/png')),service=createExportRenderer();
+ try{
+ const h=harness({bridge:{renderExport:v=>service.render(structuredClone(v)),cancelExportRender:id=>service.cancel(id)}});for(let i=0;i<25;i++)await Promise.resolve();
+ const p=h.photo('synthetic-four-corners');p.originalWidth=W;p.originalHeight=H;p.blob=new Blob([bytes],{type:'image/png'});
+ h.activate(p);const input=h.context.document.createElement('canvas');input.width=W;input.height=H;input.getContext('2d').drawImage(source,0,0);h.api.set({source:input});h.api.updateControls();await h.api.renderCurrent();
+ const initialSource=sha(input.pixels),initialBlob=sha(new Uint8Array(await p.blob.arrayBuffer()));
+ h.fire('startPerspective');await h.api.renderCurrent();for(let i=0;i<4;i++)for(const axis of ['x','y'])h.get('perspective'+i+axis).value=String(recipe.quad[i][axis]*100);h.get('perspectiveWidth').value='75';h.get('perspectiveHeight').value='80';h.fire('perspectiveWidth','input');assert.equal(p.undo.length,0);h.fire('applyPerspective');await h.api.renderCurrent();assert.equal(h.api.perspectiveState().renderFailure,'');assert.equal(p.undo.length,1);
+ const rendered=h.api.get().rendered;await h.api.startExport();assert.equal(h.calls.writes.length,1,h.api.get().exportQueue.items[0].error);
+ const png=h.calls.writes[0].bytes,decoded=await sharp(png).ensureAlpha().raw().toBuffer({resolveWithObject:true});assert.equal(sha(decoded.data),sha(rendered.pixels));assert.equal(initialSource,sha(input.pixels));assert.equal(initialBlob,sha(new Uint8Array(await p.blob.arrayBuffer())));
+ const originalComparison=h.api.originalForView();assert.equal(sha(originalComparison.pixels),sha(rendered.pixels)); // color edits are neutral in this fixture
+ const marked=NativeQA.Native.createCanvas(W,H),mc=marked.getContext('2d');mc.drawImage(source,0,0);mc.lineWidth=3;mc.strokeStyle='#ffffff';mc.fillStyle='#12232d';mc.font='bold 16px sans-serif';mc.beginPath();recipe.quad.forEach((q,i)=>{const x=q.x*W,y=q.y*H;mc[i?'lineTo':'moveTo'](x,y)});mc.closePath();mc.stroke();recipe.quad.forEach((q,i)=>{const x=q.x*W,y=q.y*H;mc.beginPath();mc.arc(x,y,12,0,2*Math.PI);mc.fill();mc.stroke();mc.fillStyle='#ffffff';mc.fillText(String(i+1),x-5,y+6);mc.fillStyle='#12232d';});
+ const exportCanvas=NativeQA.Native.createCanvas(decoded.info.width,decoded.info.height);exportCanvas.getContext('2d').putImageData(new NativeQA.Native.ImageData(new Uint8ClampedArray(decoded.data),decoded.info.width,decoded.info.height),0,0);
+ const contact=NativeQA.Native.createCanvas(860,760),c=contact.getContext('2d');c.fillStyle='#eff3f4';c.fillRect(0,0,860,760);c.fillStyle='#183137';c.font='bold 21px sans-serif';c.fillText('Four-corner correction | current app pixel path',20,31);c.font='13px sans-serif';c.fillText('Synthetic local fixture. Authored DOM + NativeCanvas + real Sharp PNG. Not a Windows screenshot.',20,55);
+ const tiles=[[source,'1. Immutable source: 400 x 300'],[marked,'2. Chosen source edges (numbered diagram)'],[rendered._native,'3. Current app preview: 300 x 240'],[exportCanvas,'4. Original-basis PNG: 300 x 240']];
+ for(let i=0;i<tiles.length;i++){const [im,title]=tiles[i],x=20+(i%2)*425,y=78+Math.floor(i/2)*322;c.fillStyle='#183137';c.font='15px sans-serif';c.fillText(title,x,y+18);c.fillStyle='#dce4e7';c.fillRect(x,y+29,400,280);const k=Math.min(400/im.width,280/im.height);c.drawImage(im,x+(400-im.width*k)/2,y+29+(280-im.height*k)/2,im.width*k,im.height*k);}
+ c.font='15px sans-serif';c.fillStyle='#183137';c.fillText('Decoded PNG RGBA = preview at this input resolution; original bytes unchanged.',20,738);
+ const files={'app-source.png':bytes,'app-source-corners.png':marked.toBuffer('image/png'),'app-preview.png':rendered._native.toBuffer('image/png'),'app-native-export.png':png,'app-pixel-contact.png':contact.toBuffer('image/png')};const meta={};for(const [name,data]of Object.entries(files)){fs.writeFileSync(path.join(__dirname,name),data);meta[name]={bytes:data.length,sha256:sha(data)};}
+ const report={schemaVersion:1,scope:'Current unchanged production app code under authored DOM/IPC; installed NativeCanvas and real Sharp PNG; not browser/Electron/Windows acceptance',fixture:'Self-created synthetic projected color grid, not a person/photo',recipe:p.settings.perspective,sourceDimensions:{width:W,height:H},previewDimensions:{width:rendered.width,height:rendered.height},exportDimensions:{width:decoded.info.width,height:decoded.info.height},previewRgbaSha256:sha(rendered.pixels),exportRgbaSha256:sha(decoded.data),sameResolutionPixelParity:true,notClaimed:'Downsampled preview is not promised byte-identical to a different-resolution original export',originalSourceRgbaUnchanged:initialSource===sha(input.pixels),originalBlobUnchanged:initialBlob===sha(new Uint8Array(await p.blob.arrayBuffer())),undoSteps:p.undo.length,receipt:h.api.get().exportQueue.items[0].output.perspectiveReceipt,files:meta};fs.writeFileSync(path.join(__dirname,'app-pixel-evidence.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({files:Object.keys(files),pixelParity:report.sameResolutionPixelParity,rgba:report.exportRgbaSha256}));
+ }finally{service.dispose();}
+})().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,0 +1,123 @@
+{
+  "created": "2026-10-22T15:58:09.304Z",
+  "method": "Unmodified production app.js export orchestration in authored DOM plus installed NativeCanvas; production export-renderer/worker with Sharp. JPEG, downsized, and no-cover baseline reuse the captured validated request.",
+  "claimLimits": [
+    "Not a browser, Windows, installer, screenshot or native input-event test.",
+    "Mosaic is a visual effect, not reliable anonymization.",
+    "JPEG and output downsampling alter boundary colors.",
+    "Source/project/recovery retain original pixels; share only an inspected exported copy.",
+    "Preview downsampling is not proof of original-resolution export."
+  ],
+  "source": {
+    "file": "independent-source.png",
+    "sha256": "926006d405a5d575b006111a405aa41d43b9d3e8f6b67e1126ace5f28320226d",
+    "width": 800,
+    "height": 520
+  },
+  "records": [
+    {
+      "file": "independent-native-before-cover.png",
+      "sha256": "4108bacc64aba8c11bac067249cac921b46d0539e423524d728ffd9dd52301be",
+      "width": 580,
+      "height": 852,
+      "zeroAlphaPixels": 160736,
+      "nonzeroHiddenRGBPixels": 0,
+      "exactOpaqueCoverRGBPixels": 1119,
+      "exif": false,
+      "xmp": false,
+      "iptc": false,
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "none",
+        "framing": "integer-crop-quarter-turn-flip",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "textLayers": 3
+      }
+    },
+    {
+      "file": "independent-native-cover.png",
+      "sha256": "21e0edeeda8c33ec3420ec3e00aecde124b2ec5884d054c7393c7f76c65c8524",
+      "width": 580,
+      "height": 852,
+      "zeroAlphaPixels": 160736,
+      "nonzeroHiddenRGBPixels": 0,
+      "exactOpaqueCoverRGBPixels": 37251,
+      "exif": false,
+      "xmp": false,
+      "iptc": false,
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "none",
+        "framing": "integer-crop-quarter-turn-flip",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "textLayers": 3
+      }
+    },
+    {
+      "file": "independent-native-cover.jpg",
+      "sha256": "946bbbba63938ac0687fea300accf33babc9812bdd42f181d33a348c341e8a23",
+      "width": 580,
+      "height": 852,
+      "zeroAlphaPixels": 0,
+      "nonzeroHiddenRGBPixels": 0,
+      "exactOpaqueCoverRGBPixels": 0,
+      "exif": false,
+      "xmp": false,
+      "iptc": false,
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "none",
+        "framing": "integer-crop-quarter-turn-flip",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "textLayers": 3
+      }
+    },
+    {
+      "file": "independent-native-cover-downsize.png",
+      "sha256": "4a098f654f4e4a827b1dab006d3c16faf5448621e5353b4f9d279f94aa890eae",
+      "width": 218,
+      "height": 320,
+      "zeroAlphaPixels": 20256,
+      "nonzeroHiddenRGBPixels": 0,
+      "exactOpaqueCoverRGBPixels": 4199,
+      "exif": false,
+      "xmp": false,
+      "iptc": false,
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "explicit-final-output-lanczos3",
+        "framing": "integer-crop-quarter-turn-flip",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "textLayers": 3
+      }
+    }
+  ],
+  "sourceHashes": {
+    "src/app.js": "a620bf4bea93f5d7f9ee1d204d13afed9403efdf8f4b7680810eba5c407ec724",
+    "src/redact-core.cjs": "14abf070ebc42e9942e4a847d672ff4a53c1769ee66276de4e24ff86e6b62be8",
+    "src/redaction-layers.cjs": "5045b733008cb3d79ece6b3b559703637cc91b17db2df72481ee754a6154154d",
+    "src/project-document.cjs": "fb60d926d5f8d54d1604a846a0723d20531a89ff177459d366316a9ec9a5571f",
+    "export-render-core.cjs": "32f9e0a5e9136b986437337f06d0b6fef594a4501cb65a51c688508dee60a866",
+    "export-render-worker.cjs": "6841a221e03911bae3dc4b2cb665cbe32d26d7d69fa4d77cb1c854f4c3024844"
+  }
+}

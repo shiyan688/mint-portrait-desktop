@@ -1,0 +1,17 @@
+# Desktop people checkpoint 20 (unreleased)
+
+The development source now includes checkpoint19 painting plus explicit selection of up to five detected faces, independent reversible per-face beauty/reshape settings, immutable same-phase rendering, overlap rejection and per-revision provenance. Defaults are zero. No identity tracking, ethnicity classifier, automatic inter-person skin-tone matching or learning-based retouch claim is made.
+
+Project schema13 reads schemas1–12 and binds the stored batch to each photo revision. All history slots keep independent snapshots. Presets export selected beauty values only; batch color and synchronization do not transplant meshes or per-person values. Late/cancelled detection cannot overwrite changed photos or edits. The original diagnostic view is separate from rendered output. Portrait, geometry, transparency and final-layer constraints fail closed.
+
+Verified on the development working tree: 2547/2547 aggregate JavaScript tests, zero failures/cancellations/skips. This includes45 independent workflow checks and24 desktop adapter checks. The separately run2390 legacy top-level checks overlap with that total; counts are not summed. Archive safety checks23/23. Evidence includes actual Sharp PNG encode/decode, real NativeCanvas raster work, authored app/worker harnesses, and byte equality with independent immutable-face composition. Six workflow findings were fixed and retested, including slider-switch races, stale detection, preset overlap rejection and export-budget hints. Native ArrayBuffer validation was hardened without changing pixel math.
+
+The two/five-person public NASA composites are not real group photos or product artwork. Their recorded MediaPipe0.10.21 Python CPU detections are reused, not fabricated or newly inferred for packaging. No Windows, Chromium, Electron, Android, GPU/4060, broad group-photo quality or SOTA acceptance is asserted. See docs/PORTRAIT-PEOPLE-UI.zh-CN.md and quality/portrait-people-qa/REPORT.md.
+
+The last delivered Setup remains0.2.5: online Library libfile_44379f7c7100819199aca804f7e6403c v5, SHA256 d8bf73b9d280db9fcc9d8a7482c05fb8e3ed7140b86f06ae0ef829ae0c733917; offline libfile_ef80df086da48191aa7f8e30c963c4fd v5, SHA256 b94d88116c0fe9a9ee7c7f3ff1e2c706637d7545698c3d214d63c91a4b5b5da5. Neither includes drawing or per-person work. An upcoming development0.2.6 bundle is authorized but is not claimed built by this source checkpoint.
+
+Restore base libfile_409356280a8c8191a5bf3fd3cbdffe91 v1, then this source overlay and the exact separate QA archive in QA-RESTORE.json. Dependency/runtime/model/font binaries are deliberately excluded. Package-inventory regressions additionally require the retained, matched0.2.5 payload and dist/app.asar static fixtures; using those is not validation of a new candidate installer. Originals and history remain private project content, not sanitized picture exports.
+
+## Actual restoration verification
+
+The base plus the source overlay restored 779 hashed source entries and127 exact QA binary entries. After supplying the existing approved local dependencies and retained matching0.2.5 static package fixtures, the entire restored suite passed2547/2547 with zero skipped, cancelled or failed tests. No package binary was executed. The final archive adds this receipt and logs only; its full member hashes are verified again, and production/test bytes are required to match the tested restoration.

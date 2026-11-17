@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-21",
+  "code": {
+    "repository": "https://github.com/Kartik-3004/SegFace",
+    "revision": "9416628e7b5a3e4b9a1068b8467bdc0cf0be7a7d",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/Kartik-3004/SegFace/blob/9416628e7b5a3e4b9a1068b8467bdc0cf0be7a7d/LICENSE",
+    "files": {
+      "network/models/segface_celeb.py": {
+        "bytes": 14602,
+        "sha256": "9258ad3e8f102dfb4d0cbbd4bc41b83f5eeaa011a79c71c001355b3d107f33c4"
+      },
+      "network/models/transformer.py": {
+        "bytes": 9587,
+        "sha256": "df8ac36e5bd9d367837efc3012b9c2e675b75ab6983a2ea25e2a85dba6d0b237"
+      }
+    }
+  },
+  "weights": {
+    "repository": "https://huggingface.co/kartiknarayan/SegFace",
+    "revision": "5e093b03c0523f7f32a9845bbbc75ecb027c8bee",
+    "uploadRevision": "7c6077ee6b09c0ea63ac15c5b4184db52637da78",
+    "license": "MIT",
+    "licenseUrl": "https://huggingface.co/kartiknarayan/SegFace/blob/5e093b03c0523f7f32a9845bbbc75ecb027c8bee/README.md",
+    "variants": {
+      "mobilenet": {
+        "path": "mobilenet_celeba_512/model_299.pt",
+        "bytes": 84928824,
+        "sha256": "4d67ea7d8c33849272b293b421fa3d20d54d9987f1bca8c1ef0eebe4534993e8"
+      },
+      "swin_base": {
+        "path": "swinb_celeba_512/model_299.pt",
+        "bytes": 1093095540,
+        "sha256": "320b1c167191804913323b229a5256b1fc71f1987161fc54dc440e59af45dae8"
+      }
+    }
+  },
+  "input": {
+    "width": 512,
+    "height": 512,
+    "channels": 3,
+    "layout": "NCHW",
+    "dtype": "float32",
+    "resize": "PIL-bicubic",
+    "colorSpace": "srgb",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "classes": [
+    "background",
+    "neck",
+    "skin",
+    "cloth",
+    "l_ear",
+    "r_ear",
+    "l_brow",
+    "r_brow",
+    "l_eye",
+    "r_eye",
+    "nose",
+    "mouth",
+    "l_lip",
+    "u_lip",
+    "hair",
+    "eye_g",
+    "hat",
+    "ear_r",
+    "neck_l"
+  ],
+  "runtimeStatus": "not_validated",
+  "maxRoiPixels": 1048576,
+  "notices": [
+    "Source review and metadata do not establish inference quality or RTX 4060 speed.",
+    "The transformer source retains Meta Platforms copyright; preserve and audit upstream notices before redistribution.",
+    "No model or research-code execution is authorized by this manifest."
+  ],
+  "evaluation": {
+    "status": "limited-public-cpu-fixtures-reviewed",
+    "date": "2026-10-21",
+    "fixtureCount": 3,
+    "evidence": "quality/segface/report.json",
+    "notValidated": [
+      "Windows",
+      "CUDA",
+      "all-population accuracy",
+      "learned retouch"
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "scope": "Synthetic authored DOM/IPC + installed NativeCanvas + production native Sharp export. Not a browser screenshot, Electron GUI or Windows test.",
+  "width": 80,
+  "height": 60,
+  "sourceRGBAHash": "441b5789cda0f7822251c59a50bce3102828e4dc9756e92d58aa59de2d51a6eb",
+  "finalRGBAHash": "3deeed7bceb5f64c48464827de3a6d9debe91d5740aba35189688c6742fd9403",
+  "pngSHA256": "cb1ffc842ec9ee2ae37cfec271f778d549056f81388b1f2e8f2397f4bbe29b36",
+  "coreSHA256": "3a3b57ea8da4ce4a7c99b180a454e9f00a4242a0460621d267ad5487fbe66557",
+  "settings": {
+    "exposure": 0,
+    "contrast": 0,
+    "saturation": 0,
+    "temperature": 0,
+    "smooth": 0,
+    "brighten": 0,
+    "warmth": 0,
+    "slim": 0,
+    "eyes": 0,
+    "nose": 0,
+    "jaw": 0,
+    "bgMode": "original",
+    "bgBlur": 18,
+    "bgColor": "#e9eee9",
+    "bgFeather": 2,
+    "spots": [],
+    "underEye": 0,
+    "redness": 0,
+    "lip": 0,
+    "blush": 0,
+    "palette": "natural",
+    "localLayers": [],
+    "manualSelection": null,
+    "manualLiquify": [],
+    "manualRepair": [],
+    "lightBalance": null,
+    "levels": null,
+    "advancedTone": null,
+    "sharpness": null,
+    "framing": null,
+    "straighten": null,
+    "perspective": {
+      "version": 1,
+      "quad": [
+        {
+          "x": 0.12,
+          "y": 0.08
+        },
+        {
+          "x": 0.88,
+          "y": 0.08
+        },
+        {
+          "x": 0.98,
+          "y": 0.92
+        },
+        {
+          "x": 0.02,
+          "y": 0.92
+        }
+      ],
+      "outputFraction": {
+        "width": 0.8,
+        "height": 0.75
+      }
+    },
+    "canvasPadding": null,
+    "textLayers": [
+      {
+        "id": "text-photo-1",
+        "enabled": true,
+        "recipe": {
+          "version": 1,
+          "text": "FINAL",
+          "x": 0.55,
+          "y": 0.25,
+          "size": 0.2,
+          "boxWidth": 0.7,
+          "rotation": 0,
+          "align": "center",
+          "fontFamily": "sans",
+          "bold": true,
+          "italic": false,
+          "lineHeight": 1.25,
+          "color": "#ffffff",
+          "opacity": 1,
+          "outlineWidth": 0,
+          "outlineColor": "#000000",
+          "shadow": false
+        }
+      }
+    ],
+    "imageLayers": [],
+    "paintLayers": {
+      "version": 1,
+      "sourceRevision": "independent:source-0",
+      "geometryKey": "{\"framing\":{\"version\":1,\"crop\":{\"x\":0,\"y\":0,\"w\":1,\"h\":1},\"quarterTurns\":0,\"flipX\":false,\"flipY\":false},\"canvasPadding\":{\"version\":1,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0,\"color\":\"#ffffff\",\"opacity\":1},\"manualLiquify\":[],\"perspective\":{\"version\":1,\"quad\":[{\"x\":0.12,\"y\":0.08},{\"x\":0.88,\"y\":0.08},{\"x\":0.98,\"y\":0.92},{\"x\":0.02,\"y\":0.92}],\"outputFraction\":{\"width\":0.8,\"height\":0.75}},\"slim\":0,\"eyes\":0,\"nose\":0,\"jaw\":0}",
+      "layers": [
+        {
+          "id": "paint-photo-2",
+          "name": "绘画 1",
+          "enabled": true,
+          "recipe": {
+            "version": 1,
+            "strokes": [
+              {
+                "mode": "paint",
+                "color": "#ed2641",
+                "width": 0.12,
+                "opacity": 1,
+                "points": [
+                  {
+                    "x": 0.2,
+                    "y": 0.7
+                  },
+                  {
+                    "x": 0.8,
+                    "y": 0.7
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": null
+        }
+      ]
+    },
+    "redactions": {
+      "version": 1,
+      "sourceRevision": "independent:source-0",
+      "geometryKey": "{\"framing\":{\"version\":1,\"crop\":{\"x\":0,\"y\":0,\"w\":1,\"h\":1},\"quarterTurns\":0,\"flipX\":false,\"flipY\":false},\"canvasPadding\":{\"version\":1,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0,\"color\":\"#ffffff\",\"opacity\":1},\"manualLiquify\":[],\"perspective\":{\"version\":1,\"quad\":[{\"x\":0.12,\"y\":0.08},{\"x\":0.88,\"y\":0.08},{\"x\":0.98,\"y\":0.92},{\"x\":0.02,\"y\":0.92}],\"outputFraction\":{\"width\":0.8,\"height\":0.75}},\"slim\":0,\"eyes\":0,\"nose\":0,\"jaw\":0}",
+      "layers": [
+        {
+          "id": "cover-photo-3",
+          "name": "不透明遮盖",
+          "enabled": true,
+          "recipe": {
+            "version": 1,
+            "mode": "cover",
+            "blockSize": 0.04,
+            "color": "#1256ab",
+            "strokes": [
+              {
+                "radius": 0.1,
+                "points": [
+                  {
+                    "x": 0.5,
+                    "y": 0.7
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": null
+        }
+      ]
+    },
+    "faceAdjustments": null
+  },
+  "perspectiveReceipt": {
+    "version": 1,
+    "recipe": {
+      "version": 1,
+      "quad": [
+        {
+          "x": 0.12,
+          "y": 0.08
+        },
+        {
+          "x": 0.88,
+          "y": 0.08
+        },
+        {
+          "x": 0.98,
+          "y": 0.92
+        },
+        {
+          "x": 0.02,
+          "y": 0.92
+        }
+      ],
+      "outputFraction": {
+        "width": 0.8,
+        "height": 0.75
+      }
+    },
+    "inputWidth": 100,
+    "inputHeight": 80,
+    "outputWidth": 80,
+    "outputHeight": 60,
+    "kind": "resample",
+    "resampling": "linear-light-premultiplied-alpha-mip-anisotropic-bilinear"
+  },
+  "overlayOrder": [
+    "perspective",
+    "text",
+    "paint",
+    "cover"
+  ],
+  "probes": {
+    "paint": [
+      16,
+      42,
+      237,
+      38,
+      65,
+      255
+    ],
+    "cover": [
+      40,
+      42,
+      18,
+      86,
+      171,
+      255
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+--- frozen-mobile/image-overlay.js
++++ candidate-profile/image-overlay.js
+@@ -1,18 +1,19 @@
+-/* MintImageOverlay v1. Pure, bounded RGBA image-overlay compositor. */
++/* MintImageOverlay v1. Pure, bounded RGBA image-overlay compositor.
++ * Isolated desktop-profile candidate; default mobile behavior is preserved. */
+ (function (root, factory) {
+   'use strict';
+   const api = factory();
+   if (typeof module === 'object' && module.exports) module.exports = api;
+   else if (typeof define === 'function' && define.amd) define([], function () { return api; });
+   else root.MintImageOverlay = api;
+-})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
++})(typeof globalThis !== 'undefined' ? globalThis : this, function createApi(desktop) {
+   'use strict';
+ 
+-  const LIMITS = Object.freeze({ maxPixels: 8000000, maxEdge: 4096,
++  const LIMITS = Object.freeze({ maxPixels: desktop ? 16777216 : 8000000, maxEdge: desktop ? 16384 : 4096,
+     maxAssetPixels: 1048576, maxAssetEdge: 1024, maxAssetBytes: 4194304,
+     maxAssetBase64Chars: 5592408, minSize: 0.02, maxSize: 2,
+-    edgeSamplesPerAxis: 4, maxMipTexelsPerPixel: 2, maxWorkUnits: 100000000,
+-    maxExtraBytes: 64 * 1024 * 1024, cancelIntervalPixels: 16384 });
++    edgeSamplesPerAxis: 4, maxMipTexelsPerPixel: 2, maxWorkUnits: desktop ? 256000000 : 100000000,
++    maxExtraBytes: (desktop ? 128 : 64) * 1024 * 1024, cancelIntervalPixels: 16384 });
+   const RECIPE_KEYS = ['version', 'x', 'y', 'size', 'rotation', 'opacity', 'flipX', 'flipY'];
+   const ASSET_KEYS = ['version', 'width', 'height', 'data'];
+   const IMAGE_KEYS = ['width', 'height', 'data'];
+@@ -394,5 +395,10 @@
+     return changed ? { width: image.width, height: image.height, data: out } : imageValue;
+   }
+ 
+-  return Object.freeze({ LIMITS, defaults, validate, validateAsset, encodeAsset, decodeAsset, layout, apply });
++  function createProfile(name) {
++    if (arguments.length !== 1 || name !== 'desktop') fail('Unsupported image-overlay profile');
++    return createApi(true);
++  }
++
++  return Object.freeze({ LIMITS, defaults, validate, validateAsset, encodeAsset, decodeAsset, layout, apply, createProfile });
+ });

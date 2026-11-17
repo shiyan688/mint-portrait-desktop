@@ -1,0 +1,2 @@
+{"file": "MintPortrait-Setup.exe", "installerVersion": "0.2.9", "applicationVersion": "0.2.9", "bytes": 13937726, "sha256": "1124326ff94364bba065c7b7955ce34148913fb511fa75afe8608637b01c1f2c", "peFixedAndStringVersionsVerified": true, "signed": false, "executionLevel": "asInvoker", "offline": false, "appAsarSha256": "29df72c3ded9ffc7858b70cf4342c21b17c9561ba1c124b53dc88779cac186cf", "archiveIntegrityTest": "passed", "windowsExecutionTested": false, "qualityStatus": "development candidate, not accepted SOTA remake"}
+Verified embedded files: 19

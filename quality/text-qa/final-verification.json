@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "independent": {
+    "tests": 16,
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "log": "quality/text-qa/independent-suite.log"
+  },
+  "allTextFocused": {
+    "tests": 101,
+    "passed": 101,
+    "failed": 0,
+    "skipped": 0,
+    "log": "quality/text-qa/focused-suite.log"
+  },
+  "sha256": {
+    "src/app.js": "a88f34de613526e374ebc89e71ce0137ec39238dd9f1ffc2758e56eeaf9bb589",
+    "src/text-overlay.cjs": "44874197cdf371f6763228d61a67c75346c50e37c2267e2b9e69e33f314f93a1",
+    "src/text-layers.cjs": "4e13c01b05b3f812df3f4ce2c948bf7a6e7705914b3be4c60b38dd1c782abc78",
+    "src/text-layer-renderer.cjs": "51c762e4fd54280c22e12a8edb608f354edd1a3b1f680390595b1eead9967687",
+    "src/pipeline.js": "43d2ce90d45c9830f32dffbf301d1c1524f9d609b588b1c45b1cce384d33b47d",
+    "src/pixel-worker.js": "2833d2ccb83ac54ef8b60c9d7bcdc184d8b5404f72a42e8e5ee59bb4ff0abe5b",
+    "src/project-document.cjs": "9cf480970be8068145ad9c0b364c00027044a03a273da1a2487b9e0cb640d3cb",
+    "export-render-core.cjs": "f361d2e3e4c6a391fcab8882aca63ba44e4a75d3e2cc6dc780ca8a38add7ca36",
+    "export-render-worker.cjs": "166086ea7004a53f2ba194869e1c93aab94228d884ec67e372d1e3f0f26e3f82",
+    "export-renderer.cjs": "986cf0e55e4d0d80eb1cc8098b71d2a6ff62ac1fa8c28c1a38c9d5fd016d6a24",
+    "tests/text-independent.test.cjs": "b6f9bf32d539f722ed43f689d494b807af061332fb1796600494913c4a05abb8",
+    "quality/text-qa/app-harness.cjs": "710889360538cf22758fc9451435d11e6f4a1bf86fdbedcac4ca54bc59a16e95",
+    "quality/text-qa/native-support.cjs": "0d3965501547a311d699347dde88386175d3046126d3d8c41346d28732fad1b2"
+  },
+  "paddingEvidence": "quality/text-qa/padding-placement-evidence.json"
+}

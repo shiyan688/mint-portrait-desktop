@@ -1,0 +1,13 @@
+{
+  "id": "suni",
+  "width": 795,
+  "height": 900,
+  "source_crop_xyxy": [
+    630,
+    490,
+    1610,
+    1600
+  ],
+  "crop_resize": "Lanczos fit in 900x900",
+  "fixture_sha256": "6bd04d4edf100a6e64d1fcc192b7a410b086dc840c66a8aa8d6513c505b7c9d7"
+}

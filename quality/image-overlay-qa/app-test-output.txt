@@ -1,0 +1,42 @@
+✔ image UI: shipped module order, explicit controls and every numeric field label exist (4.456932ms)
+✔ image UI: import draft/cancel is absent from current/history/project/export and original bytes (139.89992ms)
+✔ image UI: native dialog cancellation and invalid import identity never create a draft or asset (111.613808ms)
+✔ image UI: delayed import cancel cannot attach stale pixels (23.632002ms)
+✔ image UI: delayed import cancel-photo-switch cannot attach stale pixels (38.097392ms)
+✔ image UI: delayed import photo-switch cannot attach stale pixels (23.217901ms)
+✔ image UI: delayed import revision cannot attach stale pixels (18.576612ms)
+✔ image UI: delayed import blob cannot attach stale pixels (20.916345ms)
+✔ image UI: delayed import settings cannot attach stale pixels (27.89325ms)
+✔ image UI: delayed import pagehide cannot attach stale pixels (18.831055ms)
+✔ image UI: apply all form fields once, re-edit/cancel, undo/redo preserves originals and asset identity (105.691857ms)
+✔ image UI: selected layer edit, invalid field rejection, hidden state, order/delete and undo have real pixels (93.375365ms)
+✔ image UI: four-layer cap and active desktop final-canvas cap reject without leaking assets (168.334823ms)
+✔ image UI: point placement release is draft-only; pointercancel and Escape never commit (63.514549ms)
+✔ image UI: pending draft is invalidated by another edit and a normal photo switch (31.088788ms)
+✔ image UI: transactional failure after history mutation restores settings, history, revision and table, preserving draft (38.585295ms)
+✔ image UI: current, undo, redo and exported-only assets survive; expired unreferenced assets are collected (253.726785ms)
+✔ image UI: real project16 archive restores photo-local assets, hidden layer and undo/redo/exported references (208.582238ms)
+✔ image UI: named presets and cross-photo sync retain each target private layer and asset table (44.820146ms)
+✔ image UI: missing imageCore or missing hidden asset fails closed rather than dropping an overlay (34.808443ms)
+✔ image UI: missing imageSession or missing hidden asset fails closed rather than dropping an overlay (38.755735ms)
+✔ image UI: point-source, manual-source and white-balance views exclude overlays without modifying recipe (65.856551ms)
+✔ image UI: actual native batch freezes per-photo asset/recipe snapshots, exports applied data only and records provenance (514.793362ms)
+✔ image UI: native forged provenance rejects before write with frozen retryable assets retained (723.396061ms)
+✔ image UI: cancelled first import cannot overwrite a newer successful draft (34.05594ms)
+✔ image UI: persistent photo/session asset limits refuse apply atomically and keep draft available (52.011898ms)
+✔ image UI: source/missing-asset save failure preserves existing session and writes nothing (63.66024ms)
+✔ image UI: actual event stack image then text then paint then redaction matches native PNG pixel-for-pixel (604.876884ms)
+✔ image UI: paintBrushTool cancels armed placement but preserves draft until independent stroke commits (35.758395ms)
+✔ image UI: selectionBrushTool cancels armed placement but preserves draft until independent stroke commits (44.106879ms)
+✔ image UI: paintBrushTool cancels active placement but preserves draft until independent stroke commits (38.268474ms)
+✔ image UI: selectionBrushTool cancels active placement but preserves draft until independent stroke commits (40.898732ms)
+✔ image UI: failed write retry uses original frozen asset recipe and releases only after successful commit (315.241263ms)
+✔ image UI: cancelled in-flight result writes nothing, retained image snapshot retries successfully (291.822724ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5309.088567

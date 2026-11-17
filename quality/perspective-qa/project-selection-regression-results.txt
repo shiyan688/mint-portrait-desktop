@@ -1,0 +1,1198 @@
+TAP version 13
+# Subtest: genuine frozen v15 migrates every history slot and preserves immutable bytes and float signed zero
+not ok 1 - genuine frozen v15 migrates every history slot and preserves immutable bytes and float signed zero
+  ---
+  duration_ms: 36.519187
+  type: 'test'
+  location: '/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/tests/image-asset-project.test.cjs:49:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    17 !== 16
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 16
+  actual: 17
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/tests/image-asset-project.test.cjs:51:107)
+    async Test.run (node:internal/test_runner/test:1389:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# Subtest: legacy schema1 migrates image fields only without payload changes
+ok 2 - legacy schema1 migrates image fields only without payload changes
+  ---
+  duration_ms: 17.046678
+  type: 'test'
+  ...
+# Subtest: legacy schema2 migrates image fields only without payload changes
+ok 3 - legacy schema2 migrates image fields only without payload changes
+  ---
+  duration_ms: 14.87933
+  type: 'test'
+  ...
+# Subtest: legacy schema3 migrates image fields only without payload changes
+ok 4 - legacy schema3 migrates image fields only without payload changes
+  ---
+  duration_ms: 9.938527
+  type: 'test'
+  ...
+# Subtest: legacy schema4 migrates image fields only without payload changes
+ok 5 - legacy schema4 migrates image fields only without payload changes
+  ---
+  duration_ms: 11.264312
+  type: 'test'
+  ...
+# Subtest: legacy schema5 migrates image fields only without payload changes
+ok 6 - legacy schema5 migrates image fields only without payload changes
+  ---
+  duration_ms: 3.167685
+  type: 'test'
+  ...
+# Subtest: legacy schema6 migrates image fields only without payload changes
+ok 7 - legacy schema6 migrates image fields only without payload changes
+  ---
+  duration_ms: 3.213182
+  type: 'test'
+  ...
+# Subtest: legacy schema7 migrates image fields only without payload changes
+ok 8 - legacy schema7 migrates image fields only without payload changes
+  ---
+  duration_ms: 4.777525
+  type: 'test'
+  ...
+# Subtest: legacy schema8 migrates image fields only without payload changes
+ok 9 - legacy schema8 migrates image fields only without payload changes
+  ---
+  duration_ms: 4.40165
+  type: 'test'
+  ...
+# Subtest: legacy schema9 migrates image fields only without payload changes
+ok 10 - legacy schema9 migrates image fields only without payload changes
+  ---
+  duration_ms: 4.833119
+  type: 'test'
+  ...
+# Subtest: legacy schema10 migrates image fields only without payload changes
+ok 11 - legacy schema10 migrates image fields only without payload changes
+  ---
+  duration_ms: 13.598534
+  type: 'test'
+  ...
+# Subtest: legacy schema11 migrates image fields only without payload changes
+ok 12 - legacy schema11 migrates image fields only without payload changes
+  ---
+  duration_ms: 4.219326
+  type: 'test'
+  ...
+# Subtest: legacy schema12 migrates image fields only without payload changes
+ok 13 - legacy schema12 migrates image fields only without payload changes
+  ---
+  duration_ms: 5.802727
+  type: 'test'
+  ...
+# Subtest: legacy schema13 migrates image fields only without payload changes
+ok 14 - legacy schema13 migrates image fields only without payload changes
+  ---
+  duration_ms: 6.330521
+  type: 'test'
+  ...
+# Subtest: legacy schema14 migrates image fields only without payload changes
+ok 15 - legacy schema14 migrates image fields only without payload changes
+  ---
+  duration_ms: 3.173673
+  type: 'test'
+  ...
+# Subtest: legacy schema15 migrates image fields only without payload changes
+ok 16 - legacy schema15 migrates image fields only without payload changes
+  ---
+  duration_ms: 5.736417
+  type: 'test'
+  ...
+# Subtest: one raw asset blob serves many independent current, committed, undo, redo and export recipes
+ok 17 - one raw asset blob serves many independent current, committed, undo, redo and export recipes
+  ---
+  duration_ms: 117.913958
+  type: 'test'
+  ...
+# Subtest: identical content may be separately owned per photo but references never cross ownership tables
+ok 18 - identical content may be separately owned per photo but references never cross ownership tables
+  ---
+  duration_ms: 30.144459
+  type: 'test'
+  ...
+# Subtest: v16 requires explicit image layers and resolves disabled/zero-opacity references in current
+ok 19 - v16 requires explicit image layers and resolves disabled/zero-opacity references in current
+  ---
+  duration_ms: 12.152978
+  type: 'test'
+  ...
+# Subtest: v16 requires explicit image layers and resolves disabled/zero-opacity references in committed
+ok 20 - v16 requires explicit image layers and resolves disabled/zero-opacity references in committed
+  ---
+  duration_ms: 23.411082
+  type: 'test'
+  ...
+# Subtest: v16 requires explicit image layers and resolves disabled/zero-opacity references in undo0
+ok 21 - v16 requires explicit image layers and resolves disabled/zero-opacity references in undo0
+  ---
+  duration_ms: 14.1028
+  type: 'test'
+  ...
+# Subtest: v16 requires explicit image layers and resolves disabled/zero-opacity references in undo1
+ok 22 - v16 requires explicit image layers and resolves disabled/zero-opacity references in undo1
+  ---
+  duration_ms: 17.995887
+  type: 'test'
+  ...
+# Subtest: v16 requires explicit image layers and resolves disabled/zero-opacity references in redo
+ok 23 - v16 requires explicit image layers and resolves disabled/zero-opacity references in redo
+  ---
+  duration_ms: 22.235493
+  type: 'test'
+  ...
+# Subtest: v16 requires explicit image layers and resolves disabled/zero-opacity references in exported
+ok 24 - v16 requires explicit image layers and resolves disabled/zero-opacity references in exported
+  ---
+  duration_ms: 8.040913
+  type: 'test'
+  ...
+# Subtest: v16 requires asset table; old schemas do not smuggle active new fields
+ok 25 - v16 requires asset table; old schemas do not smuggle active new fields
+  ---
+  duration_ms: 7.959402
+  type: 'test'
+  ...
+# Subtest: asset dimensions are identity-bound even when pixel byte count, blob hashes and metadata hashes remain valid
+ok 26 - asset dimensions are identity-bound even when pixel byte count, blob hashes and metadata hashes remain valid
+  ---
+  duration_ms: 35.79679
+  type: 'test'
+  ...
+# Subtest: recomputed blob/container hashes cannot disguise different RGBA bytes or fabricated content IDs
+ok 27 - recomputed blob/container hashes cannot disguise different RGBA bytes or fabricated content IDs
+  ---
+  duration_ms: 22.168683
+  type: 'test'
+  ...
+# Subtest: duplicate asset IDs, wrong kinds, reused blobs, missing blobs and orphan blobs reject atomically
+ok 28 - duplicate asset IDs, wrong kinds, reused blobs, missing blobs and orphan blobs reject atomically
+  ---
+  duration_ms: 28.207255
+  type: 'test'
+  ...
+# Subtest: strict asset, layer and table own-data validation never evaluates accessors
+ok 29 - strict asset, layer and table own-data validation never evaluates accessors
+  ---
+  duration_ms: 80.728118
+  type: 'test'
+  ...
+# Subtest: encode captures every asset, source, float plane and recipe before an injected asynchronous digest
+ok 30 - encode captures every asset, source, float plane and recipe before an injected asynchronous digest
+  ---
+  duration_ms: 12.700954
+  type: 'test'
+  ...
+# Subtest: decode captures metadata and all payloads before its first await, without retaining file aliases
+ok 31 - decode captures metadata and all payloads before its first await, without retaining file aliases
+  ---
+  duration_ms: 10.823859
+  type: 'test'
+  ...
+# Subtest: photo and whole-project count caps reject before unbounded retained tables
+ok 32 - photo and whole-project count caps reject before unbounded retained tables
+  ---
+  duration_ms: 112.67906
+  type: 'test'
+  ...
+# Subtest: decoded metadata budgets precede base64 reconstruction and retain original cache/container ceilings
+ok 33 - decoded metadata budgets precede base64 reconstruction and retain original cache/container ceilings
+  ---
+  duration_ms: 83.542042
+  type: 'test'
+  ...
+# Subtest: unknown versions, encodings, metadata extensions and oversized asset descriptors fail closed
+not ok 34 - unknown versions, encodings, metadata extensions and oversized asset descriptors fail closed
+  ---
+  duration_ms: 9.769974
+  type: 'test'
+  location: '/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/tests/image-asset-project.test.cjs:188:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected rejection.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  stack: |-
+    async TestContext.<anonymous> (/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/tests/image-asset-project.test.cjs:190:316)
+    async Test.run (node:internal/test_runner/test:1389:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+  ...
+# Subtest: browser UMD roundtrip uses shared codec and WebCrypto, without renderer or file access
+ok 35 - browser UMD roundtrip uses shared codec and WebCrypto, without renderer or file access
+  ---
+  duration_ms: 37.214052
+  type: 'test'
+  ...
+# Subtest: metadata corruption keeps integrity-error precedence and source geometry remains independent of rendering caps
+ok 36 - metadata corruption keeps integrity-error precedence and source geometry remains independent of rendering caps
+  ---
+  duration_ms: 6.020075
+  type: 'test'
+  ...
+# Subtest: frozen exact UMD API and null defaults
+ok 37 - frozen exact UMD API and null defaults
+  ---
+  duration_ms: 12.385509
+  type: 'test'
+  ...
+# Subtest: deep immutable snapshots capture independent selections and canonical recipes
+ok 38 - deep immutable snapshots capture independent selections and canonical recipes
+  ---
+  duration_ms: 5.247892
+  type: 'test'
+  ...
+# Subtest: exact collection schema rejects unsafe records, sparse arrays and duplicate IDs
+ok 39 - exact collection schema rejects unsafe records, sparse arrays and duplicate IDs
+  ---
+  duration_ms: 2.678438
+  type: 'test'
+  ...
+# Subtest: every collection and context descriptor boundary rejects getters without calling them
+ok 40 - every collection and context descriptor boundary rejects getters without calling them
+  ---
+  duration_ms: 3.827547
+  type: 'test'
+  ...
+# Subtest: all stored layers bind source and geometry, even empty/disabled; color changes are irrelevant
+ok 41 - all stored layers bind source and geometry, even empty/disabled; color changes are irrelevant
+  ---
+  duration_ms: 1.191943
+  type: 'test'
+  ...
+# Subtest: selection cannot silently survive auto/manual warp or mismatched source
+ok 42 - selection cannot silently survive auto/manual warp or mismatched source
+  ---
+  duration_ms: 2.416535
+  type: 'test'
+  ...
+# Subtest: inactive output never allocates, but still validates dimensions and cancellation
+ok 43 - inactive output never allocates, but still validates dimensions and cancellation
+  ---
+  duration_ms: 4.241559
+  type: 'test'
+  ...
+# Subtest: layer/stroke/point aggregate budgets include disabled recipes
+ok 44 - layer/stroke/point aggregate budgets include disabled recipes
+  ---
+  duration_ms: 33.733493
+  type: 'test'
+  ...
+# Subtest: plans expose conservative memory/work and reject aggregate erasure before any allocation
+ok 45 - plans expose conservative memory/work and reject aggregate erasure before any allocation
+  ---
+  duration_ms: 2.228121
+  type: 'test'
+  ...
+# Subtest: unselected metadata source may be larger when final is cropped; selected source is limited to 16M
+ok 46 - unselected metadata source may be larger when final is cropped; selected source is limited to 16M
+  ---
+  duration_ms: 0.765622
+  type: 'test'
+  ...
+# Subtest: native layer isolation: top eraser never removes bottom paint and array order is source-over
+ok 47 - native layer isolation: top eraser never removes bottom paint and array order is source-over
+  ---
+  duration_ms: 7.926451
+  type: 'test'
+  ...
+# Subtest: native feather selection multiplies final layer alpha once, never RGB or per-stroke coverage
+ok 48 - native feather selection multiplies final layer alpha once, never RGB or per-stroke coverage
+  ---
+  duration_ms: 52.012013
+  type: 'test'
+  ...
+# Subtest: native source selection exact crop/quarter-turn/flip/padding transport matches independent mapping
+ok 49 - native source selection exact crop/quarter-turn/flip/padding transport matches independent mapping
+  ---
+  duration_ms: 79.004937
+  type: 'test'
+  ...
+# Subtest: reused factory surfaces are rejected without changing previously issued canvas dimensions
+ok 50 - reused factory surfaces are rejected without changing previously issued canvas dimensions
+  ---
+  duration_ms: 1.689531
+  type: 'test'
+  ...
+# Subtest: allocation/readback errors and cancellation dispose every owned surface, never return partial bytes
+ok 51 - allocation/readback errors and cancellation dispose every owned surface, never return partial bytes
+  ---
+  duration_ms: 1.457633
+  type: 'test'
+  ...
+# Subtest: v17 default is explicit null; direct legacy omission is neutral and exact neutral remains a complete recipe
+ok 52 - v17 default is explicit null; direct legacy omission is neutral and exact neutral remains a complete recipe
+  ---
+  duration_ms: 10.982758
+  type: 'test'
+  ...
+# Subtest: genuine immutable v16 writer fixture migrates every slot while retaining source/cache/assets and old geometry keys
+ok 53 - genuine immutable v16 writer fixture migrates every slot while retaining source/cache/assets and old geometry keys
+  ---
+  duration_ms: 74.460517
+  type: 'test'
+  ...
+# Subtest: properly framed schema1 omission migrates perspective in all six settings slots
+ok 54 - properly framed schema1 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 5.544639
+  type: 'test'
+  ...
+# Subtest: properly framed schema2 omission migrates perspective in all six settings slots
+ok 55 - properly framed schema2 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 3.41075
+  type: 'test'
+  ...
+# Subtest: properly framed schema3 omission migrates perspective in all six settings slots
+ok 56 - properly framed schema3 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 5.021913
+  type: 'test'
+  ...
+# Subtest: properly framed schema4 omission migrates perspective in all six settings slots
+ok 57 - properly framed schema4 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 16.922057
+  type: 'test'
+  ...
+# Subtest: properly framed schema5 omission migrates perspective in all six settings slots
+ok 58 - properly framed schema5 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 3.802339
+  type: 'test'
+  ...
+# Subtest: properly framed schema6 omission migrates perspective in all six settings slots
+ok 59 - properly framed schema6 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 6.477161
+  type: 'test'
+  ...
+# Subtest: properly framed schema7 omission migrates perspective in all six settings slots
+ok 60 - properly framed schema7 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 2.407861
+  type: 'test'
+  ...
+# Subtest: properly framed schema8 omission migrates perspective in all six settings slots
+ok 61 - properly framed schema8 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 3.861148
+  type: 'test'
+  ...
+# Subtest: properly framed schema9 omission migrates perspective in all six settings slots
+ok 62 - properly framed schema9 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 7.83888
+  type: 'test'
+  ...
+# Subtest: properly framed schema10 omission migrates perspective in all six settings slots
+ok 63 - properly framed schema10 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 29.133428
+  type: 'test'
+  ...
+# Subtest: properly framed schema11 omission migrates perspective in all six settings slots
+ok 64 - properly framed schema11 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 13.851634
+  type: 'test'
+  ...
+# Subtest: properly framed schema12 omission migrates perspective in all six settings slots
+ok 65 - properly framed schema12 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 12.912461
+  type: 'test'
+  ...
+# Subtest: properly framed schema13 omission migrates perspective in all six settings slots
+ok 66 - properly framed schema13 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 21.207778
+  type: 'test'
+  ...
+# Subtest: properly framed schema14 omission migrates perspective in all six settings slots
+ok 67 - properly framed schema14 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 7.818789
+  type: 'test'
+  ...
+# Subtest: properly framed schema15 omission migrates perspective in all six settings slots
+ok 68 - properly framed schema15 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 15.177869
+  type: 'test'
+  ...
+# Subtest: properly framed schema16 omission migrates perspective in all six settings slots
+ok 69 - properly framed schema16 omission migrates perspective in all six settings slots
+  ---
+  duration_ms: 23.333454
+  type: 'test'
+  ...
+# Subtest: v17 requires own explicit perspective in current on both encode and rehashed decode
+ok 70 - v17 requires own explicit perspective in current on both encode and rehashed decode
+  ---
+  duration_ms: 19.48784
+  type: 'test'
+  ...
+# Subtest: v17 requires own explicit perspective in committed on both encode and rehashed decode
+ok 71 - v17 requires own explicit perspective in committed on both encode and rehashed decode
+  ---
+  duration_ms: 30.925073
+  type: 'test'
+  ...
+# Subtest: v17 requires own explicit perspective in undo[0] on both encode and rehashed decode
+ok 72 - v17 requires own explicit perspective in undo[0] on both encode and rehashed decode
+  ---
+  duration_ms: 23.276989
+  type: 'test'
+  ...
+# Subtest: v17 requires own explicit perspective in undo[1] on both encode and rehashed decode
+ok 73 - v17 requires own explicit perspective in undo[1] on both encode and rehashed decode
+  ---
+  duration_ms: 24.883356
+  type: 'test'
+  ...
+# Subtest: v17 requires own explicit perspective in redo[0] on both encode and rehashed decode
+ok 74 - v17 requires own explicit perspective in redo[0] on both encode and rehashed decode
+  ---
+  duration_ms: 15.238529
+  type: 'test'
+  ...
+# Subtest: v17 requires own explicit perspective in exported on both encode and rehashed decode
+ok 75 - v17 requires own explicit perspective in exported on both encode and rehashed decode
+  ---
+  duration_ms: 12.172859
+  type: 'test'
+  ...
+# Subtest: schema1 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 76 - schema1 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 36.690926
+  type: 'test'
+  ...
+# Subtest: schema2 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 77 - schema2 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 37.668244
+  type: 'test'
+  ...
+# Subtest: schema3 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 78 - schema3 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 20.54392
+  type: 'test'
+  ...
+# Subtest: schema4 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 79 - schema4 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 14.722523
+  type: 'test'
+  ...
+# Subtest: schema5 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 80 - schema5 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 30.682888
+  type: 'test'
+  ...
+# Subtest: schema6 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 81 - schema6 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 30.78378
+  type: 'test'
+  ...
+# Subtest: schema7 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 82 - schema7 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 22.017505
+  type: 'test'
+  ...
+# Subtest: schema8 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 83 - schema8 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 46.615948
+  type: 'test'
+  ...
+# Subtest: schema9 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 84 - schema9 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 29.016212
+  type: 'test'
+  ...
+# Subtest: schema10 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 85 - schema10 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 16.087666
+  type: 'test'
+  ...
+# Subtest: schema11 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 86 - schema11 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 43.219385
+  type: 'test'
+  ...
+# Subtest: schema12 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 87 - schema12 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 84.814505
+  type: 'test'
+  ...
+# Subtest: schema13 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 88 - schema13 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 63.725997
+  type: 'test'
+  ...
+# Subtest: schema14 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 89 - schema14 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 79.532931
+  type: 'test'
+  ...
+# Subtest: schema15 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 90 - schema15 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 87.455788
+  type: 'test'
+  ...
+# Subtest: schema16 cannot smuggle active perspective through any slot despite correct container and blob hashes
+ok 91 - schema16 cannot smuggle active perspective through any slot despite correct container and blob hashes
+  ---
+  duration_ms: 64.397317
+  type: 'test'
+  ...
+# Subtest: active v17 recipes roundtrip independently in every slot without rewriting source, float cache or embedded asset blobs
+ok 92 - active v17 recipes roundtrip independently in every slot without rewriting source, float cache or embedded asset blobs
+  ---
+  duration_ms: 21.012894
+  type: 'test'
+  ...
+# Subtest: neutral v17 perspective never rekeys selected historical paint/redaction collections
+ok 93 - neutral v17 perspective never rekeys selected historical paint/redaction collections
+  ---
+  duration_ms: 15.54481
+  type: 'test'
+  ...
+# Subtest: bound collections refuse changed quad, output fraction, or reset in current without rewriting strokes
+ok 94 - bound collections refuse changed quad, output fraction, or reset in current without rewriting strokes
+  ---
+  duration_ms: 38.774689
+  type: 'test'
+  ...
+# Subtest: bound collections refuse changed quad, output fraction, or reset in committed without rewriting strokes
+ok 95 - bound collections refuse changed quad, output fraction, or reset in committed without rewriting strokes
+  ---
+  duration_ms: 36.167603
+  type: 'test'
+  ...
+# Subtest: bound collections refuse changed quad, output fraction, or reset in undo[0] without rewriting strokes
+ok 96 - bound collections refuse changed quad, output fraction, or reset in undo[0] without rewriting strokes
+  ---
+  duration_ms: 41.878147
+  type: 'test'
+  ...
+# Subtest: bound collections refuse changed quad, output fraction, or reset in undo[1] without rewriting strokes
+ok 97 - bound collections refuse changed quad, output fraction, or reset in undo[1] without rewriting strokes
+  ---
+  duration_ms: 44.70626
+  type: 'test'
+  ...
+# Subtest: bound collections refuse changed quad, output fraction, or reset in redo[0] without rewriting strokes
+ok 98 - bound collections refuse changed quad, output fraction, or reset in redo[0] without rewriting strokes
+  ---
+  duration_ms: 53.311648
+  type: 'test'
+  ...
+# Subtest: bound collections refuse changed quad, output fraction, or reset in exported without rewriting strokes
+ok 99 - bound collections refuse changed quad, output fraction, or reset in exported without rewriting strokes
+  ---
+  duration_ms: 62.600751
+  type: 'test'
+  ...
+# Subtest: active perspective refuses captured paint/redaction selections even hidden or empty in current
+ok 100 - active perspective refuses captured paint/redaction selections even hidden or empty in current
+  ---
+  duration_ms: 78.055299
+  type: 'test'
+  ...
+# Subtest: active perspective refuses captured paint/redaction selections even hidden or empty in committed
+ok 101 - active perspective refuses captured paint/redaction selections even hidden or empty in committed
+  ---
+  duration_ms: 77.909971
+  type: 'test'
+  ...
+# Subtest: active perspective refuses captured paint/redaction selections even hidden or empty in undo[0]
+ok 102 - active perspective refuses captured paint/redaction selections even hidden or empty in undo[0]
+  ---
+  duration_ms: 76.928353
+  type: 'test'
+  ...
+# Subtest: active perspective refuses captured paint/redaction selections even hidden or empty in undo[1]
+ok 103 - active perspective refuses captured paint/redaction selections even hidden or empty in undo[1]
+  ---
+  duration_ms: 99.542648
+  type: 'test'
+  ...
+# Subtest: active perspective refuses captured paint/redaction selections even hidden or empty in redo[0]
+ok 104 - active perspective refuses captured paint/redaction selections even hidden or empty in redo[0]
+  ---
+  duration_ms: 83.814271
+  type: 'test'
+  ...
+# Subtest: active perspective refuses captured paint/redaction selections even hidden or empty in exported
+ok 105 - active perspective refuses captured paint/redaction selections even hidden or empty in exported
+  ---
+  duration_ms: 94.838762
+  type: 'test'
+  ...
+# Subtest: malformed recipes reject own-data violations, unknown fields, unsafe geometry and nonfinite values without getters
+ok 106 - malformed recipes reject own-data violations, unknown fields, unsafe geometry and nonfinite values without getters
+  ---
+  duration_ms: 217.830777
+  type: 'test'
+  ...
+# Subtest: encode captures perspective, source, asset and cache before asynchronous hashing; decode does not retain container aliases
+ok 107 - encode captures perspective, source, asset and cache before asynchronous hashing; decode does not retain container aliases
+  ---
+  duration_ms: 23.995991
+  type: 'test'
+  ...
+# Subtest: metadata-only validation accepts valid recipes for source dimensions beyond raster caps and never calls raster APIs
+ok 108 - metadata-only validation accepts valid recipes for source dimensions beyond raster caps and never calls raster APIs
+  ---
+  duration_ms: 33.174365
+  type: 'test'
+  ...
+# Subtest: corrupt metadata keeps integrity-error precedence and future versions fail closed
+ok 109 - corrupt metadata keeps integrity-error precedence and future versions fail closed
+  ---
+  duration_ms: 9.453739
+  type: 'test'
+  ...
+# Subtest: paint: absent, null and complete neutral perspective retain the exact frozen v16 geometry string
+ok 110 - paint: absent, null and complete neutral perspective retain the exact frozen v16 geometry string
+  ---
+  duration_ms: 12.361542
+  type: 'test'
+  ...
+# Subtest: paint: every active corner coordinate and output fraction participates in geometry binding
+ok 111 - paint: every active corner coordinate and output fraction participates in geometry binding
+  ---
+  duration_ms: 5.208553
+  type: 'test'
+  ...
+# Subtest: paint: active perspective cannot rekey bound visible, hidden, or empty layers on quad edit, size edit or reset
+ok 112 - paint: active perspective cannot rekey bound visible, hidden, or empty layers on quad edit, size edit or reset
+  ---
+  duration_ms: 7.643087
+  type: 'test'
+  ...
+# Subtest: paint: visible captured source selection fails before any mask, pixel planning or raster call
+ok 113 - paint: visible captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 4.846819
+  type: 'test'
+  ...
+# Subtest: paint: hidden captured source selection fails before any mask, pixel planning or raster call
+ok 114 - paint: hidden captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 2.04148
+  type: 'test'
+  ...
+# Subtest: paint: empty captured source selection fails before any mask, pixel planning or raster call
+ok 115 - paint: empty captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 2.182503
+  type: 'test'
+  ...
+# Subtest: paint: transparent captured source selection fails before any mask, pixel planning or raster call
+ok 116 - paint: transparent captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 1.792396
+  type: 'test'
+  ...
+# Subtest: paint: erase-only captured source selection fails before any mask, pixel planning or raster call
+ok 117 - paint: erase-only captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 13.077699
+  type: 'test'
+  ...
+# Subtest: paint: copied crop, fraction-only resize and tiny nonneutral edits still refuse every saved selection
+ok 118 - paint: copied crop, fraction-only resize and tiny nonneutral edits still refuse every saved selection
+  ---
+  duration_ms: 2.035552
+  type: 'test'
+  ...
+# Subtest: paint: selected layer cannot hide after a normal first layer or behind no-op selections
+ok 119 - paint: selected layer cannot hide after a normal first layer or behind no-op selections
+  ---
+  duration_ms: 1.096669
+  type: 'test'
+  ...
+# Subtest: paint: malformed perspective and accessors are rejected rather than silently becoming neutral
+ok 120 - paint: malformed perspective and accessors are rejected rather than silently becoming neutral
+  ---
+  duration_ms: 0.622736
+  type: 'test'
+  ...
+# Subtest: paint: source-revision binding is not weakened by perspective
+ok 121 - paint: source-revision binding is not weakened by perspective
+  ---
+  duration_ms: 0.540053
+  type: 'test'
+  ...
+# Subtest: redaction: absent, null and complete neutral perspective retain the exact frozen v16 geometry string
+ok 122 - redaction: absent, null and complete neutral perspective retain the exact frozen v16 geometry string
+  ---
+  duration_ms: 2.018536
+  type: 'test'
+  ...
+# Subtest: redaction: every active corner coordinate and output fraction participates in geometry binding
+ok 123 - redaction: every active corner coordinate and output fraction participates in geometry binding
+  ---
+  duration_ms: 1.524784
+  type: 'test'
+  ...
+# Subtest: redaction: active perspective cannot rekey bound visible, hidden, or empty layers on quad edit, size edit or reset
+ok 124 - redaction: active perspective cannot rekey bound visible, hidden, or empty layers on quad edit, size edit or reset
+  ---
+  duration_ms: 5.700545
+  type: 'test'
+  ...
+# Subtest: redaction: visible captured source selection fails before any mask, pixel planning or raster call
+ok 125 - redaction: visible captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 3.516059
+  type: 'test'
+  ...
+# Subtest: redaction: hidden captured source selection fails before any mask, pixel planning or raster call
+ok 126 - redaction: hidden captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 1.504983
+  type: 'test'
+  ...
+# Subtest: redaction: empty captured source selection fails before any mask, pixel planning or raster call
+ok 127 - redaction: empty captured source selection fails before any mask, pixel planning or raster call
+  ---
+  duration_ms: 1.593446
+  type: 'test'
+  ...
+# Subtest: redaction: copied crop, fraction-only resize and tiny nonneutral edits still refuse every saved selection
+ok 128 - redaction: copied crop, fraction-only resize and tiny nonneutral edits still refuse every saved selection
+  ---
+  duration_ms: 0.89751
+  type: 'test'
+  ...
+# Subtest: redaction: selected layer cannot hide after a normal first layer or behind no-op selections
+ok 129 - redaction: selected layer cannot hide after a normal first layer or behind no-op selections
+  ---
+  duration_ms: 0.600673
+  type: 'test'
+  ...
+# Subtest: redaction: malformed perspective and accessors are rejected rather than silently becoming neutral
+ok 130 - redaction: malformed perspective and accessors are rejected rather than silently becoming neutral
+  ---
+  duration_ms: 0.294343
+  type: 'test'
+  ...
+# Subtest: redaction: source-revision binding is not weakened by perspective
+ok 131 - redaction: source-revision binding is not weakened by perspective
+  ---
+  duration_ms: 0.303516
+  type: 'test'
+  ...
+# Subtest: active unselected final-canvas paint and redaction render normally with no second geometry transform
+ok 132 - active unselected final-canvas paint and redaction render normally with no second geometry transform
+  ---
+  duration_ms: 6.690382
+  type: 'test'
+  ...
+# Subtest: neutral perspective preserves real feathered mask weights and canonical alpha bytes exactly
+ok 133 - neutral perspective preserves real feathered mask weights and canonical alpha bytes exactly
+  ---
+  duration_ms: 18.811073
+  type: 'test'
+  ...
+# Subtest: browser UMD binding rejects hidden selections with no Canvas or model runtime
+ok 134 - browser UMD binding rejects hidden selections with no Canvas or model runtime
+  ---
+  duration_ms: 13.422878
+  type: 'test'
+  ...
+# Subtest: UMD exports, immutable limits and null identity defaults
+not ok 135 - UMD exports, immutable limits and null identity defaults
+  ---
+  duration_ms: 13.80889
+  type: 'test'
+  location: '/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/tests/redaction-layers.test.cjs:22:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    6 !== 5
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 5
+  actual: 6
+  operator: 'strictEqual'
+  stack: |-
+    define (/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/tests/redaction-layers.test.cjs:28:47)
+    evalmachine.<anonymous>:7:56
+    evalmachine.<anonymous>:10:3
+    Script.runInContext (node:vm:149:12)
+    Script.runInNewContext (node:vm:154:17)
+    Object.runInNewContext (node:vm:310:38)
+    TestContext.<anonymous> (/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/tests/redaction-layers.test.cjs:29:6)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1382:25)
+    Test.start (node:internal/test_runner/test:1242:17)
+  ...
+# Subtest: canonical geometry key binds normalized shape, not color adjustments or history counter
+ok 136 - canonical geometry key binds normalized shape, not color adjustments or history counter
+  ---
+  duration_ms: 14.869745
+  type: 'test'
+  ...
+# Subtest: validation returns independent, deep-frozen canonical layers and selections
+ok 137 - validation returns independent, deep-frozen canonical layers and selections
+  ---
+  duration_ms: 1.488559
+  type: 'test'
+  ...
+# Subtest: exact records reject omissions, extensions, unsafe prototypes and duplicates
+ok 138 - exact records reject omissions, extensions, unsafe prototypes and duplicates
+  ---
+  duration_ms: 6.152423
+  type: 'test'
+  ...
+# Subtest: getters at every input boundary are rejected without invocation
+ok 139 - getters at every input boundary are rejected without invocation
+  ---
+  duration_ms: 1.305604
+  type: 'test'
+  ...
+# Subtest: stale source and geometry reject without altering stored strokes
+ok 140 - stale source and geometry reject without altering stored strokes
+  ---
+  duration_ms: 7.571499
+  type: 'test'
+  ...
+# Subtest: selected layers fail closed with unwarped automatic or manual shaping
+ok 141 - selected layers fail closed with unwarped automatic or manual shaping
+  ---
+  duration_ms: 4.48127
+  type: 'test'
+  ...
+# Subtest: null, empty, disabled and empty-stroke identity still validate image and cancellation
+ok 142 - null, empty, disabled and empty-stroke identity still validate image and cancellation
+  ---
+  duration_ms: 6.567368
+  type: 'test'
+  ...
+# Subtest: image schema and native RGBA buffers are strict, getter-free and non-shared
+ok 143 - image schema and native RGBA buffers are strict, getter-free and non-shared
+  ---
+  duration_ms: 7.661183
+  type: 'test'
+  ...
+# Subtest: unselected cover matches shared core exactly including alpha255 over transparent pixels
+ok 144 - unselected cover matches shared core exactly including alpha255 over transparent pixels
+  ---
+  duration_ms: 1.977855
+  type: 'test'
+  ...
+# Subtest: binary selection clips cover once and preserves outside bytes including hidden RGB
+ok 145 - binary selection clips cover once and preserves outside bytes including hidden RGB
+  ---
+  duration_ms: 12.728495
+  type: 'test'
+  ...
+# Subtest: mosaic feather blends the core result only once, preserving alpha and every weight-zero byte
+ok 146 - mosaic feather blends the core result only once, preserving alpha and every weight-zero byte
+  ---
+  duration_ms: 10.040211
+  type: 'test'
+  ...
+# Subtest: crop, all quarter turns, flips and colored padding transport exact Float32 mask bytes
+ok 147 - crop, all quarter turns, flips and colored padding transport exact Float32 mask bytes
+  ---
+  duration_ms: 75.746186
+  type: 'test'
+  ...
+# Subtest: unselected strokes include padding while selected all-source selection excludes padding
+ok 148 - unselected strokes include padding while selected all-source selection excludes padding
+  ---
+  duration_ms: 1.009198
+  type: 'test'
+  ...
+# Subtest: layers execute in stored order and each mosaic samples its immutable layer source
+ok 149 - layers execute in stored order and each mosaic samples its immutable layer source
+  ---
+  duration_ms: 1.051551
+  type: 'test'
+  ...
+# Subtest: aggregate layer, stroke and point budgets include disabled layers
+ok 150 - aggregate layer, stroke and point budgets include disabled layers
+  ---
+  duration_ms: 27.787173
+  type: 'test'
+  ...
+# Subtest: aggregate work, per-call core work, raster and memory limits are checked by allocation-free plans
+ok 151 - aggregate work, per-call core work, raster and memory limits are checked by allocation-free plans
+  ---
+  duration_ms: 34.310631
+  type: 'test'
+  ...
+# Subtest: oversized arrays and strings reject before accessor traversal
+ok 152 - oversized arrays and strings reject before accessor traversal
+  ---
+  duration_ms: 0.612371
+  type: 'test'
+  ...
+# Subtest: cooperative cancellation never returns partial work or mutates input or recipe
+ok 153 - cooperative cancellation never returns partial work or mutates input or recipe
+  ---
+  duration_ms: 7.363234
+  type: 'test'
+  ...
+# Subtest: cancellation callback detachment fails closed even when it returns false
+ok 154 - cancellation callback detachment fails closed even when it returns false
+  ---
+  duration_ms: 0.699181
+  type: 'test'
+  ...
+# Subtest: nonbinary or nonfinite transported cover masks fail closed, never blend alpha
+ok 155 - nonbinary or nonfinite transported cover masks fail closed, never blend alpha
+  ---
+  duration_ms: 17.304627
+  type: 'test'
+  ...
+# Subtest: selection snapshots are independently captured for every layer
+ok 156 - selection snapshots are independently captured for every layer
+  ---
+  duration_ms: 0.390417
+  type: 'test'
+  ...
+# Subtest: bounded geometry key fails before persistence and array/metadata cycles are rejected
+ok 157 - bounded geometry key fails before persistence and array/metadata cycles are rejected
+  ---
+  duration_ms: 62.401991
+  type: 'test'
+  ...
+# Subtest: disabled collections cannot silently rebind stale geometry or source
+ok 158 - disabled collections cannot silently rebind stale geometry or source
+  ---
+  duration_ms: 0.762848
+  type: 'test'
+  ...
+# Subtest: shared redaction core remains the frozen reviewed desktop-profile adapter
+ok 159 - shared redaction core remains the frozen reviewed desktop-profile adapter
+  ---
+  duration_ms: 0.920995
+  type: 'test'
+  ...
+# Subtest: schema14 default is null; direct legacy omission is neutral but explicit zero stays a complete recipe
+ok 160 - schema14 default is null; direct legacy omission is neutral but explicit zero stays a complete recipe
+  ---
+  duration_ms: 12.274221
+  type: 'test'
+  ...
+# Subtest: genuine frozen schema13 migrates all snapshots without changing source, history, cache provenance or geometry keys
+ok 161 - genuine frozen schema13 migrates all snapshots without changing source, history, cache provenance or geometry keys
+  ---
+  duration_ms: 68.458214
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema1 without straighten migrates every snapshot to null
+ok 162 - properly rehashed schema1 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 15.342877
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema2 without straighten migrates every snapshot to null
+ok 163 - properly rehashed schema2 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 4.603013
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema3 without straighten migrates every snapshot to null
+ok 164 - properly rehashed schema3 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 3.186513
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema4 without straighten migrates every snapshot to null
+ok 165 - properly rehashed schema4 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 10.676809
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema5 without straighten migrates every snapshot to null
+ok 166 - properly rehashed schema5 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 5.513603
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema6 without straighten migrates every snapshot to null
+ok 167 - properly rehashed schema6 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 2.132808
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema7 without straighten migrates every snapshot to null
+ok 168 - properly rehashed schema7 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 7.167546
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema8 without straighten migrates every snapshot to null
+ok 169 - properly rehashed schema8 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 12.136703
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema9 without straighten migrates every snapshot to null
+ok 170 - properly rehashed schema9 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 4.119366
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema10 without straighten migrates every snapshot to null
+ok 171 - properly rehashed schema10 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 7.744018
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema11 without straighten migrates every snapshot to null
+ok 172 - properly rehashed schema11 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 4.958568
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema12 without straighten migrates every snapshot to null
+ok 173 - properly rehashed schema12 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 5.872763
+  type: 'test'
+  ...
+# Subtest: properly rehashed schema13 without straighten migrates every snapshot to null
+ok 174 - properly rehashed schema13 without straighten migrates every snapshot to null
+  ---
+  duration_ms: 4.057632
+  type: 'test'
+  ...
+# Subtest: schema14 owns independent exact recipes in every slot and preserves original/cache bytes
+ok 175 - schema14 owns independent exact recipes in every slot and preserves original/cache bytes
+  ---
+  duration_ms: 8.288311
+  type: 'test'
+  ...
+# Subtest: explicit zero preserves historical paint/redaction keys exactly without rewriting bound collections
+ok 176 - explicit zero preserves historical paint/redaction keys exactly without rewriting bound collections
+  ---
+  duration_ms: 15.594235
+  type: 'test'
+  ...
+# Subtest: schema14 requires explicit straighten in current on both encode and decode
+ok 177 - schema14 requires explicit straighten in current on both encode and decode
+  ---
+  duration_ms: 9.502602
+  type: 'test'
+  ...
+# Subtest: schema14 requires explicit straighten in committed on both encode and decode
+ok 178 - schema14 requires explicit straighten in committed on both encode and decode
+  ---
+  duration_ms: 16.932272
+  type: 'test'
+  ...
+# Subtest: schema14 requires explicit straighten in undo[0] on both encode and decode
+ok 179 - schema14 requires explicit straighten in undo[0] on both encode and decode
+  ---
+  duration_ms: 10.028964
+  type: 'test'
+  ...
+# Subtest: schema14 requires explicit straighten in undo[1] on both encode and decode
+ok 180 - schema14 requires explicit straighten in undo[1] on both encode and decode
+  ---
+  duration_ms: 20.308521
+  type: 'test'
+  ...
+# Subtest: schema14 requires explicit straighten in redo on both encode and decode
+ok 181 - schema14 requires explicit straighten in redo on both encode and decode
+  ---
+  duration_ms: 24.783225
+  type: 'test'
+  ...
+# Subtest: schema14 requires explicit straighten in exported on both encode and decode
+ok 182 - schema14 requires explicit straighten in exported on both encode and decode
+  ---
+  duration_ms: 39.194119
+  type: 'test'
+  ...
+# Subtest: straighten rejects incomplete, malformed and unsafe records without invoking getters
+ok 183 - straighten rejects incomplete, malformed and unsafe records without invoking getters
+  ---
+  duration_ms: 164.018292
+  type: 'test'
+  ...
+# Subtest: UMD codec uses shared strict validation before bound paint/redaction and never plans a render
+ok 184 - UMD codec uses shared strict validation before bound paint/redaction and never plans a render
+  ---
+  duration_ms: 15.379502
+  type: 'test'
+  ...
+# Subtest: UMD schema14 roundtrip uses browser globals/WebCrypto and preserves exact source/cache payloads
+ok 185 - UMD schema14 roundtrip uses browser globals/WebCrypto and preserves exact source/cache payloads
+  ---
+  duration_ms: 35.553304
+  type: 'test'
+  ...
+# Subtest: loading oversized metadata does not impose straighten execution caps or allocate decoded pixels
+ok 186 - loading oversized metadata does not impose straighten execution caps or allocate decoded pixels
+  ---
+  duration_ms: 13.824071
+  type: 'test'
+  ...
+# Subtest: recovery generations roundtrip schema14 recipes and genuine historical13 without rewriting source blobs
+ok 187 - recovery generations roundtrip schema14 recipes and genuine historical13 without rewriting source blobs
+  ---
+  duration_ms: 77.523109
+  type: 'test'
+  ...
+# Subtest: native Canvas paint feather alpha matches scalar masks across crop/all16 turn-flip combos and exact straighten turns
+ok 188 - native Canvas paint feather alpha matches scalar masks across crop/all16 turn-flip combos and exact straighten turns
+  ---
+  duration_ms: 202.974784
+  type: 'test'
+  ...
+# Subtest: same-size angle/mode edits never rekey existing collections and preserve every saved selected layer
+ok 189 - same-size angle/mode edits never rekey existing collections and preserve every saved selected layer
+  ---
+  duration_ms: 2.863496
+  type: 'test'
+  ...
+# Subtest: actual retained backing buffers are charged, not tiny logical views
+ok 190 - actual retained backing buffers are charged, not tiny logical views
+  ---
+  duration_ms: 2.14144
+  type: 'test'
+  ...
+1..190
+# tests 190
+# suites 0
+# pass 187
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2346.395806

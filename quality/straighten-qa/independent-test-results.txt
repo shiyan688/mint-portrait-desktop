@@ -1,0 +1,25 @@
+✔ independent provenance and mandatory native prerequisites (6.064022ms)
+✔ independent continuous dimension optimization and pixel oracle: expand (28.759351ms)
+✔ independent continuous dimension optimization and pixel oracle: crop (25.739137ms)
+✔ negative controls detect gamma interpolation, straight-alpha halos and wrong clockwise sign (6.424464ms)
+✔ all old turn/flip states plus nontrivial crop then exact quarter turns preserve bytes including hidden RGB (19.369957ms)
+✔ selected feathered paint transport uses scalar coordinates through independently quantized crop/flip/turn/padding (138.188556ms)
+✔ unsupported selection check rejects saved empty and hidden layers before Canvas allocation; metadata cannot rekey them (9.494051ms)
+✔ identity framing and zero-edge padding allocations are charged before active 512 MiB admission (1.029228ms)
+✔ near-axis half-pixel phase is real, not epsilon snapped or represented as identity (1.543932ms)
+✔ actual native PNG source-local edit→frame→straighten→padding→real text→paint→cover→final resize matches independent stage assembly (296.397858ms)
+✔ real same-size positive/negative-angle exports remain semantically distinct with complete canonical metadata (267.787828ms)
+✔ native PNG preserves nonzero-alpha channels and sanitizes zero-alpha hidden RGB without mutating source (560.167209ms)
+✔ app original comparison matches independent accepted geometry rather than raw-source stretching or exposure (95.123622ms)
+✔ late neutral-original completion cannot publish a stale same-size opposite-angle comparison (54.32701ms)
+✔ independent browser metadata accounting distinguishes null geometry from allocated neutral stages without readback (6.137162ms)
+✔ observed production selected-paint exact-turn transport bytes match the independent Float32 oracle before zero padding (178.524931ms)
+✔ default capture-if-present brushes allow unselected arbitrary rotation, reject selected oblique edits intact, and accept selected exact90 (438.394632ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2801.385013

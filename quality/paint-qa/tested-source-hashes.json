@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "scope": "Unreleased painting candidate; not delivered0.2.5 or Windows/browser acceptance",
+  "productionFrozenUtc": "2026-10-22T16:40:00Z",
+  "tests": {
+    "aggregate": {
+      "passed": 2461,
+      "skipped": 0
+    },
+    "paintIntegration": 27,
+    "independentUi": 52,
+    "focusedCollectionRenderer": 31,
+    "coreMobileAndDesktop": 172,
+    "coreIndependent": 123
+  },
+  "files": [
+    {
+      "path": "src/paint-layer.cjs",
+      "sha256": "cbf7ef6b29254859df709f34b5f59a2cc2b9b29842cec4fe534ea9d9271130cf"
+    },
+    {
+      "path": "src/paint-layers.cjs",
+      "sha256": "8365889b4db49de8c59c0977a48573b633eb8cb0a5ca6da4c8557a06c146dfce"
+    },
+    {
+      "path": "src/paint-layer-renderer.cjs",
+      "sha256": "ebb4ced98294ffa6d264e0194f507c927493f8d579d0d8b4267d5a7fdd4925b3"
+    },
+    {
+      "path": "src/app.js",
+      "sha256": "c741827301fe23368193e0b1fff9f13fe68037ca4b485da197174bb76771bbc2"
+    },
+    {
+      "path": "src/index.html",
+      "sha256": "c75a7764b88e02396e4aa6b8b083f69aa91e9fcc1b7f3e0a392dc3ecf66f54fa"
+    },
+    {
+      "path": "src/pipeline.js",
+      "sha256": "965dcc2742650c5c735c9b430cd24adab29b076b00f1b25fd59b0b61f8360894"
+    },
+    {
+      "path": "src/pixel-worker.js",
+      "sha256": "67007b2ba75116c9e4890c080982ad2f26dee909c7a8ce389dcf4d2c04e49218"
+    },
+    {
+      "path": "src/project-document.cjs",
+      "sha256": "4fcb76ff2db456d5b80a36e25f8fe2fa3106cae680a36ce02639a0548ff5c679"
+    },
+    {
+      "path": "export-render-core.cjs",
+      "sha256": "56279a95b63bbcc15040826a4afc87da08c951ffd36633917218a919a67227da"
+    },
+    {
+      "path": "export-renderer.cjs",
+      "sha256": "7e72bb4aa746e8e76270007e549400789318c515e5e319ce1ebf593c220bfc2c"
+    },
+    {
+      "path": "export-render-worker.cjs",
+      "sha256": "3af6947f01bd4898069eec53e0885cfe3613266169e2e48b243e08613d350913"
+    },
+    {
+      "path": "tests/paint-ui-independent.test.cjs",
+      "sha256": "b38d55108152e7bb1a40a478acfaca82d6635379c1e82a7a108b273d46634a29"
+    },
+    {
+      "path": "tests/paint-integration.test.cjs",
+      "sha256": "a1187c2e851db76e86487c97b73acd4d324ee7c4271462ec3c1baeda55c944dd"
+    },
+    {
+      "path": "tests/paint-layers.test.cjs",
+      "sha256": "879abaeebb1f79ba64b36b085dc759bf29b928360ca8569a0008df338d71b1ab"
+    },
+    {
+      "path": "tests/paint-layer-renderer.test.cjs",
+      "sha256": "cd7f07d3d545b894cdaca06df6853408176579c4cb6031a2466bf6307ffa5f97"
+    }
+  ]
+}

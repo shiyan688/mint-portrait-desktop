@@ -1,0 +1,263 @@
+
+7-Zip (z) 26.05 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit locale=C.UTF-8 Threads:9 OPEN_MAX:16384, ASM
+
+Scanning the drive for archives:
+1 file, 13930379 bytes (14 MiB)
+
+Listing archive: /workspace/scratch/902a42ed06ad/release-0.2.8/MintPortrait-Development-0.2.8-Setup.exe
+
+--
+Path = /workspace/scratch/902a42ed06ad/release-0.2.8/MintPortrait-Development-0.2.8-Setup.exe
+Type = Nsis
+Physical Size = 13930379
+Method = LZMA:26
+Solid = +
+Headers Size = 87226
+Embedded Stub Size = 117760
+SubType = NSIS-3 Unicode
+
+----------
+Path = $PLUGINSDIR/modern-wizard.bmp
+Size = 26494
+Packed Size = 13812615
+Modified = 2025-03-29 08:32:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 0
+
+Path = $PLUGINSDIR/nsDialogs.dll
+Size = 14336
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 26498
+
+Path = $PLUGINSDIR/System.dll
+Size = 28672
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 40838
+
+Path = $PLUGINSDIR/nsProcess.dll
+Size = 4608
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 69514
+
+Path = $PLUGINSDIR/INetC.dll
+Size = 244224
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 74126
+
+Path = $PLUGINSDIR/StdUtils.dll
+Size = 102400
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 318354
+
+Path = $PLUGINSDIR/nsisunz.dll
+Size = 90112
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 420758
+
+Path = $_55_/resources/app.asar
+Size = 47210796
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 510874
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/LICENSE.md
+Size = 4433
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47721674
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/README.md
+Size = 562
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47726111
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/color.cjs
+Size = 45136
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47726677
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/index.cjs
+Size = 49
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47771817
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/index.d.ts
+Size = 21569
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47771870
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/package.json
+Size = 1515
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47793443
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/LICENSE
+Size = 10464
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47794962
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/README.md
+Size = 4913
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47805430
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/index.cjs
+Size = 62
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47810347
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/package.json
+Size = 888
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47810413
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/versions.json
+Size = 596
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47811305
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll
+Size = 19018240
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 47811905
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.7.dll
+Size = 333312
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 66830149
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.5.node
+Size = 443904
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 67163465
+
+Path = $_55_/MintPortrait.ico
+Size = 17834
+Packed Size = 
+Modified = 2026-10-22 01:26:34.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 67607373
+
+Path = $_55_/使用说明.txt
+Size = 11877
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 67625211
+
+Path = $_55_/INSTALLER-NOTICES.txt
+Size = 28598
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 67637092
+
+Path = $_55_/NSIS-LICENSES.txt
+Size = 20591
+Packed Size = 
+Modified = 2026-10-22 01:26:34.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 67665694
+
+Path = $_55_/Uninstall.exe
+Size = 
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 67686289
+

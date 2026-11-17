@@ -1,0 +1,124 @@
+{
+  "artifact": "MintPortrait Desktop0.2.7 app.asar",
+  "asarSha256": "087c84b326e2a5a00a5541832f33fb9dd9b06975d35ea19d344123b8eef4d591",
+  "appSha256": "f5bf4262c6c8883e91844982371c21c659fe75b50f2c328ca3760ed2aa6c264a",
+  "manualCoreSha256": "d28e4cef2a7f589a667e89b691bad72d31f0907d40ed47fe897f564d3dd12762",
+  "currentHelpersByteIdentical": true,
+  "currentCoreByteIdentical": true,
+  "actualCommitCallsVerifiedHelper": true,
+  "scenarios": {
+    "firstAdd": {
+      "recipe": {
+        "version": 1,
+        "sourceRevision": "proof-source",
+        "base": "none",
+        "inverted": false,
+        "feather": 0,
+        "commands": [
+          {
+            "kind": "brush",
+            "mode": "add",
+            "radius": 0.12,
+            "points": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "center": 1,
+      "outside": 0,
+      "selectedPixels": 284
+    },
+    "firstSubtract": {
+      "recipe": {
+        "version": 1,
+        "sourceRevision": "proof-source",
+        "base": "all",
+        "inverted": false,
+        "feather": 0,
+        "commands": [
+          {
+            "kind": "brush",
+            "mode": "subtract",
+            "radius": 0.12,
+            "points": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "center": 0,
+      "outside": 1,
+      "selectedPixels": 7716
+    },
+    "invertedAdd": {
+      "recipe": {
+        "version": 1,
+        "sourceRevision": "proof-source",
+        "base": "none",
+        "inverted": true,
+        "feather": 0,
+        "commands": [
+          {
+            "kind": "brush",
+            "mode": "add",
+            "radius": 0.12,
+            "points": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          },
+          {
+            "kind": "brush",
+            "mode": "subtract",
+            "radius": 0.12,
+            "points": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "center": 1,
+      "outside": 1,
+      "selectedPixels": 8000
+    },
+    "invertedSubtract": {
+      "recipe": {
+        "version": 1,
+        "sourceRevision": "proof-source",
+        "base": "none",
+        "inverted": true,
+        "feather": 0,
+        "commands": [
+          {
+            "kind": "brush",
+            "mode": "add",
+            "radius": 0.12,
+            "points": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "center": 0,
+      "outside": 1,
+      "selectedPixels": 7716
+    }
+  },
+  "conclusion": "Reported phone UI construction defects are not present in this shipped desktop path; no old recipe interpretation changed.",
+  "runtime": "Linux Node VM of actual shipped helpers/core; not Windows/Electron GUI"
+}

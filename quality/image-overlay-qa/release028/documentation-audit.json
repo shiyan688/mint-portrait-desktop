@@ -1,0 +1,27 @@
+{
+  "release": "0.2.8",
+  "generatedAt": "2026-10-22T20:50:10.163151+00:00",
+  "status": "pass",
+  "checks": {
+    "exactEvaluatedTemplate": true,
+    "release028": true,
+    "noUnbuiltInstallerClaim": true,
+    "overlaysDisclosed": true,
+    "nativePngColorCorrectionDisclosed": true,
+    "eightBitWorkingSpaceLimit": true,
+    "schema16Reads1Through15": true,
+    "unsignedWindowsUntested": true,
+    "stopSecurityWarning": true,
+    "uninstallPriorVersion": true,
+    "userDataPreserved": true
+  },
+  "projectSchema": 16,
+  "readme": {
+    "path": "installer/payload/使用说明.txt",
+    "bytes": 11877,
+    "sha256": "2bb957486084a08da8f7533ac6c4fa6f34c05776f477b5d9308758d1d48a5619"
+  },
+  "templateReadStatically": true,
+  "historicalSourceStatusNote": "Source checkpoint26 was saved before this release compilation; historical not-yet-built notes in its source-only history remain historical. Installed README no longer says Setup is unbuilt.",
+  "windowsExecuted": false
+}

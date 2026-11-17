@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const N=require('/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas');
+const C=require('../../../src/paint-layer.cjs').createProfile('desktop');
+assert.equal(typeof global.gc,'function');
+const points=[{x:0,y:0},{x:1,y:1}],stroke=(mode,opacity,width)=>({mode,opacity,width,color:'#ff0000',points});
+const r={version:1,strokes:[stroke('paint',1,.12),stroke('erase',.5,.06)]};
+const report={scope:'Fresh Linux NativeCanvas diagnostic with async yields and explicit GC. This does not characterize Electron/Chromium or a real desktop.',samples:[]};
+const sample=stage=>report.samples.push({stage,...process.memoryUsage()});
+(async()=>{global.gc();sample('baseline');for(let i=0;i<4;i++){let c=C.renderLayer(4000,4000,r,{createCanvas:N.createCanvas});assert.equal(c.getContext('2d').getImageData(2000,2000,1,1).data[3],128);sample('rendered '+i);c.width=1;c.height=1;c=null;global.gc();sample('shrunk + GC '+i);await new Promise(setImmediate);global.gc();await new Promise(resolve=>setTimeout(resolve,100));sample('yielded + GC '+i);}for(let i=0;i<3;i++){await new Promise(resolve=>setTimeout(resolve,100));global.gc();sample('final yield '+i);}report.resourceUsage=process.resourceUsage();fs.writeFileSync(path.join(__dirname,'memory-yield-observation.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));})().catch(e=>{console.error(e);process.exitCode=1;});

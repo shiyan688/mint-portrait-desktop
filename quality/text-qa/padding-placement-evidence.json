@@ -1,0 +1,87 @@
+{
+  "kind": "actual-app-native-export-text-entirely-in-bottom-padding",
+  "source": {
+    "width": 520,
+    "height": 400,
+    "sha256": "e58802265e6cebfbcebef368698ec9ab30e375e21973f21a4a004f6df66dd80e"
+  },
+  "final": {
+    "width": 520,
+    "height": 520,
+    "pngSHA256": "4923a827d06f972b288ff0d2ae352f6150af8147bb2cc80e1b3ad26c452dcbe3",
+    "decodedRGBA_SHA256": "26aa792ed8dae4be21fa91ddda76fd50e43e7fdcd86b939e3d0d34ae8213c979",
+    "expectedRGBA_SHA256": "26aa792ed8dae4be21fa91ddda76fd50e43e7fdcd86b939e3d0d34ae8213c979"
+  },
+  "contentRect": {
+    "x": 0,
+    "y": 0,
+    "width": 520,
+    "height": 400
+  },
+  "paddingRect": {
+    "x": 0,
+    "y": 400,
+    "width": 520,
+    "height": 120
+  },
+  "anchor": {
+    "x": 260,
+    "y": 494
+  },
+  "measuredCorners": [
+    {
+      "x": 52,
+      "y": 480.54296875
+    },
+    {
+      "x": 468,
+      "y": 480.54296875
+    },
+    {
+      "x": 468,
+      "y": 507
+    },
+    {
+      "x": 52,
+      "y": 507
+    }
+  ],
+  "actualInkBounds": {
+    "left": 210,
+    "top": 481,
+    "right": 309,
+    "bottom": 500
+  },
+  "alphaPixels": 1010,
+  "contentAlpha": 0,
+  "changedPaddingPixels": 1010,
+  "changedContentPixels": 0,
+  "recipe": {
+    "version": 1,
+    "text": "留白 MINT",
+    "x": 0.5,
+    "y": 0.95,
+    "size": 0.04,
+    "boxWidth": 0.8,
+    "rotation": 0,
+    "align": "center",
+    "fontFamily": "sans",
+    "bold": true,
+    "italic": false,
+    "lineHeight": 1.25,
+    "color": "#ffffff",
+    "opacity": 1,
+    "outlineWidth": 0,
+    "outlineColor": "#000000",
+    "shadow": false
+  },
+  "rasterRequests": 1,
+  "textDraws": 1,
+  "assertions": [
+    "All measured bounds and actual nonzero glyph pixels lie wholly in bottom padding.",
+    "Export changes padding pixels and zero content pixels.",
+    "App raster equals direct shared-core raster at y=0.95; no relocation.",
+    "Native decoded pixels match independent scalar source-over and accepted preview."
+  ],
+  "qualification": "Synthetic source; installed Linux NativeCanvas and fonts, not Windows/Electron UI."
+}

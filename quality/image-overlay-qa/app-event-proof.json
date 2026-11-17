@@ -1,0 +1,256 @@
+{
+  "label": "CURRENT PRODUCTION APP CODE; actual event handlers in authored DOM/IPC shell; installed NativeCanvas and real Sharp export. NOT a shipped GUI, Electron/Windows/browser screenshot.",
+  "generatedAt": "2026-10-22T21:25:43.333Z",
+  "sourceHashes": {
+    "src/app.js": "d856516c340ed35c903462ba7404b14f840e0eb9959be0587e8b50db8a5efdf6",
+    "src/image-layer-panel.cjs": "11af7673946aef03194b38dbf0d62040772a1c1feaed56d946c5f3567f53fe59",
+    "src/image-layer-session.cjs": "0ee2712cd59a94a6e2ea07153dc5cfb2e7a5f796512057e0e40489fdbe555a2b",
+    "src/image-overlay.cjs": "be527c529e013f706bfdc39b6970bbed3d2b0e33f75ac1f7c016cf6576a33b87",
+    "src/image-assets.cjs": "b67b999441770eaf5137f1de8fb2ffbd773173fa688273d63c3d552c4108b32c",
+    "src/image-layers.cjs": "ab4cd4dc87ac4a718c56a9224e181d77f9f4305061a89b88de842e8da75efc53",
+    "src/project-document.cjs": "1e573f2e1f2083616d550004f0985d87715de290c22a8ead971a70ba533e835c",
+    "src/export-queue.cjs": "cfe7a395cc422481bf5e90c102176f5371300c80e3658079b45f4ffa5737537d",
+    "export-renderer.cjs": "b1a99c1e942b5502eab0153d2c20470ba032fdb565279cacc37668e4ecaea804",
+    "export-render-core.cjs": "7d810dded0e05981c602b64e12094204f93dc64d7370717b1bb3d7725fe3a4e2",
+    "export-render-worker.cjs": "acf1a9872a098799caec90fbabd54c3e52e101eef3566f1181590a89d7512733"
+  },
+  "size": {
+    "width": 100,
+    "height": 80
+  },
+  "inputBlobSha256": "bff13afc14efd85799f5184f29057607a6633c62a9adb541bf82fd8a62fcd369",
+  "assets": [
+    {
+      "id": "rgba-ca76d1bc6ffed9a9a75ed301b74eb768cfaae9513187747d8f0f86dd1e34b1fa",
+      "width": 7,
+      "height": 5
+    },
+    {
+      "id": "rgba-91256544e2c48727bb6ae18324d09f5b4131c879e5a1f8d3f1db0cbbd5b08e95",
+      "width": 3,
+      "height": 3
+    }
+  ],
+  "recipe": {
+    "exposure": 0,
+    "contrast": 0,
+    "saturation": 0,
+    "temperature": 0,
+    "smooth": 0,
+    "brighten": 0,
+    "warmth": 0,
+    "slim": 0,
+    "eyes": 0,
+    "nose": 0,
+    "jaw": 0,
+    "bgMode": "original",
+    "bgBlur": 18,
+    "bgColor": "#e9eee9",
+    "bgFeather": 2,
+    "spots": [],
+    "underEye": 0,
+    "redness": 0,
+    "lip": 0,
+    "blush": 0,
+    "palette": "natural",
+    "localLayers": [],
+    "manualSelection": null,
+    "manualLiquify": [],
+    "manualRepair": [],
+    "lightBalance": null,
+    "levels": null,
+    "advancedTone": null,
+    "sharpness": null,
+    "framing": null,
+    "straighten": null,
+    "perspective": null,
+    "canvasPadding": null,
+    "textLayers": [
+      {
+        "id": "text-photo-1",
+        "enabled": true,
+        "recipe": {
+          "version": 1,
+          "text": "Mint",
+          "x": 0.5,
+          "y": 0.5,
+          "size": 0.26,
+          "boxWidth": 0.85,
+          "rotation": 0,
+          "align": "center",
+          "fontFamily": "sans",
+          "bold": true,
+          "italic": false,
+          "lineHeight": 1.25,
+          "color": "#fbe33c",
+          "opacity": 1,
+          "outlineWidth": 0,
+          "outlineColor": "#000000",
+          "shadow": false
+        }
+      }
+    ],
+    "imageLayers": [
+      {
+        "id": "image-ab396de0-1373-4a1d-a5b9-9b6fee55bd1a",
+        "name": "Transparent multicolor",
+        "enabled": true,
+        "assetId": "rgba-ca76d1bc6ffed9a9a75ed301b74eb768cfaae9513187747d8f0f86dd1e34b1fa",
+        "recipe": {
+          "version": 1,
+          "x": 0.46,
+          "y": 0.43,
+          "size": 1.12,
+          "rotation": 24,
+          "opacity": 0.88,
+          "flipX": true,
+          "flipY": false
+        }
+      },
+      {
+        "id": "image-b27b2e47-15f2-4382-bb76-9711ae74b93d",
+        "name": "Translucent second",
+        "enabled": true,
+        "assetId": "rgba-91256544e2c48727bb6ae18324d09f5b4131c879e5a1f8d3f1db0cbbd5b08e95",
+        "recipe": {
+          "version": 1,
+          "x": 0.66,
+          "y": 0.55,
+          "size": 0.65,
+          "rotation": -33,
+          "opacity": 0.77,
+          "flipX": false,
+          "flipY": true
+        }
+      }
+    ],
+    "paintLayers": {
+      "version": 1,
+      "sourceRevision": "audit:source-0",
+      "geometryKey": "{\"framing\":{\"version\":1,\"crop\":{\"x\":0,\"y\":0,\"w\":1,\"h\":1},\"quarterTurns\":0,\"flipX\":false,\"flipY\":false},\"canvasPadding\":{\"version\":1,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0,\"color\":\"#ffffff\",\"opacity\":1},\"manualLiquify\":[],\"slim\":0,\"eyes\":0,\"nose\":0,\"jaw\":0}",
+      "layers": [
+        {
+          "id": "paint-photo-2",
+          "name": "绘画 1",
+          "enabled": true,
+          "recipe": {
+            "version": 1,
+            "strokes": [
+              {
+                "mode": "paint",
+                "color": "#00cc44",
+                "width": 0.12,
+                "opacity": 1,
+                "points": [
+                  {
+                    "x": 0.2,
+                    "y": 0.5
+                  },
+                  {
+                    "x": 0.8,
+                    "y": 0.5
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": null
+        }
+      ]
+    },
+    "redactions": {
+      "version": 1,
+      "sourceRevision": "audit:source-0",
+      "geometryKey": "{\"framing\":{\"version\":1,\"crop\":{\"x\":0,\"y\":0,\"w\":1,\"h\":1},\"quarterTurns\":0,\"flipX\":false,\"flipY\":false},\"canvasPadding\":{\"version\":1,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0,\"color\":\"#ffffff\",\"opacity\":1},\"manualLiquify\":[],\"slim\":0,\"eyes\":0,\"nose\":0,\"jaw\":0}",
+      "layers": [
+        {
+          "id": "cover-photo-3",
+          "name": "不透明遮盖",
+          "enabled": true,
+          "recipe": {
+            "version": 1,
+            "mode": "cover",
+            "blockSize": 0.04,
+            "color": "#1256ab",
+            "strokes": [
+              {
+                "radius": 0.08,
+                "points": [
+                  {
+                    "x": 0.4,
+                    "y": 0.5
+                  },
+                  {
+                    "x": 0.6,
+                    "y": 0.5
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": null
+        }
+      ]
+    },
+    "faceAdjustments": null
+  },
+  "nativeOutput": {
+    "width": 100,
+    "height": 80,
+    "imageLayerKey": "[{\"id\":\"image-ab396de0-1373-4a1d-a5b9-9b6fee55bd1a\",\"name\":\"Transparent multicolor\",\"enabled\":true,\"assetId\":\"rgba-ca76d1bc6ffed9a9a75ed301b74eb768cfaae9513187747d8f0f86dd1e34b1fa\",\"recipe\":{\"version\":1,\"x\":0.46,\"y\":0.43,\"size\":1.12,\"rotation\":24,\"opacity\":0.88,\"flipX\":true,\"flipY\":false}},{\"id\":\"image-b27b2e47-15f2-4382-bb76-9711ae74b93d\",\"name\":\"Translucent second\",\"enabled\":true,\"assetId\":\"rgba-91256544e2c48727bb6ae18324d09f5b4131c879e5a1f8d3f1db0cbbd5b08e95\",\"recipe\":{\"version\":1,\"x\":0.66,\"y\":0.55,\"size\":0.65,\"rotation\":-33,\"opacity\":0.77,\"flipX\":false,\"flipY\":true}}]",
+    "details": {
+      "codec": "sharp-0.35.5",
+      "color": "8-bit sRGB",
+      "embeddedProfile": "sRGB",
+      "sourceExifPreserved": false,
+      "sourceBytesUnchanged": true,
+      "resampling": "none",
+      "imageOverlay": "premultiplied-srgb-mip-bilinear-edge4x4",
+      "imageLayerKey": "[{\"id\":\"image-ab396de0-1373-4a1d-a5b9-9b6fee55bd1a\",\"name\":\"Transparent multicolor\",\"enabled\":true,\"assetId\":\"rgba-ca76d1bc6ffed9a9a75ed301b74eb768cfaae9513187747d8f0f86dd1e34b1fa\",\"recipe\":{\"version\":1,\"x\":0.46,\"y\":0.43,\"size\":1.12,\"rotation\":24,\"opacity\":0.88,\"flipX\":true,\"flipY\":false}},{\"id\":\"image-b27b2e47-15f2-4382-bb76-9711ae74b93d\",\"name\":\"Translucent second\",\"enabled\":true,\"assetId\":\"rgba-91256544e2c48727bb6ae18324d09f5b4131c879e5a1f8d3f1db0cbbd5b08e95\",\"recipe\":{\"version\":1,\"x\":0.66,\"y\":0.55,\"size\":0.65,\"rotation\":-33,\"opacity\":0.77,\"flipX\":false,\"flipY\":true}}]",
+      "framing": "none",
+      "retouch": "classical-explicit-not-SOTA",
+      "localLayers": 0,
+      "paintLayers": 1,
+      "textLayers": 1
+    },
+    "pngSha256": "71f77088a4f5881d6784cf0d85eb338ead530d9422f092229456d8bcd79aed7a",
+    "rawSha256": "90537e37f118b0c41a3c4ba2c03d9617fa47cc61db15c5c42e0fe0e98cfd1d38"
+  },
+  "pixelComparison": {
+    "comparedChannels": 32000,
+    "mismatchedChannels": 0,
+    "nativeEqualsCurrentApp": true
+  },
+  "stages": [
+    {
+      "name": "01-original",
+      "label": "Synthetic original",
+      "rawSha256": "441b5789cda0f7822251c59a50bce3102828e4dc9756e92d58aa59de2d51a6eb",
+      "pngSha256": "0a87ed769bbd21cb7e1d53826f07357b7bb63b2048f158fc3131b4dda984fb5d"
+    },
+    {
+      "name": "02-images",
+      "label": "Two image layers",
+      "rawSha256": "ce39dd5bfcef2eda0fcae5438b606e33e589a684e17ba20cc5f153c32eaf3aa4",
+      "pngSha256": "f2f815f4bec55bc1f796ed9b62935051b74d9eb8ed8c9fd20a9801c5c2367900"
+    },
+    {
+      "name": "03-text",
+      "label": "Then editable text",
+      "rawSha256": "3e52f53ade36e9e6849b278143c04898ddac91055749dd5fec4b2057ceebb84a",
+      "pngSha256": "4bb53828894b5e387140ef1a73e94a3af7ad4198d12ad2f7e7f382427520c616"
+    },
+    {
+      "name": "04-paint",
+      "label": "Then paint stroke",
+      "rawSha256": "9eb0dc18e3d4a88f80cbb17b71c93c3e4edb4d1041e9b8940ace34bb71174dc5",
+      "pngSha256": "a743766491ccfba0703d6f5045d063580fca715cddf96cfc01f7e5407a5f995d"
+    },
+    {
+      "name": "05-redaction",
+      "label": "Then opaque cover",
+      "rawSha256": "90537e37f118b0c41a3c4ba2c03d9617fa47cc61db15c5c42e0fe0e98cfd1d38",
+      "pngSha256": "028915ef6e3bb823f6b5106ed89c9d682ab743dd8c23046a30754b3cf8b01025"
+    }
+  ]
+}

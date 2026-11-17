@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "kind": "matte",
+  "width": 725,
+  "height": 900,
+  "roi": {
+    "x": 0,
+    "y": 0,
+    "width": 725,
+    "height": 900
+  },
+  "matte": {
+    "width": 725,
+    "height": 900,
+    "space": "roi-original-pixels",
+    "encoding": "unit-float32-le",
+    "payloadBytes": 2610000
+  },
+  "foreground": {
+    "width": 725,
+    "height": 900,
+    "format": "rgba8",
+    "alphaMode": "straight",
+    "colorSpace": "srgb",
+    "payloadBytes": 2610000
+  },
+  "provenance": {
+    "jobId": "73140e9f-f22d-4f29-9c97-0290324b0022",
+    "task": "matting",
+    "modelId": "ZhengPeng7/BiRefNet_HR-matting",
+    "modelVersion": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+    "weightsSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55",
+    "kind": "model",
+    "device": {
+      "kind": "cpu",
+      "name": "CPU (x86_64)"
+    },
+    "executionProfile": {
+      "adapter": "birefnet",
+      "inputSize": 2048,
+      "precision": "mixed-bfloat16",
+      "threads": 4,
+      "qualityProfile": "hr-2048",
+      "operatorPrecision": {
+        "deformConv2d": "float32",
+        "weights": "float32"
+      }
+    },
+    "foregroundRefinement": {
+      "kind": "classical-color-estimation",
+      "implementation": "pymatting",
+      "version": "1.1.16",
+      "method": "estimate_foreground_ml",
+      "settings": {
+        "workingColorSpace": "linear-srgb",
+        "regularization": 0.00001,
+        "n_small_iterations": 10,
+        "n_big_iterations": 2,
+        "small_size": 32,
+        "gradient_weight": 1,
+        "opaqueProtection": "correction weight min(1,20*(1-alpha))",
+        "sourceAlphaPolicy": "original alpha bytes preserved; RGB unchanged where source alpha < 255"
+      },
+      "alphaModified": false,
+      "alphaDigest": "af3a7bf1d7e8f3c32ff7d77f561e1a9cf0f26240430d6f72c9e8349dd3de56f4",
+      "sourceDigest": "717951a5ffdf6105a4a93e5df3fd7d60ffe39e4a8d7164cfbc9bd3784e546acd"
+    }
+  }
+}

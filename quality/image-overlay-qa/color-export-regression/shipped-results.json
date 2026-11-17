@@ -1,0 +1,284 @@
+{
+  "source": "Exact four modules extracted from shipped0.2.7 ASAR and matched restored checkpoint24",
+  "runtime": "Linux Node24/Sharp0.35.5 worker; NativeCanvas Skia reference. Not Chromium/Windows import UI.",
+  "proofs": [
+    {
+      "name": "export-render-core.cjs",
+      "sha256": "72e6babe27ed53031331fbdb8acee093ad1eb1b34f08c888b7afcee6dd053254"
+    },
+    {
+      "name": "export-render-worker.cjs",
+      "sha256": "0233c0cfbd32945894371d09ca435b02fec247a75b000b12c17069139e4f235c"
+    },
+    {
+      "name": "export-renderer.cjs",
+      "sha256": "f5df7567615f6d37ab71e253807ed967ab5e6f9560ee3c97202a6c221ac44fbe"
+    },
+    {
+      "name": "src/project-document.cjs",
+      "sha256": "bfacff0e1ef3e4a3b127c77666f14dfa74106cf240d433795de01d9c3d04e658"
+    }
+  ],
+  "cases": [
+    {
+      "color": "#12aaed",
+      "depth": 8,
+      "hasProfile": false,
+      "space": "srgb",
+      "inputSha256": "463814465358956ef017168ab4f5832278148c68f66be5b476e8bb33c267194c",
+      "nativeSkiaDecode": [
+        18,
+        170,
+        237,
+        255
+      ],
+      "referenceDecode": [
+        18,
+        170,
+        237,
+        255
+      ],
+      "shippedNativeExport": [
+        18,
+        170,
+        237,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#12aaed",
+      "depth": 16,
+      "hasProfile": false,
+      "space": "rgb16",
+      "inputSha256": "c8cbef53cf2ba2a54972d4bae0f037d8b3408be6e8e861549947f70c52bce841",
+      "nativeSkiaDecode": [
+        18,
+        170,
+        237,
+        255
+      ],
+      "referenceDecode": [
+        18,
+        170,
+        237,
+        255
+      ],
+      "shippedNativeExport": [
+        0,
+        173,
+        243,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#808080",
+      "depth": 8,
+      "hasProfile": false,
+      "space": "srgb",
+      "inputSha256": "4402493230d4ccfabcbc654881667331b7e39f993c0434dc41817ebd9b4dd09e",
+      "nativeSkiaDecode": [
+        128,
+        128,
+        128,
+        255
+      ],
+      "referenceDecode": [
+        128,
+        128,
+        128,
+        255
+      ],
+      "shippedNativeExport": [
+        128,
+        128,
+        128,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#808080",
+      "depth": 16,
+      "hasProfile": false,
+      "space": "rgb16",
+      "inputSha256": "d4f3634c26cc7d55ee2bb831f0f7fff15971ef27c4dfe1bc980f4cb22d6c2bd8",
+      "nativeSkiaDecode": [
+        128,
+        128,
+        128,
+        255
+      ],
+      "referenceDecode": [
+        128,
+        128,
+        128,
+        255
+      ],
+      "shippedNativeExport": [
+        128,
+        128,
+        128,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#e63223",
+      "depth": 8,
+      "hasProfile": false,
+      "space": "srgb",
+      "inputSha256": "7db17b91f76d784fcef398fdbc3296269d6690c56217433a5e21dc7802519f13",
+      "nativeSkiaDecode": [
+        230,
+        50,
+        35,
+        255
+      ],
+      "referenceDecode": [
+        230,
+        50,
+        35,
+        255
+      ],
+      "shippedNativeExport": [
+        230,
+        50,
+        35,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#e63223",
+      "depth": 16,
+      "hasProfile": false,
+      "space": "rgb16",
+      "inputSha256": "97c2ac1d60662c5e66a3b1901464df8d58fbba00ebb16c50f2620cfbd3447eb5",
+      "nativeSkiaDecode": [
+        230,
+        50,
+        35,
+        255
+      ],
+      "referenceDecode": [
+        230,
+        50,
+        35,
+        255
+      ],
+      "shippedNativeExport": [
+        251,
+        0,
+        5,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#122328",
+      "depth": 8,
+      "hasProfile": false,
+      "space": "srgb",
+      "inputSha256": "ff224920fb7aadccf9137c174c47806921200582b716f39b243864298f32deaf",
+      "nativeSkiaDecode": [
+        18,
+        35,
+        40,
+        255
+      ],
+      "referenceDecode": [
+        18,
+        35,
+        40,
+        255
+      ],
+      "shippedNativeExport": [
+        18,
+        35,
+        40,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#122328",
+      "depth": 16,
+      "hasProfile": false,
+      "space": "rgb16",
+      "inputSha256": "7981ed9814768c2fba9eb1fed588283f848ec549a64ee976444619b46133a765",
+      "nativeSkiaDecode": [
+        18,
+        35,
+        40,
+        255
+      ],
+      "referenceDecode": [
+        18,
+        35,
+        40,
+        255
+      ],
+      "shippedNativeExport": [
+        12,
+        35,
+        41,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#f4dcc8",
+      "depth": 8,
+      "hasProfile": false,
+      "space": "srgb",
+      "inputSha256": "d35a890c0c0e0bd3f5dce267b02525a7fd7960f73be7b9c3930efa8acebfdea0",
+      "nativeSkiaDecode": [
+        244,
+        220,
+        200,
+        255
+      ],
+      "referenceDecode": [
+        244,
+        220,
+        200,
+        255
+      ],
+      "shippedNativeExport": [
+        244,
+        220,
+        200,
+        255
+      ],
+      "originalBytesUnchanged": true
+    },
+    {
+      "color": "#f4dcc8",
+      "depth": 16,
+      "hasProfile": false,
+      "space": "rgb16",
+      "inputSha256": "3fc9bb335a3329802d61a43fc3a559de5e233f7f8dd51120460852f2167e54c8",
+      "nativeSkiaDecode": [
+        244,
+        220,
+        200,
+        255
+      ],
+      "referenceDecode": [
+        244,
+        220,
+        200,
+        255
+      ],
+      "shippedNativeExport": [
+        249,
+        219,
+        197,
+        255
+      ],
+      "originalBytesUnchanged": true
+    }
+  ]
+}

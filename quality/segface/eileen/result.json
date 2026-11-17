@@ -1,0 +1,125 @@
+{
+  "id": "eileen",
+  "source": {
+    "center": "KSC",
+    "date_created": "1999-01-04T00:00:00Z",
+    "description": "KENNEDY SPACE CENTER, FLA.  -  Official portrait of Eileen Collins, mission commander on STS-114.",
+    "location": "Kennedy Space Center, FL",
+    "media_type": "image",
+    "nasa_id": "KSC-99pp0310",
+    "title": "KSC-99pp0310",
+    "id": "eileen",
+    "source_api": "https://images-api.nasa.gov/search?nasa_id=KSC-99pp0310",
+    "source_page": "https://images.nasa.gov/details/KSC-99pp0310",
+    "source_file": "https://images-assets.nasa.gov/image/KSC-99pp0310/KSC-99pp0310~orig.jpg",
+    "sha256": "15cf6d87ada0dfb401835eb8a58cfb9cedcd3c80da46252ad437686bd99b4a4c",
+    "usage_guidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "usage": "Non-commercial factual software-testing illustration. Source NASA; no endorsement. Edited comparisons are software output, not NASA images. Do not reuse as promotional material or product assets."
+  },
+  "fixturePngSha256": "5379dc39c2f28810c2b37214061f5f76911c0c2f838f99dc69c1cbb1f5d48135",
+  "roi": {
+    "x": 108,
+    "y": 40,
+    "width": 542,
+    "height": 665
+  },
+  "selection": {
+    "kind": "detected-face",
+    "faceId": "eileen-face-0",
+    "revision": "5379dc39c2f28810c2b37214061f5f76911c0c2f838f99dc69c1cbb1f5d48135"
+  },
+  "secondsIncludingLoad": 1.2324969910000618,
+  "coldModelLoad": false,
+  "outputDimensions": [
+    542,
+    665
+  ],
+  "outputBytes": 27392680,
+  "probabilitySumMaxError": 5.960464477539062e-07,
+  "inputUnchanged": true,
+  "classStats": {
+    "background": {
+      "argmaxPixels": 71229,
+      "meanProbability": 0.19823810458183289
+    },
+    "neck": {
+      "argmaxPixels": 13675,
+      "meanProbability": 0.03797008469700813
+    },
+    "skin": {
+      "argmaxPixels": 84279,
+      "meanProbability": 0.23310045897960663
+    },
+    "cloth": {
+      "argmaxPixels": 41541,
+      "meanProbability": 0.11449646204710007
+    },
+    "l_ear": {
+      "argmaxPixels": 1525,
+      "meanProbability": 0.004398983903229237
+    },
+    "r_ear": {
+      "argmaxPixels": 1669,
+      "meanProbability": 0.004700792487710714
+    },
+    "l_brow": {
+      "argmaxPixels": 897,
+      "meanProbability": 0.0026422080118209124
+    },
+    "r_brow": {
+      "argmaxPixels": 780,
+      "meanProbability": 0.002304630819708109
+    },
+    "l_eye": {
+      "argmaxPixels": 961,
+      "meanProbability": 0.002714849542826414
+    },
+    "r_eye": {
+      "argmaxPixels": 873,
+      "meanProbability": 0.0024667198304086924
+    },
+    "nose": {
+      "argmaxPixels": 7707,
+      "meanProbability": 0.021657098084688187
+    },
+    "mouth": {
+      "argmaxPixels": 2281,
+      "meanProbability": 0.00629480741918087
+    },
+    "l_lip": {
+      "argmaxPixels": 2582,
+      "meanProbability": 0.007196472026407719
+    },
+    "u_lip": {
+      "argmaxPixels": 1757,
+      "meanProbability": 0.004996528849005699
+    },
+    "hair": {
+      "argmaxPixels": 128674,
+      "meanProbability": 0.35682180523872375
+    },
+    "eye_g": {
+      "argmaxPixels": 0,
+      "meanProbability": 6.803552166090299e-11
+    },
+    "hat": {
+      "argmaxPixels": 0,
+      "meanProbability": 3.649200941424624e-09
+    },
+    "ear_r": {
+      "argmaxPixels": 0,
+      "meanProbability": 1.4168115569646034e-09
+    },
+    "neck_l": {
+      "argmaxPixels": 0,
+      "meanProbability": 3.4282585659184406e-09
+    }
+  },
+  "provenance": {
+    "weightsSha256": "4d67ea7d8c33849272b293b421fa3d20d54d9987f1bca8c1ef0eebe4534993e8",
+    "codeRevision": "9416628e7b5a3e4b9a1068b8467bdc0cf0be7a7d",
+    "device": "cpu",
+    "inputSha256": "410f4799beef973f6988bcd4483ebac361cec1e34962cf9a4d79e44479eeabe1",
+    "outputSha256": "af77fd95716c80ddd907fd50a30a573dfcf06aa95fd972f3e446493177945931"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "kind": "quality-archive-set-restore",
+  "state": "frozen",
+  "checkpointRevision": 28,
+  "qaManifestSha256": "d8e435f4b42b31e3d52c0eb228abc1babecea5e0e796439f977188b0be4d4249",
+  "archives": [
+    {
+      "bytes": 61564488,
+      "libraryVersion": 4,
+      "fileName": "MintPortrait-QA-Checkpoint20.zip",
+      "libraryFileId": "libfile_c60c939b4c948191b422c7dc7b15e49e",
+      "qaManifestSha256": "85ea2c7bacca449eed04da02d3232ad2a2aab680cfb7af3170d30d34addf863c",
+      "checkpointRevision": 20,
+      "sha256": "4b39f257cf700d59b5da62e2fdaf41802f41e58fc6da5e9e8e4c4630f40b7b1d",
+      "role": "baseline"
+    },
+    {
+      "checkpointRevision": 22,
+      "fileName": "MintPortrait-QA-Straighten-Checkpoint22.zip",
+      "bytes": 5115930,
+      "sha256": "019fb6f25a5595ba6ff8d523b159ce3da45e2bcbc1d32bc1a264bde93f0c88c4",
+      "qaManifestSha256": "78ada0e31c0cb1ccc51cf3581ece0a259572e4b386913479bd20a732a1006c85",
+      "role": "increment",
+      "libraryFileId": "libfile_c5ac740d6d208191897230d3878b5291",
+      "libraryVersion": 0
+    },
+    {
+      "checkpointRevision": 23,
+      "fileName": "MintPortrait-QA-Sharpness-Checkpoint23.zip",
+      "bytes": 1783133,
+      "sha256": "43663e37867a3f5567dbad0732094f9ed152018d45548eeb3ff476025b3b518b",
+      "qaManifestSha256": "e8ad6a48bdf5f268b0d4f2db32808db1af39a866a9516ffa9ee024896237746e",
+      "role": "increment",
+      "libraryFileId": "libfile_d1c310bcd2bc8191bcf6bbaf8f2dac8e",
+      "libraryVersion": 0
+    },
+    {
+      "checkpointRevision": 26,
+      "fileName": "MintPortrait-QA-ImageLayers-Checkpoint26.zip",
+      "bytes": 778370,
+      "sha256": "2f0be34965c34363b4d9c8f570c8c48cde57f7d8eb5d74f412accd72a7f67906",
+      "qaManifestSha256": "967d512d108c8ed3a2ebaf038485782ab7d558547891e28537addb4c07f7a4fd",
+      "role": "increment",
+      "libraryFileId": "libfile_32b4b1bad3788191b4b95696586bbdbb",
+      "libraryVersion": 0
+    },
+    {
+      "checkpointRevision": 28,
+      "fileName": "MintPortrait-QA-Perspective-Checkpoint28.zip",
+      "bytes": 422713,
+      "sha256": "d1ee614c0add5856e39902b3af0b7ffb5f739f1986e8d5058e61b893d069bb64",
+      "qaManifestSha256": "6c003f5d07a8c792331ad8fc05de9c77985551150535af5bc43213ad7a919fc5",
+      "role": "increment",
+      "libraryFileId": "libfile_9933680f203881919a8685db758e2c8f",
+      "libraryVersion": 0
+    }
+  ]
+}

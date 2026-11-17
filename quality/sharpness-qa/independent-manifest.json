@@ -1,0 +1,116 @@
+{
+  "status": "CURRENT UNRELEASED CANDIDATE; independent scoped checks passed",
+  "startedUTC": "2026-10-22T18:49:17.048Z",
+  "finishedUTC": "2026-10-22T18:49:53.672Z",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "nativeCanvas": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas",
+    "sharp": {
+      "aom": "3.15.1",
+      "archive": "3.8.9",
+      "cairo": "1.18.6",
+      "cgif": "0.5.4",
+      "exif": "0.6.26",
+      "expat": "2.8.5",
+      "ffi": "3.8.0",
+      "fontconfig": "2.18.3",
+      "freetype": "2.14.3",
+      "fribidi": "1.0.17",
+      "glib": "2.90.0",
+      "harfbuzz": "14.5.0",
+      "heif": "1.23.5",
+      "highway": "1.4.0",
+      "imagequant": "2.4.1",
+      "lcms": "2.19.1",
+      "mozjpeg": "0826579",
+      "pango": "1.58.2",
+      "pixman": "0.46.4",
+      "png": "1.6.58",
+      "proxy-libintl": "0.5",
+      "rsvg": "2.63.2",
+      "tiff": "4.7.2",
+      "uhdr": "2.0.2",
+      "vips": "8.18.7",
+      "webp": "1.6.0",
+      "xml2": "2.15.4",
+      "zlib-ng": "2.3.3",
+      "sharp": "0.35.5"
+    }
+  },
+  "scope": "Cloud Node, installed NativeCanvas, real Sharp export workers and authored VM execution of production web-worker source. No browser, Electron UI, Windows, phone, installer, GPU or model inference verification.",
+  "commands": [
+    "node --test --test-reporter=tap tests/sharpness-independent.test.cjs",
+    "node quality/sharpness-qa/independent-render-evidence.cjs"
+  ],
+  "tests": {
+    "total": 20,
+    "passed": 20,
+    "failed": 0,
+    "skipped": 0,
+    "log": "quality/sharpness-qa/independent-suite.tap",
+    "logSHA256": "33352b604cbe3a47ae2fb4eb107f4ee5109089c06b80d67a76a73d766b8554c8"
+  },
+  "sourceFiles": {
+    "src/sharpness.cjs": "44e95137e818d4157370975a795364ee6e303d719c0db4456f71d5e08bc6d707",
+    "src/pixel-worker.js": "adf3ceae5e36082fd82ac42fe2c838a1c9c23d78d68ef275e5d9fd3385a5baed",
+    "src/pipeline.js": "e0fc185b4fb54aee3a4b6b73405d74a21f4b4d787f9e65f741b4c81902128021",
+    "src/project-document.cjs": "bfacff0e1ef3e4a3b127c77666f14dfa74106cf240d433795de01d9c3d04e658",
+    "export-render-core.cjs": "72e6babe27ed53031331fbdb8acee093ad1eb1b34f08c888b7afcee6dd053254",
+    "export-render-worker.cjs": "0233c0cfbd32945894371d09ca435b02fec247a75b000b12c17069139e4f235c",
+    "export-renderer.cjs": "f5df7567615f6d37ab71e253807ed967ab5e6f9560ee3c97202a6c221ac44fbe",
+    "src/local-adjustments.cjs": "1fff1c416893849296fbd6cca6bad0ab854766a819017ce7990486f05eda7757",
+    "src/portrait-engine.cjs": "5cde7dcd60aab1d68e1ec5fb026c6396c2f395c1597dd03113c34674ba57d524",
+    "src/portrait-people-desktop.cjs": "e7387a6cc1634640fa4a58a5c681c033dc3f1a29b75222921a23790a9e0b49fc",
+    "src/manual-pipeline.cjs": "acbff3ca3fb2088fcb08594be9192881335fe07ddfc686deb4d755809e7879d3",
+    "src/light-balance.cjs": "bfd8cb0be2fbdaea50ce59b5646cf6a99ae3a980fdb97cd554a901761860dac1",
+    "src/levels.cjs": "1e454e275c24e2e99b7b6e32bad3569a3ce996e73e2d8cc895c00aea5daf327f",
+    "src/advanced-tone.cjs": "bf2d10e8044856fbdaabcc24d4c6c43cf3d818a25127fc50c6299fa93eb61628",
+    "src/geometry.cjs": "c8a0dc83278229ed9b07978801afe3a1a835eb505415ffc91e937a51d77590ba",
+    "src/straighten.cjs": "7b28d67aba28747e85abf95c12b39522153871c4d084038bcb053244fa11f98e",
+    "src/canvas-padding.cjs": "91412cfaefd331c6fc5fffb8f9f58256dd25eb6306de6511cdec1cd2a2deb995",
+    "src/text-overlay.cjs": "44874197cdf371f6763228d61a67c75346c50e37c2267e2b9e69e33f314f93a1",
+    "src/text-layers.cjs": "4e13c01b05b3f812df3f4ce2c948bf7a6e7705914b3be4c60b38dd1c782abc78",
+    "src/paint-layer.cjs": "cbf7ef6b29254859df709f34b5f59a2cc2b9b29842cec4fe534ea9d9271130cf",
+    "src/paint-layers.cjs": "c65b812dfa0423a5b1c2c5ae1a28fae09c4bbe5b15cf1f4a6cb6bde9d4dd4d66",
+    "src/redaction-layers.cjs": "5442a319b5a008febbab8c7de5e2bac405d4dd99b16781a315d141dd94099c0e",
+    "src/export-size.cjs": "f2236d84cc60bfdb6dcef2d0c23f657676e8a2e75382f4bb5f6358ababf442fb",
+    "tests/sharpness-independent.test.cjs": "c04731c243d41cbdacb43f1e767d273a38ff0790faf30c0c5e7c2486d2352e4b",
+    "quality/sharpness-qa/independent-support.cjs": "5d508bd6c67112c4a0aff5d0e6018e383095311893f091c1d6ff546ce3752b10",
+    "quality/sharpness-qa/independent-render-evidence.cjs": "5f608bcf5c4672d2dfd43ccd9d390e2607b54024f4be89f0fa1a8169b694075d",
+    "quality/straighten-qa/independent-oracles.cjs": "6c8ed88665c460aff2abaa450f4a89ea5adae318722b116a94cb7819f0b8b7ea",
+    "quality/text-qa/native-support.cjs": "0d3965501547a311d699347dde88386175d3046126d3d8c41346d28732fad1b2"
+  },
+  "sourceFilesUnchangedDuringVerification": true,
+  "pixelEvidence": {
+    "path": "quality/sharpness-qa/independent-pixels.json",
+    "sha256": "73c7389cc58933e673fad4d564a5dc38e4d35749419d1c3ea40051f99ee5ff35"
+  },
+  "outputs": [
+    {
+      "path": "quality/sharpness-qa/independent-victor-amounts.png",
+      "bytes": 603111,
+      "sha256": "e9e0a77ed39fd5b917652e8b6e76bd12b6d6e40bedf5d4b3c7867edc20d76ef4",
+      "width": 1240,
+      "height": 1030
+    },
+    {
+      "path": "quality/sharpness-qa/independent-mukai-amounts.png",
+      "bytes": 602074,
+      "sha256": "96341fadfe7016ff293a3e1b624bd244cbe46d7abb7c0df0105a3a2bc99f7065",
+      "width": 1240,
+      "height": 1030
+    },
+    {
+      "path": "quality/sharpness-qa/independent-noise-edge-counterexample.png",
+      "bytes": 607051,
+      "sha256": "051735184c60a1d7c242eed6ec2264a46aba127e32682fae38efb61729be51e7",
+      "width": 1240,
+      "height": 1070
+    }
+  ],
+  "pngBytes": 1812236,
+  "visualReview": "See independent-review.json for final human-readable observations tied to output hashes; do not infer a visual pass from pixel counts.",
+  "sourceUsage": "Private informational QA only; no endorsement; altered software-test output, not NASA original. Not cleared for commercial/marketing/app-sample/training reuse. No model release."
+}

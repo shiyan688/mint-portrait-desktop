@@ -1,0 +1,26 @@
+{
+  "alphaDigest": "b36fe1632526303e897a0d1097a05921351827e959dcf6abb47f552000ad4038",
+  "sourceDigest": "6bd04d4edf100a6e64d1fcc192b7a410b086dc840c66a8aa8d6513c505b7c9d7",
+  "inputUnchanged": true,
+  "alphaUnchanged": true,
+  "variants": [
+    {
+      "strength": 0,
+      "foregroundRgbaSha256": "6bd04d4edf100a6e64d1fcc192b7a410b086dc840c66a8aa8d6513c505b7c9d7",
+      "originalAlphaPreserved": true,
+      "fullyOpaquePixelsProtected": true
+    },
+    {
+      "strength": 0.5,
+      "foregroundRgbaSha256": "abb440d1ec043c8e83b98075abee51b06f47c28871eabcdaa05158d04a800d91",
+      "originalAlphaPreserved": true,
+      "fullyOpaquePixelsProtected": true
+    },
+    {
+      "strength": 1,
+      "foregroundRgbaSha256": "142b242e606fa81d5d99cd2c98613b7a894b694d3801dbc78c01ea32f78b4414",
+      "originalAlphaPreserved": true,
+      "fullyOpaquePixelsProtected": true
+    }
+  ]
+}

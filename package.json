@@ -1,0 +1,23 @@
+{
+  "name": "mint-portrait-desktop",
+  "productName": "Mint Portrait",
+  "version": "0.2.9",
+  "description": "Offline desktop portrait editing workbench",
+  "main": "main.cjs",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "vendor": "node tools/vendor.cjs",
+    "test": "node --test tests/*.test.cjs tests/manual-qa/*.test.cjs",
+    "build:win": "node tools/package-win.cjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@mediapipe/tasks-vision": "1.1.1",
+    "electron": "45.0.0"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  }
+}

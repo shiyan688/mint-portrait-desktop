@@ -1,0 +1,67 @@
+{
+  "scope": "Public NASA fixture, three explicit local keep strokes demo; not a complete matte correction or quality acceptance",
+  "width": 795,
+  "height": 900,
+  "strokes": [
+    {
+      "mode": "keep",
+      "points": [
+        {
+          "x": 760,
+          "y": 110
+        },
+        {
+          "x": 760,
+          "y": 600
+        }
+      ],
+      "radiusPx": 80,
+      "hardness": 0.85,
+      "opacity": 1
+    },
+    {
+      "mode": "keep",
+      "points": [
+        {
+          "x": 680,
+          "y": 150
+        },
+        {
+          "x": 680,
+          "y": 600
+        }
+      ],
+      "radiusPx": 90,
+      "hardness": 0.85,
+      "opacity": 1
+    },
+    {
+      "mode": "keep",
+      "points": [
+        {
+          "x": 590,
+          "y": 100
+        },
+        {
+          "x": 760,
+          "y": 100
+        }
+      ],
+      "radiusPx": 50,
+      "hardness": 0.8,
+      "opacity": 1
+    }
+  ],
+  "changedAlphaPixels": 133678,
+  "sourceUnchanged": true,
+  "rawAlphaUnchanged": true,
+  "sourceSha256": "6bd04d4edf100a6e64d1fcc192b7a410b086dc840c66a8aa8d6513c505b7c9d7",
+  "rawAlphaSha256": "b36fe1632526303e897a0d1097a05921351827e959dcf6abb47f552000ad4038",
+  "correctedAlphaSha256": "27f77cbb7e15a7bf10397525f398348a89546f481d4efd7f0416ccc7095a9a52",
+  "correction": {
+    "algorithm": "manual-soft-polyline-union-v1",
+    "units": "original-pixels",
+    "strokeCount": 3,
+    "learned": false
+  }
+}

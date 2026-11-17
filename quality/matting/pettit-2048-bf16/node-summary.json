@@ -1,0 +1,47 @@
+{
+  "test": "approved-public-fixture-actual-node-ai-to-python-birefnet",
+  "fixture": "NASA iss072e188983 Pettit",
+  "sourceProvenance": "../../fixtures/pettit-provenance.json",
+  "inputSha256": "0f1cd0fffabfcac650bb6c8c4e32194bfeb3398b52343978c874b35b4a47aadb",
+  "inputUnchanged": true,
+  "wallSeconds": 116.243412416,
+  "outputBytes": 9830400,
+  "outputSha256": "aa6e16cbca0cdf7bb076ec15fe0d87c93d32208783dc41ee589877ce34b7c5d2",
+  "min": 1.9815999507954984e-8,
+  "max": 1,
+  "mean": 0.1744634595274744,
+  "softPixels": 32708,
+  "totalPixels": 2457600,
+  "rssSamplingMs": 100,
+  "rssNote": "Sampling observed Node only; subprocess information was unavailable in this execution environment. This is not worker, total-model or GPU memory.",
+  "workerPids": [],
+  "provenance": {
+    "jobId": "27695256-b560-4b31-9653-7819497cb2d3",
+    "task": "matting",
+    "modelId": "ZhengPeng7/BiRefNet_HR-matting",
+    "modelVersion": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+    "weightsSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55",
+    "kind": "model",
+    "device": {
+      "kind": "cpu",
+      "name": "CPU (x86_64)"
+    },
+    "executionProfile": {
+      "adapter": "birefnet",
+      "inputSize": 2048,
+      "precision": "mixed-bfloat16",
+      "threads": 4,
+      "qualityProfile": "hr-2048",
+      "operatorPrecision": {
+        "deformConv2d": "float32",
+        "weights": "float32"
+      }
+    }
+  },
+  "qualityVerified": false,
+  "foregroundRefinement": false,
+  "stderrNote": "Supervisor stderr captured separately. Model diagnostic stderr is bounded and drained, not retained by transport.",
+  "maxSampledNodeRssKiB": 156548,
+  "workerPeakRssKiB": null,
+  "workerRssAvailable": false
+}

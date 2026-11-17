@@ -1,0 +1,226 @@
+{
+  "date": "2026-10-22T14:58:49.660Z",
+  "environment": "Node + real native export worker + Sharp PNG decode on Linux. Not app screenshot/browser/Windows/GPU testing.",
+  "algorithm": "Conventional display-referred 8-bit sRGB light balance; not learned retouch, RAW recovery or natural-beauty default.",
+  "privateQAOnly": true,
+  "rights": "NASA public media; informational private QA only, no training, marketing, endorsement or shipped stock asset.",
+  "sourceAttribution": {
+    "victor": "quality/levels-qa/visual-evidence.json",
+    "mukai": "quality/advanced-tone/README.md; original NASA metadata in Asian QA Library libfile_4727ca03ec8081918e22fe9191fdac16"
+  },
+  "hashes": {
+    "src/light-balance.cjs": "b33b2cc55dbd5943dc07db4baf42f6af68e61c62951751c5dc5774063a272531",
+    "src/pixel-worker.js": "ad7bb4aec18ff596cde1ef94e290225f25849af20dcfb4bd594d85f1fcd9c462",
+    "export-render-core.cjs": "d67c6a12a0129309181644117862c095c10d26f525b7ed93c8f68134a0dfd30f",
+    "export-render-worker.cjs": "6841a221e03911bae3dc4b2cb665cbe32d26d7d69fa4d77cb1c854f4c3024844",
+    "src/project-document.cjs": "ac5708a334b8287d1d5442c917dae76762b0757684f5dec2f54529f9021fd29b",
+    "src/preset-codec.cjs": "b03d59aab2fa6b32639ceb1ddc0d22e680adde21a2834aece6cea9e79645e5d6"
+  },
+  "photos": [
+    {
+      "name": "victor",
+      "sourceFile": "quality/levels-qa/victor-original.png",
+      "sourceSha256": "8a7bca546361e7e506d458d184d198327633c84749e252c8a929621fd2e7aaf6",
+      "width": 646,
+      "height": 900,
+      "variants": [
+        {
+          "title": "中性：像素完全不变",
+          "recipe": {
+            "version": 1,
+            "shadows": 0,
+            "highlights": 0,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "8a7bca546361e7e506d458d184d198327633c84749e252c8a929621fd2e7aaf6",
+          "rgbaSha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "阴影 +25 / 高光 -25",
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "d706e00bb3f20d70273ce47c8eaa502ce8feeb9461dad96b8caef062be7de4b9",
+          "rgbaSha256": "b0ec8c9abf0810f5ccff5cecf616188ccbd3e3b51ccb6d51e6b488c7bd399817",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "阴影 +50 / 高光 -50",
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "6945b950d0e3e6179aa6ad749927c741e8911a4d7721aa82f9fcc7033d46acbf",
+          "rgbaSha256": "02f77a4ad0cf8a448a9f0ba8e9157969373ad5e2c97a544feb98bc87eb91e34c",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "阴影 +100 / 高光 -100",
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "7fd4a7e40c6f2116096d3c94cabb7fdd97b0813545a98b1aa324fe0cf34e6e9b",
+          "rgbaSha256": "e0965f52c95bbac87b5ea2b7ab139a505f7c98c3e8d5061fc62cf187bfb710c1",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "反向极限：-100 / +100",
+          "recipe": {
+            "version": 1,
+            "shadows": -100,
+            "highlights": 100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "63a039d56b31e991c9ed0db9f6b93f3295738c9d48bf01b2b41b16c706f2284e",
+          "rgbaSha256": "3304285c491a9c12a6f8f3e707c5b498aae4d951bbfafdd7783b195be240300e",
+          "nativeReadbackEqualsCore": true
+        }
+      ]
+    },
+    {
+      "name": "mukai",
+      "sourceFile": "quality/advanced-tone/mukai-0.png",
+      "sourceSha256": "7b59ad1ca562db6d25080fe126d9cc31cb0899c529bb5ff9484df6b4a649d61b",
+      "width": 897,
+      "height": 1000,
+      "variants": [
+        {
+          "title": "中性：像素完全不变",
+          "recipe": {
+            "version": 1,
+            "shadows": 0,
+            "highlights": 0,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "faa8d27f65c468ccced771c0b96f89767b287821b0a754c50b6dd2004d5b69bb",
+          "rgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "阴影 +25 / 高光 -25",
+          "recipe": {
+            "version": 1,
+            "shadows": 25,
+            "highlights": -25,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "5b72e4c864d167b370b648952b9c67213df874819c83ca97a0b469ca56ab345b",
+          "rgbaSha256": "6a2a4e98de4a39083e7330bbb0a6881b20d48b8dce3749ffcb8a6798fde89d17",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "阴影 +50 / 高光 -50",
+          "recipe": {
+            "version": 1,
+            "shadows": 50,
+            "highlights": -50,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "674753e915066ad1316e96a890b21fa68c23e0b425d1fe3e280d17e76fcc9f43",
+          "rgbaSha256": "44304f93679b3d2cf9b074fd84056902325b061ec8aef470d8a7c4cca1ba94a2",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "阴影 +100 / 高光 -100",
+          "recipe": {
+            "version": 1,
+            "shadows": 100,
+            "highlights": -100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "25496a1c94e2627e0ac3d76f998c3fcf8791e2f46c92546d3489ad48fe6b6d46",
+          "rgbaSha256": "1a74227cea5f3eacc68ef7b5b9dfbe06fea48871ba26b84ef318236aa3c0d287",
+          "nativeReadbackEqualsCore": true
+        },
+        {
+          "title": "反向极限：-100 / +100",
+          "recipe": {
+            "version": 1,
+            "shadows": -100,
+            "highlights": 100,
+            "whiteBalance": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            }
+          },
+          "pngSha256": "b54b51f8fe90580b187beb6cff7440ba2937bb2b16115ab6ea95c14b0bdc154e",
+          "rgbaSha256": "c31e05b62897dd3195a9d600cb4cb7f8dc5647f3dbf1e3bc325719bd22983d09",
+          "nativeReadbackEqualsCore": true
+        }
+      ]
+    }
+  ],
+  "whiteBalance": {
+    "purpose": "Known synthetic linear-light color cast and an added neutral gray card; not a claim to know real scene illumination or skin neutrality.",
+    "sourceFile": "quality/advanced-tone/mukai-0.png",
+    "syntheticCast": [
+      1.2,
+      0.9809284116331096,
+      0.6
+    ],
+    "sampledGains": {
+      "r": 0.8377855391575338,
+      "g": 1.0166193479814916,
+      "b": 1.6897735202787056
+    },
+    "sourcePrescale": 0.6,
+    "grayLinear": 0.18,
+    "patch": {
+      "x": 0.5,
+      "y": 0.9629629629629629,
+      "radius": 0.012
+    },
+    "uncorrectedRgbMAE": 9.344343738387217,
+    "correctedRgbMAE": 0.41423931623931626,
+    "correctedMaxCodeError": 2,
+    "nativeReadbackEqualsCore": true,
+    "pngSha256": "6df49f986fc96a36669ee266f810e426f7f14742484f5a8d535d5fe25bdf5e00",
+    "rgbaSha256": "d204e674f66fb4f8a8a13d4940bfd339ca140f352d8da0c6d580e66af3bbeddf"
+  }
+}

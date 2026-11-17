@@ -1,0 +1,13 @@
+{
+  "modelId": "ZhengPeng7/BiRefNet_HR-matting",
+  "revision": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+  "source": "https://huggingface.co/ZhengPeng7/BiRefNet_HR-matting",
+  "files": {
+    "README.md": "834ba4551d22697900286f26909064338c1e04dd44a8feb43e2992c0d644334b",
+    "requirements.txt": "bdfdd83a090d31a2acf64f7350653fa63cd8b5d9d6e0ff3e135bea7ce3786341",
+    "BiRefNet_config.py": "e7b8c2a74f6cea6a59553d517f71d47f2c1d90e670a13416af17c25fe2f3dc52",
+    "birefnet.py": "2a45b4e0ece72d7c4212bca1a988e7d7e52bfe9f98ec59c58b8809c8a8b7a831",
+    "model.safetensors": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55",
+    "config.json": "d0b779ee9a76bf079673c5852c346f439591f016ca0d778a87bbd1dcbe24398a"
+  }
+}

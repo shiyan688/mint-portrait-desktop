@@ -1,0 +1,63 @@
+{
+  "qualification": "Synthetic native Linux Skia raster evidence only; not Electron, browser, Windows, installer, cross-OS font acceptance, or a private photo.",
+  "nativeVersion": "0.1.100",
+  "fonts": [
+    {
+      "file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "family": "sans-serif",
+      "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+    },
+    {
+      "file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "family": "sans-serif",
+      "sha256": "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb"
+    },
+    {
+      "file": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+      "family": "monospace",
+      "sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8"
+    }
+  ],
+  "width": 960,
+  "height": 640,
+  "previewWidth": 333,
+  "previewHeight": 222,
+  "sourceHash": "8c61fb86dd57e787609b2ec41092d8c520a33d4633ff5d2b61584ca84b1b92b5",
+  "recipeHash": "48528d89e1034449369a1c366be8c44130276c91748123dc0d1563948a523c9b",
+  "rgbaHash": "00abef39ab79be9db3909ec4368dcbec87fb5b6c901a779c6ad16142a455b73d",
+  "images": {
+    "full-overlay.png": {
+      "sha256": "de534e2b1019c0c86b3cf2bd9c24e01270baba0922258186d70ef14507b32448",
+      "width": 960,
+      "height": 640,
+      "bytes": 220020
+    },
+    "same-basis-preview.png": {
+      "sha256": "3ebd1af33c34b8a76a299ec03b4161674125aa784f67d76f30845d814607854b",
+      "width": 333,
+      "height": 222,
+      "bytes": 43219
+    },
+    "reversed-order.png": {
+      "sha256": "7b2c098e03cbb3da28e4f0e29fb9f5be86757d6c597c75c27ad1338a719f57c2",
+      "width": 960,
+      "height": 640,
+      "bytes": 221325
+    },
+    "full-composite.png": {
+      "sha256": "de534e2b1019c0c86b3cf2bd9c24e01270baba0922258186d70ef14507b32448",
+      "width": 960,
+      "height": 640,
+      "bytes": 220020
+    }
+  },
+  "assertions": [
+    "shared core equals renderer pixels",
+    "CJK/Latin/multiline/outline/shadow/opacity/rotation/order exercised",
+    "smaller preview uses exact full-size raster downsample",
+    "same-size preview equals exact raw Layers compositor without overlay Canvas roundtrip",
+    "independent source-over oracle matches real scaled preview readback",
+    "source unchanged",
+    "exact envelope association"
+  ]
+}

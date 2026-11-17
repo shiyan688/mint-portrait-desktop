@@ -1,0 +1,84 @@
+{
+  "scope": "Actual authored shared geometry and native PNG export. Public NASA fixture, private informational QA only. Contact sheet is not a UI screenshot.",
+  "sourceCoreSha256": "c8a0dc83278229ed9b07978801afe3a1a835eb505415ffc91e937a51d77590ba",
+  "sourceRgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+  "sourceUnchanged": true,
+  "sourceBytesUnchanged": true,
+  "cases": [
+    {
+      "label": "Original / unchanged",
+      "width": 897,
+      "height": 1000,
+      "recipe": null,
+      "rgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+      "pngSha256": "7b59ad1ca562db6d25080fe126d9cc31cb0899c529bb5ff9484df6b4a649d61b"
+    },
+    {
+      "label": "Crop after +3 exposure",
+      "width": 539,
+      "height": 760,
+      "recipe": {
+        "version": 1,
+        "crop": {
+          "x": 0.22,
+          "y": 0.08,
+          "w": 0.6,
+          "h": 0.76
+        },
+        "quarterTurns": 0,
+        "flipX": false,
+        "flipY": false
+      },
+      "rgbaSha256": "ab16d7eb32a5d2744ee6c5d68e886bcbc005b7b93f23d9c84d4e2aa560eded40",
+      "pngSha256": "044fc4cc51efb415d54993841e26cafbf115d4752f0837e59bae6da4b9cd984d"
+    },
+    {
+      "label": "Same crop / clockwise90",
+      "width": 760,
+      "height": 539,
+      "recipe": {
+        "version": 1,
+        "crop": {
+          "x": 0.22,
+          "y": 0.08,
+          "w": 0.6,
+          "h": 0.76
+        },
+        "quarterTurns": 1,
+        "flipX": false,
+        "flipY": false
+      },
+      "rgbaSha256": "294a77fc7b1f77a63a050ef0c6af31b7b53567c2d2d4f34b13410c4e38f957f2",
+      "pngSha256": "7ba19aa8902f7f874666b094a7a3e1baaa30f5c60bacb13d78c9ecb167dfb05a"
+    },
+    {
+      "label": "Same crop / rotate + flip",
+      "width": 760,
+      "height": 539,
+      "recipe": {
+        "version": 1,
+        "crop": {
+          "x": 0.22,
+          "y": 0.08,
+          "w": 0.6,
+          "h": 0.76
+        },
+        "quarterTurns": 1,
+        "flipX": true,
+        "flipY": false
+      },
+      "rgbaSha256": "fd9869ae7c714eb74a5e4f5353800fec9f80a5d093ab6c8d83bf3044c4467465",
+      "pngSha256": "d9d2f1d1a6561fd1bb96a33dc21ea95127081ff6352953a545206c977226b5eb"
+    }
+  ],
+  "native": {
+    "width": 760,
+    "height": 539,
+    "processingWidth": 897,
+    "processingHeight": 1000,
+    "scaled": false,
+    "framed": true,
+    "encodedSha256": "059b428f9c33dfc05f8d2af604b90e911527e6b2725433121c4c58b68b3e2ec4",
+    "byteExactToSharedCore": true
+  }
+}

@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'../../..'),A=require(path.join(root,'src/learned-analysis.cjs')),E=require(path.join(root,'src/portrait-engine.cjs'));
+const {width,height}=JSON.parse(fs.readFileSync(path.join(root,'quality/fixtures/suni.json'))),source=new Uint8ClampedArray(fs.readFileSync(path.join(root,'quality/fixtures/suni.rgba'))),raw=fs.readFileSync(path.join(root,'quality/matting/suni-2048-bf16/alpha.f32'));
+const mask={width,height,data:new Float32Array(raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength)),maxValue:1};
+const strokes=[{mode:'keep',points:[{x:760,y:110},{x:760,y:600}],radiusPx:80,hardness:.85,opacity:1},{mode:'keep',points:[{x:680,y:150},{x:680,y:600}],radiusPx:90,hardness:.85,opacity:1},{mode:'keep',points:[{x:590,y:100},{x:760,y:100}],radiusPx:50,hardness:.8,opacity:1}];
+const beforeSource=source.slice(),beforeMask=mask.data.slice(),corrected=A.applyMaskStrokes(mask,{width,height},strokes);
+for(const [name,m]of [['before',mask],['after',corrected]])fs.writeFileSync(path.join(__dirname,name+'.rgba'),E.background({width,height,data:source},{mode:'color',color:'#0ca03c',continuousAlpha:true,mask:m}).data);
+let changed=0;for(let i=0;i<mask.data.length;i++)if(mask.data[i]!==corrected.data[i])changed++;
+if(!Buffer.from(source).equals(Buffer.from(beforeSource))||!Buffer.from(mask.data.buffer).equals(Buffer.from(beforeMask.buffer)))throw Error('Immutable input changed');
+const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
+fs.writeFileSync(path.join(__dirname,'report.json'),JSON.stringify({scope:'Public NASA fixture, three explicit local keep strokes demo; not a complete matte correction or quality acceptance',width,height,strokes,changedAlphaPixels:changed,sourceUnchanged:true,rawAlphaUnchanged:true,sourceSha256:hash(source),rawAlphaSha256:hash(raw),correctedAlphaSha256:hash(Buffer.from(corrected.data.buffer)),correction:corrected.correction},null,2));

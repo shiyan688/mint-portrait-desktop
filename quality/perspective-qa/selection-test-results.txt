@@ -1,0 +1,33 @@
+✔ paint: absent, null and complete neutral perspective retain the exact frozen v16 geometry string (6.748176ms)
+✔ paint: every active corner coordinate and output fraction participates in geometry binding (3.97692ms)
+✔ paint: active perspective cannot rekey bound visible, hidden, or empty layers on quad edit, size edit or reset (5.685459ms)
+✔ paint: visible captured source selection fails before any mask, pixel planning or raster call (3.530709ms)
+✔ paint: hidden captured source selection fails before any mask, pixel planning or raster call (1.803652ms)
+✔ paint: empty captured source selection fails before any mask, pixel planning or raster call (1.93553ms)
+✔ paint: transparent captured source selection fails before any mask, pixel planning or raster call (1.733877ms)
+✔ paint: erase-only captured source selection fails before any mask, pixel planning or raster call (1.592264ms)
+✔ paint: copied crop, fraction-only resize and tiny nonneutral edits still refuse every saved selection (1.840117ms)
+✔ paint: selected layer cannot hide after a normal first layer or behind no-op selections (0.906894ms)
+✔ paint: malformed perspective and accessors are rejected rather than silently becoming neutral (0.562996ms)
+✔ paint: source-revision binding is not weakened by perspective (0.420733ms)
+✔ redaction: absent, null and complete neutral perspective retain the exact frozen v16 geometry string (1.577061ms)
+✔ redaction: every active corner coordinate and output fraction participates in geometry binding (1.355318ms)
+✔ redaction: active perspective cannot rekey bound visible, hidden, or empty layers on quad edit, size edit or reset (4.782261ms)
+✔ redaction: visible captured source selection fails before any mask, pixel planning or raster call (2.463013ms)
+✔ redaction: hidden captured source selection fails before any mask, pixel planning or raster call (1.318022ms)
+✔ redaction: empty captured source selection fails before any mask, pixel planning or raster call (1.380987ms)
+✔ redaction: copied crop, fraction-only resize and tiny nonneutral edits still refuse every saved selection (0.767804ms)
+✔ redaction: selected layer cannot hide after a normal first layer or behind no-op selections (0.537448ms)
+✔ redaction: malformed perspective and accessors are rejected rather than silently becoming neutral (0.2326ms)
+✔ redaction: source-revision binding is not weakened by perspective (0.253982ms)
+✔ active unselected final-canvas paint and redaction render normally with no second geometry transform (5.730125ms)
+✔ neutral perspective preserves real feathered mask weights and canonical alpha bytes exactly (18.832187ms)
+✔ browser UMD binding rejects hidden selections with no Canvas or model runtime (12.802439ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 526.966603

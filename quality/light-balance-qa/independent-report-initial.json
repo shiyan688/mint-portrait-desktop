@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-10-22T15:00:41.605Z",
+  "node": "v24.19.0",
+  "scope": "Independent authored-DOM plus actual NativeCanvas audit; deterministic core/worker and native Sharp export parity. No browser/Electron/model/user-computer execution.",
+  "hashes": {
+    "src/light-balance.cjs": "b33b2cc55dbd5943dc07db4baf42f6af68e61c62951751c5dc5774063a272531",
+    "src/preset-codec.cjs": "b03d59aab2fa6b32639ceb1ddc0d22e680adde21a2834aece6cea9e79645e5d6",
+    "src/project-document.cjs": "ac5708a334b8287d1d5442c917dae76762b0757684f5dec2f54529f9021fd29b",
+    "src/app.js": "2e70e1853165e542165883b260285ff6be9d09e7c01ede65a527f3d43c8d7177",
+    "src/pipeline.js": "752d55006c5879b7922f1493f4a298539109b945055ac05409a4c3089bc9dc92",
+    "src/pixel-worker.js": "ad7bb4aec18ff596cde1ef94e290225f25849af20dcfb4bd594d85f1fcd9c462",
+    "src/index.html": "1705570fda3c2b7566d4c08c6793df9049227184447152c28b22d04a0a37c2c8",
+    "src/styles.css": "40a34826ad4d65e7a82ad4ed6b6befbeb866dadc5343c80fac3cb92679f23009",
+    "export-render-core.cjs": "d67c6a12a0129309181644117862c095c10d26f525b7ed93c8f68134a0dfd30f",
+    "quality/light-balance-qa/app-harness.cjs": "7dabc84aeb8c9ad9e4c2141e8abf6be48ca8e8e2cac8cb8157354a965c2c6464",
+    "tests/light-balance-independent.test.cjs": "04c4b5ba07f3531f21dd42702da2cba0b202691fd25a6bdbb178b945e220f2c3"
+  },
+  "sourceStableAcrossRun": true,
+  "expectedFrozenHashes": {
+    "src/light-balance.cjs": "b33b2cc55dbd5943dc07db4baf42f6af68e61c62951751c5dc5774063a272531",
+    "src/preset-codec.cjs": "b03d59aab2fa6b32639ceb1ddc0d22e680adde21a2834aece6cea9e79645e5d6"
+  },
+  "runs": [
+    {
+      "command": "node --test --test-reporter=tap tests/light-balance-core.test.cjs",
+      "exitCode": 0,
+      "tests": 35,
+      "pass": 35,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "command": "node --test --test-reporter=tap tests/light-balance-integration.test.cjs",
+      "exitCode": 0,
+      "tests": 37,
+      "pass": 37,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "command": "node --test --test-reporter=tap tests/light-balance-ui.test.cjs",
+      "exitCode": 0,
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    {
+      "command": "node --test --test-reporter=tap tests/light-balance-independent.test.cjs",
+      "exitCode": 0,
+      "tests": 27,
+      "pass": 27,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    }
+  ],
+  "totals": {
+    "tests": 113,
+    "pass": 113,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "reproducedDefects": [
+    {
+      "id": "WB-COMPARE-01",
+      "status": "fixed and independently retested",
+      "finding": "Enabling before/after comparison left WB input mode active and a pending pointerup could commit. Parent amended setCompare and frame readiness; regression now passes."
+    }
+  ],
+  "harnessCorrection": "With parent approval, inherited named-preset codec callback now receives the same light-balance dependency as production; app.js remains unmodified by the harness.",
+  "limits": [
+    "No actual browser/Electron layout or native pointer-capture validation",
+    "No Windows installer/hardware/RTX 4060 validation",
+    "No model inference, real portrait retouch quality or SOTA acceptance",
+    "No RAW/high-dynamic-range/clipped-detail recovery claim",
+    "Synthetic source and authored face topology only",
+    "The UI export test validates request isolation; actual native PNG parity is covered separately by the integration suite"
+  ],
+  "expectedFrozenHashesMatched": true
+}

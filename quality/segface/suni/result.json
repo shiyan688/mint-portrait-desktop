@@ -1,0 +1,125 @@
+{
+  "id": "suni",
+  "source": {
+    "center": "JSC",
+    "date_created": "2004-09-22T00:00:00Z",
+    "description": "JSC2005-E-02663 (22 Sept. 2004) --- Astronaut Sunita L. Williams",
+    "media_type": "image",
+    "nasa_id": "jsc2005e02663",
+    "photographer": "Mark Sowa",
+    "title": "Official Portrait of Astronaut Sunita L. Williams",
+    "id": "suni",
+    "source_api": "https://images-api.nasa.gov/search?nasa_id=jsc2005e02663",
+    "source_page": "https://images.nasa.gov/details/jsc2005e02663",
+    "source_file": "https://images-assets.nasa.gov/image/jsc2005e02663/jsc2005e02663~orig.jpg",
+    "sha256": "70e75f837c938a162693ea7c932b191ba57b33e5e3f8d66aab489779d6173467",
+    "usage_guidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "usage": "Non-commercial factual software-testing illustration. Source NASA; no endorsement. Edited comparisons are software output, not NASA images. Do not reuse as promotional material or product assets."
+  },
+  "fixturePngSha256": "42b9345231e1a01fead8be823dc7912858e9f4c9f3b34defa5580131b1de6327",
+  "roi": {
+    "x": 163,
+    "y": 61,
+    "width": 471,
+    "height": 612
+  },
+  "selection": {
+    "kind": "detected-face",
+    "faceId": "suni-face-0",
+    "revision": "42b9345231e1a01fead8be823dc7912858e9f4c9f3b34defa5580131b1de6327"
+  },
+  "secondsIncludingLoad": 1.1130860289999873,
+  "coldModelLoad": false,
+  "outputDimensions": [
+    471,
+    612
+  ],
+  "outputBytes": 21907152,
+  "probabilitySumMaxError": 4.76837158203125e-07,
+  "inputUnchanged": true,
+  "classStats": {
+    "background": {
+      "argmaxPixels": 42766,
+      "meanProbability": 0.14395803213119507
+    },
+    "neck": {
+      "argmaxPixels": 17312,
+      "meanProbability": 0.06015308201313019
+    },
+    "skin": {
+      "argmaxPixels": 79915,
+      "meanProbability": 0.2768794894218445
+    },
+    "cloth": {
+      "argmaxPixels": 52,
+      "meanProbability": 0.0042757298797369
+    },
+    "l_ear": {
+      "argmaxPixels": 699,
+      "meanProbability": 0.0024657135363668203
+    },
+    "r_ear": {
+      "argmaxPixels": 0,
+      "meanProbability": 4.8562465160273405e-09
+    },
+    "l_brow": {
+      "argmaxPixels": 1964,
+      "meanProbability": 0.0069356136955320835
+    },
+    "r_brow": {
+      "argmaxPixels": 1187,
+      "meanProbability": 0.004288393072783947
+    },
+    "l_eye": {
+      "argmaxPixels": 774,
+      "meanProbability": 0.002725024474784732
+    },
+    "r_eye": {
+      "argmaxPixels": 782,
+      "meanProbability": 0.0027314708568155766
+    },
+    "nose": {
+      "argmaxPixels": 5323,
+      "meanProbability": 0.01845775730907917
+    },
+    "mouth": {
+      "argmaxPixels": 2307,
+      "meanProbability": 0.00799152348190546
+    },
+    "l_lip": {
+      "argmaxPixels": 1738,
+      "meanProbability": 0.005968549754470587
+    },
+    "u_lip": {
+      "argmaxPixels": 833,
+      "meanProbability": 0.0029755141586065292
+    },
+    "hair": {
+      "argmaxPixels": 132600,
+      "meanProbability": 0.46019411087036133
+    },
+    "eye_g": {
+      "argmaxPixels": 0,
+      "meanProbability": 3.1633740071868033e-10
+    },
+    "hat": {
+      "argmaxPixels": 0,
+      "meanProbability": 1.0510058101598219e-10
+    },
+    "ear_r": {
+      "argmaxPixels": 0,
+      "meanProbability": 4.2414116663280765e-09
+    },
+    "neck_l": {
+      "argmaxPixels": 0,
+      "meanProbability": 3.406873005928901e-09
+    }
+  },
+  "provenance": {
+    "weightsSha256": "4d67ea7d8c33849272b293b421fa3d20d54d9987f1bca8c1ef0eebe4534993e8",
+    "codeRevision": "9416628e7b5a3e4b9a1068b8467bdc0cf0be7a7d",
+    "device": "cpu",
+    "inputSha256": "b95fd39dfdd400e73ccb735f4249c9c8acdf83ec341c2c1318dabc71fbcd97c8",
+    "outputSha256": "ff7ebdad38d9a2668238d535c51397c58047cbe3defb55fd410d44e2b0a6e818"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "sourceEntriesVerified": 1089,
+  "qaArchives": 5,
+  "externalExistingDependencyAndPackagingFixtures": [
+    "node_modules, .build and dist: links to existing approved frozen fixtures",
+    "installer/payload: regular-file copies of exact frozen payload; source-archived text retained"
+  ],
+  "windowsExecuted": false,
+  "newDependenciesInstalled": false,
+  "initialFixtureIssue": "Initial restored audit correctly rejected per-file payload symlinks; replaced with regular copies without changing tests or production code."
+}

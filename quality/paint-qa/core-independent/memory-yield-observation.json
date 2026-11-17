@@ -1,0 +1,151 @@
+{
+  "scope": "Fresh Linux NativeCanvas diagnostic with async yields and explicit GC. This does not characterize Electron/Chromium or a real desktop.",
+  "samples": [
+    {
+      "stage": "baseline",
+      "rss": 75730944,
+      "heapTotal": 12316672,
+      "heapUsed": 7107904,
+      "external": 3761343,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 0",
+      "rss": 344047616,
+      "heapTotal": 12578816,
+      "heapUsed": 7188816,
+      "external": 35761351,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "shrunk + GC 0",
+      "rss": 216006656,
+      "heapTotal": 12578816,
+      "heapUsed": 7149152,
+      "external": 35761351,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "yielded + GC 0",
+      "rss": 216137728,
+      "heapTotal": 12578816,
+      "heapUsed": 7154680,
+      "external": 3761347,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 1",
+      "rss": 359124992,
+      "heapTotal": 12578816,
+      "heapUsed": 7198200,
+      "external": 67761351,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "shrunk + GC 1",
+      "rss": 226836480,
+      "heapTotal": 12578816,
+      "heapUsed": 7147808,
+      "external": 67761351,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "yielded + GC 1",
+      "rss": 189743104,
+      "heapTotal": 12578816,
+      "heapUsed": 7153640,
+      "external": 3761347,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 2",
+      "rss": 360022016,
+      "heapTotal": 12578816,
+      "heapUsed": 5908576,
+      "external": 67761351,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "shrunk + GC 2",
+      "rss": 227897344,
+      "heapTotal": 12578816,
+      "heapUsed": 5749576,
+      "external": 67757301,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "yielded + GC 2",
+      "rss": 192245760,
+      "heapTotal": 12578816,
+      "heapUsed": 5756024,
+      "external": 3757297,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 3",
+      "rss": 361447424,
+      "heapTotal": 12578816,
+      "heapUsed": 5808920,
+      "external": 63757301,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "shrunk + GC 3",
+      "rss": 229322752,
+      "heapTotal": 12578816,
+      "heapUsed": 5760304,
+      "external": 63757301,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "yielded + GC 3",
+      "rss": 193671168,
+      "heapTotal": 12578816,
+      "heapUsed": 5766272,
+      "external": 3757297,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "final yield 0",
+      "rss": 193671168,
+      "heapTotal": 12316672,
+      "heapUsed": 5760680,
+      "external": 3757297,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "final yield 1",
+      "rss": 193671168,
+      "heapTotal": 12316672,
+      "heapUsed": 5765280,
+      "external": 3757297,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "final yield 2",
+      "rss": 193671168,
+      "heapTotal": 12316672,
+      "heapUsed": 5765496,
+      "external": 3757297,
+      "arrayBuffers": 146559
+    }
+  ],
+  "resourceUsage": {
+    "userCPUTime": 1415851,
+    "systemCPUTime": 329677,
+    "maxRSS": 352976,
+    "sharedMemorySize": 0,
+    "unsharedDataSize": 0,
+    "unsharedStackSize": 0,
+    "minorPageFault": 157221,
+    "majorPageFault": 0,
+    "swappedOut": 0,
+    "fsRead": 0,
+    "fsWrite": 0,
+    "ipcSent": 0,
+    "ipcReceived": 0,
+    "signalsCount": 0,
+    "voluntaryContextSwitches": 567,
+    "involuntaryContextSwitches": 9
+  }
+}

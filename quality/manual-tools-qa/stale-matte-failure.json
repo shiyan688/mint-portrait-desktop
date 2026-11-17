@@ -1,0 +1,23 @@
+{
+  "test": "SYNTHETIC green rectangle: manual right-edge push followed by old background matte",
+  "clippedMovedSubjectPixels": 96,
+  "liquify": {
+    "totalSteps": 2,
+    "limitedSteps": 2,
+    "skippedSteps": 0,
+    "maxEdgeGradient": 0.440000057220459,
+    "minJacobianLowerBound": 0.14269200397579243,
+    "maxDisplacement": 3.109865665435791,
+    "changedPixels": 126,
+    "estimatedWork": 305176,
+    "estimatedMemoryBytes": 2343944
+  },
+  "status": "Historical failure, fixed by explicit combination rejection, not by matte deformation",
+  "retestedUtc": "2026-10-22T09:25:00Z",
+  "verifiedPaths": [
+    "native pixel pipeline",
+    "browser Worker script",
+    "project settings validation",
+    "framing-valid project decode"
+  ]
+}

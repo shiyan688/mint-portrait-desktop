@@ -1,0 +1,62 @@
+[
+  {
+    "id": "victor",
+    "actualLandmarks": 478,
+    "baseline": {
+      "boundary_delta_gradient_p95": 20.0,
+      "boundary_delta_gradient_max": 28.0,
+      "feature_core_max_channel_change": 25.0,
+      "face_core_mean_luma_lift": 25.485,
+      "face_core_mean_chroma_spread_ratio": 0.821,
+      "changed_pixels": 161891
+    },
+    "final": {
+      "boundary_delta_gradient_p95": 1.0,
+      "boundary_delta_gradient_max": 1.0,
+      "feature_core_max_channel_change": 0.0,
+      "face_core_mean_luma_lift": 10.104,
+      "face_core_mean_chroma_spread_ratio": 1.084,
+      "changed_pixels": 154137
+    }
+  },
+  {
+    "id": "suni",
+    "actualLandmarks": 478,
+    "baseline": {
+      "boundary_delta_gradient_p95": 21.0,
+      "boundary_delta_gradient_max": 29.0,
+      "feature_core_max_channel_change": 0.0,
+      "face_core_mean_luma_lift": 21.154,
+      "face_core_mean_chroma_spread_ratio": 0.821,
+      "changed_pixels": 75445
+    },
+    "final": {
+      "boundary_delta_gradient_p95": 1.0,
+      "boundary_delta_gradient_max": 2.0,
+      "feature_core_max_channel_change": 0.0,
+      "face_core_mean_luma_lift": 11.041,
+      "face_core_mean_chroma_spread_ratio": 1.078,
+      "changed_pixels": 72108
+    }
+  },
+  {
+    "id": "eileen",
+    "actualLandmarks": 478,
+    "baseline": {
+      "boundary_delta_gradient_p95": 19.0,
+      "boundary_delta_gradient_max": 29.0,
+      "feature_core_max_channel_change": 26.0,
+      "face_core_mean_luma_lift": 16.791,
+      "face_core_mean_chroma_spread_ratio": 0.822,
+      "changed_pixels": 94560
+    },
+    "final": {
+      "boundary_delta_gradient_p95": 1.0,
+      "boundary_delta_gradient_max": 2.0,
+      "feature_core_max_channel_change": 0.0,
+      "face_core_mean_luma_lift": 8.622,
+      "face_core_mean_chroma_spread_ratio": 1.052,
+      "changed_pixels": 88602
+    }
+  }
+]

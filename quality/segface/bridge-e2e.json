@@ -1,0 +1,161 @@
+{
+  "test": "approved-public-fixture-actual-node-ai-to-python-segface",
+  "fixture": "NASA suni",
+  "secondsWall": 13.798584232000001,
+  "originalSize": {
+    "width": 795,
+    "height": 900
+  },
+  "roi": {
+    "x": 163,
+    "y": 61,
+    "width": 471,
+    "height": 612
+  },
+  "inputUnchanged": true,
+  "outputKind": "face-masks",
+  "maskBytes": 2306016,
+  "rawProbabilityBytes": 21907152,
+  "skinMean": 0.25515853418443435,
+  "nonzeroSkinPixels": 75815,
+  "maxDeltaVsIndependentSavedInference": 0,
+  "maxComplementError": 2.9802322387695312e-8,
+  "provenance": {
+    "jobId": "1dc72bab-a723-40d1-9f5f-2a327e1e8041",
+    "task": "parse",
+    "modelId": "segface-mobilenet-celeba-512",
+    "modelVersion": "9416628e-7c6077ee",
+    "weightsSha256": "4d67ea7d8c33849272b293b421fa3d20d54d9987f1bca8c1ef0eebe4534993e8",
+    "kind": "model",
+    "device": {
+      "kind": "cpu",
+      "name": "CPU (x86_64)"
+    },
+    "executionProfile": {
+      "adapter": "segface",
+      "variant": "mobilenet",
+      "inputSize": 512,
+      "precision": "float32",
+      "threads": 2,
+      "qualityProfile": "face-parsing-512"
+    },
+    "selection": {
+      "kind": "detected-face",
+      "faceId": "suni-face-0",
+      "revision": "42b9345231e1a01fead8be823dc7912858e9f4c9f3b34defa5580131b1de6327"
+    },
+    "classVocabulary": [
+      "background",
+      "neck",
+      "skin",
+      "cloth",
+      "l_ear",
+      "r_ear",
+      "l_brow",
+      "r_brow",
+      "l_eye",
+      "r_eye",
+      "nose",
+      "mouth",
+      "l_lip",
+      "u_lip",
+      "hair",
+      "eye_g",
+      "hat",
+      "ear_r",
+      "neck_l"
+    ],
+    "maskClasses": {
+      "skin": [
+        "skin",
+        "nose"
+      ],
+      "protected": [
+        "background",
+        "neck",
+        "cloth",
+        "l_ear",
+        "r_ear",
+        "l_brow",
+        "r_brow",
+        "l_eye",
+        "r_eye",
+        "mouth",
+        "l_lip",
+        "u_lip",
+        "hair",
+        "eye_g",
+        "hat",
+        "ear_r",
+        "neck_l"
+      ]
+    },
+    "maskPolicy": {
+      "version": "segface-conservative-v1",
+      "kind": "deterministic-mask-postprocessing-not-a-retouch-model",
+      "maskClasses": {
+        "skin": [
+          "skin",
+          "nose"
+        ],
+        "protected": [
+          "background",
+          "neck",
+          "cloth",
+          "l_ear",
+          "r_ear",
+          "l_brow",
+          "r_brow",
+          "l_eye",
+          "r_eye",
+          "mouth",
+          "l_lip",
+          "u_lip",
+          "hair",
+          "eye_g",
+          "hat",
+          "ear_r",
+          "neck_l"
+        ]
+      },
+      "classIds": {
+        "skin": [
+          2,
+          10
+        ],
+        "protected": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      "guard": {
+        "method": "separable-square-minimum",
+        "radiusPx": 3,
+        "units": "original-roi-pixels",
+        "outsideRoi": "fully-protected"
+      },
+      "confidence": {
+        "low": 0.65,
+        "full": 0.95,
+        "curve": "smoothstep-clamped-to-guarded-probability"
+      },
+      "protectedIncludes": "other-model-classes-plus-boundary-margin-and-uncertainty",
+      "limitation": "Cannot repair confident misclassification or separately identify beard/moustache."
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "nativeExportRgbaSha256": "3129a261b746183a1e625cd4b8624a753999ff7225475b2a83bb56bb9a8b1110",
+  "actualPixelWorkerRgbaSha256": "3129a261b746183a1e625cd4b8624a753999ff7225475b2a83bb56bb9a8b1110",
+  "independentEngineMergeRgbaSha256": "3129a261b746183a1e625cd4b8624a753999ff7225475b2a83bb56bb9a8b1110",
+  "sourceEncodedSha256": "7cd86c7757c5c3d7e12d075acdbbabf6e52b6f6520ad5accbbcd295346246e9d",
+  "sourceUnchanged": true,
+  "pixelsUnchanged": true,
+  "details": {
+    "codec": "sharp-0.35.5",
+    "color": "8-bit sRGB",
+    "embeddedProfile": "sRGB",
+    "sourceExifPreserved": false,
+    "sourceBytesUnchanged": true,
+    "resampling": "none",
+    "framing": "none",
+    "retouch": "classical-explicit-not-SOTA",
+    "localLayers": 0,
+    "paintLayers": 0,
+    "textLayers": 0
+  }
+}

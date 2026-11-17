@@ -1,0 +1,73 @@
+{
+  "scope": "Synthetic current-development app event workflow; authored DOM/IPC shell, installed NativeCanvas, real native worker/Sharp PNG. Not browser, Electron GUI, Windows, visual layout, pointer-device, accessibility, model-inference or installer QA.",
+  "nativeCanvas": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas",
+  "generatedUTC": "2026-10-22T16:36:12.623Z",
+  "sourceUnchanged": true,
+  "oneStrokeOneUndo": true,
+  "eraserPreservesOtherLayers": true,
+  "undoRedoPixelExact": true,
+  "previewNativePngPixelExact": true,
+  "centerAfterErase": [
+    19,
+    191,
+    120,
+    255
+  ],
+  "historyEntries": 3,
+  "files": [
+    {
+      "filename": "independent-source.png",
+      "label": "1 Original synthetic gradient",
+      "width": 100,
+      "height": 80,
+      "sha256": "bff13afc14efd85799f5184f29057607a6633c62a9adb541bf82fd8a62fcd369"
+    },
+    {
+      "filename": "independent-bottom-layer.png",
+      "label": "2 Green bottom paint layer",
+      "width": 100,
+      "height": 80,
+      "sha256": "a614632dd667bc463ff3cd06407eeedc4fc653a4100b128824831eec40a565fc"
+    },
+    {
+      "filename": "independent-top-layer.png",
+      "label": "3 Magenta top paint layer",
+      "width": 100,
+      "height": 80,
+      "sha256": "4bc6b948dbe56645450d9f4855de731cbe5ea612c09479bfde18ebe226b1d168"
+    },
+    {
+      "filename": "independent-erase-top-only.png",
+      "label": "4 Eraser reveals green below",
+      "width": 100,
+      "height": 80,
+      "sha256": "86a4ada3bb5b7593ca2163715ee13d4041b3ee418d966012387e5b78efc421a9"
+    },
+    {
+      "filename": "independent-undo.png",
+      "label": "5 Undo restores magenta",
+      "width": 100,
+      "height": 80,
+      "sha256": "4bc6b948dbe56645450d9f4855de731cbe5ea612c09479bfde18ebe226b1d168"
+    },
+    {
+      "filename": "independent-native-export.png",
+      "label": "6 Native worker PNG matches",
+      "width": 100,
+      "height": 80,
+      "sha256": "8676cd1835423255f978828181572546018910c94f27fc049a1110148f83d64e"
+    }
+  ],
+  "sourceSHA256": {
+    "src/app.js": "c741827301fe23368193e0b1fff9f13fe68037ca4b485da197174bb76771bbc2",
+    "src/index.html": "c75a7764b88e02396e4aa6b8b083f69aa91e9fcc1b7f3e0a392dc3ecf66f54fa",
+    "src/paint-layer.cjs": "cbf7ef6b29254859df709f34b5f59a2cc2b9b29842cec4fe534ea9d9271130cf",
+    "src/paint-layers.cjs": "8365889b4db49de8c59c0977a48573b633eb8cb0a5ca6da4c8557a06c146dfce",
+    "src/paint-layer-renderer.cjs": "ebb4ced98294ffa6d264e0194f507c927493f8d579d0d8b4267d5a7fdd4925b3",
+    "src/project-document.cjs": "4fcb76ff2db456d5b80a36e25f8fe2fa3106cae680a36ce02639a0548ff5c679",
+    "export-render-core.cjs": "56279a95b63bbcc15040826a4afc87da08c951ffd36633917218a919a67227da",
+    "export-render-worker.cjs": "3af6947f01bd4898069eec53e0885cfe3613266169e2e48b243e08613d350913",
+    "quality/paint-qa/app-harness.cjs": "4b8b36c85bd908d7d2a659a20c89a61360285711e4c134e86de88af5c55e9f44",
+    "tests/paint-ui-independent.test.cjs": "b38d55108152e7bb1a40a478acfaca82d6635379c1e82a7a108b273d46634a29"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "verifiedAt": "2026-10-22T12:38:14.002Z",
+  "sourceFreeze": "implementation owner freeze confirmed 2026-10-22 12:36:34 UTC",
+  "node": "v24.19.0",
+  "independent": {
+    "command": "MINT_PIXEL_QA_EVIDENCE=1 node --test tests/preview-pixel-inspector-independent.test.cjs",
+    "tests": 66,
+    "pass": 66,
+    "fail": 0,
+    "skipped": 0
+  },
+  "focusedRegression": {
+    "command": "node --test tests/preview-pixel-inspector*.test.cjs tests/reference-compare*.test.cjs",
+    "tests": 289,
+    "pass": 289,
+    "fail": 0,
+    "skipped": 0
+  },
+  "evidenceClass": "Offline authored-DOM/IPC handler QA plus native synthetic Skia/Sharp raster evidence. Not browser/Electron visual acceptance.",
+  "hashes": {
+    "src/preview-pixel-inspector.cjs": "19918e8562bc210cb3994667350de30ac60bc6c7ad0ff16e3999fef0aef89bf2",
+    "src/app.js": "0ceb175731bacb505d978f6a55528c7fd89a9d701ffaf791e62e7f2c14fcf8f9",
+    "src/index.html": "c3d4b4410282e966d88530e770896c1f9d92ad808805c18bc5977a82d53d5f5c",
+    "src/styles.css": "1fdf2aea3a1e6eb43c6af671ccde25ab21d3d15a756048629d2f1ca6ad7f013a",
+    "src/reference-compare.cjs": "30b83d4c044ccb8fdfa602c0388247242064959f2c5c5bfedcb83a79ba8f33f9",
+    "src/geometry.cjs": "c8a0dc83278229ed9b07978801afe3a1a835eb505415ffc91e937a51d77590ba",
+    "src/project-document.cjs": "a0490c7734d681d68d41853260422da93e49e55f8eb34f9cc3796f7fc8953379",
+    "export-render-core.cjs": "4a418a36208ac73353da6dbee7851cb29a93be19db51080e2b7dadf6d0465f99",
+    "tests/photo-review-ui.test.cjs": "18bc94c3fb810b6956886445fea3c6a94937b1cc86d025e8fd5462d49bfe8551",
+    "tests/preview-pixel-inspector-independent.test.cjs": "eb75584bdabc7219cc7db9669f883d0ec74800a6e7d9189e0665d9cbb5468e13",
+    "tests/preview-pixel-inspector.test.cjs": "83747da41f8a3c172ee3c6a0d9388977d23e649b2d9357ac070d1cd0959dfc23",
+    "tests/preview-pixel-inspector-ui.test.cjs": "c0d225624afe5f2972f54f3cc271eea05e59a5f22fc465c920e99325d761d7da",
+    "quality/preview-pixel-inspector-qa/independent-freeze.log": "f93eb8282322c23ea0334a6fa18704c69636083add0afa57d0539e8a8489f855",
+    "quality/preview-pixel-inspector-qa/inspector-reference-regression.log": "a21b91dda8b24cccf2333f9658e9e79431225d998e2bd944aa6105227eb3c3ac",
+    "quality/preview-pixel-inspector-qa/synthetic-native-alpha-rgba.png": "2c62cd3f670afe9bea860416a21db72f0c1a5bb209078a36dcdf3be5f9ab1fd4",
+    "quality/preview-pixel-inspector-qa/synthetic-native-alpha-evidence.json": "81166849632f9e49d90cecaed9eb391adef9e5f1e1a11d7cc3680745bd192999",
+    "quality/preview-pixel-inspector-qa/QA_REPORT.md": "1381ae6210f01db5c7ca2bfe037bd650b10a26a113298195c96371aa4566c35f"
+  }
+}

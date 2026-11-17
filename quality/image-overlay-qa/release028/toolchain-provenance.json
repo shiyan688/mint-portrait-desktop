@@ -1,0 +1,44 @@
+{
+  "status": "pass",
+  "provenance": "Already cached packages only. No downloads or installation. Existing canonical pin values from installer/BUILD.md and tools/nsis/7zip-manifest.json.",
+  "packages": [
+    {
+      "package": "nsis.deb",
+      "bytes": 568816,
+      "sha256": "e6eb6ffb70f0df09e95dedb2d2cf55ad3c2679f7c2ae357d0c00cc4c83178690",
+      "actualCachedFilesMatchedToPackage": 12,
+      "actualSymlinksMatchedToPackage": [
+        {
+          "path": "./usr/bin/genpat",
+          "target": "GenPat"
+        },
+        {
+          "path": "./usr/share/man/man1/genpat.1.gz",
+          "target": "GenPat.1.gz"
+        }
+      ]
+    },
+    {
+      "package": "nsis-common.deb",
+      "bytes": 1168188,
+      "sha256": "103a3284c1a5356efa0aba90fdfc391c3cde8e7df8726377cef0f98471584047",
+      "actualCachedFilesMatchedToPackage": 342,
+      "actualSymlinksMatchedToPackage": []
+    },
+    {
+      "package": "nsis-resources.7z",
+      "sha512Base64": "Dqd6g+2buwwvoG1Vyf6BHR1b+25QMmPcwZx40atOT57gH27rkjOei1L0JTldxZu4NFoEmW4kJgZ3DlSWVON3+Q==",
+      "actualUnicodePluginsMatchedToArchive": [
+        "INetC.dll",
+        "StdUtils.dll",
+        "nsisunz.dll",
+        "nsProcess.dll"
+      ]
+    },
+    {
+      "package": "7z2605-linux-x64.tar.xz",
+      "sha256": "22cf82fcc6eb7474f1d5bb4f02c0f8ebd573a718089d6833dc30f8350a3b232e",
+      "actual7zipBinaryMatchesArchive": true
+    }
+  ]
+}

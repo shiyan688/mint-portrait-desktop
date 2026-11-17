@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "scope": "Current unchanged production app code under authored DOM/IPC; installed NativeCanvas and real Sharp PNG; not browser/Electron/Windows acceptance",
+  "fixture": "Self-created synthetic projected color grid, not a person/photo",
+  "recipe": {
+    "version": 1,
+    "quad": [
+      {
+        "x": 0.14,
+        "y": 0.13
+      },
+      {
+        "x": 0.85,
+        "y": 0.055
+      },
+      {
+        "x": 0.94,
+        "y": 0.9
+      },
+      {
+        "x": 0.06,
+        "y": 0.83
+      }
+    ],
+    "outputFraction": {
+      "width": 0.75,
+      "height": 0.8
+    }
+  },
+  "sourceDimensions": {
+    "width": 400,
+    "height": 300
+  },
+  "previewDimensions": {
+    "width": 300,
+    "height": 240
+  },
+  "exportDimensions": {
+    "width": 300,
+    "height": 240
+  },
+  "previewRgbaSha256": "ac769973cfe5e4921ef76cc49bd5b0dd525ed72f4eed1265c46f7b9092f3fdff",
+  "exportRgbaSha256": "ac769973cfe5e4921ef76cc49bd5b0dd525ed72f4eed1265c46f7b9092f3fdff",
+  "sameResolutionPixelParity": true,
+  "notClaimed": "Downsampled preview is not promised byte-identical to a different-resolution original export",
+  "originalSourceRgbaUnchanged": true,
+  "originalBlobUnchanged": true,
+  "undoSteps": 1,
+  "receipt": {
+    "version": 1,
+    "recipe": {
+      "version": 1,
+      "quad": [
+        {
+          "x": 0.14,
+          "y": 0.13
+        },
+        {
+          "x": 0.85,
+          "y": 0.055
+        },
+        {
+          "x": 0.94,
+          "y": 0.9
+        },
+        {
+          "x": 0.06,
+          "y": 0.83
+        }
+      ],
+      "outputFraction": {
+        "width": 0.75,
+        "height": 0.8
+      }
+    },
+    "inputWidth": 400,
+    "inputHeight": 300,
+    "outputWidth": 300,
+    "outputHeight": 240,
+    "kind": "resample",
+    "resampling": "linear-light-premultiplied-alpha-mip-anisotropic-bilinear"
+  },
+  "files": {
+    "app-source.png": {
+      "bytes": 17953,
+      "sha256": "1d83e9c1a3e7c71f62b891b96a21ba60c6a0bcdbc732c855e501e0ca3fee6a06"
+    },
+    "app-source-corners.png": {
+      "bytes": 24236,
+      "sha256": "1fb7e9887531e09a6d056dbd83b5e478d04d14a9fbdd0f406a85575c936d3e1e"
+    },
+    "app-preview.png": {
+      "bytes": 21828,
+      "sha256": "67f2d967d7b38461623ea378e4044a949ac07ddb59680efd2f51df2091af3880"
+    },
+    "app-native-export.png": {
+      "bytes": 31958,
+      "sha256": "e8cfd314f8e7cd03137d6784abd19d78146ce25c03248a520f51735c5dbc5a17"
+    },
+    "app-pixel-contact.png": {
+      "bytes": 121771,
+      "sha256": "dcd376d34bf93caf482e8b02de316b0fdfa4c3b56e09f3e40478dfe8e11a2882"
+    }
+  }
+}

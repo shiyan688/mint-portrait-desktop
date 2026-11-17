@@ -1,0 +1,19 @@
+{
+  "checkedUtc": "2026-10-22T09:25:00Z",
+  "independentTests": {
+    "pass": 62,
+    "fail": 0,
+    "skip": 0
+  },
+  "purpose": "Frozen candidate tested hashes. Later source changes require rerun.",
+  "files": {
+    "src/manual-tools.cjs": "d28e4cef2a7f589a667e89b691bad72d31f0907d40ed47fe897f564d3dd12762",
+    "src/repair-brush-core.cjs": "bffb259472939058f936a5f0b925d14e87cb194e38697a0eb730f19c402867fd",
+    "src/local-adjustments.cjs": "1fff1c416893849296fbd6cca6bad0ab854766a819017ce7990486f05eda7757",
+    "src/manual-pipeline.cjs": "9211f64d36290d40e65c13edf12e50650a52d1abe284d2a6e0ac427b02111fae",
+    "src/project-document.cjs": "f545abd69ddea68de4a483bf45339ed1cedc0340bf029a250e646a44cbf8441a",
+    "src/pixel-worker.js": "d7c1276fec464163149ec367a6a4e5ed31f68c6af84889ad4567aef6c00debd8",
+    "export-render-core.cjs": "ce1c84850651256beb01b2133c2c867c258a138f4bd5c582861b0c8b4bf21785",
+    "export-renderer.cjs": "98a60f659ed9f073a0660df35e8025a91c2df8407da3268ef98ee1e9d6510aa2"
+  }
+}

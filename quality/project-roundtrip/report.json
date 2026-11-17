@@ -1,0 +1,32 @@
+{
+  "fixture": "Public NASA Suni, factual software QA only; no endorsement",
+  "scope": "Real project codec + local filesystem store roundtrip + deterministic original-size composite, not browser/native Windows/inference",
+  "sourceBytes": 1090731,
+  "sourceSha256": "42b9345231e1a01fead8be823dc7912858e9f4c9f3b34defa5580131b1de6327",
+  "width": 795,
+  "height": 900,
+  "projectBytes": 3956191,
+  "projectSha256": "6c1440707a479d91a614b4e74abe97a4198fd1f8191621183c608ce319e81c56",
+  "preservedOriginalBytes": true,
+  "sourceFileUnchanged": true,
+  "modelAlphaByteExact": true,
+  "settingsHistoryAndBrushesPreserved": true,
+  "correctedAlphaByteExact": true,
+  "compositeByteExact": true,
+  "compositeSha256": "b450119b386f48adb0d01d6b091209a3363313d2c5b3bf5a5f211abf3ea49dc3",
+  "correctedAlphaSha256": "27f77cbb7e15a7bf10397525f398348a89546f481d4efd7f0416ccc7095a9a52",
+  "rawAlphaSha256": "b36fe1632526303e897a0d1097a05921351827e959dcf6abb47f552000ad4038",
+  "model": {
+    "jobId": "public-suni-2048",
+    "task": "matting",
+    "modelId": "ZhengPeng7/BiRefNet_HR-matting",
+    "modelVersion": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+    "weightsSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55",
+    "kind": "model",
+    "device": {
+      "kind": "cpu",
+      "name": "CPU (x86_64)"
+    }
+  },
+  "sourceProcessingCapUnchanged": true
+}

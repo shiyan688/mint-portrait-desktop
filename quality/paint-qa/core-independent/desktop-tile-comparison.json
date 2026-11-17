@@ -1,0 +1,22 @@
+{
+  "scope": "One desktop-only-size Linux native fixture, tiled mask versus independent whole-viewport manual alpha erasure. Observed antialias differences are not universal bounds or cross-backend identity.",
+  "width": 5201,
+  "height": 1601,
+  "plan": {
+    "width": 5201,
+    "height": 1601,
+    "pixels": 8326801,
+    "strokeCount": 3,
+    "totalPoints": 12,
+    "eraseWorkPixels": 16653602,
+    "eraseTileCount": 24,
+    "maxTilePixels": 1000000
+  },
+  "differentPixels": 52284,
+  "peakAlpha": 33,
+  "peakPremultiplied": 24.04705882352941,
+  "flatInteriorPixels": 2251408,
+  "flatInteriorMismatches": 0,
+  "seamInteriorPixels": 17250,
+  "seamInteriorMismatches": 0
+}

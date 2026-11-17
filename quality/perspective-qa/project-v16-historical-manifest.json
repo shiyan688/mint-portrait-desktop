@@ -1,0 +1,13 @@
+{
+  "fixture": "project-v16-historical.mintproj",
+  "fixtureSha256": "b14b4bf87e6528a702a4096237770fa9270dc3b45511a31559a622671a2130f5",
+  "byteLength": 16316,
+  "writerVersion": 16,
+  "writerSha256": "f84795b0a22d5b355006af93e2e2c033799a562cbda19bd4e0d3a42252abee55",
+  "geometryWriterSha256": "5442a319b5a008febbab8c7de5e2bac405d4dd99b16781a315d141dd94099c0e",
+  "seedV15Sha256": "1acd946c35905e70ecd6d7d333517b140986bd9075e832f11309dafc646a1b09",
+  "sourceSha256": "2640059609118b695c139804676372eca75c30d30e5906775902d13e44f5356c",
+  "rawAssetSha256": "b1f57d817eef5f8f8c7929ae9ceafbb063bf71481253d20aa9a9fc3065a7331f",
+  "oldGeometryKey": "{\"framing\":{\"version\":1,\"crop\":{\"x\":0,\"y\":0,\"w\":1,\"h\":1},\"quarterTurns\":0,\"flipX\":false,\"flipY\":false},\"canvasPadding\":{\"version\":1,\"top\":0,\"right\":0,\"bottom\":0,\"left\":0,\"color\":\"#ffffff\",\"opacity\":1},\"manualLiquify\":[],\"slim\":0,\"eyes\":0,\"nose\":0,\"jaw\":0}",
+  "scope": "Synthetic immutable PNG bytes, six independent history slots, learned signed-zero cache, one embedded 2x2 RGBA asset, historical selected paint and redaction collections. No image/model execution."
+}

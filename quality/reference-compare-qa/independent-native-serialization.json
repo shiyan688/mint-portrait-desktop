@@ -1,0 +1,691 @@
+{
+  "nativeVersion": "0.1.100",
+  "original": {
+    "width": 257,
+    "height": 256,
+    "pngBytes": 90093,
+    "pngMetadata": {
+      "format": "png",
+      "mediaType": "image/png",
+      "size": 90093,
+      "width": 257,
+      "height": 256,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": true,
+      "autoOrient": {
+        "width": 257,
+        "height": 256
+      }
+    },
+    "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "firstPixel": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lastPixel": [
+      243,
+      173,
+      219,
+      255
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  "copiedTinyFactory": {
+    "width": 257,
+    "height": 256,
+    "pngBytes": 90093,
+    "pngMetadata": {
+      "format": "png",
+      "mediaType": "image/png",
+      "size": 90093,
+      "width": 257,
+      "height": 256,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": true,
+      "autoOrient": {
+        "width": 257,
+        "height": 256
+      }
+    },
+    "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "firstPixel": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lastPixel": [
+      243,
+      173,
+      219,
+      255
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  "copiedSizedFactory": {
+    "width": 257,
+    "height": 256,
+    "pngBytes": 90093,
+    "pngMetadata": {
+      "format": "png",
+      "mediaType": "image/png",
+      "size": 90093,
+      "width": 257,
+      "height": 256,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": true,
+      "autoOrient": {
+        "width": 257,
+        "height": 256
+      }
+    },
+    "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "firstPixel": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lastPixel": [
+      243,
+      173,
+      219,
+      255
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  "directDrawImage": {
+    "width": 257,
+    "height": 256,
+    "pngBytes": 90093,
+    "pngMetadata": {
+      "format": "png",
+      "mediaType": "image/png",
+      "size": 90093,
+      "width": 257,
+      "height": 256,
+      "space": "srgb",
+      "channels": 4,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": true,
+      "autoOrient": {
+        "width": 257,
+        "height": 256
+      }
+    },
+    "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+    "firstPixel": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lastPixel": [
+      243,
+      173,
+      219,
+      255
+    ],
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  "afterSourceRepaint": {
+    "original": {
+      "width": 257,
+      "height": 256,
+      "pngBytes": 887,
+      "pngMetadata": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 887,
+        "width": 257,
+        "height": 256,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 72,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 257,
+          "height": 256
+        }
+      },
+      "pngRgbaHash": "9a7013786e3368e815455c87acaf3909a6cb880c172a5501bbdedc88a39c38ad",
+      "readbackRgbaHash": "9a7013786e3368e815455c87acaf3909a6cb880c172a5501bbdedc88a39c38ad",
+      "firstPixel": [
+        83,
+        169,
+        109,
+        255
+      ],
+      "lastPixel": [
+        83,
+        169,
+        109,
+        255
+      ],
+      "alphaMin": 255,
+      "alphaMax": 255
+    },
+    "tiny": {
+      "width": 257,
+      "height": 256,
+      "pngBytes": 90093,
+      "pngMetadata": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 90093,
+        "width": 257,
+        "height": 256,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 72,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 257,
+          "height": 256
+        }
+      },
+      "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "firstPixel": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "lastPixel": [
+        243,
+        173,
+        219,
+        255
+      ],
+      "alphaMin": 0,
+      "alphaMax": 255
+    },
+    "sized": {
+      "width": 257,
+      "height": 256,
+      "pngBytes": 90093,
+      "pngMetadata": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 90093,
+        "width": 257,
+        "height": 256,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 72,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 257,
+          "height": 256
+        }
+      },
+      "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "firstPixel": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "lastPixel": [
+        243,
+        173,
+        219,
+        255
+      ],
+      "alphaMin": 0,
+      "alphaMax": 255
+    },
+    "direct": {
+      "width": 257,
+      "height": 256,
+      "pngBytes": 90093,
+      "pngMetadata": {
+        "format": "png",
+        "mediaType": "image/png",
+        "size": 90093,
+        "width": 257,
+        "height": 256,
+        "space": "srgb",
+        "channels": 4,
+        "depth": "uchar",
+        "density": 72,
+        "isProgressive": false,
+        "isPalette": false,
+        "bitsPerSample": 8,
+        "hasProfile": false,
+        "hasAlpha": true,
+        "autoOrient": {
+          "width": 257,
+          "height": 256
+        }
+      },
+      "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "firstPixel": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "lastPixel": [
+        243,
+        173,
+        219,
+        255
+      ],
+      "alphaMin": 0,
+      "alphaMax": 255
+    }
+  },
+  "matrix": [
+    {
+      "sourceEarlyEncode": false,
+      "frozenEarlyEncode": false,
+      "accepted": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "before": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "after": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "exported": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 90093,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 90093,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          243,
+          173,
+          219,
+          255
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "replayedAsImage": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 90093,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 90093,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          243,
+          173,
+          219,
+          255
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      }
+    },
+    {
+      "sourceEarlyEncode": false,
+      "frozenEarlyEncode": true,
+      "accepted": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "before": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "after": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "exported": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 90093,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 90093,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          243,
+          173,
+          219,
+          255
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "replayedAsImage": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 90093,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 90093,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          243,
+          173,
+          219,
+          255
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      }
+    },
+    {
+      "sourceEarlyEncode": true,
+      "frozenEarlyEncode": false,
+      "accepted": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "before": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "after": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "exported": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 363,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 363,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "9b94b83334ada38b48b53f19ef2c45abc9f84fb723564671290a556f75d6fdc8",
+        "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "alphaMin": 0,
+        "alphaMax": 0
+      },
+      "replayedAsImage": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 363,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 363,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "9b94b83334ada38b48b53f19ef2c45abc9f84fb723564671290a556f75d6fdc8",
+        "readbackRgbaHash": "9b94b83334ada38b48b53f19ef2c45abc9f84fb723564671290a556f75d6fdc8",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "alphaMin": 0,
+        "alphaMax": 0
+      }
+    },
+    {
+      "sourceEarlyEncode": true,
+      "frozenEarlyEncode": true,
+      "accepted": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "before": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "after": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+      "exported": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 90093,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 90093,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          243,
+          173,
+          219,
+          255
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "replayedAsImage": {
+        "width": 257,
+        "height": 256,
+        "pngBytes": 90093,
+        "pngMetadata": {
+          "format": "png",
+          "mediaType": "image/png",
+          "size": 90093,
+          "width": 257,
+          "height": 256,
+          "space": "srgb",
+          "channels": 4,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": true,
+          "autoOrient": {
+            "width": 257,
+            "height": 256
+          }
+        },
+        "pngRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "readbackRgbaHash": "46e54d42c5aa59d997a0704ada1200a3e320d2a461936a5ed6c73e215f632586",
+        "firstPixel": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lastPixel": [
+          243,
+          173,
+          219,
+          255
+        ],
+        "alphaMin": 0,
+        "alphaMax": 255
+      }
+    }
+  ]
+}

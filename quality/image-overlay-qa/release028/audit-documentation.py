@@ -1,0 +1,12 @@
+"""Static release-note template evaluation without executing prepare.py."""
+from pathlib import Path
+import argparse,ast,json,hashlib,re,datetime
+ap=argparse.ArgumentParser();ap.add_argument('--repo-root',required=True,type=Path);ap.add_argument('--output-dir',required=True,type=Path);args=ap.parse_args();r=args.repo_root;o=args.output_dir
+text=(r/'installer/prepare.py').read_text();tree=ast.parse(text)
+readme=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and isinstance(n.value,ast.Constant) and isinstance(n.value.value,str) and any(isinstance(t,ast.Name) and t.id=='readme' for t in n.targets))
+release=json.loads((r/'release-config.json').read_text());version=release['version'];schema=int(re.search(r'const VERSION = (\d+)',(r/'src/project-document.cjs').read_text())[1])
+expected=readme.replace('__RELEASE_VERSION__',version).replace('__RELEASE_CHANNEL_LABEL__','开发候选版').replace('__PROJECT_VERSION__',str(schema)).replace('__PROJECT_PREVIOUS__',str(schema-1))
+p=r/'installer/payload/使用说明.txt';b=p.read_bytes();actual=b.decode('utf-8-sig')
+checks={'exactEvaluatedTemplate':actual==expected,'release028':actual.startswith('薄荷人像 Desktop 0.2.8 · Windows x64 开发候选版'),'noUnbuiltInstallerClaim':not re.search(r'(?:Setup|安装包).{0,15}(?:尚未|未)(?:生成|交付|编译)',actual),'overlaysDisclosed':'本地图片贴图' in actual and '从本机导入图片层' in actual,'nativePngColorCorrectionDisclosed':'16位RGB PNG' in actual and '偏色' in actual,'eightBitWorkingSpaceLimit':'处理及输出仍是8位sRGB，不是16位工作流' in actual,'schema16Reads1Through15':'工程写v16并读取v1–15' in actual,'unsignedWindowsUntested':'本安装包未签名，尚未实际Windows安装/运行/卸载验收' in actual,'stopSecurityWarning':'遇到安全拦截请停止并反馈，不绕过警告或组织策略' in actual,'uninstallPriorVersion':'重装前请先通过“已安装应用”卸载旧版' in actual,'userDataPreserved':'用户工程和AppData偏好/命名预设/恢复草稿' in actual}
+report={'release':version,'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'pass' if all(checks.values()) else 'fail','checks':checks,'projectSchema':schema,'readme':{'path':str(p.relative_to(r)),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()},'templateReadStatically':True,'historicalSourceStatusNote':'Source checkpoint26 was saved before this release compilation; historical not-yet-built notes in its source-only history remain historical. Installed README no longer says Setup is unbuilt.','windowsExecuted':False}
+(o/'documentation-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False));assert all(checks.values()),checks

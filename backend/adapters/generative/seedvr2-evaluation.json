@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "task": "upscale-new-canvas",
+  "candidate": "SeedVR2 3B",
+  "status": "planned-not-installed-not-live-validated",
+  "executeAllowed": false,
+  "sources": {
+    "officialProject": "https://github.com/ByteDance-Seed/SeedVR",
+    "officialWeights": "https://huggingface.co/ByteDance-Seed/SeedVR2-3B",
+    "lowMemoryIntegration": "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler"
+  },
+  "licenseReview": "Apache-2.0 declared upstream; verify each exact selected code and weight artifact before execution/distribution.",
+  "hardware": "RTX 4060 stated by user, exact VRAM and system RAM unverified. No GPU execution performed here.",
+  "proposedLowMemoryConfiguration": {
+    "model": "3B GGUF Q8_0 or Q4_K_M, exact file not selected",
+    "blockSwap": "CPU offload, up to 32 blocks",
+    "vaeTiling": true,
+    "precisionQualityTradeoff": "Quantized result must be compared to full precision; no equivalent-quality claim."
+  },
+  "requiredBeforeExecution": [
+    "Confirm exact GPU VRAM, system RAM, OS and driver",
+    "Select and pin source repository commit and weight files; verify download sizes and hashes",
+    "Obtain explicit approval before executing the custom GitHub integration or model code",
+    "Do not silently enable trust_remote_code or install unpinned dependencies",
+    "Implement a separate new-canvas geometry contract; never reinterpret same-size restore as upscale"
+  ],
+  "evaluation": {
+    "inputs": "Only public or separately authorized fixtures, with provenance and usage rights",
+    "checks": ["peak VRAM and RAM", "cold/warm wall-clock latency", "OOM handling", "cancellation/resource release", "identity drift", "invented skin/teeth/iris details", "text changes", "edge halos", "tile seams", "color drift", "transparent-edge handling"],
+    "acceptance": "Side-by-side original, conservative resize baseline and candidate; explicit human accept/reject; no automatic overwrite"
+  }
+}

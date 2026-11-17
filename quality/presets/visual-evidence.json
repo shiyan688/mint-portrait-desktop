@@ -1,0 +1,31 @@
+{
+  "scope": "Portable adjustment recipe replay, not learned-retouch quality certification or a UI screenshot. Public NASA fixture used privately; no photo/path/mesh in exported recipe.",
+  "width": 897,
+  "height": 1000,
+  "sourceUnchanged": true,
+  "compressedSourceUnchanged": true,
+  "neutralExact": true,
+  "roundtripPixelExact": true,
+  "nativePngExact": true,
+  "recipeBytes": 284,
+  "recipeSha256": "f31c42caf4fe952213aab6d23a45c328c30850c9c22e570d24637399ea79ddbb",
+  "sourceRgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+  "cases": [
+    {
+      "label": "Source / original",
+      "rgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b"
+    },
+    {
+      "label": "Neutral recipe / exact",
+      "rgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b"
+    },
+    {
+      "label": "Before preset serialization",
+      "rgbaSha256": "3feafa8c26687ea719a5db5aa9ee40551584be960b243349e662d6a371ecc267"
+    },
+    {
+      "label": "After portable file import",
+      "rgbaSha256": "3feafa8c26687ea719a5db5aa9ee40551584be960b243349e662d6a371ecc267"
+    }
+  ]
+}

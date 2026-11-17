@@ -1,0 +1,27 @@
+{
+  "kind": "classical-color-estimation",
+  "implementation": "pymatting",
+  "version": "1.1.16",
+  "method": "estimate_foreground_ml",
+  "settings": {
+    "workingColorSpace": "linear-srgb",
+    "regularization": 1e-05,
+    "n_small_iterations": 10,
+    "n_big_iterations": 2,
+    "small_size": 32,
+    "gradient_weight": 1.0,
+    "opaqueProtection": "correction weight min(1,20*(1-alpha))",
+    "sourceAlphaPolicy": "original alpha bytes preserved; RGB unchanged where source alpha < 255"
+  },
+  "alphaModified": false,
+  "alphaDigest": "b36fe1632526303e897a0d1097a05921351827e959dcf6abb47f552000ad4038",
+  "sourceDigest": "6bd04d4edf100a6e64d1fcc192b7a410b086dc840c66a8aa8d6513c505b7c9d7",
+  "seconds": 1.4422255859999495,
+  "peakRSSKiB": 317424,
+  "sourceUnchanged": true,
+  "sourceAlphaBytesPreserved": true,
+  "alphaUnchanged": true,
+  "alphaSha256": "b36fe1632526303e897a0d1097a05921351827e959dcf6abb47f552000ad4038",
+  "foregroundSha256": "142b242e606fa81d5d99cd2c98613b7a894b694d3801dbc78c01ea32f78b4414",
+  "verification": "direct optional helper on saved actual learned alpha; not yet full worker foreground-plane integration"
+}

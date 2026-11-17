@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "generatedAt": "2026-10-22T20:50:32.462782+00:00",
+  "frozenManifestSha256": "7d9bb0aeb53e97fbf40c09478da49ee99e469f2524ec73f7ff876a8f7cbf91af",
+  "checkedFiles": 941,
+  "modifiedFiles": [],
+  "addedFiles": [],
+  "removedFiles": [],
+  "officialToolchainSymlinks": [
+    "tools/nsis/root/usr/bin/genpat",
+    "tools/nsis/root/usr/share/man/man1/genpat.1.gz"
+  ],
+  "unexpectedSymlinks": [],
+  "payloadManifestSha256": "5821bc43931986eba18f05cde6aa056490bdd446ec0df47c3717229dcd6e2644",
+  "scope": "Exact immutable source, tests, generated payload, installer inputs, and cached toolchain inventory; compilation output and audit reports excluded."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "victor",
+  "width": 646,
+  "height": 900,
+  "source_crop_xyxy": [
+    2070,
+    0,
+    3470,
+    1950
+  ],
+  "crop_resize": "Lanczos fit in 900x900",
+  "fixture_sha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd"
+}

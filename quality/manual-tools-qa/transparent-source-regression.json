@@ -1,0 +1,12 @@
+{
+  "source": "Actual shipped development0.2.0 ASAR manual-pipeline.cjs",
+  "appAsarSha256": "1dd9c5ff677e03b8ea82c310944e8a77b86deeebda5e7491c34f33b187d9fd97",
+  "test": "Same synthetic green rectangle pushed on transparent versus opaque black source",
+  "opaqueControlMovedGreenPixelsAbsentInTransparentOutput": 102,
+  "sourceAlphaBytesChanged": 0,
+  "sourceChanged": false,
+  "affectedScope": "Manual liquify with any input alpha below255; opaque JPG/PNG unaffected",
+  "fix": "New source rejects nonopaque manual liquify before mutation; no silent flatten or false silhouette warp",
+  "regression": "tests/liquify-alpha-safety.test.cjs",
+  "shippedSetupUpdated": false
+}

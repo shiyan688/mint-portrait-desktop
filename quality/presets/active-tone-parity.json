@@ -1,0 +1,12 @@
+{
+  "width": 897,
+  "height": 1000,
+  "rgbaSha256": "e56f479bb3548b7439ec017e12d670aabbd0953529904a2d261a6554712ea221",
+  "recipeSha256": "07ed2fe78347f8a323c9bd5d29c484222f99bdd310f58ffcd1f28564614da54f",
+  "activeGroups": [
+    "beauty",
+    "basic",
+    "advancedTone"
+  ],
+  "sourceUnchanged": true
+}

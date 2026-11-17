@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-10-22T19:52:45.186Z",
+  "inputs": "Locally generated RGBA gradient/checkerboard only; no user photos, file picker or Electron execution.",
+  "sharpVersion": "0.35.5",
+  "frozenMobileSha256": "800751bc88f2539e51f742d57fe6287b44c2c2c8c74f958d297cf878790d579c",
+  "source": {
+    "width": 1600,
+    "height": 900,
+    "bytes": 175633,
+    "sha256": "0bfb5b6c1b34bfab0c7086c859da971b25a9609d19224fbfbd934b9ff1df3da0",
+    "containsMetadata": true
+  },
+  "working": {
+    "width": 1024,
+    "height": 576,
+    "rawBytes": 2359296,
+    "rawSha256": "ca3cf8f486b73a59fb3e7c481b7dd2140c358f46cd72656125d9f4457ca61865",
+    "id": "rgba-34a26debde84f46e63673344819fd546ff645fbbeb0e91fcd69558bcd3f58cdc",
+    "canonicalBase64Chars": 3145728,
+    "verified": true,
+    "details": {
+      "encodedWidth": 1600,
+      "encodedHeight": 900,
+      "sourceWidth": 1600,
+      "sourceHeight": 900,
+      "resized": true,
+      "orientationApplied": false,
+      "color": "8-bit sRGB",
+      "alpha": "straight",
+      "metadataPreserved": false
+    }
+  },
+  "reconstructedPng": {
+    "bytes": 96919,
+    "sha256": "d1cb7f6a1650f2b76be1d9a68ac9a038e7056868a1586256deca57da3cfb8a35",
+    "containsExif": false,
+    "containsXmp": false,
+    "containsIcc": false
+  }
+}

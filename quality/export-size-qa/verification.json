@@ -1,0 +1,92 @@
+{
+  "verifiedAt": "2026-10-22T14:20:00Z",
+  "independent": {
+    "tests": 16,
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "log": "independent-suite.log"
+  },
+  "focused": {
+    "tests": 83,
+    "passed": 83,
+    "failed": 0,
+    "skipped": 0,
+    "log": "focused-suite.log"
+  },
+  "visualInspection": {
+    "files": [
+      "contact.png",
+      "final-native.png"
+    ],
+    "observations": "Readable multilingual title and subtitle; upright text after source turn/flip; visible dark padding and footer wholly in bottom padding; final smaller composition retains positions. PNG alpha boundary has no hidden-magenta halo; JPEG background is white.",
+    "method": "view_image of actual generated PNGs, not an authored screenshot."
+  },
+  "packaging": {
+    "appContentDirectories": [
+      "src",
+      "assets"
+    ],
+    "qaDirectory": "quality/export-size-qa",
+    "includedInWindowsApp": false,
+    "reason": "App staging copies only src/assets plus explicitly listed runtime/backend files; quality and tests are not staged."
+  },
+  "sourceSHA256": {
+    "src/export-size.cjs": "f2236d84cc60bfdb6dcef2d0c23f657676e8a2e75382f4bb5f6358ababf442fb",
+    "src/export-resize.cjs": "3b76758161c73eb778519834e866a6a8ead5744b76bc0bb3ee4036f9218bd542",
+    "src/app.js": "5ce69193ab7b32ef9e425f74d792b931b63e81d8b0d982b894b501a54e8fd8b2",
+    "src/export-queue.cjs": "1538c3c505190de469215f52010eb4e91935caa6c1a60a98eb031c05dfec2a1f",
+    "src/index.html": "a173a6e79079e8fe68ada89b76b00809624746856b3edc607d332426ac27145a",
+    "export-render-core.cjs": "a90170732b881384c933d8d6cca0ac812b8da886ad0b1cde1118887e7e0cd442",
+    "export-render-worker.cjs": "6841a221e03911bae3dc4b2cb665cbe32d26d7d69fa4d77cb1c854f4c3024844",
+    "export-renderer.cjs": "aebfb52f34ea89fb0c58658959fb0af1142e2ca5beb2bebb03a1b54adaf639d9",
+    "tests/export-size-independent.test.cjs": "ab626ef9714b19036f1188e8ccfb9f707a56a408d75d114b9b62d992a7bf3133",
+    "quality/export-size-qa/app-harness.cjs": "5b7250b1c1c2609e6357898e84cf16e893018efc56e447951ade6479b5cb9049"
+  },
+  "files": {
+    "alpha-evidence.json": {
+      "bytes": 517,
+      "sha256": "d62f6e543998dfa9d6375432c9aa7ab8a2ad1dfa361ad543f8d7c92c69c32678"
+    },
+    "alpha-final.jpg": {
+      "bytes": 1639,
+      "sha256": "f535dd5be177e40ad4cf9dd950dc9235a9eb75cf484550463f495c5fa874539a"
+    },
+    "alpha-final.png": {
+      "bytes": 875,
+      "sha256": "b83e445257b02987c3b0d645b68cf723dd5d0b0b19d668a5fce8c6f0871e0a9d"
+    },
+    "alpha-source.png": {
+      "bytes": 412,
+      "sha256": "4a371d98e0ff32cccf0102f6cc0b87866944b2132dd29bffbf099e243134c5ff"
+    },
+    "composition-native.png": {
+      "bytes": 146715,
+      "sha256": "623305d06927942c1461ea48612b5aefa3ec9a1e3ccd975571b4a1f231108e6b"
+    },
+    "contact.png": {
+      "bytes": 180212,
+      "sha256": "72bbe412e5d118ddf54d8ec8fdb6fee8756e0696f826dcb073cc4c59772b5b54"
+    },
+    "final-native.png": {
+      "bytes": 58332,
+      "sha256": "90f383eff06ec76b49c0f1078cacf20128cbdd484398c95f56ba0155ff7afe49"
+    },
+    "incorrect-relayout-control.png": {
+      "bytes": 51398,
+      "sha256": "e0abebb7a6530e7fbadfed4dadba2289748ea10f22fc85caf9440861a7a21502"
+    },
+    "native-evidence.json": {
+      "bytes": 5867,
+      "sha256": "634a6533490da60b52bb03647c4a6ba8f287329bf0845b522f245785d72705a2"
+    },
+    "preview.png": {
+      "bytes": 111044,
+      "sha256": "a9dfc8135fce0876e63562a6f3ebaa0781b38a377790d9b9afffc3426c56fcda"
+    },
+    "source.png": {
+      "bytes": 3930,
+      "sha256": "4a99d77069af10d04c8e26c372875c4c16f7b271841e504b9ea33477534e3791"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "In-memory expected-failure controls; production files remain untouched.",
+  "controls": [
+    {
+      "control": "missing-v17-field-accepted",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failingTests": 6,
+      "sampleFailures": [
+        "v17 requires own explicit perspective in current on both encode and rehashed decode",
+        "v17 requires own explicit perspective in committed on both encode and rehashed decode",
+        "v17 requires own explicit perspective in undo[0] on both encode and rehashed decode",
+        "v17 requires own explicit perspective in undo[1] on both encode and rehashed decode"
+      ]
+    },
+    {
+      "control": "legacy-active-perspective-accepted",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failingTests": 16,
+      "sampleFailures": [
+        "schema1 cannot smuggle active perspective through any slot despite correct container and blob hashes",
+        "schema2 cannot smuggle active perspective through any slot despite correct container and blob hashes",
+        "schema3 cannot smuggle active perspective through any slot despite correct container and blob hashes",
+        "schema4 cannot smuggle active perspective through any slot despite correct container and blob hashes"
+      ]
+    },
+    {
+      "control": "active-perspective-omitted-from-binding",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failingTests": 17,
+      "sampleFailures": [
+        "paint: every active corner coordinate and output fraction participates in geometry binding",
+        "paint: active perspective cannot rekey bound visible, hidden, or empty layers on quad edit, size edit or reset",
+        "paint: visible captured source selection fails before any mask, pixel planning or raster call",
+        "paint: hidden captured source selection fails before any mask, pixel planning or raster call"
+      ]
+    },
+    {
+      "control": "captured-selection-guards-removed",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failingTests": 12,
+      "sampleFailures": [
+        "paint: visible captured source selection fails before any mask, pixel planning or raster call",
+        "paint: hidden captured source selection fails before any mask, pixel planning or raster call",
+        "paint: empty captured source selection fails before any mask, pixel planning or raster call",
+        "paint: transparent captured source selection fails before any mask, pixel planning or raster call"
+      ]
+    }
+  ]
+}

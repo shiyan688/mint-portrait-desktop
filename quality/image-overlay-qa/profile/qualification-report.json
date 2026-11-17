@@ -1,0 +1,131 @@
+{
+  "runtime": "v24.19.0",
+  "frozenOriginalSha256": "800751bc88f2539e51f742d57fe6287b44c2c2c8c74f958d297cf878790d579c",
+  "candidateSha256": "be527c529e013f706bfdc39b6970bbed3d2b0e33f75ac1f7c016cf6576a33b87",
+  "differentialCases": 300,
+  "pixelComparisons": 34968328,
+  "productionIntegration": false,
+  "rssClaim": false,
+  "cancellationChecksPerCompletedFixture": 148,
+  "managedAccounting": {
+    "planExtraBytes": 17674500,
+    "ownedPixelBufferBytes": 15577348,
+    "allowanceBytes": 2097152,
+    "allocations": [
+      {
+        "type": "Uint8ClampedArray",
+        "bytes": 4194304
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 8388608
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 2097152
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 524288
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 131072
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 32768
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 8192
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 2048
+      },
+      {
+        "type": "Float64Array",
+        "bytes": 512
+      },
+      {
+        "type": "Uint8ClampedArray",
+        "bytes": 198404
+      }
+    ],
+    "temporaryCopyViews": 4,
+    "mipPixels": 349520,
+    "definition": "Cumulative owned typed pixel buffers plus fixed 2 MiB allowance; excludes caller input, existing asset string, external pipeline, callbacks, runtime/GC and RSS."
+  },
+  "largeOracle": {
+    "width": 4096,
+    "height": 4096,
+    "pixels": 16777216,
+    "sourceSha256": "926730120ebe7f0ccd15385fca0f1a4c0ca7a873fe6b0d811606d5e3c6fc5a55",
+    "resultSha256": "2b62def623c8d4f7c50378120305a81d77aa8b281cf7f73f35ea193dc9601bb6",
+    "oracleSha256": "2b62def623c8d4f7c50378120305a81d77aa8b281cf7f73f35ea193dc9601bb6",
+    "byteExact": true,
+    "sourceUnchanged": true,
+    "recipe": {
+      "version": 1,
+      "x": 0.375,
+      "y": 0.625,
+      "size": 0.5,
+      "rotation": 90,
+      "opacity": 0.5,
+      "flipX": true,
+      "flipY": true
+    },
+    "plan": {
+      "width": 4096,
+      "height": 4096,
+      "assetWidth": 1,
+      "assetHeight": 1,
+      "centerX": 1536,
+      "centerY": 2560,
+      "drawWidth": 2048,
+      "drawHeight": 2048,
+      "scale": 2048,
+      "cos": 0,
+      "sin": 1,
+      "bounds": {
+        "x": 512,
+        "y": 1536,
+        "width": 2048,
+        "height": 2048
+      },
+      "active": true,
+      "candidatePixels": 4194304,
+      "interiorPixels": 4194304,
+      "boundaryPixels": 0,
+      "samples": 4194304,
+      "mipLevels": 0,
+      "mipWidth": 1,
+      "mipHeight": 1,
+      "mipPixels": 0,
+      "mipSizes": [],
+      "workUnits": 37765133,
+      "extraBytes": 69206020
+    },
+    "ownedPixelBufferBytes": 67108868,
+    "copyViewCount": 1024,
+    "renderMs": 829.55,
+    "oracle": "Aligned 2048x2048 constant RGBA rectangle at x=512..2559,y=1536..3583, independent integer source-over over deterministic opaque/transparent target.",
+    "largeCopyCancellation": {
+      "afterCopyViews": 4,
+      "sourceUnchanged": true
+    }
+  },
+  "largeFullFrameOracle": {
+    "pixels": 16777216,
+    "byteExact": true,
+    "sourceUnchanged": true,
+    "resultSha256": "d7aeb9020c941ed22d2672af1319e8c3c356fa4ccf9d70350d76e2ba955b7e6f",
+    "oracleSha256": "d7aeb9020c941ed22d2672af1319e8c3c356fa4ccf9d70350d76e2ba955b7e6f",
+    "workUnits": 100696077,
+    "planExtraBytes": 69206020,
+    "ownedPixelBufferBytes": 67108868,
+    "renderMs": 2262.5,
+    "oracle": "Whole target receives constant RGBA [31,192,77,128]; independent integer source-over against deterministic opaque/transparent source pixels."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "pettit",
+  "source_api": "https://images-api.nasa.gov/search?nasa_id=iss072e188983",
+  "source_page": "https://images.nasa.gov/details/iss072e188983",
+  "source_file": "https://images-assets.nasa.gov/image/iss072e188983/iss072e188983~large.jpg",
+  "sourceSha256": "a703154b54b3c2f4078d9ad9b3608b859a6e559b462e01ba841b961f48bd30a9",
+  "sourceSize": [
+    1920,
+    1280
+  ],
+  "sourceCredit": "NASA; ISS expedition 72, November 15 2024",
+  "usage_guidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "usage": "Factual public software QA only; no NASA endorsement, no promotional reuse. Figure outputs are altered model results.",
+  "groundTruthAlpha": false
+}

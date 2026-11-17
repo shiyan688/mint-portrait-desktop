@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-22T14:57:51.717Z",
+  "fixtureProvenance": "Locally generated mathematical RGBA8 ramps and uniform color patches only; no source photo, image service, network, or model.",
+  "core": {
+    "path": "src/light-balance.cjs",
+    "sha256": "b33b2cc55dbd5943dc07db4baf42f6af68e61c62951751c5dc5774063a272531",
+    "api": [
+      "LIMITS",
+      "defaults",
+      "validate",
+      "isActive",
+      "apply",
+      "deriveWhiteBalance"
+    ],
+    "dependencyFree": true
+  },
+  "focusedTests": {
+    "command": "node --test --test-reporter=tap tests/light-balance-core.test.cjs",
+    "tests": 35,
+    "passed": 35,
+    "failed": 0,
+    "exitCode": 0,
+    "testFileSha256": "1e6b59c1804633925baca353e96c88ea13e49327b10987907b44c533c6f86c5e",
+    "stdoutSha256": "13f90fce540b68393fc9183d654822baeefbd017687897511d45e841e95ec2df"
+  },
+  "contract": {
+    "path": "docs/LIGHT-BALANCE-CONTRACT.md",
+    "sha256": "605fdd3941e16016728171d7d25ffb44863d164e59b7b015053efb33543386a6"
+  },
+  "image": {
+    "path": "quality/light-balance-qa/synthetic-ramps.png",
+    "width": 1710,
+    "height": 1260,
+    "sha256": "6185525cafc81aefac8654a530a2987ad1eb99214b8c4a815a8316a9f3dec2bc"
+  },
+  "saturatedRampRegression": {
+    "inputSamples": 1536,
+    "comparison": "Rejected two-stage maximum-chroma gamut contraction with uneased tone versus shipping common WB normalization and eased tone with convex white/black mixing.",
+    "cases": [
+      {
+        "name": "Shadows +100 / highlights -100",
+        "recipe": {
+          "version": 1,
+          "shadows": 100,
+          "highlights": -100,
+          "whiteBalance": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          }
+        },
+        "oldControl": {
+          "maximumAdjacentCodeStep": 18,
+          "location": {
+            "pixel": 821,
+            "channel": "r"
+          }
+        },
+        "finalCore": {
+          "maximumAdjacentCodeStep": 7,
+          "location": {
+            "pixel": 822,
+            "channel": "r"
+          }
+        },
+        "unchangedRegressionMaximum": 8,
+        "passesRegression": true
+      },
+      {
+        "name": "Shadows -100 / highlights +100",
+        "recipe": {
+          "version": 1,
+          "shadows": -100,
+          "highlights": 100,
+          "whiteBalance": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          }
+        },
+        "oldControl": {
+          "maximumAdjacentCodeStep": 17,
+          "location": {
+            "pixel": 820,
+            "channel": "r"
+          }
+        },
+        "finalCore": {
+          "maximumAdjacentCodeStep": 8,
+          "location": {
+            "pixel": 817,
+            "channel": "r"
+          }
+        },
+        "unchangedRegressionMaximum": 8,
+        "passesRegression": true
+      },
+      {
+        "name": "Shadows +65 / highlights -55 / WB 1.15, 0.95, 1.20",
+        "recipe": {
+          "version": 1,
+          "shadows": 65,
+          "highlights": -55,
+          "whiteBalance": {
+            "r": 1.15,
+            "g": 0.95,
+            "b": 1.2
+          }
+        },
+        "oldControl": {
+          "maximumAdjacentCodeStep": 48,
+          "location": {
+            "pixel": 271,
+            "channel": "b"
+          }
+        },
+        "finalCore": {
+          "maximumAdjacentCodeStep": 5,
+          "location": {
+            "pixel": 798,
+            "channel": "r"
+          }
+        },
+        "unchangedRegressionMaximum": 8,
+        "passesRegression": true
+      },
+      {
+        "name": "Shadows +100 / highlights +100 / WB 4.00, 0.25, 1.00",
+        "recipe": {
+          "version": 1,
+          "shadows": 100,
+          "highlights": 100,
+          "whiteBalance": {
+            "r": 4,
+            "g": 0.25,
+            "b": 1
+          }
+        },
+        "oldControl": {
+          "maximumAdjacentCodeStep": 32,
+          "location": {
+            "pixel": 401,
+            "channel": "b"
+          }
+        },
+        "finalCore": {
+          "maximumAdjacentCodeStep": 2,
+          "location": {
+            "pixel": 376,
+            "channel": "r"
+          }
+        },
+        "unchangedRegressionMaximum": 8,
+        "passesRegression": true
+      },
+      {
+        "name": "Shadows -100 / highlights -100 / WB 0.25, 4.00, 0.25",
+        "recipe": {
+          "version": 1,
+          "shadows": -100,
+          "highlights": -100,
+          "whiteBalance": {
+            "r": 0.25,
+            "g": 4,
+            "b": 0.25
+          }
+        },
+        "oldControl": {
+          "maximumAdjacentCodeStep": 52,
+          "location": {
+            "pixel": 138,
+            "channel": "b"
+          }
+        },
+        "finalCore": {
+          "maximumAdjacentCodeStep": 3,
+          "location": {
+            "pixel": 931,
+            "channel": "g"
+          }
+        },
+        "unchangedRegressionMaximum": 8,
+        "passesRegression": true
+      }
+    ]
+  },
+  "broaderGainToneCornerSweep": {
+    "recipes": 243,
+    "inputPixels": 373248,
+    "maximumAdjacentCodeStep": 15,
+    "location": {
+      "pixel": 908,
+      "channel": "r"
+    },
+    "recipe": {
+      "version": 1,
+      "shadows": -100,
+      "highlights": 100,
+      "whiteBalance": {
+        "r": 0.25,
+        "g": 4,
+        "b": 0.25
+      }
+    },
+    "interpretation": "This 15-code extreme-relative-gain slope is disclosed, not hidden behind the narrower eight-code regression threshold."
+  },
+  "neutralPatchCases": [
+    {
+      "name": "Warm",
+      "inputRGB": [
+        180,
+        150,
+        115
+      ],
+      "gains": {
+        "r": 0.7176381405985045,
+        "g": 1.073939612940074,
+        "b": 1.9104984547100428
+      },
+      "outputRGB": [
+        155,
+        155,
+        155
+      ],
+      "sourceLuminance": 0.32753795802384644,
+      "correctedPrequantizationLuminance": 0.32753795802384644
+    },
+    {
+      "name": "Cool",
+      "inputRGB": [
+        115,
+        150,
+        180
+      ],
+      "gains": {
+        "r": 1.6771251449224873,
+        "g": 0.9427545594447917,
+        "b": 0.6299764166707151
+      },
+      "outputRGB": [
+        146,
+        146,
+        146
+      ],
+      "sourceLuminance": 0.28752818091220594,
+      "correctedPrequantizationLuminance": 0.2875281809122059
+    },
+    {
+      "name": "Green",
+      "inputRGB": [
+        130,
+        165,
+        140
+      ],
+      "gains": {
+        "r": 1.5029274809254907,
+        "g": 0.8916534805455348,
+        "b": 1.279293004343769
+      },
+      "outputRGB": [
+        157,
+        157,
+        157
+      ],
+      "sourceLuminance": 0.3354954315622939,
+      "correctedPrequantizationLuminance": 0.33549543156229394
+    },
+    {
+      "name": "Magenta",
+      "inputRGB": [
+        175,
+        135,
+        170
+      ],
+      "gains": {
+        "r": 0.6845074859115658,
+        "g": 1.211162681950529,
+        "b": 0.7299952106652815
+      },
+      "outputRGB": [
+        147,
+        147,
+        147
+      ],
+      "sourceLuminance": 0.2934418540713659,
+      "correctedPrequantizationLuminance": 0.2934418540713659
+    }
+  ],
+  "arithmeticMeanConditionalCounterexample": {
+    "fixture": "5x5 patch: 24 pixels [243,243,224] plus one [243,243,238], all opaque and accepted as chromaticity inliers.",
+    "beforeSumLuminance": 22.14233453211426,
+    "afterGainSumLuminance": 22.142334532114262,
+    "afterGamutSumLuminance": 22.128699158261334,
+    "maximumCorrectedChannelBeforeGamut": 1.0154757581684926,
+    "interpretation": "Derived gains preserve accepted inlier mean before gamut. One bright inlier exceeds gamut, so bounded output loses some mean luminance."
+  },
+  "verification": {
+    "neutralObjectAndBytesExact": true,
+    "alphaAndHiddenRGBExact": true,
+    "activeInputImmutable": true,
+    "independentScalarPixels": 48128,
+    "integerSliderRampRecipes": 1206,
+    "grayRampSamplesPerRecipe": 256,
+    "cancellationAndDetachment": true,
+    "strictDescriptorPrototypeStorageTests": true,
+    "visualInspection": {
+      "performed": true,
+      "method": "Opened final 1710x1260 synthetic PNG through local image inspection after correcting chart strip fit; checked all five old/final hue pairs, five grayscale-input strips, and four neutral-patch pairs.",
+      "observations": [
+        "Final strips show the complete red-yellow-green-cyan-blue-magenta hue traversal, not a cropped strip.",
+        "Old control has conspicuous near-white discontinuities in the warm-gain mixed-tone and extreme green-gain cases; final core removes those white bands and has smoother color transitions.",
+        "The two unity-WB grayscale ramps remain neutral and increase from black to white; non-unit-WB grayscale-input strips are expected to be tinted.",
+        "Warm, cool, green and magenta sample patches all become visually neutral gray after the derived correction.",
+        "Strong brightening visibly reduces saturation as disclosed; the inspection is synthetic image evidence, not real-photo or app-screen validation."
+      ]
+    }
+  },
+  "limitations": [
+    "Display-referred sRGB only; no clipped-information recovery or Kelvin claim.",
+    "WB normalization trades gained luminance for bounded corrected RGB ratios.",
+    "Tone brightening contracts saturation; RGB-neutral-axis direction is not perceptual/HSL hue.",
+    "8-bit quantization and extreme gains can still produce visible transitions.",
+    "No real-photo, browser/UI, mobile-device or color-managed-display QA."
+  ],
+  "sharedCoreRegression": {
+    "command": "node --test tests/light-balance-core.test.cjs tests/levels-core.test.cjs tests/advanced-tone.test.cjs",
+    "tests": 94,
+    "passed": 94,
+    "failed": 0,
+    "exitCode": 0
+  }
+}

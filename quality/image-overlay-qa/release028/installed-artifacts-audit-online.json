@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "generatedAt": "2026-10-22T20:41:30.574277+00:00",
+  "release": "0.2.8",
+  "sourceGuards": {
+    "cancelBeforeHashAndStage": true,
+    "cancelFailsClosed": true,
+    "checksumFailsClosed": true,
+    "downloadHasTimeoutAndCancelPrompt": true,
+    "noWeakNetworkSecurity": true,
+    "safeDestinationBeforeAfterNetworkAndBeforeCommit": true,
+    "cleanupRequiresOwnedUncommittedStage": true,
+    "newPathWin32Fix": true,
+    "freshOnlyOldInstallRejected": true,
+    "noForcedKillOrPrivilegeBypass": true
+  },
+  "runtime": {
+    "url": "https://github.com/electron/electron/releases/download/v45.0.0/electron-v45.0.0-win32-x64.zip",
+    "bytes": 158223852,
+    "sha256": "ae53887a23bb640369c93dbd38c408a2af5c0deb86f2fa76c6c244cb444b7f47"
+  },
+  "installers": [
+    {
+      "mode": "online",
+      "status": "pass",
+      "file": "MintPortrait-Development-0.2.8-Setup.exe",
+      "bytes": 13930379,
+      "sha256": "3c60dcb0fd0096099429fa7749d47ac83ba4d003f6314100155f0601d07f24c9",
+      "productFileCount": 19
+    }
+  ],
+  "windowsExecuted": false,
+  "limits": [
+    "Exact archived-byte, compiled metadata/string, source-ordering and source-regression evidence only. No Windows download, install, launch, DLL loading, uninstall or UI/runtime behavior was exercised.",
+    "Known-secret signature and exact QA fixture checks do not prove absence of every possible encoded secret."
+  ]
+}

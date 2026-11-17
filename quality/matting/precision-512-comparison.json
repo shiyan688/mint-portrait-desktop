@@ -1,0 +1,8 @@
+{
+  "comparison": "same512 float32 versus explicit CPU mixed bfloat16; not accuracy against reference",
+  "MAD": 6.408691115211695e-05,
+  "maxAbs": 0.016095459461212158,
+  "p99Abs": 0.0010616262443363667,
+  "softAlphaMAD": 0.0009641111828386784,
+  "softCount": 25750
+}

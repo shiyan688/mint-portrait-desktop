@@ -1,0 +1,13 @@
+{
+  "id": "eileen",
+  "width": 725,
+  "height": 900,
+  "source_crop_xyxy": [
+    560,
+    240,
+    1470,
+    1370
+  ],
+  "crop_resize": "Lanczos fit in 900x900",
+  "fixture_sha256": "717951a5ffdf6105a4a93e5df3fd7d60ffe39e4a8d7164cfbc9bd3784e546acd"
+}

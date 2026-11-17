@@ -1,0 +1,23 @@
+[
+  {
+    "strength": 0,
+    "visibleRgbMaxDifferenceVsPython": 0,
+    "visibleRgbMeanDifferenceVsPython": 0.0,
+    "alphaMaxDifferenceVsRoundedOriginalTimesMatte": 0,
+    "alphaArithmetic": "Float64 multiplication matches JavaScript Number; Float32 intermediate may differ by 1 LSB."
+  },
+  {
+    "strength": 0.5,
+    "visibleRgbMaxDifferenceVsPython": 1,
+    "visibleRgbMeanDifferenceVsPython": 1.8107793521900652e-05,
+    "alphaMaxDifferenceVsRoundedOriginalTimesMatte": 0,
+    "alphaArithmetic": "Float64 multiplication matches JavaScript Number; Float32 intermediate may differ by 1 LSB."
+  },
+  {
+    "strength": 1,
+    "visibleRgbMaxDifferenceVsPython": 0,
+    "visibleRgbMeanDifferenceVsPython": 0.0,
+    "alphaMaxDifferenceVsRoundedOriginalTimesMatte": 0,
+    "alphaArithmetic": "Float64 multiplication matches JavaScript Number; Float32 intermediate may differ by 1 LSB."
+  }
+]

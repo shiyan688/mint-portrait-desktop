@@ -1,0 +1,462 @@
+{
+  "mode": "online",
+  "status": "pass",
+  "file": "MintPortrait-Development-0.2.8-Setup.exe",
+  "bytes": 13930379,
+  "sha256": "3c60dcb0fd0096099429fa7749d47ac83ba4d003f6314100155f0601d07f24c9",
+  "payloadManifestSha256": "5821bc43931986eba18f05cde6aa056490bdd446ec0df47c3717229dcd6e2644",
+  "productFileCount": 19,
+  "productFiles": [
+    {
+      "path": "INSTALLER-NOTICES.txt",
+      "bytes": 28598,
+      "sha256": "0781a9e466a1a7ee0c6b55b119931a39e8de76f34e199c64971f498d1c99501d"
+    },
+    {
+      "path": "MintPortrait.ico",
+      "bytes": 17834,
+      "sha256": "a42f31d443eeece3f0e73b90e61661d2071961cc08aa9cf19d3c49bcc5c8df74"
+    },
+    {
+      "path": "NSIS-LICENSES.txt",
+      "bytes": 20591,
+      "sha256": "d2b03d11801736ff4fda2a1e215a13c324dca7fd76eb948ae7d835000fe339d3"
+    },
+    {
+      "path": "resources/app.asar",
+      "bytes": 47210796,
+      "sha256": "108ffadbf3bd4e11a658ced310da98dfcbccc728f053b19462cb085b4f036a20"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/LICENSE.md",
+      "bytes": 4433,
+      "sha256": "e2eaa4603c14cb26f301e88648c12a853fa3f0f5da6d4b0972958c666e7f2ab8"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/README.md",
+      "bytes": 562,
+      "sha256": "be7edf3bc6467f761168cef3bb2b9b3def2532c98a86249848376ea00338ad1d"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/color.cjs",
+      "bytes": 45136,
+      "sha256": "f7c3efcf482624007f2019fffee3e1dec56b8cb893faa9a420b2832805888dce"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/index.cjs",
+      "bytes": 49,
+      "sha256": "e6e93e7fb209420a20fdf2ec676e9c67413be8d5ace99eec64f9468480f0368d"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/index.d.ts",
+      "bytes": 21569,
+      "sha256": "2467b00d963828f540f4acd7910f4c04cfe4b489550e6bb682212f65583bca5b"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/package.json",
+      "bytes": 1515,
+      "sha256": "bc38c5097693ed53b91c32f35fb0a52569736c7854ba2eb6d080f3252071f75c"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/LICENSE",
+      "bytes": 10464,
+      "sha256": "dc1f5d2d43c5531dfe0acaf4e950ea5dbe3e61e1850cf0e983bda7efc10d6693"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/README.md",
+      "bytes": 4913,
+      "sha256": "3d083ada5ebafe1e6c227daa7b061d4254b61df4a3901c359ffdeac817ce5866"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/index.cjs",
+      "bytes": 62,
+      "sha256": "6ecbd583f45e914233410fe83a614e4f5ff1a6875a7eb828b03b7258e8ba6944"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll",
+      "bytes": 19018240,
+      "sha256": "06dab07cc386748513337a31672b1d5269fbc770a14ff403080575665bf0813f"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.7.dll",
+      "bytes": 333312,
+      "sha256": "25001dbd05305a0a29119ab49933622c70b4a20ea12ef1d5d20ca40181db53bf"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.5.node",
+      "bytes": 443904,
+      "sha256": "971048779f9c8598df14641dfc03c625885c93f473a788e65ca2deb50d0b083e"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/package.json",
+      "bytes": 888,
+      "sha256": "697b3d89590e3b988b51764bd22dfd6f4a1b35cd4eb12c664eca7987e8ee6115"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/versions.json",
+      "bytes": 596,
+      "sha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4"
+    },
+    {
+      "path": "使用说明.txt",
+      "bytes": 11877,
+      "sha256": "2bb957486084a08da8f7533ac6c4fa6f34c05776f477b5d9308758d1d48a5619"
+    }
+  ],
+  "exactProductAndAuxiliaryInventory": true,
+  "appAsarSha256": "108ffadbf3bd4e11a658ced310da98dfcbccc728f053b19462cb085b4f036a20",
+  "plugins": [
+    {
+      "path": "INetC.dll",
+      "bytes": 244224,
+      "sha256": "ed04a4823f221e9197b8f3c3da1d6859ff5b176185bde2f1c923a442516c810a",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/resources/plugins/x86-unicode/INetC.dll"
+      ]
+    },
+    {
+      "path": "StdUtils.dll",
+      "bytes": 102400,
+      "sha256": "b72e9013a6204e9f01076dc38dabbf30870d44dfc66962adbf73619d4331601e",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/resources/plugins/x86-unicode/StdUtils.dll"
+      ]
+    },
+    {
+      "path": "System.dll",
+      "bytes": 28672,
+      "sha256": "54167ae0968e05910ef8dcd8bbc345afe3dad810fd3c9d2d3f47ad4caffc456d",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/root/usr/share/nsis/Plugins/x86-unicode/System.dll"
+      ]
+    },
+    {
+      "path": "modern-wizard.bmp",
+      "bytes": 26494,
+      "sha256": "3ad2dc318056d0a2024af1804ea741146cfc18cc404649a44610cbf8b2056cf2",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/root/usr/share/nsis/Contrib/Graphics/Wizard/win.bmp"
+      ]
+    },
+    {
+      "path": "nsDialogs.dll",
+      "bytes": 14336,
+      "sha256": "3564ce8b510acfe456f7135e0c1ac1f71cfa39c787909192be8f8ed40dcbe305",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/root/usr/share/nsis/Plugins/x86-unicode/nsDialogs.dll"
+      ]
+    },
+    {
+      "path": "nsProcess.dll",
+      "bytes": 4608,
+      "sha256": "30c6c3dd3cc7fcea6e6081ce821adc7b2888542dae30bf00e881c0a105eb4d11",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/resources/plugins/x86-unicode/nsProcess.dll"
+      ]
+    },
+    {
+      "path": "nsisunz.dll",
+      "bytes": 90112,
+      "sha256": "c31b590cba443de87f0f4a81712f0883ac3b506f3868759d918d9a81f84ea922",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/resources/plugins/x86-unicode/nsisunz.dll"
+      ]
+    }
+  ],
+  "uninstaller": {
+    "file": "embedded/Uninstall.exe",
+    "bytes": 143480,
+    "sha256": "18835ae2730e2a67b55b659b4d1d048e528336b10ed5658943078294adf59d05",
+    "machine": "0x14c",
+    "architecture": "x86",
+    "optionalHeaderMagic": "0x10b",
+    "subsystem": 2,
+    "subsystemName": "Windows GUI",
+    "coffCharacteristics": "0x30f",
+    "dllCharacteristics": "0x8540",
+    "aslr": true,
+    "dep": true,
+    "highEntropyVa": false,
+    "cfgFlagPresent": false,
+    "certificateDirectory": [
+      0,
+      0
+    ],
+    "authenticodeSignaturePresent": false,
+    "versionResources": [
+      {
+        "resourcePath": [
+          16,
+          1,
+          2052
+        ],
+        "file": "0.2.8.0",
+        "product": "0.2.8.0",
+        "fileFlagsMask": "0x0",
+        "fileFlags": "0x0",
+        "fileOS": "0x4",
+        "fileType": 1,
+        "strings": {
+          "VS_VERSION_INFO/StringFileInfo/080404b0/FileDescription": "薄荷人像 Desktop Setup",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/FileVersion": "0.2.8.0",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/LegalCopyright": "Mint Portrait",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/ProductName": "薄荷人像安装程序",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/ProductVersion": "0.2.8"
+        }
+      }
+    ],
+    "manifests": [
+      {
+        "resourcePath": [
+          24,
+          1,
+          1033
+        ],
+        "bytes": 1061,
+        "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2",
+        "requestedExecutionLevels": [
+          {
+            "level": "asInvoker",
+            "uiAccess": "false"
+          }
+        ],
+        "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"><assemblyIdentity version=\"1.0.0.0\" processorArchitecture=\"*\" name=\"Nullsoft.NSIS.exehead\" type=\"win32\"/><description>Nullsoft Install System v3.11-1</description><dependency><dependentAssembly><assemblyIdentity type=\"win32\" name=\"Microsoft.Windows.Common-Controls\" version=\"6.0.0.0\" processorArchitecture=\"*\" publicKeyToken=\"6595b64144ccf1df\" language=\"*\" /></dependentAssembly></dependency><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\"><security><requestedPrivileges><requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"/></requestedPrivileges></security></trustInfo><compatibility xmlns=\"urn:schemas-microsoft-com:compatibility.v1\"><application><supportedOS Id=\"{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}\"/><supportedOS Id=\"{1f676c76-80e1-4239-95bb-83d0f6d0da78}\"/><supportedOS Id=\"{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}\"/><supportedOS Id=\"{35138b9a-5d96-4fbd-8e2d-a2440225f93a}\"/></application></compatibility></assembly>"
+      }
+    ],
+    "installerExecutionLevel": "asInvoker",
+    "resourceInventory": [
+      {
+        "path": [
+          2,
+          110,
+          1033
+        ],
+        "bytes": 1638,
+        "sha256": "0e90a9e4b8f3a5bf990e8aadfd8096ad7aeaf1a4e032ac7b6395ce191d61c142"
+      },
+      {
+        "path": [
+          3,
+          1,
+          1033
+        ],
+        "bytes": 4264,
+        "sha256": "3d81391786527a7bb826c610931a09ab676ef08f6ca4f8069dd73afdde6e821b"
+      },
+      {
+        "path": [
+          3,
+          2,
+          1033
+        ],
+        "bytes": 3752,
+        "sha256": "50ebb1f16e0a5484a18ce67e679060d24527e7fdf3b4e998f4c93fff72674ae4"
+      },
+      {
+        "path": [
+          3,
+          3,
+          1033
+        ],
+        "bytes": 2216,
+        "sha256": "c9af85f7939a39d7fccbb9a8df5fe94a8ce6a7b0036c931513ece6ec2879139e"
+      },
+      {
+        "path": [
+          3,
+          4,
+          1033
+        ],
+        "bytes": 1384,
+        "sha256": "f4d09e2edf48980e560244647c25a2760216919139535428e4ab4ba1c71b6e6a"
+      },
+      {
+        "path": [
+          3,
+          5,
+          1033
+        ],
+        "bytes": 1128,
+        "sha256": "1d4117209387f9c222d04c115e94d00ddac34e95be4d9b820d1c1e7802389f69"
+      },
+      {
+        "path": [
+          3,
+          6,
+          1033
+        ],
+        "bytes": 744,
+        "sha256": "9e401c9627f5c86827ad2829f63af7fcd46bab500b6bb3249fb3fb04ae7e9c05"
+      },
+      {
+        "path": [
+          3,
+          7,
+          1033
+        ],
+        "bytes": 296,
+        "sha256": "fd63eb5bf40c281b1e1063990235ce71f0f222b35b622c687765d126fbd99a9c"
+      },
+      {
+        "path": [
+          5,
+          103,
+          1033
+        ],
+        "bytes": 304,
+        "sha256": "7d256f5d76bc52ec3b05d3c4a1b26dd3bd14ba7df6f16c93708a7f9805ea71df"
+      },
+      {
+        "path": [
+          5,
+          104,
+          1033
+        ],
+        "bytes": 336,
+        "sha256": "311942ea193e7dd0c614b48be27a9331769d94e9cfa4d9eae21d6869b618dc0a"
+      },
+      {
+        "path": [
+          5,
+          105,
+          1033
+        ],
+        "bytes": 554,
+        "sha256": "e502086038bd072c90060202651011524b40a0dbf222f84ebd39096f8240a853"
+      },
+      {
+        "path": [
+          5,
+          106,
+          1033
+        ],
+        "bytes": 240,
+        "sha256": "8bec95cdc0c8dbab7674b2e376399f0fd92d68c97a2c5226b97d99b1d5b16d0d"
+      },
+      {
+        "path": [
+          5,
+          107,
+          1033
+        ],
+        "bytes": 140,
+        "sha256": "8ec647f9650b79179d5afc3e2bd8ecaa4b4617ada8c69c22382321a16f2153e0"
+      },
+      {
+        "path": [
+          5,
+          111,
+          1033
+        ],
+        "bytes": 218,
+        "sha256": "c53f8150b6af1f60fd252048650f3406f021642e6f64fde00722c24203526009"
+      },
+      {
+        "path": [
+          14,
+          103,
+          1033
+        ],
+        "bytes": 104,
+        "sha256": "fed46e06346fb8f64b14c18408a82caf955929ac0e65151630539dc5bd194584"
+      },
+      {
+        "path": [
+          16,
+          1,
+          2052
+        ],
+        "bytes": 512,
+        "sha256": "d941abce530587eb29cf71314b4797dc5c3b5f4a31d4737ff59979d81d82a526"
+      },
+      {
+        "path": [
+          24,
+          1,
+          1033
+        ],
+        "bytes": 1061,
+        "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtualSize": 37596,
+        "rawSize": 37888,
+        "rawPointer": 1024
+      },
+      {
+        "name": ".data",
+        "rva": 45056,
+        "virtualSize": 224,
+        "rawSize": 512,
+        "rawPointer": 38912
+      },
+      {
+        "name": ".rdata",
+        "rva": 49152,
+        "virtualSize": 52408,
+        "rawSize": 52736,
+        "rawPointer": 39424
+      },
+      {
+        "name": ".bss",
+        "rva": 102400,
+        "virtualSize": 128576,
+        "rawSize": 0,
+        "rawPointer": 0
+      },
+      {
+        "name": ".idata",
+        "rva": 233472,
+        "virtualSize": 5040,
+        "rawSize": 5120,
+        "rawPointer": 92160
+      },
+      {
+        "name": ".ndata",
+        "rva": 241664,
+        "virtualSize": 212992,
+        "rawSize": 512,
+        "rawPointer": 97280
+      },
+      {
+        "name": ".rsrc",
+        "rva": 454656,
+        "virtualSize": 19888,
+        "rawSize": 19968,
+        "rawPointer": 97792
+      }
+    ]
+  },
+  "compiledNsisHeader": {
+    "sha256": "f51ed33495fc291f8d5416896fa969b9f87f308ee9703260f2fef4794f5feccc",
+    "bytes": 87226,
+    "solidLzmaDictionaryBytes": 67108864,
+    "commonStringsVerified": {
+      "GetFullPathNameW": true,
+      "GetFileAttributesW": true,
+      "MintPortrait.Desktop": true,
+      "0.2.8": true,
+      "SHA2-256": true
+    },
+    "forbiddenSecurityBypassStringsAbsent": [
+      "/WEAKSECURITY",
+      "--no-sandbox",
+      "ExecutionPolicy",
+      "_KillProcess",
+      "_CloseProcess"
+    ],
+    "onlineRuntimeAndCancellationStringsPresent": true,
+    "offlineDownloaderStringsAbsent": false
+  },
+  "unsigned": true,
+  "installedReadme": {
+    "bytes": 11877,
+    "sha256": "2bb957486084a08da8f7533ac6c4fa6f34c05776f477b5d9308758d1d48a5619",
+    "overlaysAndProject16AndEightBitColorFixDisclosed": true
+  },
+  "windowsExecuted": false
+}

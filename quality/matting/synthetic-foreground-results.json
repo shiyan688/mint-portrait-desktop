@@ -1,0 +1,23 @@
+{
+  "scope": "Actual PyMatting optional helper on synthetic known-alpha/color mixtures, not learned-model accuracy or portrait benchmark",
+  "results": [
+    {
+      "background": "white",
+      "knownSyntheticAlpha": true,
+      "baselineForegroundLinearMAD": 0.45186443735122367,
+      "estimatedForegroundLinearMAD": 0.0012519033627403015,
+      "relativeError": 0.0027705286348242235,
+      "alphaUnchanged": true,
+      "sourceUnchanged": true
+    },
+    {
+      "background": "blue",
+      "knownSyntheticAlpha": true,
+      "baselineForegroundLinearMAD": 0.17878215822961407,
+      "estimatedForegroundLinearMAD": 0.0009077993382558218,
+      "relativeError": 0.005077684189771969,
+      "alphaUnchanged": true,
+      "sourceUnchanged": true
+    }
+  ]
+}

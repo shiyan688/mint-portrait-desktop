@@ -1,0 +1,100 @@
+{
+  "platform": "linux",
+  "node": "v24.19.0",
+  "nativeVersion": "0.1.100",
+  "scope": "Independent Linux NativeCanvas core QA only; not UI, Windows, browser, GPU, total-memory, or universal cross-backend pixel acceptance.",
+  "metrics": {
+    "differential": {
+      "fixtures": 384,
+      "profilesCompared": 3,
+      "referencePixels": 1537767,
+      "rgbaBytesCompared": 18453204
+    },
+    "cancellationCheckpoints": 16,
+    "longEdgeAllocation": {
+      "sizes": [
+        [
+          16384,
+          900
+        ],
+        [
+          1000,
+          900
+        ]
+      ],
+      "plan": {
+        "width": 16384,
+        "height": 900,
+        "pixels": 14745600,
+        "strokeCount": 3,
+        "totalPoints": 6,
+        "eraseWorkPixels": 29491200,
+        "eraseTileCount": 34,
+        "maxTilePixels": 900000
+      }
+    },
+    "maximumRender": {
+      "dimensions": [
+        4000,
+        4000
+      ],
+      "sizes": [
+        [
+          4000,
+          4000
+        ],
+        [
+          1000,
+          1000
+        ]
+      ],
+      "wallMs": 220.12412700000004,
+      "rssSnapshotBytes": 822489088,
+      "logicalPixelStorageBytes": 76000000,
+      "plan": {
+        "width": 4000,
+        "height": 4000,
+        "pixels": 16000000,
+        "strokeCount": 2,
+        "totalPoints": 4,
+        "eraseWorkPixels": 16000000,
+        "eraseTileCount": 16,
+        "maxTilePixels": 1000000
+      },
+      "note": "Logical output+mask+two tile buffers is 76MB decimal. RSS snapshot is not peak, leak proof, or a process/device memory guarantee."
+    },
+    "syntheticPhoto": {
+      "width": 640,
+      "height": 480,
+      "basePixelHashBefore": "a40851dc8cd677dbaf7cc788c7dda4f36698e8b0467386743085588a80068247",
+      "basePixelHashAfter": "a40851dc8cd677dbaf7cc788c7dda4f36698e8b0467386743085588a80068247",
+      "centerBefore": [
+        120,
+        120,
+        90,
+        255
+      ],
+      "centerComposite": [
+        120,
+        120,
+        90,
+        255
+      ],
+      "layerCenter": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "sha256": {
+    "mobile-control.cjs": "fab1a908831f00f2c5d6110c2fde95a0957f3ee44b537058007cde4ce02f9f4e",
+    "paint-layer.cjs": "cbf7ef6b29254859df709f34b5f59a2cc2b9b29842cec4fe534ea9d9271130cf",
+    "maximum-layer-4000.png": "1d5dfd2b497429a2f7b28dca02be29ef93f225e53dfe7b1541c40b24c221a26a",
+    "synthetic-base.png": "a07a57de723cacf07f7e233ef12875b6e3c482c87653028d7baf1286450f5d2b",
+    "synthetic-transparent-layer.png": "b470396e644e7be2db851b34f92cb21264413c047f056b59df89a39721847a5c",
+    "synthetic-composite.png": "f93b80747ee599fe6ceb4d0a6602970a42500050a6492c5ee8a01177613dd7b6",
+    "synthetic-evidence-contact.png": "8accf6e9c9397eed2edbbdf0d0902c47a5129fc53a1c43edb8a568001c96328a"
+  }
+}

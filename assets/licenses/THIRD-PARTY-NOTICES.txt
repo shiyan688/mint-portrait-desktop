@@ -1,0 +1,16 @@
+薄荷人像 Desktop 第三方声明
+
+Electron 45.0.0：MIT License；官方 https://github.com/electron/electron 。完全离线包保留运行库自带 LICENSE、LICENSES.chromium.html，轻量包首次从官方 release 获取同一组件。未修改 Chromium/Node 运行库实现。
+
+@mediapipe/tasks-vision 1.1.1：Apache License 2.0；官方 https://github.com/google-ai-edge/mediapipe ，完整许可见 MEDIAPIPE-APACHE-2.0.txt。浏览器 JS/WASM 由官方 npm 包 vendored；保留文件内原始许可声明。
+
+模型：face_landmarker.task 与 selfie_segmenter.tflite，来自 Google MediaPipe 官方公开模型库，Apache-2.0。精确 SHA-256 见 docs/offline-assets.json。
+https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
+https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segmenter/float16/1/selfie_segmenter.tflite
+
+演示图：NASA Eileen Collins astronaut.png，scikit-image 分发的公共领域照片；仅作演示，不是用户照片，也不代表人物为本应用背书。
+来源 https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/astronaut.png
+说明 https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut
+SHA-256 88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5
+
+像素蛋糕 / Pixel Cake 名称仅用于说明工作流参考；本软件不是其官方产品，不包含其商业模型、代码、设计资产或服务。

@@ -1,0 +1,11 @@
+✔ image UI: native forged provenance rejects before write with frozen retryable assets retained (619.455175ms)
+✔ image UI: failed write retry uses original frozen asset recipe and releases only after successful commit (324.757645ms)
+✔ image UI: cancelled in-flight result writes nothing, retained image snapshot retries successfully (366.006854ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2002.018776

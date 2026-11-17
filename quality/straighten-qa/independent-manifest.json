@@ -1,0 +1,491 @@
+{
+  "scope": "CURRENT CANDIDATE CODE / 未发布候选",
+  "environment": "Cloud Node with installed NativeCanvas and Sharp. No browser/Electron/Windows/device/GPU/model validation.",
+  "sourceFiles": {
+    "src/straighten.cjs": "7b28d67aba28747e85abf95c12b39522153871c4d084038bcb053244fa11f98e",
+    "src/geometry.cjs": "c8a0dc83278229ed9b07978801afe3a1a835eb505415ffc91e937a51d77590ba",
+    "src/canvas-padding.cjs": "91412cfaefd331c6fc5fffb8f9f58256dd25eb6306de6511cdec1cd2a2deb995",
+    "src/app.js": "96953c262d0c35ee5b07b5614e0ae3b75fa55dae3f78cd692d8ee25ff8220381",
+    "src/index.html": "ebea6c6d61f4b6b9569e977da7209f7efd400e2a7fb65492dd9c05baa07d5ca7",
+    "src/styles.css": "b3d1bf98a927be4570973cb4091418dca56a897357092672e374078f689f1bc8",
+    "src/pipeline.js": "e326095ef00750ffdc479f9b65f69cc5e3bb65a4fe6f19d969a03c6c06132ab7",
+    "src/pixel-worker.js": "016aa24baac715e0d23f690842c6ed54e54330e1c5228014d832c7f8251c6a52",
+    "src/project-document.cjs": "d68bfd204ed104af58d95ebd5264eec1dbb0c16f3ad2c57a84f86a78494cbca9",
+    "src/paint-layers.cjs": "c65b812dfa0423a5b1c2c5ae1a28fae09c4bbe5b15cf1f4a6cb6bde9d4dd4d66",
+    "src/redaction-layers.cjs": "5442a319b5a008febbab8c7de5e2bac405d4dd99b16781a315d141dd94099c0e",
+    "export-render-core.cjs": "b638ae2e40dc26cf9758220c99f2f1c63ff4baff74bba9ad8e706eebbe709152",
+    "export-render-worker.cjs": "bb1942566241099d58c9d1f695228d707dd4dac901ddf148838cc05b721f33b2",
+    "export-renderer.cjs": "15665918f60899dbf130c08cc6f27952a1e4dfc33d27233c677a4f131da058a2",
+    "src/export-queue.cjs": "294d1ca6b2fe83d8dad29999ee59ceb44e23ac9c6a059be8d48181aa157e5a6a",
+    "quality/straighten-qa/app-harness.cjs": "e034028986542c1f7a55f70ed1ebd0fa3eb4a038553e1466d47c942a17442d2a",
+    "quality/text-qa/native-support.cjs": "0d3965501547a311d699347dde88386175d3046126d3d8c41346d28732fad1b2",
+    "tests/text-ui.test.cjs": "e5a5226ba849b06c21c0d3b1226e42bd65b7c55f91387da7cdcbb5b74ecabce9",
+    "tests/straighten-workflow-independent.test.cjs": "51c7bcb1d47958c47ac28a94a4e72b789503ce787283acb0b3f6eeae0a091ebf",
+    "quality/straighten-qa/independent-oracles.cjs": "6c8ed88665c460aff2abaa450f4a89ea5adae318722b116a94cb7819f0b8b7ea",
+    "quality/straighten-qa/independent-scenario.cjs": "92ae43c303d10cb4f73cefdf2780794612fa107ef056828db641f09f25feba2c",
+    "quality/straighten-qa/independent-evidence.cjs": "e12709c30c299c99a5c7b7678cca74e4ddd85e0e18254fd450239fd3bace87d1",
+    "quality/straighten-qa/README.md": "89ad3cf7ce9d6e65931e01ab8d4be635048eb2bc9fd037fc5359fe12c9d3f3e5"
+  },
+  "outputs": [
+    {
+      "path": "quality/straighten-qa/independent-grid-source.png",
+      "width": 320,
+      "height": 220,
+      "pngSha256": "ec08466ffb2166a472ef23fcf01f7b24f7da21860a5e9d39508ee220edda5347",
+      "rgbaSha256": "f641f6bc8fda5f85187382beca034d691f61ddff6faaef6b1640c60bdd46e38e",
+      "label": "Original asymmetric grid"
+    },
+    {
+      "path": "quality/straighten-qa/independent-grid-expand.png",
+      "width": 362,
+      "height": 287,
+      "pngSha256": "79b73a51e859fcb86a41d6a0709f3b330925d17557198eb02a0e4ae32faed4be",
+      "rgbaSha256": "63e8bfd64621820cf912ed540956fe91eb89a13be3c5f5c5f349687cf4c3baee",
+      "label": "13° expand",
+      "recipe": {
+        "version": 1,
+        "angle": 13,
+        "mode": "expand"
+      },
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "straighten-linear-light-premultiplied-alpha-bilinear",
+        "straighten": "linear-light-premultiplied-alpha-bilinear",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": 13,
+          "mode": "expand"
+        },
+        "framing": "none",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "paintLayers": 0,
+        "textLayers": 0
+      },
+      "independentMaxByteError": 0
+    },
+    {
+      "path": "quality/straighten-qa/independent-grid-crop.png",
+      "width": 292,
+      "height": 158,
+      "pngSha256": "39c5a02db41ccb47c562800f551be72c796b1d75eeb307d7b9a1babd2f509e91",
+      "rgbaSha256": "e49fd47950a39259b083d90ca230eeb9b0de6af3e3daa1a7b81c524fd4e1c3cf",
+      "label": "13° crop",
+      "recipe": {
+        "version": 1,
+        "angle": 13,
+        "mode": "crop"
+      },
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "straighten-linear-light-premultiplied-alpha-bilinear",
+        "straighten": "linear-light-premultiplied-alpha-bilinear",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": 13,
+          "mode": "crop"
+        },
+        "framing": "none",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "paintLayers": 0,
+        "textLayers": 0
+      },
+      "independentMaxByteError": 0
+    },
+    {
+      "path": "quality/straighten-qa/independent-grid-quarter.png",
+      "width": 220,
+      "height": 320,
+      "pngSha256": "37643efd0bc2067b0b046b54d1ca8ee57324fa1f0ebbbe79cd6b3c61f285ea64",
+      "rgbaSha256": "0f86734e80ceb6b25f22879c862c39ef9f698a03d078bd98c03cf84f6b26d231",
+      "label": "90° expand",
+      "recipe": {
+        "version": 1,
+        "angle": 90,
+        "mode": "expand"
+      },
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "none",
+        "straighten": "exact-quarter-turn-byte-copy",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": 90,
+          "mode": "expand"
+        },
+        "framing": "none",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "paintLayers": 0,
+        "textLayers": 0
+      },
+      "independentMaxByteError": 0
+    },
+    {
+      "path": "quality/straighten-qa/independent-grid-contact-sheet.png",
+      "width": 1440,
+      "height": 518,
+      "pngSha256": "9f303c0711207fcaa2e5dc924c733ed151f0c776be74f2a6189bee818c7b5ad8",
+      "rgbaSha256": "e7e811214a69c7bacc7595e679ee286034111950f2d698a381370ecce977f0bb",
+      "label": "grid-contact-sheet",
+      "contactSheet": true
+    },
+    {
+      "path": "quality/straighten-qa/independent-nasa-expand.png",
+      "width": 832,
+      "height": 1023,
+      "pngSha256": "f12fe1f7d257eb5a07198f7678df2c40be80741be410719a8299ffffc3f8b0b9",
+      "rgbaSha256": "f46fec1265721b03cefe28579f1e44357f010297dbbc5552512a7dc8ba8c58dc",
+      "label": "13° expand",
+      "recipe": {
+        "version": 1,
+        "angle": 13,
+        "mode": "expand"
+      },
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "straighten-linear-light-premultiplied-alpha-bilinear",
+        "straighten": "linear-light-premultiplied-alpha-bilinear",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": 13,
+          "mode": "expand"
+        },
+        "framing": "none",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "paintLayers": 0,
+        "textLayers": 0
+      },
+      "independentMaxByteError": 0
+    },
+    {
+      "path": "quality/straighten-qa/independent-nasa-crop.png",
+      "width": 475,
+      "height": 814,
+      "pngSha256": "b83b27d9e42ce7295924787b1eb5b29cf9943a443da60f8ab279f1fc43558716",
+      "rgbaSha256": "f3fd91672ac25e6caa316f1d5156cc4abb01e75631b505ae4a9fce484456c744",
+      "label": "13° crop",
+      "recipe": {
+        "version": 1,
+        "angle": 13,
+        "mode": "crop"
+      },
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "straighten-linear-light-premultiplied-alpha-bilinear",
+        "straighten": "linear-light-premultiplied-alpha-bilinear",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": 13,
+          "mode": "crop"
+        },
+        "framing": "none",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "paintLayers": 0,
+        "textLayers": 0
+      },
+      "independentMaxByteError": 0
+    },
+    {
+      "path": "quality/straighten-qa/independent-nasa-quarter.png",
+      "width": 900,
+      "height": 646,
+      "pngSha256": "471e0947550f24833b22a2a9d59fc8b25037560cb88c508d91e5b54f9e884a00",
+      "rgbaSha256": "52e7bcd2e529adddb98707e79f35013605235871573a44a82d82fa5ca03104a5",
+      "label": "90° expand",
+      "recipe": {
+        "version": 1,
+        "angle": 90,
+        "mode": "expand"
+      },
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "none",
+        "straighten": "exact-quarter-turn-byte-copy",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": 90,
+          "mode": "expand"
+        },
+        "framing": "none",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "paintLayers": 0,
+        "textLayers": 0
+      },
+      "independentMaxByteError": 0
+    },
+    {
+      "path": "quality/straighten-qa/independent-nasa-contact-sheet.png",
+      "width": 1440,
+      "height": 628,
+      "pngSha256": "72da5d0460fac173a018fee09b084c8920c193c5d5b55af168c363748f60b8ed",
+      "rgbaSha256": "d87648c843dd30195916fe239f91e7a4dfb884b571a577b51ffe05e99a00dee9",
+      "label": "nasa-contact-sheet",
+      "contactSheet": true
+    },
+    {
+      "path": "quality/straighten-qa/independent-order-base.png",
+      "width": 265,
+      "height": 357,
+      "pngSha256": "d8b82b794935dc928b84349e7725a710c1966606d7368c969a1be935deda0e11",
+      "rgbaSha256": "56d066892798635ea30f10fc5968e75ecc30a2601ac33803c9c63bde6bb21ff0",
+      "label": "Source edit + final geometry"
+    },
+    {
+      "path": "quality/straighten-qa/independent-order-complete.png",
+      "width": 265,
+      "height": 357,
+      "pngSha256": "e9179186c773295eed80705f37dfdc7e13938b796af9ead5b95cb0f1174c8380",
+      "rgbaSha256": "68b551059c8b85e29ef4f79b32be09cdd3bae0b5da000fdbde78809afdda0d9e",
+      "label": "Text → paint → final cover",
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "straighten-linear-light-premultiplied-alpha-bilinear",
+        "straighten": "linear-light-premultiplied-alpha-bilinear",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": -13,
+          "mode": "expand"
+        },
+        "framing": "integer-crop-quarter-turn-flip",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 1,
+        "paintLayers": 1,
+        "textLayers": 1
+      }
+    },
+    {
+      "path": "quality/straighten-qa/independent-order-resized.png",
+      "width": 119,
+      "height": 160,
+      "pngSha256": "727d73fd25730ba6ca3673ef0f7c0a01c5a29b41390f664dc43592493653f27a",
+      "rgbaSha256": "9157666dd632f2a15208c75077e6c2eb9be809f36eee8d6d7f39e00e444e7331",
+      "label": "Explicit final resize: 160 px",
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "straighten-linear-light-premultiplied-alpha-bilinear+explicit-final-output-lanczos3",
+        "straighten": "linear-light-premultiplied-alpha-bilinear",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": -13,
+          "mode": "expand"
+        },
+        "framing": "integer-crop-quarter-turn-flip",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 1,
+        "paintLayers": 1,
+        "textLayers": 1
+      }
+    },
+    {
+      "path": "quality/straighten-qa/independent-order-wrong-control.png",
+      "width": 265,
+      "height": 357,
+      "pngSha256": "2b94919e718de5346dd337a57a514d6b5845b85126d2b652c0531259545d445a",
+      "rgbaSha256": "04b6322c37583373d07c99e4880263a9f877534909be1c110b4bea8832853732",
+      "label": "NEGATIVE: paint after cover",
+      "negativeControl": true
+    },
+    {
+      "path": "quality/straighten-qa/independent-order-contact-sheet.png",
+      "width": 1440,
+      "height": 598,
+      "pngSha256": "36ed38798303746b2044639e2d3d14f85e5db5f9c6ea10772e59d381bef9d284",
+      "rgbaSha256": "eb746c4d40d926a0c596c0ef137a4dea0b4afd8472234b6992bfe28a840b3876",
+      "label": "order-contact-sheet",
+      "contactSheet": true
+    },
+    {
+      "path": "quality/straighten-qa/independent-phase-zero.png",
+      "width": 16,
+      "height": 12,
+      "pngSha256": "8b192059f2afab81d2f3be15cfc68280a971b96d55cff9fc8ed261b7773802c7",
+      "rgbaSha256": "54e97bd5ff38c48c921efffe2297381b91bff6e514dc0bfe5347f508364d6eba",
+      "label": "0°: 16 × 12 checkerboard"
+    },
+    {
+      "path": "quality/straighten-qa/independent-phase-tiny.png",
+      "width": 17,
+      "height": 13,
+      "pngSha256": "f5b29ca9ba2d369b16a9a92f63da215cedc5424dedf8c1ffb3cd6d3537bec7ba",
+      "rgbaSha256": "f2e83270140bf50a018e13569aa5da2828fbc90e633be882c04f25ffae141df4",
+      "label": "1e-20°: half-pixel phase",
+      "details": {
+        "codec": "sharp-0.35.5",
+        "color": "8-bit sRGB",
+        "embeddedProfile": "sRGB",
+        "sourceExifPreserved": false,
+        "sourceBytesUnchanged": true,
+        "resampling": "straighten-linear-light-premultiplied-alpha-bilinear",
+        "straighten": "linear-light-premultiplied-alpha-bilinear",
+        "straightenRecipe": {
+          "version": 1,
+          "angle": 1e-20,
+          "mode": "expand"
+        },
+        "framing": "none",
+        "retouch": "classical-explicit-not-SOTA",
+        "localLayers": 0,
+        "paintLayers": 0,
+        "textLayers": 0
+      }
+    },
+    {
+      "path": "quality/straighten-qa/independent-phase-quarter.png",
+      "width": 12,
+      "height": 16,
+      "pngSha256": "f5a94a8a0ab16034fdd23b6646281bfbf939f27de065f04a069c000d012d2555",
+      "rgbaSha256": "a69ebd166c72d222baedccb4746977f60b62a93231b44c749e48a9c8f0fa4b0b",
+      "label": "90°: exact byte-copy"
+    },
+    {
+      "path": "quality/straighten-qa/independent-phase-contact-sheet.png",
+      "width": 1260,
+      "height": 518,
+      "pngSha256": "26756b71ae2399116b52229ad8ba943fea5f97696ab351a309719b680b9e5563",
+      "rgbaSha256": "3aa16573d26d574fe1f878fe8cff2933374e45219d0f4b628a7a33925fd098dd",
+      "label": "phase-contact-sheet",
+      "contactSheet": true
+    }
+  ],
+  "checks": {
+    "orderMaxByteError": 0,
+    "wrongOrderDifferentChannels": 4320,
+    "sourcePngUnchanged": true,
+    "nasaFixtureUnchanged": true,
+    "frozenCoreSha256": "7b28d67aba28747e85abf95c12b39522153871c4d084038bcb053244fa11f98e",
+    "testCommand": "node --test tests/straighten-workflow-independent.test.cjs",
+    "regenerateCommand": "node quality/straighten-qa/independent-evidence.cjs"
+  },
+  "limitations": [
+    "Arbitrary angles resample in linear-light premultiplied-alpha bilinear and can soften detail.",
+    "Only exact quarter turns preserve pure-core bytes; exported PNG sanitizes fully transparent RGB.",
+    "Contact-sheet previews are display-scaled; original candidate PNGs remain beside them.",
+    "NASA use is factual noncommercial software testing, not promotion, endorsement or app assets."
+  ],
+  "nasa": {
+    "album": [
+      "Artemis_Team_Astronauts"
+    ],
+    "center": "HQ",
+    "date_created": "2020-09-15T00:00:00Z",
+    "description": "NASA astronaut Victor Glover poses for a portrait, Tuesday, Sept. 15, 2020, in the Blue Flight Control Room at NASA’s Johnson Space Center in Houston. Photo Credit: (NASA/Bill Ingalls)",
+    "keywords": [
+      "Artemis",
+      "Astronaut",
+      "Blue Flight Control Room",
+      "Houston",
+      "Johnson Space Center (JSC)",
+      "Mission Control Center (MCC)",
+      "Texas",
+      "Victor Glover"
+    ],
+    "location": "NASA's Johnson Space Center",
+    "media_type": "image",
+    "nasa_id": "NHQ202009150002",
+    "photographer": "NASA/Bill Ingalls",
+    "title": "Portrait - Astronaut Victor Glover",
+    "id": "victor",
+    "source_api": "https://images-api.nasa.gov/search?nasa_id=NHQ202009150002",
+    "source_page": "https://images.nasa.gov/details/NHQ202009150002",
+    "source_file": "https://images-assets.nasa.gov/image/NHQ202009150002/NHQ202009150002~orig.jpg",
+    "sha256": "99df35026020072bd4e8abdecea056bd84f5ed30ffa15f5c5b9d52b483449b47",
+    "usage_guidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "usage": "Non-commercial factual software-testing illustration. Source NASA; no endorsement. Edited comparisons are software output, not NASA images. Do not reuse as promotional material or product assets.",
+    "fixture": "quality/fixtures/victor.png",
+    "fixturePngSha256": "790bf7eee26069ce2a9222af8cebcf8782fc801beedf52ef46f2b3169f07cffe",
+    "fixtureRgbaSha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+    "manifest": "quality/fixtures/manifest.json",
+    "manifestSha256": "dbc43c832becb1b9d6e4009cb3e5944036505e1870650843caf3ab882f67cf5b"
+  },
+  "generatedUtc": "2026-10-22T18:16:31.594Z",
+  "imageGenerationSourceFiles": {
+    "src/straighten.cjs": "7b28d67aba28747e85abf95c12b39522153871c4d084038bcb053244fa11f98e",
+    "src/geometry.cjs": "c8a0dc83278229ed9b07978801afe3a1a835eb505415ffc91e937a51d77590ba",
+    "src/canvas-padding.cjs": "91412cfaefd331c6fc5fffb8f9f58256dd25eb6306de6511cdec1cd2a2deb995",
+    "src/app.js": "8c5ab9e225d20f7c6c656dc8f6d91aad76ada3eb132440255e08a7e1d9badfe9",
+    "src/index.html": "ebea6c6d61f4b6b9569e977da7209f7efd400e2a7fb65492dd9c05baa07d5ca7",
+    "src/styles.css": "b3d1bf98a927be4570973cb4091418dca56a897357092672e374078f689f1bc8",
+    "src/pipeline.js": "e326095ef00750ffdc479f9b65f69cc5e3bb65a4fe6f19d969a03c6c06132ab7",
+    "src/pixel-worker.js": "016aa24baac715e0d23f690842c6ed54e54330e1c5228014d832c7f8251c6a52",
+    "src/project-document.cjs": "d68bfd204ed104af58d95ebd5264eec1dbb0c16f3ad2c57a84f86a78494cbca9",
+    "src/paint-layers.cjs": "c65b812dfa0423a5b1c2c5ae1a28fae09c4bbe5b15cf1f4a6cb6bde9d4dd4d66",
+    "src/redaction-layers.cjs": "5442a319b5a008febbab8c7de5e2bac405d4dd99b16781a315d141dd94099c0e",
+    "export-render-core.cjs": "b638ae2e40dc26cf9758220c99f2f1c63ff4baff74bba9ad8e706eebbe709152",
+    "export-render-worker.cjs": "bb1942566241099d58c9d1f695228d707dd4dac901ddf148838cc05b721f33b2",
+    "export-renderer.cjs": "15665918f60899dbf130c08cc6f27952a1e4dfc33d27233c677a4f131da058a2",
+    "src/export-queue.cjs": "294d1ca6b2fe83d8dad29999ee59ceb44e23ac9c6a059be8d48181aa157e5a6a",
+    "quality/straighten-qa/app-harness.cjs": "e034028986542c1f7a55f70ed1ebd0fa3eb4a038553e1466d47c942a17442d2a",
+    "quality/text-qa/native-support.cjs": "0d3965501547a311d699347dde88386175d3046126d3d8c41346d28732fad1b2",
+    "tests/text-ui.test.cjs": "e5a5226ba849b06c21c0d3b1226e42bd65b7c55f91387da7cdcbb5b74ecabce9",
+    "tests/straighten-workflow-independent.test.cjs": "8d5ffba1e7c7166896cde54e822b0e09669b63e2bd94d311b55462265b1bce68",
+    "quality/straighten-qa/independent-oracles.cjs": "6c8ed88665c460aff2abaa450f4a89ea5adae318722b116a94cb7819f0b8b7ea",
+    "quality/straighten-qa/independent-scenario.cjs": "92ae43c303d10cb4f73cefdf2780794612fa107ef056828db641f09f25feba2c"
+  },
+  "latestValidation": {
+    "utc": "2026-10-22T18:24:24.129Z",
+    "testCommand": "node --test tests/straighten-workflow-independent.test.cjs",
+    "tests": 17,
+    "passed": 17,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "defaultCaptureIfPresentUiCases": 9,
+    "resultLog": "quality/straighten-qa/independent-test-results.txt",
+    "resultLogSha256": "4c17e08c968f807449f065765f3281ac8ffb01427b795c66659e2229fd8b00e9",
+    "changedSinceImageGeneration": [
+      "src/app.js",
+      "tests/straighten-workflow-independent.test.cjs"
+    ],
+    "note": "Final independent snapshot after owner aggregate pass. Current app event tests cover three tools times three cases: unselected +13 degrees allowed; selected +13 degrees rejected without state/history/pixel changes; selected exact90 allowed. Images remain unchanged: intervening UI selection checks and authored VM dependency loading do not change image-generation pixel stages. Image-generation hashes remain separate from validated current source hashes. Any subsequent source edit requires revalidation.",
+    "existingPngEvidenceVerified": 18
+  },
+  "aggregateVerification": {
+    "owner": "root implementation owner",
+    "testCommand": "npm test",
+    "tests": 2662,
+    "passed": 2662,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "log": "/tmp/straighten-aggregate-verified.log",
+    "logSha256": "875e3a0ebb4c518f9b7d37d2465b7ac2ef713dd42a99c534bebda13d4e14233b",
+    "verification": "Owner-reported completion independently checked against the saved aggregate log; this independent QA worker did not own or rerun the full gate."
+  }
+}

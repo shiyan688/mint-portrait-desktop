@@ -1,0 +1,10 @@
+{
+  "backend/adapters/birefnet.py": "8dbbd89688e1a6edca772f75ec17e1338e864fe0cd10eac11e1272409c673f04",
+  "backend/adapters/birefnet_foreground.py": "b8a0faa35a427d24e35476924a996e1d80e47c4d682a996ab95ea6d7f6066502",
+  "backend/adapters/birefnet_quality.py": "35024f71db38e6a6f1edea3785b1db8acc5a0c9c3583f721f4b71c83e70080ca",
+  "backend/adapters/birefnet_support.py": "6055422312575d13e9be3002b3d183828069d3fc31f6805d2e0a1f071299eccb",
+  "backend/adapters/test_birefnet_foreground.py": "42077969cde05d4c1e6d1a971783ad9d83005859ee976120d82b91a11f437d83",
+  "backend/adapters/test_birefnet_options.py": "508112dc7fe7b5476cfef2b4621fefba2a15d53b4396e866583a1b195e21668f",
+  "backend/adapters/test_birefnet_quality.py": "5abf860cced13b0fe6dc71133beafadb5dc94bb83ef2a4340030b63193babb7f",
+  "backend/adapters/test_birefnet_support.py": "3107e45b9a13e560399541e31a9c264a7ce7d3f1e0686374c756c75256b2a7c9"
+}

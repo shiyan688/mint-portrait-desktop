@@ -1,0 +1,319 @@
+{
+  "engine": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/src/portrait-engine.cjs",
+  "sha256": "65cebaaaf65797e9661ee213d28083eec4c4f194fc14384ebd8ec8340cc00b2c",
+  "generatedAt": "2026-10-21T16:02:54.734Z",
+  "results": [
+    {
+      "id": "victor",
+      "name": "original",
+      "settings": {},
+      "width": 646,
+      "height": 900,
+      "ms": 1.9
+    },
+    {
+      "id": "victor",
+      "name": "brighten25",
+      "settings": {
+        "brighten": 25
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 131.4
+    },
+    {
+      "id": "victor",
+      "name": "brighten50",
+      "settings": {
+        "brighten": 50
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 64.8
+    },
+    {
+      "id": "victor",
+      "name": "brighten100",
+      "settings": {
+        "brighten": 100
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 61.1
+    },
+    {
+      "id": "victor",
+      "name": "smooth50",
+      "settings": {
+        "smooth": 50
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 116
+    },
+    {
+      "id": "victor",
+      "name": "smooth100",
+      "settings": {
+        "smooth": 100
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 100.1
+    },
+    {
+      "id": "victor",
+      "name": "combined50",
+      "settings": {
+        "smooth": 50,
+        "brighten": 50
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 112.4
+    },
+    {
+      "id": "victor",
+      "name": "combined100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 109.4
+    },
+    {
+      "id": "victor",
+      "name": "warm100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100,
+        "warmth": 100
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 107.4
+    },
+    {
+      "id": "victor",
+      "name": "cool100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100,
+        "warmth": -100
+      },
+      "width": 646,
+      "height": 900,
+      "ms": 156.8
+    },
+    {
+      "id": "suni",
+      "name": "original",
+      "settings": {},
+      "width": 795,
+      "height": 900,
+      "ms": 0.2
+    },
+    {
+      "id": "suni",
+      "name": "brighten25",
+      "settings": {
+        "brighten": 25
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 66.3
+    },
+    {
+      "id": "suni",
+      "name": "brighten50",
+      "settings": {
+        "brighten": 50
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 68.5
+    },
+    {
+      "id": "suni",
+      "name": "brighten100",
+      "settings": {
+        "brighten": 100
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 67
+    },
+    {
+      "id": "suni",
+      "name": "smooth50",
+      "settings": {
+        "smooth": 50
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 112.6
+    },
+    {
+      "id": "suni",
+      "name": "smooth100",
+      "settings": {
+        "smooth": 100
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 97.7
+    },
+    {
+      "id": "suni",
+      "name": "combined50",
+      "settings": {
+        "smooth": 50,
+        "brighten": 50
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 100.7
+    },
+    {
+      "id": "suni",
+      "name": "combined100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 79.6
+    },
+    {
+      "id": "suni",
+      "name": "warm100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100,
+        "warmth": 100
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 72.7
+    },
+    {
+      "id": "suni",
+      "name": "cool100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100,
+        "warmth": -100
+      },
+      "width": 795,
+      "height": 900,
+      "ms": 73.2
+    },
+    {
+      "id": "eileen",
+      "name": "original",
+      "settings": {},
+      "width": 725,
+      "height": 900,
+      "ms": 0.2
+    },
+    {
+      "id": "eileen",
+      "name": "brighten25",
+      "settings": {
+        "brighten": 25
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 58.7
+    },
+    {
+      "id": "eileen",
+      "name": "brighten50",
+      "settings": {
+        "brighten": 50
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 45.8
+    },
+    {
+      "id": "eileen",
+      "name": "brighten100",
+      "settings": {
+        "brighten": 100
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 45.9
+    },
+    {
+      "id": "eileen",
+      "name": "smooth50",
+      "settings": {
+        "smooth": 50
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 67.9
+    },
+    {
+      "id": "eileen",
+      "name": "smooth100",
+      "settings": {
+        "smooth": 100
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 68.9
+    },
+    {
+      "id": "eileen",
+      "name": "combined50",
+      "settings": {
+        "smooth": 50,
+        "brighten": 50
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 67.8
+    },
+    {
+      "id": "eileen",
+      "name": "combined100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 77.5
+    },
+    {
+      "id": "eileen",
+      "name": "warm100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100,
+        "warmth": 100
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 66.5
+    },
+    {
+      "id": "eileen",
+      "name": "cool100",
+      "settings": {
+        "smooth": 100,
+        "brighten": 100,
+        "warmth": -100
+      },
+      "width": 725,
+      "height": 900,
+      "ms": 67
+    }
+  ]
+}

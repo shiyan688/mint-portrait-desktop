@@ -1,0 +1,423 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-22T15:40:46.895Z",
+  "node": "v24.19.0",
+  "checks": [
+    {
+      "name": "exact source transformation; frozen original and copied-test digests",
+      "details": true
+    },
+    {
+      "name": "only maxPixels and maxEdge differ by profile",
+      "details": true
+    },
+    {
+      "name": "strict primitive profile names; no getters, reflection traps, coercion, or arbitrary overrides",
+      "details": true
+    },
+    {
+      "name": "UMD entry parity",
+      "details": true
+    },
+    {
+      "name": "frozen-mobile differential pixels and plans",
+      "details": {
+        "cases": 512,
+        "comparedRGBAValues": 8375400,
+        "profilesCompared": 3,
+        "seed": "0x5d817b9e"
+      }
+    },
+    {
+      "name": "frozen-mobile cancellation counts, early/mid/final aborts, hook identity and source immutability",
+      "details": true
+    },
+    {
+      "name": "independent pixel oracle on desktop-only edges",
+      "details": {
+        "cases": 48,
+        "comparedRGBAValues": 5501440
+      }
+    },
+    {
+      "name": "inclusive dimension plans; no pixel/geometry typed allocation in plan",
+      "details": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "pixels": 16777216,
+          "active": true,
+          "mode": "cover",
+          "blockEdge": 41,
+          "gridColumns": 100,
+          "gridRows": 100,
+          "gridCells": 10000,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 4096,
+          "workPixels": 33558528,
+          "extraBytes": 69223076
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "pixels": 16777216,
+          "active": true,
+          "mode": "mosaic",
+          "blockEdge": 41,
+          "gridColumns": 100,
+          "gridRows": 100,
+          "gridCells": 10000,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 4096,
+          "workPixels": 50335744,
+          "extraBytes": 69253076
+        },
+        {
+          "width": 16384,
+          "height": 1024,
+          "pixels": 16777216,
+          "active": true,
+          "mode": "cover",
+          "blockEdge": 10,
+          "gridColumns": 1639,
+          "gridRows": 103,
+          "gridCells": 168817,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 1024,
+          "workPixels": 33555456,
+          "extraBytes": 69272228
+        },
+        {
+          "width": 16384,
+          "height": 1024,
+          "pixels": 16777216,
+          "active": true,
+          "mode": "mosaic",
+          "blockEdge": 10,
+          "gridColumns": 1639,
+          "gridRows": 103,
+          "gridCells": 168817,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 1024,
+          "workPixels": 50332672,
+          "extraBytes": 69778679
+        },
+        {
+          "width": 1024,
+          "height": 16384,
+          "pixels": 16777216,
+          "active": true,
+          "mode": "cover",
+          "blockEdge": 10,
+          "gridColumns": 103,
+          "gridRows": 1639,
+          "gridCells": 168817,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 16384,
+          "workPixels": 33570816,
+          "extraBytes": 69210788
+        },
+        {
+          "width": 1024,
+          "height": 16384,
+          "pixels": 16777216,
+          "active": true,
+          "mode": "mosaic",
+          "blockEdge": 10,
+          "gridColumns": 103,
+          "gridRows": 1639,
+          "gridCells": 168817,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 16384,
+          "workPixels": 50348032,
+          "extraBytes": 69717239
+        },
+        {
+          "width": 16384,
+          "height": 1,
+          "pixels": 16384,
+          "active": true,
+          "mode": "cover",
+          "blockEdge": 1,
+          "gridColumns": 16384,
+          "gridRows": 1,
+          "gridCells": 16384,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 1,
+          "workPixels": 32769,
+          "extraBytes": 2228900
+        },
+        {
+          "width": 16384,
+          "height": 1,
+          "pixels": 16384,
+          "active": true,
+          "mode": "mosaic",
+          "blockEdge": 1,
+          "gridColumns": 16384,
+          "gridRows": 1,
+          "gridCells": 16384,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 1,
+          "workPixels": 49153,
+          "extraBytes": 2278052
+        },
+        {
+          "width": 1,
+          "height": 16384,
+          "pixels": 16384,
+          "active": true,
+          "mode": "cover",
+          "blockEdge": 1,
+          "gridColumns": 1,
+          "gridRows": 16384,
+          "gridCells": 16384,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 16384,
+          "workPixels": 49152,
+          "extraBytes": 2163368
+        },
+        {
+          "width": 1,
+          "height": 16384,
+          "pixels": 16384,
+          "active": true,
+          "mode": "mosaic",
+          "blockEdge": 1,
+          "gridColumns": 1,
+          "gridRows": 16384,
+          "gridCells": 16384,
+          "strokeCount": 1,
+          "totalPoints": 1,
+          "segmentCount": 1,
+          "segmentRows": 16384,
+          "workPixels": 65536,
+          "extraBytes": 2212520
+        }
+      ]
+    },
+    {
+      "name": "dimensions outside bound fail before cancellation and typed allocation",
+      "details": {
+        "dimensionCases": 12,
+        "activeAndNeutral": true
+      }
+    },
+    {
+      "name": "work limit is not relaxed by desktop dimensions; tall/wide row accounting",
+      "details": {
+        "rejects": [
+          {
+            "width": 4096,
+            "height": 4096,
+            "mode": "mosaic",
+            "segmentCount": 4095,
+            "workPixels": 67104768
+          },
+          {
+            "width": 1024,
+            "height": 16384,
+            "mode": "cover",
+            "segmentCount": 4095,
+            "workPixels": 100646912
+          },
+          {
+            "width": 1024,
+            "height": 16384,
+            "mode": "mosaic",
+            "segmentCount": 4095,
+            "workPixels": 117424128
+          },
+          {
+            "width": 1,
+            "height": 16384,
+            "mode": "cover",
+            "segmentCount": 4095,
+            "workPixels": 67125248
+          },
+          {
+            "width": 1,
+            "height": 16384,
+            "mode": "mosaic",
+            "segmentCount": 4095,
+            "workPixels": 67141632
+          }
+        ],
+        "acceptedWide": {
+          "width": 16384,
+          "height": 1,
+          "pixels": 16384,
+          "active": true,
+          "mode": "mosaic",
+          "blockEdge": 1,
+          "gridColumns": 16384,
+          "gridRows": 1,
+          "gridCells": 16384,
+          "strokeCount": 1,
+          "totalPoints": 4096,
+          "segmentCount": 4095,
+          "segmentRows": 4095,
+          "workPixels": 53247,
+          "extraBytes": 3981412
+        },
+        "acceptedTallBoundary": {
+          "width": 1,
+          "height": 16384,
+          "pixels": 16384,
+          "active": true,
+          "mode": "cover",
+          "blockEdge": 1,
+          "gridColumns": 1,
+          "gridRows": 16384,
+          "gridCells": 16384,
+          "strokeCount": 1,
+          "totalPoints": 3905,
+          "segmentCount": 3904,
+          "segmentRows": 63963136,
+          "workPixels": 63995904,
+          "extraBytes": 3787272
+        }
+      }
+    },
+    {
+      "name": "128 MiB guard unchanged; no legal profile input reaches the extra-byte rejection branch",
+      "details": {
+        "looseIndependentMaximaBytes": 121323524,
+        "limitBytes": 134217728,
+        "note": "The guard cannot be dynamically breached without altering production limits; no artificial profile or budget override was added."
+      }
+    },
+    {
+      "name": "neutral identity, strict validation, cancellation and no typed allocation at desktop edge",
+      "details": true
+    },
+    {
+      "name": "isolated inclusive-bound full-cover allocation",
+      "details": {
+        "width": 4096,
+        "height": 4096,
+        "pixels": 16777216,
+        "sourceBytes": 67108864,
+        "outputBytes": 67108864,
+        "plan": {
+          "width": 4096,
+          "height": 4096,
+          "pixels": 16777216,
+          "active": true,
+          "mode": "cover",
+          "blockEdge": 164,
+          "gridColumns": 25,
+          "gridRows": 25,
+          "gridCells": 625,
+          "strokeCount": 1,
+          "totalPoints": 2,
+          "segmentCount": 1,
+          "segmentRows": 4096,
+          "workPixels": 33558528,
+          "extraBytes": 69223332
+        },
+        "elapsedApplyMs": 193.106835,
+        "availableBytesBefore": 8225685504,
+        "memory": {
+          "baseline": {
+            "rss": 40525824,
+            "heapTotal": 12054528,
+            "heapUsed": 6866592,
+            "external": 3790282,
+            "arrayBuffers": 146559
+          },
+          "beforeApply": {
+            "rss": 40656896,
+            "heapTotal": 12054528,
+            "heapUsed": 6946048,
+            "external": 70929357,
+            "arrayBuffers": 67255423
+          },
+          "afterApply": {
+            "rss": 113487872,
+            "heapTotal": 12316672,
+            "heapUsed": 7543664,
+            "external": 138054769,
+            "arrayBuffers": 134380835
+          },
+          "maxRSSBytes": 114929664
+        },
+        "outputSha256": "87bdfebffedd7313c420c1680846b9db74d25bf9675a3c1370ceb3a03e0e0299",
+        "allPixelsExactOpaqueColor": true,
+        "sourceUnchanged": true,
+        "neutralIdentityAndCancelAtInclusiveBound": true,
+        "warning": "Single synthetic Node observation, not a platform memory bound, benchmark promise, or editor/export validation."
+      }
+    }
+  ],
+  "frozenMobileSha256": "76feabea4b8b940bf26d9b807e2799ce5012ef6973841f38120770a537c9da61",
+  "copiedMobileTestsSha256": "8e5f9b0533f308863abc6666cdafefacbfbfdd212b9c12cb22dca6199c17b663",
+  "desktopSourceSha256": "14abf070ebc42e9942e4a847d672ff4a53c1769ee66276de4e24ff86e6b62be8",
+  "limits": {
+    "default": {
+      "maxStrokes": 64,
+      "maxTotalPoints": 4096,
+      "maxPixels": 8000000,
+      "maxEdge": 4096,
+      "minRadius": 0.002,
+      "maxRadius": 0.5,
+      "minBlockSize": 0.01,
+      "maxBlockSize": 0.25,
+      "maxExtraBytes": 134217728,
+      "maxWorkPixels": 64000000,
+      "cancelIntervalPixels": 16384
+    },
+    "mobile": {
+      "maxStrokes": 64,
+      "maxTotalPoints": 4096,
+      "maxPixels": 8000000,
+      "maxEdge": 4096,
+      "minRadius": 0.002,
+      "maxRadius": 0.5,
+      "minBlockSize": 0.01,
+      "maxBlockSize": 0.25,
+      "maxExtraBytes": 134217728,
+      "maxWorkPixels": 64000000,
+      "cancelIntervalPixels": 16384
+    },
+    "desktop": {
+      "maxStrokes": 64,
+      "maxTotalPoints": 4096,
+      "maxPixels": 16777216,
+      "maxEdge": 16384,
+      "minRadius": 0.002,
+      "maxRadius": 0.5,
+      "minBlockSize": 0.01,
+      "maxBlockSize": 0.25,
+      "maxExtraBytes": 134217728,
+      "maxWorkPixels": 64000000,
+      "cancelIntervalPixels": 16384
+    }
+  },
+  "recipeVersion": 1,
+  "scope": "Synthetic core tests only; no editor, Canvas, PNG/JPEG, browser, native platform, or installer acceptance.",
+  "testFileSha256": "aabba42a9808903de341d6f8de546d0ae3a7c155e43ffbf246f763645f19ea07",
+  "copiedMobileContractChecks": 25,
+  "desktopProfileChecks": 13,
+  "totalNodeTests": 39,
+  "command": "REDACT_WRITE_REPORT=1 node --test --test-concurrency=1 tests/redact-core-desktop.test.cjs",
+  "status": "passed"
+}

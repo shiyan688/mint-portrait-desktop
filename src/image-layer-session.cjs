@@ -1,0 +1,15 @@
+/* Photo-local image-asset retention. Recipes, not image bytes, enter history.
+ * Input assets must already be SHA-verified at import or project decode. */
+(function(root,factory){const api=factory(typeof module==='object'&&module.exports?require('./image-layers.cjs'):root.MintImageLayers);if(typeof module==='object'&&module.exports)module.exports=api;else root.MintImageLayerSession=api;})(typeof globalThis==='object'?globalThis:this,function(Layers){
+ 'use strict';const LIMITS=Object.freeze({maxSessionAssets:128,maxSessionBytes:64*1024*1024,maxSnapshots:128});
+ const checkedTables=new WeakMap();
+ function checkTable(value){if(value&&typeof value==='object'&&checkedTables.has(value))return checkedTables.get(value);const clean=Layers.validateAssets(value);checkedTables.set(clean,clean);if(Object.isFrozen(value)&&value.every(Object.isFrozen))checkedTables.set(value,clean);return clean;}
+ function fail(message){throw new TypeError(message);}
+ function array(value,max){if(!Array.isArray(value)||Object.getPrototypeOf(value)!==Array.prototype||value.length>max||Reflect.ownKeys(value).length!==value.length+1)fail('Invalid image-asset collection');for(let i=0;i<value.length;i++){const d=Object.getOwnPropertyDescriptor(value,String(i));if(!d||!d.enumerable||!Object.hasOwn(d,'value'))fail('Unsafe image-asset collection');}return value;}
+ function layersOf(settings){if(!settings||typeof settings!=='object'||Array.isArray(settings)||![Object.prototype,null].includes(Object.getPrototypeOf(settings)))fail('Invalid image-layer settings');const d=Object.getOwnPropertyDescriptor(settings,'imageLayers');if(!d)return[];if(!d.enumerable||!Object.hasOwn(d,'value'))fail('Unsafe image-layer settings');return Layers.validate(d.value);}
+ function select(table,settings){const clean=checkTable(table),ids=Layers.referencedAssetIds(layersOf(settings)),map=new Map(clean.map(a=>[a.id,a]));return Object.freeze(ids.map(id=>{if(!map.has(id))fail('Missing image asset: '+id);return map.get(id);}));}
+ function retain(table,snapshots){const clean=checkTable(table),ids=new Set();for(const settings of array(snapshots,LIMITS.maxSnapshots))for(const asset of select(clean,settings))ids.add(asset.id);return Object.freeze(clean.filter(a=>ids.has(a.id)));}
+ function append(table,asset){const clean=checkTable(table),next=Layers.validateAssets([asset])[0],old=clean.find(a=>a.id===next.id);if(old){if(JSON.stringify(old)!==JSON.stringify(next))fail('Same image identity has different pixels');return clean;}return Layers.validateAssets([...clean,next]);}
+ function sessionPlan(tables){let assets=0,rawBytes=0,maxBase64StringBytes=0;for(const table of array(tables,100)){const clean=checkTable(table);assets+=clean.length;maxBase64StringBytes+=clean.reduce((n,a)=>n+a.data.length*2,0);rawBytes+=clean.reduce((n,a)=>n+a.width*a.height*4,0);if(assets>LIMITS.maxSessionAssets||rawBytes>LIMITS.maxSessionBytes)throw new RangeError('本会话贴图素材最多128份、RGBA工作数据64 MiB；请保存工程后另开会话');}return Object.freeze({assets,rawBytes,maxBase64StringBytes});}
+ return Object.freeze({LIMITS,select,retain,append,sessionPlan,layersOf});
+});

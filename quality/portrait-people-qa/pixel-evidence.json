@@ -1,0 +1,965 @@
+{
+  "createdUtc": "2026-10-22T17:11:40.937Z",
+  "scope": "Development app only. Public NASA adult-photo synthetic QA composites; not actual group photography. Existing MediaPipe CPU-host landmarks. Real installed NativeCanvas/Sharp local pixels; NOT browser, Windows, native desktop GUI, new model or subjective retouch acceptance.",
+  "runtime": {
+    "nativeCanvas": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas",
+    "sharp": "0.35.5"
+  },
+  "cases": [
+    {
+      "count": 2,
+      "phase": "beauty",
+      "selectedBatchLocalIds": [
+        "face-1",
+        "face-2"
+      ],
+      "changedPixelsPerFace": [
+        51431,
+        48676
+      ],
+      "protectedInactivePixels": 0,
+      "inputSha256": "0df158c8d5ecab8c90a83de4b7a7dc3667c44782f04463f7ea793e934a859a0b",
+      "outputSha256": "f8c533be92ad1794f3900f90ef83988d9515f270fde9d678e87f922142744819",
+      "encodedFile": "public-2-beauty.png",
+      "plan": {
+        "version": 1,
+        "phase": "beauty",
+        "sourceRevision": "independent-2:source-0",
+        "batchId": "independent-2:batch-1",
+        "detector": {
+          "id": "mediapipe-face-landmarker",
+          "modelSha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+          "topology": "MediaPipe478"
+        },
+        "width": 900,
+        "height": 500,
+        "workSize": {
+          "width": 900,
+          "height": 500
+        },
+        "opaqueAlphaRequired": false,
+        "faces": [
+          {
+            "id": "face-1",
+            "active": true,
+            "protectedBounds": {
+              "minX": 94,
+              "minY": 126,
+              "maxX": 357,
+              "maxY": 443
+            },
+            "displayBounds": {
+              "id": "face-1",
+              "x": 0.10630298405885696,
+              "y": 0.25621694326400757,
+              "width": 0.28965844959020615,
+              "height": 0.6292433142662048
+            },
+            "controls": {
+              "smooth": 0,
+              "brighten": 12,
+              "warmth": 15,
+              "underEye": 10,
+              "redness": 0,
+              "lip": 10,
+              "blush": 0,
+              "palette": "natural"
+            },
+            "writeBounds": {
+              "minX": 94,
+              "minY": 126,
+              "maxX": 357,
+              "maxY": 443
+            },
+            "readBounds": {
+              "minX": 86,
+              "minY": 118,
+              "maxX": 365,
+              "maxY": 451
+            },
+            "influenceBounds": {
+              "minX": 86,
+              "minY": 118,
+              "maxX": 365,
+              "maxY": 451
+            },
+            "workPolygonBounds": {
+              "minX": 96,
+              "minY": 128,
+              "maxX": 355,
+              "maxY": 441
+            }
+          },
+          {
+            "id": "face-2",
+            "active": true,
+            "protectedBounds": {
+              "minX": 528,
+              "minY": 130,
+              "maxX": 814,
+              "maxY": 448
+            },
+            "displayBounds": {
+              "id": "face-2",
+              "x": 0.5892032980918884,
+              "y": 0.2639806866645813,
+              "width": 0.3140624165534973,
+              "height": 0.631478488445282
+            },
+            "controls": {
+              "smooth": 0,
+              "brighten": 16,
+              "warmth": -14,
+              "underEye": 13,
+              "redness": 0,
+              "lip": 12,
+              "blush": 0,
+              "palette": "peach"
+            },
+            "writeBounds": {
+              "minX": 535,
+              "minY": 130,
+              "maxX": 814,
+              "maxY": 448
+            },
+            "readBounds": {
+              "minX": 527,
+              "minY": 122,
+              "maxX": 822,
+              "maxY": 456
+            },
+            "influenceBounds": {
+              "minX": 527,
+              "minY": 122,
+              "maxX": 822,
+              "maxY": 456
+            },
+            "workPolygonBounds": {
+              "minX": 537,
+              "minY": 132,
+              "maxX": 812,
+              "maxY": 446
+            }
+          }
+        ],
+        "resources": {
+          "pixels": 450000,
+          "workPixels": 450000,
+          "activeFaces": 2,
+          "retainedOutputBytes": 1800000,
+          "maxConcurrentEngineOutputBytes": 1800000,
+          "engineTemporaryBytes": 37802080,
+          "extraPeakBytes": 41402080,
+          "estimatedPeakExtraBytes": 41402080,
+          "cumulativeTypedArrayBytes": 79204160,
+          "workUnits": 40950000,
+          "estimatedWorkUnits": 40950000,
+          "staticEngineTableBytes": 17412,
+          "excludes": "source, canvas/native/GPU/history copies, JS objects, VM overhead and delayed collection between calls; not a measured real-device peak"
+        },
+        "noOp": false,
+        "desktopLimits": {
+          "maxPixels": 16000000,
+          "maxEdge": 16384,
+          "maxExtraBytes": 268435456,
+          "maxWorkUnits": 512000000,
+          "maxCumulativeTypedArrayBytes": 536870912,
+          "maxNoOpPixels": 64000000
+        }
+      }
+    },
+    {
+      "count": 2,
+      "phase": "reshape",
+      "selectedBatchLocalIds": [
+        "face-1",
+        "face-2"
+      ],
+      "changedPixelsPerFace": [
+        8801,
+        13929
+      ],
+      "protectedInactivePixels": 0,
+      "inputSha256": "0df158c8d5ecab8c90a83de4b7a7dc3667c44782f04463f7ea793e934a859a0b",
+      "outputSha256": "bdf3ebaa50af49de7118c545e6cc11c1b2e23121b762dd4d5f7d2b953e42cb1d",
+      "encodedFile": "public-2-reshape.png",
+      "plan": {
+        "version": 1,
+        "phase": "reshape",
+        "sourceRevision": "independent-2:source-0",
+        "batchId": "independent-2:batch-1",
+        "detector": {
+          "id": "mediapipe-face-landmarker",
+          "modelSha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+          "topology": "MediaPipe478"
+        },
+        "width": 900,
+        "height": 500,
+        "workSize": {
+          "width": 900,
+          "height": 500
+        },
+        "opaqueAlphaRequired": true,
+        "faces": [
+          {
+            "id": "face-1",
+            "active": true,
+            "protectedBounds": {
+              "minX": 94,
+              "minY": 126,
+              "maxX": 357,
+              "maxY": 443
+            },
+            "displayBounds": {
+              "id": "face-1",
+              "x": 0.10630298405885696,
+              "y": 0.25621694326400757,
+              "width": 0.28965844959020615,
+              "height": 0.6292433142662048
+            },
+            "controls": {
+              "slim": 0,
+              "eyes": 14,
+              "nose": 15,
+              "jaw": 0
+            },
+            "writeBounds": {
+              "minX": 125,
+              "minY": 194,
+              "maxX": 312,
+              "maxY": 360
+            },
+            "readBounds": {
+              "minX": 92,
+              "minY": 161,
+              "maxX": 345,
+              "maxY": 393
+            },
+            "influenceBounds": {
+              "minX": 92,
+              "minY": 161,
+              "maxX": 345,
+              "maxY": 393
+            },
+            "fields": [
+              {
+                "x": 164.3501361310482,
+                "y": 222.69619737565517,
+                "rx": 38.43520463826333,
+                "ry": 26.47758541747029
+              },
+              {
+                "x": 271.0683732330799,
+                "y": 221.91754046082497,
+                "rx": 40.22792158574569,
+                "ry": 27.712568203513694
+              },
+              {
+                "x": 212.76594361662865,
+                "y": 296.69375175237656,
+                "rx": 52.08058923631907,
+                "ry": 62.79848276376725
+              }
+            ],
+            "maxShift": 31.248353541791438
+          },
+          {
+            "id": "face-2",
+            "active": true,
+            "protectedBounds": {
+              "minX": 528,
+              "minY": 130,
+              "maxX": 814,
+              "maxY": 448
+            },
+            "displayBounds": {
+              "id": "face-2",
+              "x": 0.5892032980918884,
+              "y": 0.2639806866645813,
+              "width": 0.3140624165534973,
+              "height": 0.631478488445282
+            },
+            "controls": {
+              "slim": 0,
+              "eyes": 19,
+              "nose": -15,
+              "jaw": 0
+            },
+            "writeBounds": {
+              "minX": 542,
+              "minY": 196,
+              "maxX": 771,
+              "maxY": 361
+            },
+            "readBounds": {
+              "minX": 507,
+              "minY": 161,
+              "maxX": 806,
+              "maxY": 396
+            },
+            "influenceBounds": {
+              "minX": 507,
+              "minY": 161,
+              "maxX": 806,
+              "maxY": 396
+            },
+            "fields": [
+              {
+                "x": 591.7111060619354,
+                "y": 233.6637427508831,
+                "rx": 48.78588617168871,
+                "ry": 33.60805491827444
+              },
+              {
+                "x": 717.071631371975,
+                "y": 232.8881270289421,
+                "rx": 53.31356655972116,
+                "ry": 36.72712363003013
+              },
+              {
+                "x": 641.1890670061111,
+                "y": 297.42429238557816,
+                "rx": 55.15482877492905,
+                "ry": 63.021553146839146
+              }
+            ],
+            "maxShift": 33.09289726495743
+          }
+        ],
+        "resources": {
+          "pixels": 450000,
+          "workPixels": 450000,
+          "activeFaces": 2,
+          "retainedOutputBytes": 1800000,
+          "maxConcurrentEngineOutputBytes": 1800000,
+          "engineTemporaryBytes": 0,
+          "extraPeakBytes": 3600000,
+          "estimatedPeakExtraBytes": 3600000,
+          "cumulativeTypedArrayBytes": 3600000,
+          "workUnits": 3150000,
+          "estimatedWorkUnits": 3150000,
+          "staticEngineTableBytes": 17412,
+          "excludes": "source, canvas/native/GPU/history copies, JS objects, VM overhead and delayed collection between calls; not a measured real-device peak"
+        },
+        "noOp": false,
+        "desktopLimits": {
+          "maxPixels": 16000000,
+          "maxEdge": 16384,
+          "maxExtraBytes": 268435456,
+          "maxWorkUnits": 512000000,
+          "maxCumulativeTypedArrayBytes": 536870912,
+          "maxNoOpPixels": 64000000
+        }
+      }
+    },
+    {
+      "count": 2,
+      "phase": "one-active-beauty",
+      "selectedBatchLocalIds": [
+        "face-1"
+      ],
+      "protectedInactivePixels": 91553,
+      "inputSha256": "0df158c8d5ecab8c90a83de4b7a7dc3667c44782f04463f7ea793e934a859a0b",
+      "outputSha256": "eba0263ec33361907a1a3f0b14ee5986dab7b561f01aba89db00b8221d3b41a8"
+    },
+    {
+      "count": 5,
+      "phase": "beauty",
+      "selectedBatchLocalIds": [
+        "face-1",
+        "face-3",
+        "face-5"
+      ],
+      "changedPixelsPerFace": [
+        17502,
+        0,
+        22264,
+        0,
+        21318
+      ],
+      "protectedInactivePixels": 79261,
+      "inputSha256": "f9c42742603f203977756fb40e7b133c46c17843601c5c7ee8ebc9ae9accab74",
+      "outputSha256": "e82c7ef475d940b79f7baaaec7b7c81a672d0c748565a710d0a6306a143197df",
+      "encodedFile": "public-5-beauty.png",
+      "plan": {
+        "version": 1,
+        "phase": "beauty",
+        "sourceRevision": "independent-5:source-0",
+        "batchId": "independent-5:batch-1",
+        "detector": {
+          "id": "mediapipe-face-landmarker",
+          "modelSha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+          "topology": "MediaPipe478"
+        },
+        "width": 900,
+        "height": 680,
+        "workSize": {
+          "width": 900,
+          "height": 680
+        },
+        "opaqueAlphaRequired": false,
+        "faces": [
+          {
+            "id": "face-1",
+            "active": true,
+            "protectedBounds": {
+              "minX": 209,
+              "minY": 439,
+              "maxX": 389,
+              "maxY": 642
+            },
+            "displayBounds": {
+              "id": "face-1",
+              "x": 0.23422512412071228,
+              "y": 0.6490351557731628,
+              "width": 0.1971319615840912,
+              "height": 0.29479724168777466
+            },
+            "controls": {
+              "smooth": 0,
+              "brighten": 12,
+              "warmth": 15,
+              "underEye": 10,
+              "redness": 0,
+              "lip": 10,
+              "blush": 0,
+              "palette": "natural"
+            },
+            "writeBounds": {
+              "minX": 209,
+              "minY": 439,
+              "maxX": 389,
+              "maxY": 642
+            },
+            "readBounds": {
+              "minX": 198,
+              "minY": 428,
+              "maxX": 400,
+              "maxY": 653
+            },
+            "influenceBounds": {
+              "minX": 198,
+              "minY": 428,
+              "maxX": 400,
+              "maxY": 653
+            },
+            "workPolygonBounds": {
+              "minX": 211,
+              "minY": 441,
+              "maxX": 387,
+              "maxY": 640
+            }
+          },
+          {
+            "id": "face-2",
+            "active": false,
+            "protectedBounds": {
+              "minX": 499,
+              "minY": 434,
+              "maxX": 700,
+              "maxY": 644
+            },
+            "displayBounds": {
+              "id": "face-2",
+              "x": 0.556659996509552,
+              "y": 0.6420171856880188,
+              "width": 0.22078865766525269,
+              "height": 0.30413568019866943
+            },
+            "controls": {
+              "smooth": 0,
+              "brighten": 0,
+              "warmth": 0,
+              "underEye": 0,
+              "redness": 0,
+              "lip": 0,
+              "blush": 0,
+              "palette": "natural"
+            },
+            "writeBounds": null,
+            "readBounds": null,
+            "influenceBounds": null
+          },
+          {
+            "id": "face-3",
+            "active": true,
+            "protectedBounds": {
+              "minX": 356,
+              "minY": 114,
+              "maxX": 545,
+              "maxY": 325
+            },
+            "displayBounds": {
+              "id": "face-3",
+              "x": 0.39778581261634827,
+              "y": 0.1707974076271057,
+              "width": 0.2067684829235077,
+              "height": 0.30520230531692505
+            },
+            "controls": {
+              "smooth": 0,
+              "brighten": 20,
+              "warmth": 15,
+              "underEye": 16,
+              "redness": 0,
+              "lip": 14,
+              "blush": 0,
+              "palette": "rose"
+            },
+            "writeBounds": {
+              "minX": 361,
+              "minY": 114,
+              "maxX": 545,
+              "maxY": 325
+            },
+            "readBounds": {
+              "minX": 350,
+              "minY": 103,
+              "maxX": 556,
+              "maxY": 336
+            },
+            "influenceBounds": {
+              "minX": 350,
+              "minY": 103,
+              "maxX": 556,
+              "maxY": 336
+            },
+            "workPolygonBounds": {
+              "minX": 363,
+              "minY": 116,
+              "maxX": 543,
+              "maxY": 323
+            }
+          },
+          {
+            "id": "face-4",
+            "active": false,
+            "protectedBounds": {
+              "minX": 64,
+              "minY": 114,
+              "maxX": 240,
+              "maxY": 320
+            },
+            "displayBounds": {
+              "id": "face-4",
+              "x": 0.07304812222719193,
+              "y": 0.169367715716362,
+              "width": 0.1922144517302513,
+              "height": 0.30036841332912445
+            },
+            "controls": {
+              "smooth": 0,
+              "brighten": 0,
+              "warmth": 0,
+              "underEye": 0,
+              "redness": 0,
+              "lip": 0,
+              "blush": 0,
+              "palette": "natural"
+            },
+            "writeBounds": null,
+            "readBounds": null,
+            "influenceBounds": null
+          },
+          {
+            "id": "face-5",
+            "active": true,
+            "protectedBounds": {
+              "minX": 654,
+              "minY": 113,
+              "maxX": 834,
+              "maxY": 324
+            },
+            "displayBounds": {
+              "id": "face-5",
+              "x": 0.7295666337013245,
+              "y": 0.16879311203956604,
+              "width": 0.19602113962173462,
+              "height": 0.30673500895500183
+            },
+            "controls": {
+              "smooth": 0,
+              "brighten": 28,
+              "warmth": 15,
+              "underEye": 22,
+              "redness": 0,
+              "lip": 18,
+              "blush": 0,
+              "palette": "peach"
+            },
+            "writeBounds": {
+              "minX": 654,
+              "minY": 113,
+              "maxX": 834,
+              "maxY": 324
+            },
+            "readBounds": {
+              "minX": 643,
+              "minY": 102,
+              "maxX": 845,
+              "maxY": 335
+            },
+            "influenceBounds": {
+              "minX": 643,
+              "minY": 102,
+              "maxX": 845,
+              "maxY": 335
+            },
+            "workPolygonBounds": {
+              "minX": 656,
+              "minY": 115,
+              "maxX": 832,
+              "maxY": 322
+            }
+          }
+        ],
+        "resources": {
+          "pixels": 612000,
+          "workPixels": 612000,
+          "activeFaces": 3,
+          "retainedOutputBytes": 2448000,
+          "maxConcurrentEngineOutputBytes": 2448000,
+          "engineTemporaryBytes": 51410080,
+          "extraPeakBytes": 56306080,
+          "estimatedPeakExtraBytes": 56306080,
+          "cumulativeTypedArrayBytes": 161574240,
+          "workUnits": 83232000,
+          "estimatedWorkUnits": 83232000,
+          "staticEngineTableBytes": 17412,
+          "excludes": "source, canvas/native/GPU/history copies, JS objects, VM overhead and delayed collection between calls; not a measured real-device peak"
+        },
+        "noOp": false,
+        "desktopLimits": {
+          "maxPixels": 16000000,
+          "maxEdge": 16384,
+          "maxExtraBytes": 268435456,
+          "maxWorkUnits": 512000000,
+          "maxCumulativeTypedArrayBytes": 536870912,
+          "maxNoOpPixels": 64000000
+        }
+      }
+    },
+    {
+      "count": 5,
+      "phase": "reshape",
+      "selectedBatchLocalIds": [
+        "face-1",
+        "face-3",
+        "face-5"
+      ],
+      "changedPixelsPerFace": [
+        4773,
+        0,
+        5938,
+        0,
+        4875
+      ],
+      "protectedInactivePixels": 79261,
+      "inputSha256": "f9c42742603f203977756fb40e7b133c46c17843601c5c7ee8ebc9ae9accab74",
+      "outputSha256": "187a6a6d252bead923967eb2ece5f13b73d165b74d5c9c408b633bd88dfc3d2b",
+      "encodedFile": "public-5-reshape.png",
+      "plan": {
+        "version": 1,
+        "phase": "reshape",
+        "sourceRevision": "independent-5:source-0",
+        "batchId": "independent-5:batch-1",
+        "detector": {
+          "id": "mediapipe-face-landmarker",
+          "modelSha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+          "topology": "MediaPipe478"
+        },
+        "width": 900,
+        "height": 680,
+        "workSize": {
+          "width": 900,
+          "height": 680
+        },
+        "opaqueAlphaRequired": true,
+        "faces": [
+          {
+            "id": "face-1",
+            "active": true,
+            "protectedBounds": {
+              "minX": 209,
+              "minY": 439,
+              "maxX": 389,
+              "maxY": 642
+            },
+            "displayBounds": {
+              "id": "face-1",
+              "x": 0.23422512412071228,
+              "y": 0.6490351557731628,
+              "width": 0.1971319615840912,
+              "height": 0.29479724168777466
+            },
+            "controls": {
+              "slim": 0,
+              "eyes": 14,
+              "nose": 15,
+              "jaw": 0
+            },
+            "writeBounds": {
+              "minX": 239,
+              "minY": 481,
+              "maxX": 371,
+              "maxY": 598
+            },
+            "readBounds": {
+              "minX": 216,
+              "minY": 458,
+              "maxX": 394,
+              "maxY": 621
+            },
+            "influenceBounds": {
+              "minX": 216,
+              "minY": 458,
+              "maxX": 394,
+              "maxY": 621
+            },
+            "fields": [
+              {
+                "x": 269.736327663064,
+                "y": 502.2551799416542,
+                "rx": 29.810789765016953,
+                "ry": 20.53632183812279
+              },
+              {
+                "x": 341.97051921486855,
+                "y": 510.886406570673,
+                "rx": 28.594537442146212,
+                "ry": 19.698459126811834
+              },
+              {
+                "x": 304.57137897610664,
+                "y": 557.720027923584,
+                "rx": 35.444326692819594,
+                "ry": 40.0334654211998
+              }
+            ],
+            "maxShift": 21.266596015691757
+          },
+          {
+            "id": "face-2",
+            "active": false,
+            "protectedBounds": {
+              "minX": 499,
+              "minY": 434,
+              "maxX": 700,
+              "maxY": 644
+            },
+            "displayBounds": {
+              "id": "face-2",
+              "x": 0.556659996509552,
+              "y": 0.6420171856880188,
+              "width": 0.22078865766525269,
+              "height": 0.30413568019866943
+            },
+            "controls": {
+              "slim": 0,
+              "eyes": 0,
+              "nose": 0,
+              "jaw": 0
+            },
+            "writeBounds": null,
+            "readBounds": null,
+            "influenceBounds": null
+          },
+          {
+            "id": "face-3",
+            "active": true,
+            "protectedBounds": {
+              "minX": 356,
+              "minY": 114,
+              "maxX": 545,
+              "maxY": 325
+            },
+            "displayBounds": {
+              "id": "face-3",
+              "x": 0.39778581261634827,
+              "y": 0.1707974076271057,
+              "width": 0.2067684829235077,
+              "height": 0.30520230531692505
+            },
+            "controls": {
+              "slim": 0,
+              "eyes": 24,
+              "nose": 15,
+              "jaw": 0
+            },
+            "writeBounds": {
+              "minX": 366,
+              "minY": 156,
+              "maxX": 516,
+              "maxY": 267
+            },
+            "readBounds": {
+              "minX": 343,
+              "minY": 133,
+              "maxX": 539,
+              "maxY": 290
+            },
+            "influenceBounds": {
+              "minX": 343,
+              "minY": 133,
+              "maxX": 539,
+              "maxY": 290
+            },
+            "fields": [
+              {
+                "x": 398.3265962898731,
+                "y": 181.23999553918839,
+                "rx": 32.2055473142788,
+                "ry": 22.186043705392066
+              },
+              {
+                "x": 480.91460049152374,
+                "y": 180.83907420933247,
+                "rx": 34.93159583629466,
+                "ry": 24.063988242780766
+              },
+              {
+                "x": 431.5822824239731,
+                "y": 224.74359720945358,
+                "rx": 36.23535291552544,
+                "ry": 41.44647306203842
+              }
+            ],
+            "maxShift": 21.741211749315262
+          },
+          {
+            "id": "face-4",
+            "active": false,
+            "protectedBounds": {
+              "minX": 64,
+              "minY": 114,
+              "maxX": 240,
+              "maxY": 320
+            },
+            "displayBounds": {
+              "id": "face-4",
+              "x": 0.07304812222719193,
+              "y": 0.169367715716362,
+              "width": 0.1922144517302513,
+              "height": 0.30036841332912445
+            },
+            "controls": {
+              "slim": 0,
+              "eyes": 0,
+              "nose": 0,
+              "jaw": 0
+            },
+            "writeBounds": null,
+            "readBounds": null,
+            "influenceBounds": null
+          },
+          {
+            "id": "face-5",
+            "active": true,
+            "protectedBounds": {
+              "minX": 654,
+              "minY": 113,
+              "maxX": 834,
+              "maxY": 324
+            },
+            "displayBounds": {
+              "id": "face-5",
+              "x": 0.7295666337013245,
+              "y": 0.16879311203956604,
+              "width": 0.19602113962173462,
+              "height": 0.30673500895500183
+            },
+            "controls": {
+              "slim": 0,
+              "eyes": 34,
+              "nose": 15,
+              "jaw": 0
+            },
+            "writeBounds": {
+              "minX": 673,
+              "minY": 156,
+              "maxX": 808,
+              "maxY": 274
+            },
+            "readBounds": {
+              "minX": 650,
+              "minY": 133,
+              "maxX": 831,
+              "maxY": 297
+            },
+            "influenceBounds": {
+              "minX": 650,
+              "minY": 133,
+              "maxX": 831,
+              "maxY": 297
+            },
+            "fields": [
+              {
+                "x": 702.5697429478168,
+                "y": 179.60873897373676,
+                "rx": 28.924894565809122,
+                "ry": 19.926038478668506
+              },
+              {
+                "x": 777.680287539959,
+                "y": 176.55863067507744,
+                "rx": 29.826553696916317,
+                "ry": 20.547181435653464
+              },
+              {
+                "x": 740.0590928196907,
+                "y": 231.7322251200676,
+                "rx": 35.24460090398789,
+                "ry": 41.65461421608925
+              }
+            ],
+            "maxShift": 21.14676054239273
+          }
+        ],
+        "resources": {
+          "pixels": 612000,
+          "workPixels": 612000,
+          "activeFaces": 3,
+          "retainedOutputBytes": 2448000,
+          "maxConcurrentEngineOutputBytes": 2448000,
+          "engineTemporaryBytes": 0,
+          "extraPeakBytes": 4896000,
+          "estimatedPeakExtraBytes": 4896000,
+          "cumulativeTypedArrayBytes": 7344000,
+          "workUnits": 6120000,
+          "estimatedWorkUnits": 6120000,
+          "staticEngineTableBytes": 17412,
+          "excludes": "source, canvas/native/GPU/history copies, JS objects, VM overhead and delayed collection between calls; not a measured real-device peak"
+        },
+        "noOp": false,
+        "desktopLimits": {
+          "maxPixels": 16000000,
+          "maxEdge": 16384,
+          "maxExtraBytes": 268435456,
+          "maxWorkUnits": 512000000,
+          "maxCumulativeTypedArrayBytes": 536870912,
+          "maxNoOpPixels": 64000000
+        }
+      }
+    },
+    {
+      "count": 5,
+      "phase": "one-active-beauty",
+      "selectedBatchLocalIds": [
+        "face-1"
+      ],
+      "protectedInactivePixels": 157913,
+      "inputSha256": "f9c42742603f203977756fb40e7b133c46c17843601c5c7ee8ebc9ae9accab74",
+      "outputSha256": "a3ad2a026df1efbae8d0fce7adb2e1d3eba9a257cc01cd7d4183b17b70052962"
+    }
+  ],
+  "hashes": {
+    "src/portrait-people.cjs": "0de2c158f3a23c6e4de8326e7474ad809e02d41ccc2931a5ccfba76505a02b3a",
+    "src/portrait-people-desktop.cjs": "e7387a6cc1634640fa4a58a5c681c033dc3f1a29b75222921a23790a9e0b49fc",
+    "src/project-document.cjs": "6c4773623917ce99333c1aa811f3fb43d0411015764d3ae2dfea602dff09e977",
+    "src/pixel-worker.js": "4faae071d679352158a9d3c9a482aa0694e2419d734574fb2ccf5c08bf199634",
+    "export-render-core.cjs": "e0b7c8137d615a7565b40033088b9bdfcc22a095616f8f3d1d35a0be5635a9f5",
+    "export-render-worker.cjs": "3af6947f01bd4898069eec53e0885cfe3613266169e2e48b243e08613d350913",
+    "src/app.js": "b7859415b99658fe651906e0126ed82e802fe010c09aa08ff03f79506edaa0f6"
+  },
+  "passed": true
+}

@@ -1,0 +1,28 @@
+{
+  "verifiedAt": "2026-10-22T21:16:31.576Z",
+  "node": "v24.19.0",
+  "focusedTests": {
+    "passed": 83,
+    "failed": 0
+  },
+  "mutationControls": {
+    "expectedFailureVariants": 4,
+    "allDetected": true
+  },
+  "initialRegression": {
+    "passed": 187,
+    "failed": 3,
+    "reason": "Stale pre-v17 assertions in image-asset-project.test.cjs and redaction-layers.test.cjs; implementation owner notified."
+  },
+  "sha256": {
+    "src/perspective.cjs": "3a3b57ea8da4ce4a7c99b180a454e9f00a4242a0460621d267ad5487fbe66557",
+    "src/project-document.cjs": "1e573f2e1f2083616d550004f0985d87715de290c22a8ead971a70ba533e835c",
+    "src/redaction-layers.cjs": "15c6cbf422283952fe991c38930c8785c32cc60fcafe544d0416120a2db038e8",
+    "src/paint-layers.cjs": "39e4e61af2aaa3c950c5b038347e3f0e3941c4b3fb7782241657562fea342742",
+    "tests/perspective-project.test.cjs": "cc4dfbe9947ed3eed77733c001951b2d1dee9efb6b1817478af279dbd4d56ee9",
+    "tests/perspective-selection.test.cjs": "06546a95f90c5f3a852983a0c51e6d91ba092a0b7de29331a8f21a6e914f455c",
+    "quality/perspective-qa/project-v16-historical.mintproj": "b14b4bf87e6528a702a4096237770fa9270dc3b45511a31559a622671a2130f5",
+    "quality/perspective-qa/project-build-v16-fixture.cjs": "66de0696614d6712bdbd806af214a44d8f165f23d37b29668a9ae8a8a1e04657",
+    "quality/perspective-qa/project-selection-mutation-controls.cjs": "1beae41c97218d6740e0a6d1fd6efa8879a4e295c6c8999323adcd74e58a8fa0"
+  }
+}

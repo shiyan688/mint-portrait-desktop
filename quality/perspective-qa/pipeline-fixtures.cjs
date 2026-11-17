@@ -1,0 +1,20 @@
+'use strict';
+// Synthetic fixture generator only. Does not read photographs or access a network.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),sharp=require('sharp');
+const root=path.resolve(__dirname,'../..'),C=require(path.join(root,'export-render-core.cjs')),P=require(path.join(root,'src/perspective.cjs')),G=require(path.join(root,'src/geometry.cjs')),S=require(path.join(root,'src/straighten.cjs')),Padding=require(path.join(root,'src/canvas-padding.cjs')),Project=require(path.join(root,'src/project-document.cjs')),{createExportRenderer}=require(path.join(root,'export-renderer.cjs'));
+const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
+async function encode(im){return sharp(Buffer.from(im.data),{raw:{width:im.width,height:im.height,channels:4}}).png().toBuffer();}
+(async()=>{
+ const width=128,height=96,data=new Uint8ClampedArray(width*height*4);
+ for(let y=0;y<height;y++)for(let x=0;x<width;x++){const i=(y*width+x)*4,grid=x%16<2||y%12<2,alpha=(x+y)%19===0?0:x<5||y<5?130:255;data.set(grid?[247,219,46,alpha]:[30+x*1.4,20+y*2,220-(x+y)/2,alpha],i);}
+ const source={width,height,data},sourceBytes=await encode(source),settings={...structuredClone(Project.DEFAULT_SETTINGS),framing:{...G.defaults(),quarterTurns:1,flipX:true},straighten:{version:1,angle:13,mode:'expand'},perspective:{version:1,quad:[{x:.1,y:.2},{x:.7,y:.1},{x:.8,y:.7},{x:.2,y:.8}],outputFraction:{width:.8,height:.7}},canvasPadding:{...Padding.defaults(),left:.15,top:.1,color:'#234953',opacity:.8}};
+ const frame=G.apply(source,settings.framing),prePerspective=S.apply(frame,settings.straighten),photo=P.apply(prePerspective,settings.perspective),composition=Padding.apply(photo,settings.canvasPadding),wrong= P.apply(Padding.apply(prePerspective,settings.canvasPadding),settings.perspective);
+ const files={};for(const [name,im]of Object.entries({'pipeline-source':source,'pipeline-post-straighten':prePerspective,'pipeline-perspective-photo':photo,'pipeline-composition':composition,'pipeline-wrong-padding-first':wrong})){const bytes=await encode(im),file=name+'.png';fs.writeFileSync(path.join(__dirname,file),bytes);files[file]={width:im.width,height:im.height,sha256:hash(bytes),rgbaSha256:hash(im.data)};}
+ const service=createExportRenderer();let result;try{result=await service.render({requestId:'perspective-pipeline-fixture',sourceRevision:'synthetic:perspective-grid',bytes:new Uint8Array(sourceBytes),settings,analysis:{sourceRevision:'synthetic:perspective-grid',landmarks:[]},mode:'original',format:'png',quality:1,outputSize:{version:1,mode:'long-edge',longEdge:79}});}finally{service.dispose();}
+ fs.writeFileSync(path.join(__dirname,'pipeline-native-final.png'),result.bytes);files['pipeline-native-final.png']={width:result.width,height:result.height,sha256:hash(result.bytes)};
+ const independentDimensions={postStraighten:{width:Math.ceil(Math.cos(13*Math.PI/180)*height+Math.sin(13*Math.PI/180)*width),height:Math.ceil(Math.sin(13*Math.PI/180)*height+Math.cos(13*Math.PI/180)*width)}};
+ independentDimensions.perspective={width:Math.max(1,Math.round(independentDimensions.postStraighten.width*.8)),height:Math.max(1,Math.round(independentDimensions.postStraighten.height*.7))};
+ if(independentDimensions.perspective.width!==photo.width||independentDimensions.perspective.height!==photo.height)throw Error('Independent dimension oracle mismatch');
+ const report={schemaVersion:1,scope:'Synthetic local Node/VM/Sharp fixtures; not actual browser, Electron UI, Windows, GPU or device acceptance',coreSha256:hash(fs.readFileSync(path.join(root,'src/perspective.cjs'))),settings,independentDimensions,perspectiveReceipt:result.perspectiveReceipt,details:result.details,files};
+ fs.writeFileSync(path.join(__dirname,'pipeline-manifest.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({files:Object.keys(files),perspectiveReceipt:result.perspectiveReceipt,final:{width:result.width,height:result.height}}));
+})().catch(e=>{console.error(e);process.exitCode=1;});

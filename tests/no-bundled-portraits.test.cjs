@@ -1,0 +1,4 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
+test('development app has no legacy NASA portrait entry or fetch route',()=>{const html=fs.readFileSync(require.resolve('../src/index.html'),'utf8'),app=fs.readFileSync(require.resolve('../src/app.js'),'utf8');assert.doesNotMatch(html,/id="demoBtn"|演示图：NASA/);assert.doesNotMatch(app,/fetch\(['"]\.\.\/assets\/demo\.png|\$\('demoBtn'\)/);assert.match(html,/id="welcomeImport"/);});
+test('packaging explicitly excludes legacy demo raster and verifies it absent',()=>{const pack=fs.readFileSync(require.resolve('../tools/package-win.cjs'),'utf8'),verify=fs.readFileSync(require.resolve('../tools/verify-package.cjs'),'utf8');assert.match(pack,/fs\.rm\(path\.join\(stage,'assets\/demo\.png'\)/);assert.match(verify,/name==='\/assets\/demo\.png'/);});

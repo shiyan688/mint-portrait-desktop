@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>薄荷人像 · 桌面修图工作台</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="ui-shell.css">
+</head>
+<body>
+<svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 15v5h16v-5"/></symbol>
+  <symbol id="i-export" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M4 15v5h16v-5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.3 6.7L21 12l-6.7 2.3L12 21l-2.3-6.7L3 12l6.7-2.3Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-7 5 8"/></symbol>
+  <symbol id="i-undo" viewBox="0 0 24 24"><path d="m9 5-5 5 5 5M4 10h10a6 6 0 0 1 0 12" transform="translate(0 -2)"/></symbol>
+  <symbol id="i-redo" viewBox="0 0 24 24"><path d="m15 5 5 5-5 5m5-5H10a6 6 0 0 0 0 12" transform="translate(0 -2)"/></symbol>
+  <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></symbol>
+  <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-compare" viewBox="0 0 24 24"><path d="M12 2v20M9 5H4v14h5m6 0h5V5h-5"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V5a1.5 1.5 0 0 1 3 0v6-7a1.5 1.5 0 0 1 3 0v7-6a1.5 1.5 0 0 1 3 0v7-3a1.5 1.5 0 0 1 3 0v6c0 5-3 7-7 7-3 0-4-1-6-4l-3-5a1.5 1.5 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-brush" viewBox="0 0 24 24"><path d="m10 13 9-10 3 3-10 9M11 15c2 6-5 7-8 5 4-1 0-6 5-6Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v13h5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+  <symbol id="i-face" viewBox="0 0 24 24"><path d="M7 3H3v4m14-4h4v4M3 17v4h4m14-4v4h-4M8 9h.01M16 9h.01M8 15q4 4 8 0"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h8m4 0h4M4 12h3m4 0h9M4 18h10m4 0h2"/><circle cx="14" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="16" cy="18" r="2"/></symbol>
+</defs></svg>
+<div id="app" class="app">
+  <header class="app-header">
+    <div class="brand"><div class="brand-mark"><i></i><i></i><i></i><i></i></div><div><strong>薄荷人像</strong><span>MINT PORTRAIT</span></div><b class="build-tag">DESKTOP</b></div>
+    <div class="header-session"><span class="session-dot"></span><span id="sessionTitle">人像修图工作台</span></div>
+    <div class="header-actions"><span class="privacy-label"><svg><use href="#i-lock"/></svg>照片仅在本机处理</span><button class="button secondary" id="backendBtn">模型与设备</button><button class="button secondary" id="importBtn"><svg><use href="#i-plus"/></svg>导入照片</button><button class="button primary" id="exportBtn" disabled><svg><use href="#i-export"/></svg>导出照片</button></div>
+  </header>
+  <main class="workspace">
+    <aside class="left-panel">
+      <div class="library-title"><svg><use href="#i-grid"/></svg><span>我的工作区</span><span id="photoCount" class="count-badge">0</span></div>
+      <div class="section-title">风格预设 <span>PRESETS</span></div>
+      <div id="presets" class="presets"></div>
+      <details id="namedPresets" class="named-presets"><summary>我的调整预设 <span>LOCAL</span></summary>
+        <div class="named-presets-body">
+          <label for="namedPresetList">本机预设</label><select id="namedPresetList" disabled><option value="">选择已保存的预设</option></select>
+          <label for="namedPresetName">暂存配方名称</label><input id="namedPresetName" type="text" maxlength="96" autocomplete="off" placeholder="1–48 个字符" disabled>
+          <div class="named-preset-actions"><button id="captureNamedPreset" type="button" class="button secondary" disabled>读取当前参数</button><button id="clearNamedPreset" type="button" class="button secondary" disabled>清除暂存</button></div>
+          <p id="namedPresetDraft" class="control-note"></p>
+          <div class="named-preset-actions"><button id="saveNamedPreset" type="button" class="button secondary" disabled>另存新预设</button><button id="updateNamedPreset" type="button" class="button secondary" disabled>更新选中预设</button></div>
+          <div class="named-preset-actions"><button id="importNamedPreset" type="button" class="button secondary" disabled>导入配方</button><button id="exportNamedPreset" type="button" class="button secondary" disabled>导出选中</button></div>
+          <label for="namedPresetScope">明确应用到</label><select id="namedPresetScope" disabled><option value="current">当前照片</option><option value="selected">选中的照片</option><option value="all">全部照片（包括筛选隐藏）</option></select>
+          <label for="namedPresetMode">应用内容</label><select id="namedPresetMode" disabled><option value="full">调色 + 人像修饰</option><option value="color">仅调色 · 保留原有修肤</option></select>
+          <button id="applyNamedPreset" type="button" class="button primary" disabled>应用暂存配方</button><button id="cancelNamedPreset" type="button" class="button secondary" hidden>取消本次应用</button>
+          <p id="namedPresetStatus" class="control-note" role="status" aria-live="polite"></p>
+          <details class="named-preset-library"><summary>管理与恢复</summary><button id="removeNamedPreset" type="button" class="button secondary" disabled>移除选中（可恢复）</button><select id="namedPresetTrash" aria-label="可恢复的预设" disabled><option value="">已移除（0/20）</option></select><div class="named-preset-actions"><button id="restoreNamedPreset" type="button" class="button secondary" disabled>恢复选中</button><button id="reloadNamedPresets" type="button" class="button secondary" disabled>重新读取</button></div><button id="recoverNamedPresets" type="button" class="button secondary" hidden disabled>恢复上次备份…</button></details>
+          <p class="control-note">仅保存基础调色、明暗/白平衡、色阶、曲线/HSL 与普通人像修饰，不含照片、路径、蒙版、笔触、构图或塑形。保存预设不等于保存项目。</p>
+        </div>
+      </details>
+      <div class="preset-note">从一个好看的起点开始，<br>再调出属于你的细节。</div>
+      <div class="left-spacer"></div>
+      <div class="session-card"><div class="session-card-title"><span class="status-dot"></span>本地项目</div><p>保存项目可保留原图、调整、<br>蒙版缓存与撤销记录。</p><div class="project-actions"><button class="button secondary" id="openProjectBtn" title="打开项目 Ctrl+Shift+O">打开项目</button><button class="button secondary" id="saveProjectBtn" title="保存项目 Ctrl+S" disabled>保存项目</button></div><button class="text-button" id="recoveryBtn" disabled>本地恢复草稿…</button><p id="recoverySummary" class="project-status" role="status">本地恢复默认关闭</p><p id="projectStatus" class="project-status" role="status">尚未保存项目</p><button class="text-button" id="helpBtn"><svg><use href="#i-info"/></svg>使用指南与快捷键</button></div>
+      <div class="version">0.2.9 <span>· UI 开发预览</span></div>
+    </aside>
+    <section class="editor-panel">
+      <div class="canvas-toolbar">
+        <div class="toolbar-left"><button class="icon-button" id="undoBtn" title="撤销 Ctrl+Z" aria-label="撤销" disabled><svg><use href="#i-undo"/></svg></button><button class="icon-button" id="redoBtn" title="重做 Ctrl+Shift+Z" aria-label="重做" disabled><svg><use href="#i-redo"/></svg></button><span class="toolbar-divider"></span><span id="activeFileName" class="active-file-name">尚未导入照片</span></div>
+        <div class="view-switch"><button id="editView" class="active" aria-pressed="true">编辑视图</button><button id="compareView" aria-pressed="false" disabled><svg><use href="#i-compare"/></svg>原图 / 调整后</button><button id="referenceView" aria-pressed="false" disabled>参考对比</button></div>
+      </div>
+      <div class="reference-toolbar"><button id="pinReference" class="text-button" disabled>固定当前处理预览为参考</button><button id="replaceReference" class="text-button" hidden disabled>替换参考</button><button id="clearReference" class="text-button" disabled>清除参考</button><span id="referenceStatus" role="status">仅本次会话；参考不会自动刷新，不是第二张照片实时处理。</span></div>
+      <div id="modelBanner" class="model-banner" role="status"><span class="small-spinner"></span><span id="modelMessage">正在加载基线人脸定位模型…</span></div>
+      <div id="viewport" class="viewport" tabindex="0" aria-label="照片预览，滚轮缩放，拖拽平移">
+        <div class="stage-grid"></div>
+        <div id="welcome" class="welcome">
+          <div class="welcome-orbit"><div class="orbit-line orbit-one"></div><div class="orbit-line orbit-two"></div><div class="welcome-photo"><svg><use href="#i-photo"/></svg><span class="welcome-spark"><svg><use href="#i-spark"/></svg></span></div><span class="orbit-dot"></span></div>
+          <div class="eyebrow">YOUR PORTRAIT, REFINED.</div><h1>让每一张人像，自然出彩。</h1><p>细腻肤质、自然塑形、纯净背景。<br>专注人像的桌面修图，从这里开始。</p>
+          <button class="button primary welcome-import" id="welcomeImport"><svg><use href="#i-plus"/></svg>选择照片开始</button>
+          <span class="drop-hint">或将照片拖到这里 · JPG / PNG / WebP</span>
+        </div>
+        <div id="imageSurface" class="image-surface" hidden><canvas id="previewCanvas" aria-label="编辑后人像"></canvas><div id="cropOverlay" class="crop-overlay" hidden aria-hidden="true"><span></span><span></span></div><div id="compareDivider" class="compare-divider" hidden><span><i>‹</i><i>›</i></span></div><div class="image-tag before-tag" id="beforeTag" hidden>原图</div><div class="image-tag after-tag" id="afterTag" hidden>调整后</div></div>
+        <section id="referenceCompare" class="reference-compare" hidden aria-label="冻结参考与当前照片对比">
+          <div class="reference-column"><header><strong>冻结参考</strong><span id="referenceMetadata"></span></header><div id="referencePane" class="reference-pane" tabindex="0" aria-label="冻结参考，联动缩放和平移"><div id="referencePixels" class="reference-pixels"></div></div></div>
+          <div class="reference-column"><header><strong>当前照片</strong><span id="referenceCurrentName"></span></header><div id="referenceCurrentPane" class="reference-pane" tabindex="0" aria-label="当前照片，联动缩放和平移"><div id="referenceCurrentPixels" class="reference-pixels"></div><p id="referenceCurrentStatus" class="reference-current-status" role="status"></p></div></div>
+          <footer>联动为各自适合画布基础上的归一化位置与缩放，不是人脸配准。<button id="referenceFit" class="text-button">适合两侧</button><span id="referenceZoom">适合 ×1</span></footer>
+        </section>
+        <div id="canvasBusy" class="canvas-busy" hidden><span class="small-spinner"></span><span id="canvasBusyText">正在处理…</span></div>
+        <div id="brushCursor" class="brush-cursor" hidden></div>
+        <div id="diagnosticBadge" class="diagnostic-badge" hidden>蒙版检查 · 原图坐标 · 叠加颜色不导出</div><div id="originalBadge" class="original-badge" hidden>原图 · 松开空格返回</div>
+        <div id="dropOverlay" class="drop-overlay" hidden><svg><use href="#i-import"/></svg><strong>松开鼠标，导入照片</strong><span>最多 100 张 · 支持 JPG / PNG / WebP</span></div>
+        <div class="empty-corner">MINT / PORTRAIT STUDIO</div>
+      </div>
+      <div class="canvas-bottom-bar"><div class="canvas-tools"><button class="icon-button active" id="panTool" title="平移照片" aria-label="平移照片"><svg><use href="#i-hand"/></svg></button><button class="icon-button" id="brushTool" title="局部点修：点击瑕疵位置" aria-label="局部点修" disabled><svg><use href="#i-brush"/></svg></button><span id="toolHint">拖拽平移 · 滚轮缩放 · 按住空格查看原图</span></div><div class="zoom-tools"><button class="icon-button" id="zoomOut" aria-label="缩小" disabled><svg><use href="#i-minus"/></svg></button><button id="zoomLabel" class="zoom-label" title="点击恢复适合画布" disabled>适合</button><button class="icon-button" id="zoomIn" aria-label="放大" disabled><svg><use href="#i-plus"/></svg></button><span class="toolbar-divider"></span><button class="icon-button" id="fitBtn" title="适合画布 (F)" aria-label="适合画布" disabled><svg><use href="#i-fit"/></svg></button></div></div>
+      <div class="preview-pixel-inspector"><label><input id="previewPixelToggle" type="checkbox" aria-controls="previewPixelDetails" aria-describedby="previewPixelHelp">检查当前结果像素</label><div id="previewPixelDetails" hidden><p id="previewPixelHelp">8-bit sRGB PREVIEW · 0–255 码值 · x/y 从 0 开始，仅对应处理预览；不是原图采样或 RAW 过曝判断。</p><p id="previewPixelReadout" role="status" aria-live="off"></p></div></div>
+      <div class="filmstrip-heading"><div><span>照片队列</span><span id="queueCount" class="muted">0 张照片</span></div><div class="queue-actions"><label><input type="checkbox" id="selectAll" disabled>全选全部</label><button class="text-button" id="copyBtn" disabled><svg><use href="#i-copy"/></svg>同步参数</button><button class="text-button muted" id="removeBtn" disabled>移除选中</button></div></div>
+      <div class="review-overview"><span id="reviewCounts" aria-live="polite">可见 0/0 · 全局已选 0 · 隐藏已选 0 · 拒绝已选 0</span><div><button id="reviewPrevious" class="text-button" type="button" disabled aria-label="上一张可见照片">‹ 上一张</button><button id="reviewNext" class="text-button" type="button" disabled aria-label="下一张可见照片">下一张 ›</button></div></div>
+      <p id="reviewHiddenCurrent" class="review-hidden-notice" hidden></p>
+      <details id="photoReview" class="photo-review"><summary>选片与筛选 <span id="reviewCurrent">导入照片后可评级与标记</span></summary><div class="review-content">
+        <div class="review-fields"><label>标记范围<select id="reviewScope"><option value="current">当前照片</option><option value="selected">全局选中照片</option></select></label><label>评级<select id="reviewRating"><option value="mixed" disabled>不同评级</option><option value="0">0 · 未评级</option><option value="1">1 星</option><option value="2">2 星</option><option value="3">3 星</option><option value="4">4 星</option><option value="5">5 星</option></select></label><label>标记<select id="reviewFlag"><option value="mixed" disabled>不同标记</option><option value="none">未标记</option><option value="pick">精选</option><option value="reject">拒绝</option></select></label><label>颜色<select id="reviewLabel"><option value="mixed" disabled>不同颜色</option><option value="none">无色</option><option value="red">红色</option><option value="yellow">黄色</option><option value="green">绿色</option><option value="blue">蓝色</option><option value="purple">紫色</option></select></label></div>
+        <div class="review-history"><button id="reviewUndo" class="text-button" type="button" disabled>撤销选片标记</button><button id="reviewRedo" class="text-button" type="button" disabled>重做选片标记</button><span>不影响调色 / 修图撤销</span></div>
+        <p id="reviewScopeNotice" class="review-note"></p>
+        <div class="review-fields review-filters"><label>最低评级<select id="reviewMin"><option value="0">0 · 未评级</option><option value="1">1 星</option><option value="2">2 星</option><option value="3">3 星</option><option value="4">4 星</option><option value="5">5 星</option></select></label><label>最高评级<select id="reviewMax"><option value="0">0 · 未评级</option><option value="1">1 星</option><option value="2">2 星</option><option value="3">3 星</option><option value="4">4 星</option><option value="5" selected>5 星</option></select></label><label>筛选标记<select id="reviewFilterFlag"><option value="all">全部标记</option><option value="none">未标记</option><option value="pick">精选</option><option value="reject">拒绝</option></select></label><label>筛选颜色<select id="reviewFilterLabel"><option value="all">全部颜色</option><option value="none">无色</option><option value="red">红色</option><option value="yellow">黄色</option><option value="green">绿色</option><option value="blue">蓝色</option><option value="purple">紫色</option></select></label><label>排序<select id="reviewSort"><option value="import">导入顺序</option><option value="name">文件名</option><option value="rating-desc">评级从高到低</option><option value="rating-asc">评级从低到高</option></select></label></div>
+        <div class="review-actions"><label><input id="reviewHideRejected" type="checkbox">隐藏拒绝照片</label><button id="resetReviewFilters" class="text-button" type="button">清除筛选 / 排序</button><button id="selectVisible" class="text-button" type="button" title="用当前可见照片替换全局选择，隐藏照片将取消选择">仅选可见（替换选择）</button></div>
+        <p class="review-note">仅你手动评级，不是 AI 评分或自动剔片。筛选不取消选择；全部范围始终包含隐藏照片。0–5 评级，P 精选 / U 未标记 / X 拒绝，仅操作当前照片，不自动跳转。← / → 浏览可见照片。</p>
+      </div></details>
+      <div id="filmstrip" class="filmstrip"><button class="add-photo-card" id="stripImport"><svg><use href="#i-plus"/></svg><span>添加照片</span></button><div id="filmstripFilteredEmpty" class="filmstrip-empty" hidden>筛选无结果。</div><div id="filmstripEmpty" class="filmstrip-empty">照片会在这里排成一列，轻松完成一整组修图。</div></div>
+    </section>
+    <aside class="right-panel">
+      <div class="adjustment-header"><div><svg><use href="#i-sliders"/></svg><strong>调整</strong></div><button class="text-button" id="resetBtn" disabled><svg><use href="#i-reset"/></svg>重置</button></div>
+      <div class="face-status" id="faceStatus"><svg><use href="#i-face"/></svg><div><strong id="faceStatusTitle">等待导入人像</strong><span id="faceStatusDetail">人脸与人物分割均在本地运行</span></div><span class="face-dot" id="faceDot"></span></div>
+      <div id="parameters" class="parameters">
+        <details id="framingSection" class="parameter-section framing-section"><summary><span>裁剪与旋转</span><span class="section-index">FRAME</span></summary><div class="section-content">
+          <p id="framingStatus" class="control-note" role="status">导入照片后可用；默认保留完整原图。</p>
+          <div class="framing-actions"><button id="rotateLeft" class="button secondary" type="button" disabled>↶ 左转 90°</button><button id="rotateRight" class="button secondary" type="button" disabled>↷ 右转 90°</button><button id="flipHorizontal" class="button secondary" type="button" disabled>↔ 水平翻转</button><button id="flipVertical" class="button secondary" type="button" disabled>↕ 垂直翻转</button></div>
+          <div class="framing-crop-heading"><button id="startCrop" class="button secondary" type="button" disabled>调整裁剪</button><button id="resetFraming" class="text-button" type="button" disabled>重置构图</button></div>
+          <p class="control-note">拖动框选当前画面，再点击应用。以下坐标始终以完整原图为准，单位为像素；不会重采样。</p>
+          <div class="crop-coordinate-grid"><label for="cropX">左 X<input id="cropX" type="number" min="0" step="1" value="0" disabled></label><label for="cropY">上 Y<input id="cropY" type="number" min="0" step="1" value="0" disabled></label><label for="cropWidth">宽<input id="cropWidth" type="number" min="1" step="1" value="1" disabled></label><label for="cropHeight">高<input id="cropHeight" type="number" min="1" step="1" value="1" disabled></label></div>
+          <p id="cropDraftStatus" class="control-note crop-draft-status" role="status" hidden>裁剪草稿未保存。</p><div id="cropDraftActions" class="framing-actions" hidden><button id="cancelCrop" class="button secondary" type="button" disabled>取消 · Esc</button><button id="applyCrop" class="button primary" type="button" disabled>应用裁剪</button></div>
+          <p id="framingDimensions" class="control-note framing-dimensions" role="status"></p><p class="control-note">每次应用可撤销。对比与空格保留同一构图；选区、推形、修复、点修和蒙版检查会显示完整原图坐标。预设与跨照片同步不覆盖各照片的构图。</p>
+        </div></details>
+        <details id="straightenSection" class="parameter-section straighten-section"><summary><span>任意角度调平</span><span class="section-index">ANGLE</span></summary><div class="section-content">
+          <p id="straightenStatus" class="control-note" role="status">导入照片后可用。0°保持原样。</p>
+          <div class="straighten-fields"><label for="straightenAngle">顺时针角度 °<input id="straightenAngle" type="number" min="-180" max="180" step="any" value="0" disabled></label><label for="straightenMode">画布处理<select id="straightenMode" disabled><option value="expand">扩展 · 保留透明角</option><option value="crop">中心裁切 · 去除透明角</option></select></label></div>
+          <div class="padding-actions"><button id="cancelStraighten" type="button" class="button secondary" disabled>取消输入</button><button id="applyStraighten" type="button" class="button primary" disabled>应用调平</button><button id="resetStraighten" type="button" class="text-button" disabled>重置调平</button></div>
+          <p id="straightenDimensions" class="control-note framing-dimensions" role="status"></p>
+          <p class="control-note">顺序：裁剪/90°旋转/翻转 → 调平 → 留白 → 文字/绘画/遮盖。启用调平后，先重置此项才能再调整前面的构图。中心裁切可能移除较多内容，不会拉伸补齐。</p>
+          <p class="control-note">非90°倍数会重采样，极小角度也可能增加一行/列并软化细节；不是无损旋转。选区绘画/遮盖暂不能与非90°调平组合。PNG可保留透明角，JPEG填白；原文件、手工编辑坐标和撤销记录保留。</p>
+        </div></details>
+        <details id="perspectiveSection" class="parameter-section"><summary><span>四角透视矫正</span><span class="section-index">QUAD</span></summary><div class="section-content">
+          <p class="control-note">先裁剪/调平，再选四角。只变换照片；留白、贴图与文字位于最终画布。已有绑定绘画/遮盖不会自动移动或清除。</p><button id="startPerspective" class="button secondary" disabled>编辑四角</button>
+          <div id="perspectiveFields" hidden><label>画面点击设置<select id="perspectiveCorner" disabled><option value="0">左上角</option><option value="1">右上角</option><option value="2">右下角</option><option value="3">左下角</option></select></label><div class="perspective-row"><span>左上</span><label>X %<input id="perspective0x" type="number" min="0" max="100" step="any" disabled></label><label>Y %<input id="perspective0y" type="number" min="0" max="100" step="any" disabled></label></div><div class="perspective-row"><span>右上</span><label>X %<input id="perspective1x" type="number" min="0" max="100" step="any" disabled></label><label>Y %<input id="perspective1y" type="number" min="0" max="100" step="any" disabled></label></div><div class="perspective-row"><span>右下</span><label>X %<input id="perspective2x" type="number" min="0" max="100" step="any" disabled></label><label>Y %<input id="perspective2y" type="number" min="0" max="100" step="any" disabled></label></div><div class="perspective-row"><span>左下</span><label>X %<input id="perspective3x" type="number" min="0" max="100" step="any" disabled></label><label>Y %<input id="perspective3y" type="number" min="0" max="100" step="any" disabled></label></div><div class="perspective-row"><span>输出比例</span><label>宽 %<input id="perspectiveWidth" type="number" min="0.0001" max="100" step="any" disabled></label><label>高 %<input id="perspectiveHeight" type="number" min="0.0001" max="100" step="any" disabled></label></div><p class="control-note">按透视前完整画布的宽、高分别计算，不是四边形边长或真实物理尺寸。交叉、凹形或过度退化的四角会拒绝，不会自动排序。</p></div>
+          <div class="button-row"><button id="applyPerspective" class="button primary" disabled>应用透视</button><button id="cancelPerspective" class="button secondary" disabled>取消四角输入</button><button id="resetPerspective" class="button secondary" disabled>重置透视</button></div><p id="perspectiveStatus" class="control-note" role="status"></p><p id="perspectiveDimensions" class="control-note"></p><p class="control-note">一般四角变换会重采样，极端透视可能变软。不是无损校正、自动镜头模型或 AI 修复。最终图层的已捕获源选区目前不能用于透视后的绘画/遮盖。</p>
+        </div></details>
+        <details id="paddingSection" class="parameter-section padding-section"><summary><span>边框与留白</span><span class="section-index">CANVAS</span></summary><div class="section-content">
+          <p id="paddingStatus" class="control-note" role="status">导入照片后可用。默认不扩展画布。</p>
+          <div class="padding-grid"><label for="paddingTop">上边 %<input id="paddingTop" type="number" min="0" max="50" step="any" value="0" disabled></label><label for="paddingRight">右边 %<input id="paddingRight" type="number" min="0" max="50" step="any" value="0" disabled></label><label for="paddingBottom">下边 %<input id="paddingBottom" type="number" min="0" max="50" step="any" value="0" disabled></label><label for="paddingLeft">左边 %<input id="paddingLeft" type="number" min="0" max="50" step="any" value="0" disabled></label></div>
+          <div class="padding-style"><label for="paddingColor">填充颜色<input id="paddingColor" type="color" value="#ffffff" disabled></label><label for="paddingOpacity">不透明度 %<input id="paddingOpacity" type="number" min="0" max="100" step="any" value="100" disabled></label></div>
+          <p class="control-note">每边以裁剪/旋转/调平后画面的短边为基准，范围 0–50%，逐边四舍五入为整数像素。导出仅向外增加画布，不覆盖或拉伸原画面。显示预览仍缩至最长边 1280；原尺寸导出不受此预览缩放影响。</p>
+          <div class="padding-actions"><button id="cancelPadding" type="button" class="button secondary" disabled>取消输入</button><button id="applyPadding" type="button" class="button primary" disabled>应用留白</button><button id="resetPadding" type="button" class="text-button" disabled>移除留白</button></div>
+          <p id="paddingDimensions" class="control-note framing-dimensions" role="status"></p><p class="control-note">对比原图保持相同构图与留白。手工和蒙版工具暂不显示留白。跨片参数同步与便携预设不覆盖各片留白。PNG 可保留透明度；JPEG 在白底上合成。</p>
+        </div></details>
+        <details id="imageLayerSection" class="parameter-section image-layer-section"><summary><span>本地图片贴图</span><span class="section-index">4 LAYERS</span></summary><div class="section-content">
+          <button id="importImageLayer" class="button secondary" type="button" disabled>从本机导入图片层</button>
+          <div class="tone-select-row"><label for="imageLayerList">图层 · 后添加在上方</label><select id="imageLayerList" disabled></select></div>
+          <div class="text-layer-actions"><button id="imageLayerUp" class="text-button" type="button" disabled>上移</button><button id="imageLayerDown" class="text-button" type="button" disabled>下移</button><button id="removeImageLayer" class="text-button" type="button" disabled>移除图层</button></div>
+          <label class="text-content-label">名称<input id="imageLayerName" type="text" maxlength="96" value="本地图片" disabled></label>
+          <label><input id="imageLayerEnabled" type="checkbox" checked disabled> 显示这一层</label>
+          <div class="text-style-grid">
+            <label>中心X %<input id="imageLayerX" type="number" min="0" max="100" step="0.1" value="50" disabled></label><label>中心Y %<input id="imageLayerY" type="number" min="0" max="100" step="0.1" value="50" disabled></label>
+            <label>大小 %<input id="imageLayerSize" type="number" min="2" max="200" step="1" value="50" disabled></label><label>旋转 °<input id="imageLayerRotation" type="number" min="-180" max="180" step="1" value="0" disabled></label>
+            <label>不透明度 %<input id="imageLayerOpacity" type="number" min="0" max="100" step="1" value="100" disabled></label>
+          </div><div class="text-toggles"><label><input id="imageLayerFlipX" type="checkbox" disabled> 水平翻转</label><label><input id="imageLayerFlipY" type="checkbox" disabled> 垂直翻转</label></div>
+          <button id="placeImageLayer" class="button secondary" type="button" disabled>在画布点选中心</button>
+          <div class="text-apply-actions"><button id="cancelImageLayer" class="button secondary" type="button" disabled>取消输入 / 导入</button><button id="applyImageLayer" class="button primary" type="button" disabled>应用贴图</button></div>
+          <div class="tone-select-row"><label for="imageLayerBasisMode">处理/导出基准</label><select id="imageLayerBasisMode"><option value="original">原尺寸</option><option value="working">工作尺寸 · 明确缩小</option></select></div>
+          <p id="imageLayerStatus" class="control-note" role="status"></p><p id="imageLayerAssetInfo" class="control-note"></p>
+          <p class="control-note">JPEG / PNG / WebP，单帧、32 MiB以内、原输入24MP/8192边；在本机转换为最长1024像素、最多1MP的8位sRGB工作素材，不保留素材文件路径或原EXIF。缺少ICC时不猜测原色域，按解码器提供的sRGB通道处理；有ICC时显式转换。大小是素材长边占最终画布短边的比例，超出画布会裁切。</p>
+          <p class="control-note">裁剪、调平、留白之后叠加，文字/绘画/遮盖仍在其上方。贴图画布最多16,777,216像素/16384边，另有组合内存/计算预算；最终缩小不绕过这些限制。图层可重编与撤销，工作素材会嵌入工程及可选本地恢复草稿，不进入调色预设或跨片同步。分享工程仍会包含原图、素材和历史。</p>
+        </div></details>
+        <details id="textSection" class="parameter-section text-section"><summary><span>可编辑文字</span><span class="section-index">TYPE</span></summary><div class="section-content">
+          <p id="textStatus" class="control-note" role="status">导入照片后可用。</p>
+          <div class="text-layer-select"><label for="textLayerList">文字层</label><select id="textLayerList" disabled aria-label="选择文字层"></select><button id="addTextLayer" type="button" class="button secondary" disabled>新增文字</button></div>
+          <div class="text-layer-actions"><button id="textLayerDown" type="button" class="text-button" disabled>下移一层</button><button id="textLayerUp" type="button" class="text-button" disabled>上移一层</button><button id="removeTextLayer" type="button" class="text-button" disabled>删除本层</button><label><input id="textEnabled" type="checkbox" checked disabled>显示</label></div>
+          <label class="text-content-label" for="textContent">内容 · 最多500个字符、12行<textarea id="textContent" rows="3" maxlength="1000" placeholder="输入文字，支持多行" disabled></textarea></label>
+          <div class="text-style-grid"><label for="textFont">系统字体<select id="textFont" disabled><option value="sans">无衬线</option><option value="serif">衬线</option><option value="mono">等宽</option></select></label><label for="textAlign">对齐<select id="textAlign" disabled><option value="left">左对齐</option><option value="center" selected>居中</option><option value="right">右对齐</option></select></label><label for="textSize">字号 %短边<input id="textSize" type="number" min="1" max="50" step="any" value="8" disabled></label><label for="textWidth">文本框 %宽<input id="textWidth" type="number" min="5" max="100" step="any" value="90" disabled></label><label for="textX">中心 X %<input id="textX" type="number" min="0" max="100" step="any" value="50" disabled></label><label for="textY">中心 Y %<input id="textY" type="number" min="0" max="100" step="any" value="50" disabled></label><label for="textRotation">旋转 °<input id="textRotation" type="number" min="-180" max="180" step="any" value="0" disabled></label><label for="textLineHeight">行距倍数<input id="textLineHeight" type="number" min="1" max="2.5" step="any" value="1.25" disabled></label><label for="textColor">文字颜色<input id="textColor" type="color" value="#ffffff" disabled></label><label for="textOpacity">不透明度 %<input id="textOpacity" type="number" min="0" max="100" step="any" value="100" disabled></label><label for="textOutlineColor">描边颜色<input id="textOutlineColor" type="color" value="#000000" disabled></label><label for="textOutline">描边 %字号<input id="textOutline" type="number" min="0" max="15" step="any" value="0" disabled></label></div>
+          <div class="text-toggles"><label><input id="textBold" type="checkbox" checked disabled>粗体</label><label><input id="textItalic" type="checkbox" disabled>斜体</label><label><input id="textShadow" type="checkbox" disabled>轻阴影</label></div>
+          <button id="placeText" type="button" class="button secondary text-place-button" disabled>在画布点选位置</button>
+          <div class="text-apply-actions"><button id="cancelText" type="button" class="button secondary" disabled>取消输入</button><button id="applyText" type="button" class="button primary" disabled>应用文字</button></div>
+          <div class="tone-select-row"><label for="textBasisMode">排字/导出基准</label><select id="textBasisMode" disabled><option value="original">原尺寸</option><option value="working">工作尺寸 · 明确缩小</option></select></div>
+          <p id="textBasisNote" class="control-note" role="status"></p><p class="control-note">文字是裁剪、旋转、调平、留白之后的独立层，最多8层；更改构图会按最终画布重新定位。保存项目可再编辑，取消输入不改变照片。原图对比不含文字；修复/选区视图暂不显示文字。</p>
+          <p class="control-note">有文字时最终画布上限1600万像素/长边16384。仅使用本机系统字体，不下载字体；换电脑时字体与换行可能不同，切换输出尺寸会重新排字。文字不进入调色预设或跨片参数同步。</p>
+        </div></details>
+        <details id="colorSection" class="parameter-section" open><summary><span>基础调色</span><span class="section-index">01</span></summary><div class="section-content" id="colorControls"></div></details>
+        <details id="lightBalanceSection" class="parameter-section light-balance-section"><summary><span>明暗与白平衡</span><span class="section-index">LIGHT</span></summary><div class="section-content">
+          <p id="lightBalanceStatus" class="control-note" role="status">导入照片后可用；默认不改变图像。</p>
+          <div class="control"><div class="control-heading"><label for="shadowAmount">阴影</label><output id="shadowAmountValue" for="shadowAmount">0</output></div><input id="shadowAmount" type="range" min="-100" max="100" step="1" value="0" disabled></div>
+          <div class="control"><div class="control-heading"><label for="highlightAmount">高光</label><output id="highlightAmountValue" for="highlightAmount">0</output></div><input id="highlightAmount" type="range" min="-100" max="100" step="1" value="0" disabled></div>
+          <div class="light-balance-actions"><button id="pickWhiteBalance" class="button secondary" type="button" aria-pressed="false" disabled>中性区域吸管</button><button id="cancelWhiteBalance" class="text-button" type="button" hidden>取消取样 · Esc</button><button id="resetWhiteBalance" class="text-button" type="button" disabled>重置白平衡</button></div>
+          <p id="whiteBalanceGains" class="control-note light-balance-gains">R 1.000 · G 1.000 · B 1.000</p><button id="resetLightBalance" class="text-button" type="button" disabled>全部重置</button>
+          <p class="control-note">阴影/高光以平滑全局曲线调整，尽量保留线性RGB比例；超出色域时压缩亮度。强调整仍会明显改变反差与视觉饱和度，不是自然美颜默认，也不能找回纯白/纯黑里丢失的细节。白平衡取样时临时显示修肤、基础调色后的输入；后续明暗、色阶、曲线、局部和构图不参与取样。请选择本应中性的灰/白物体，不要选皮肤。过暗、过曝、透明或明显混色区域会被拒绝。</p>
+          <p class="control-note">线性光 RGB 增益，显示的是 8位 sRGB 缩小预览，不是 RAW 或开尔文色温测量。保存的是增益和明暗数值，不含取样位置或照片。</p>
+        </div></details>
+
+        <details id="levelsSection" class="parameter-section levels-section"><summary><span>色阶 Levels</span><span class="section-index">LEVELS</span></summary><div class="section-content">
+          <p id="levelsStatus" class="control-note" role="status">导入照片后可用；默认不改变图像。</p>
+          <div class="tone-select-row"><label for="levelsChannel">色阶通道</label><select id="levelsChannel" disabled><option value="rgb">RGB · 总体</option><option value="red">红色 R</option><option value="green">绿色 G</option><option value="blue">蓝色 B</option></select></div>
+          <div class="levels-controls">
+            <div class="control"><div class="control-label"><label for="levelsInputBlack">输入黑场</label><output id="levelsInputBlackValue" for="levelsInputBlack">0</output></div><input id="levelsInputBlack" type="range" min="0" max="254" step="1" value="0" aria-describedby="levelsEndpointNote" disabled></div>
+            <div class="control"><div class="control-label"><label for="levelsGamma">中间调 Gamma</label><output id="levelsGammaValue" for="levelsGamma">1</output></div><input id="levelsGamma" type="range" min="0.1" max="10" step="any" value="1" aria-describedby="levelsMethodNote" disabled></div>
+            <div class="control"><div class="control-label"><label for="levelsInputWhite">输入白场</label><output id="levelsInputWhiteValue" for="levelsInputWhite">255</output></div><input id="levelsInputWhite" type="range" min="1" max="255" step="1" value="255" aria-describedby="levelsEndpointNote" disabled></div>
+            <div class="control"><div class="control-label"><label for="levelsOutputBlack">输出黑场</label><output id="levelsOutputBlackValue" for="levelsOutputBlack">0</output></div><input id="levelsOutputBlack" type="range" min="0" max="255" step="1" value="0" aria-describedby="levelsEndpointNote" disabled></div>
+            <div class="control"><div class="control-label"><label for="levelsOutputWhite">输出白场</label><output id="levelsOutputWhiteValue" for="levelsOutputWhite">255</output></div><input id="levelsOutputWhite" type="range" min="0" max="255" step="1" value="255" aria-describedby="levelsEndpointNote" disabled></div>
+          </div>
+          <div class="control levels-strength"><div class="control-label"><label for="levelsStrength">色阶整体强度</label><output id="levelsStrengthValue" for="levelsStrength">100%</output></div><input id="levelsStrength" type="range" min="0" max="100" step="any" value="100" disabled></div>
+          <div class="tone-reset-row"><button id="resetLevelsChannel" class="text-button" type="button" disabled>重置此通道</button><button id="resetLevels" class="text-button" type="button" disabled>全部重置色阶</button></div>
+          <p id="levelsEndpointNote" class="control-note">端点为 0–255 整数。输入黑场必须小于白场；输出黑场可等于、但不能大于白场。不允许交叉，不会暗中交换端点。</p>
+          <p id="levelsMethodNote" class="control-note">传统 8位 sRGB 码值色阶，不是 RAW 恢复。Gamma &gt; 1 提亮中间调，&lt; 1 压暗。先基础调色，再明暗/白平衡、色阶，最后曲线/HSL；色阶先 RGB 总体再独立通道，整体强度只混合一次。原图不修改，可撤销。</p>
+        </div></details>
+        <details id="advancedToneSection" class="parameter-section advanced-tone-section"><summary><span>曲线与 HSL</span><span class="section-index">COLOR</span></summary><div class="section-content">
+          <p id="advancedToneStatus" class="control-note" role="status">导入照片后可用；默认不改变图像。</p>
+          <div class="tone-heading-row"><label class="learned-check"><input id="advancedToneEnabled" type="checkbox" checked disabled>启用高级调色</label><button id="resetAdvancedTone" class="text-button" type="button" disabled>全部重置</button></div>
+          <div class="control"><div class="control-label"><label for="advancedToneStrength">整体强度</label><output id="advancedToneStrengthValue" for="advancedToneStrength">100%</output></div><input id="advancedToneStrength" type="range" min="0" max="100" step="any" value="100" disabled></div>
+          <div class="tone-select-row"><label for="toneCurveChannel">曲线通道</label><select id="toneCurveChannel" disabled><option value="rgb">RGB · 总体</option><option value="red">红色 R</option><option value="green">绿色 G</option><option value="blue">蓝色 B</option></select></div>
+          <div class="tone-select-row"><label for="toneCurveMode">插值模式</label><select id="toneCurveMode" disabled><option value="monotone">单调 · 防反转</option><option value="free">自由 · 允许反转</option></select></div>
+          <canvas id="toneCurveGraph" class="tone-curve-graph" width="512" height="320" role="img" aria-label="曲线：横轴输入，纵轴输出；下方五个滑块控制固定输入节点" aria-describedby="toneCurveDescription"></canvas>
+          <p id="toneCurveDescription" class="control-note">5个固定输入节点：0 / 25 / 50 / 75 / 100%。用下方滑块调输出值，图线来自实际曲线算法；不是可任意加点的曲线编辑器。</p>
+          <div id="toneCurveNodes" class="tone-curve-nodes">
+            <div class="control"><div class="control-label"><label for="toneCurveNode0">输入 0% → 输出</label><output id="toneCurveNode0Value" for="toneCurveNode0">0%</output></div><input id="toneCurveNode0" type="range" min="0" max="100" step="any" value="0" disabled></div>
+            <div class="control"><div class="control-label"><label for="toneCurveNode1">输入 25% → 输出</label><output id="toneCurveNode1Value" for="toneCurveNode1">25%</output></div><input id="toneCurveNode1" type="range" min="0" max="100" step="any" value="25" disabled></div>
+            <div class="control"><div class="control-label"><label for="toneCurveNode2">输入 50% → 输出</label><output id="toneCurveNode2Value" for="toneCurveNode2">50%</output></div><input id="toneCurveNode2" type="range" min="0" max="100" step="any" value="50" disabled></div>
+            <div class="control"><div class="control-label"><label for="toneCurveNode3">输入 75% → 输出</label><output id="toneCurveNode3Value" for="toneCurveNode3">75%</output></div><input id="toneCurveNode3" type="range" min="0" max="100" step="any" value="75" disabled></div>
+            <div class="control"><div class="control-label"><label for="toneCurveNode4">输入 100% → 输出</label><output id="toneCurveNode4Value" for="toneCurveNode4">100%</output></div><input id="toneCurveNode4" type="range" min="0" max="100" step="any" value="100" disabled></div>
+          </div>
+          <div class="tone-reset-row"><button id="resetToneChannel" class="text-button" type="button" disabled>重置此通道</button><button id="resetToneCurves" class="text-button" type="button" disabled>重置全部曲线</button></div>
+          <p id="toneCurveModeNote" class="control-note">单调模式下，输出值不能跨越相邻节点；自由模式允许色调反转。</p>
+          <div class="tone-hsl-panel"><div class="tone-select-row"><label for="toneHslBand">HSL 色带</label><select id="toneHslBand" disabled><option value="0">红色</option><option value="1">橙色</option><option value="2">黄色</option><option value="3">绿色</option><option value="4">青色</option><option value="5">蓝色</option><option value="6">紫色</option><option value="7">洋红</option></select></div>
+          <div class="control"><div class="control-label"><label for="toneHslHue">色相偏移</label><output id="toneHslHueValue" for="toneHslHue">0°</output></div><input id="toneHslHue" type="range" min="-30" max="30" step="any" value="0" disabled></div>
+          <div class="control"><div class="control-label"><label for="toneHslSaturation">饱和度</label><output id="toneHslSaturationValue" for="toneHslSaturation">0</output></div><input id="toneHslSaturation" type="range" min="-100" max="100" step="any" value="0" disabled></div>
+          <div class="control"><div class="control-label"><label for="toneHslLuminance">HSL 亮度</label><output id="toneHslLuminanceValue" for="toneHslLuminance">0</output></div><input id="toneHslLuminance" type="range" min="-100" max="100" step="any" value="0" disabled></div>
+          <div class="tone-reset-row"><button id="resetToneBand" class="text-button" type="button" disabled>重置此色带</button><button id="resetToneHsl" class="text-button" type="button" disabled>重置全部 HSL</button></div>
+          <p class="control-note">8个平滑重叠色带；近灰色像素减弱色带影响。HSL 亮度不是曝光或物理亮度。先总体曲线，再各通道曲线，最后 HSL；传统 8位 sRGB 调色，不是 RAW 高光恢复。</p></div>
+          <div class="tone-histogram-panel"><h3>预览直方图 <span>RGB + 亮度码值</span></h3><canvas id="toneHistogramGraph" width="512" height="220" role="img" aria-label="已接受处理预览的红绿蓝及亮度码值直方图" aria-describedby="toneHistogramSummary toneHistogramEndpoints"></canvas>
+          <div class="tone-histogram-legend" aria-hidden="true"><span>红</span><span>绿</span><span>蓝</span><span>亮度</span></div><p id="toneHistogramSummary" class="control-note" role="status">等待处理后的预览。</p><p id="toneHistogramEndpoints" class="control-note tone-histogram-endpoints"></p>
+          <p class="control-note">最多262,144个预览像素采样；透明像素忽略，半透明按 alpha 加权。不含棋盘格、选区叠加或左右对比。端点占比表示当前8位预览的0/255码值，不证明原图高光/暗部已丢失；不是 RAW 或全尺寸分析。手动编辑时统计手动编辑视图。</p></div>
+          <p class="control-note">高级调色可保存、撤销并同步到其他照片；全局风格预设会重置高级调色与色阶，保留各照片原有手动笔触与局部图层。</p>
+        </div></details>
+        <details id="sharpnessSection" class="parameter-section sharpness-section"><summary><span>细节与锐化</span><span class="section-index">DETAIL</span></summary><div class="section-content">
+          <p id="sharpnessStatus" class="control-note" role="status">导入照片后可用，默认关闭。</p>
+          <div class="control"><div class="control-label"><label for="sharpnessAmount">锐化强度</label><output id="sharpnessAmountValue" for="sharpnessAmount">0%</output></div><input id="sharpnessAmount" type="range" min="0" max="100" step="1" value="0" disabled></div>
+          <div class="control"><div class="control-label"><label for="sharpnessRadius">细节半径</label><output id="sharpnessRadiusValue" for="sharpnessRadius">1 px</output></div><input id="sharpnessRadius" type="range" min="0.3" max="3" step="0.1" value="1" disabled></div>
+          <div class="control"><div class="control-label"><label for="sharpnessThreshold">细节阈值</label><output id="sharpnessThresholdValue" for="sharpnessThreshold">3</output></div><input id="sharpnessThreshold" type="range" min="0" max="30" step="1" value="3" disabled></div>
+          <div class="sharpness-actions"><button id="applySharpness" class="button secondary" type="button" disabled>应用锐化</button><button id="cancelSharpness" class="text-button" type="button" disabled>取消输入</button><button id="resetSharpness" class="text-button" type="button" disabled>关闭锐化</button></div>
+          <p id="sharpnessBudget" class="control-note"></p>
+          <p class="control-note">传统亮度细节增强，不是 AI 复原或去噪。半径以处理图短边1000像素为基准；缩放显示不会改变它。较低阈值和较大半径会强化噪声，建议从半径1、阈值3开始。预览仅供参考，请检查导出100%细节。手动工具的原图坐标视图暂不显示锐化，已存参数不变。</p>
+          <p class="control-note">作用于照片编辑之后、构图与文字/绘画/遮盖之前。开启时所选处理源最多约1677万像素，后续裁剪或缩图不能绕过上限；不进入跨端调色预设。</p>
+        </div></details>
+        <details id="peopleSection" class="parameter-section" open><summary><span>逐人调整 <b class="mini-tag">最多 5 人</b></span><span class="section-index">FACE</span></summary><div class="section-content"><p id="peopleStatus" class="control-note" role="status">导入照片后检测人物。</p><div class="mask-brush-buttons"><button id="peopleEnable" class="button subtle" disabled>启用逐人模式</button><button id="peopleRedetect" class="button subtle" disabled>重新检测 · 新批次</button><button id="peopleCancel" class="button subtle" disabled>取消检测更新</button></div><label class="form-row" for="peopleFaceSelect">当前人物<select id="peopleFaceSelect" disabled><option value="">先明确选人</option></select></label><label class="learned-check"><input id="peopleInspect" type="checkbox" disabled>查看原图中的人物编号</label><p class="control-note">编号仅用于本批次，不识别身份。检查编号时显示原图，开始调节后返回结果。下面修肤、气色及塑形只修改所选人物；其他调色仍作用于整张照片。</p><div class="mask-brush-buttons"><button id="peopleResetFace" class="button subtle" disabled>所选人物归零</button><button id="peopleDisable" class="button subtle" disabled>停用逐人模式</button></div><p class="control-note">学习模型提供关键点，修饰仍是传统算法，不是学习型精修。人物过近或影响范围重叠会拒绝，不偷偷修改邻人；逐人塑形不支持透明输入、透明背景或手动推拉组合。</p></div></details>
+        <details id="skinSection" class="parameter-section" open><summary><span>基线肤质调整 <b class="mini-tag">传统</b></span><span class="section-index">02</span></summary><div class="section-content" id="skinControls"></div></details>
+        <details id="faceColorSection" class="parameter-section face-color-section"><summary><span>局部色彩修饰 <b class="mini-tag">实验</b></span><span class="section-index">COLOR</span></summary><div class="section-content"><p id="faceColorStatus" class="control-note">等待检测到人脸后可用；默认强度为0。</p><div id="faceColorControls"></div><div class="local-name-row"><label for="facePalette">唇颊色调</label><select id="facePalette" data-setting="palette" disabled><option value="natural">自然</option><option value="peach">蜜桃</option><option value="rose">玫瑰</option></select></div><p class="control-note">色调由你选择，不自动判断族裔，不默认瘦脸或统一美白。高强度可能偏软或出现边界问题；这是实验候选，不代表专业精修或 SOTA 质量。</p></div></details>
+        <details id="paintSection" class="parameter-section"><summary><span>绘画与橡皮 <b class="mini-tag">独立层</b></span><span class="section-index">PAINT</span></summary><div class="section-content">
+          <p class="control-note">在最终构图、留白和文字之上添加笔迹；遮盖层仍在绘画之上。橡皮只减少当前绘画层的透明度，不擦照片或其他图层。</p>
+          <div class="manual-tool-buttons"><button id="paintBrushTool" class="button subtle" type="button" disabled>绘画画笔</button><button id="paintEraseTool" class="button subtle" type="button" disabled>本层橡皮</button><button id="paintPickTool" class="button subtle" type="button" disabled>取绘画颜色</button></div>
+          <label class="local-field" for="paintWidth">笔刷宽度（画布短边 %）<input id="paintWidth" type="number" min="0.2" max="12" step="0.2" value="2"></label>
+          <label class="local-field" for="paintOpacity">绘画透明度 / 擦除强度 %<input id="paintOpacity" type="number" min="0" max="100" step="1" value="100"></label>
+          <label class="color-row" for="paintColor">笔迹颜色<input id="paintColor" type="color" value="#e14458"></label>
+          <label class="check-row"><input id="paintUseSelection" type="checkbox" checked>新层捕获当前选区（若有）</label>
+          <p class="control-note">已有层锁定创建时的选区快照，支持羽化；当前选区变化不改旧层。要采用新选区，请新建层；已有推形不能使用未变形选区。取色来自已接受的8位预览，不含棋盘格，不是 RAW 测量。</p>
+          <label class="local-field" for="paintLayerList">绘画层（后面的层在上方）<select id="paintLayerList" aria-label="选择绘画层"></select></label>
+          <div class="manual-selection-actions"><button id="paintNewLayer" class="text-button" type="button">下一笔新建层</button><button id="paintToggleLayer" class="text-button" type="button">显示 / 隐藏</button><button id="paintRemoveLayer" class="text-button" type="button">删除此层</button></div>
+          <div class="manual-selection-actions"><button id="paintLayerUp" class="text-button" type="button">上移一层</button><button id="paintLayerDown" class="text-button" type="button">下移一层</button><button id="paintClear" class="text-button" type="button">清除全部绘画</button><button id="paintDone" class="button subtle" type="button">完成</button></div>
+          <p id="paintStatus" class="control-note" aria-live="polite">导入照片后可用。每笔松开应用，Esc取消，支持撤销。</p>
+          <p class="control-note">最多4层、合计128笔/8192点，绘画最终画布限1600万像素。原图与笔迹配方保存在项目中，不能把绘画当作可靠脱敏。先完成裁剪／留白／形变，再绘画；不随预设或参数同步转移到其他照片。</p>
+        </div></details>
+        <details id="redactionSection" class="parameter-section"><summary><span>马赛克与遮盖 <b class="mini-tag">手动</b></span><span class="section-index">COVER</span></summary><div class="section-content">
+          <p class="control-note">在最终构图、留白、文字和绘画之上绘制。马赛克仅是视觉效果，不是可靠脱敏。原图、项目和恢复草稿仍保留被遮内容。</p>
+          <div class="manual-tool-buttons"><button id="redactMosaicTool" class="button subtle" type="button" disabled>马赛克画笔</button><button id="redactCoverTool" class="button subtle" type="button" disabled>不透明遮盖</button></div>
+          <label class="local-field" for="redactRadius">笔刷半径（画布短边 %）<input id="redactRadius" type="number" min="0.2" max="50" step="0.2" value="3"></label>
+          <label class="local-field" for="redactBlock">马赛克格宽（画布短边 %）<input id="redactBlock" type="number" min="1" max="25" step="0.5" value="4"></label>
+          <label class="color-row" for="redactColor">遮盖颜色<input id="redactColor" type="color" value="#202020"></label>
+          <label class="check-row"><input id="redactUseSelection" type="checkbox" checked>捕获当前选区限制（若有）</label>
+          <p class="control-note">遮盖不使用透明度或羽化。要受选区限制，请将选区羽化设为 0；已有推形时不能使用未变形的选区。更改笔刷设置会新建一层。</p>
+          <label class="local-field" for="redactLayerList">遮盖层<select id="redactLayerList" aria-label="选择遮盖层"></select></label>
+          <div class="manual-selection-actions"><button id="redactNewLayer" class="text-button" type="button">下一笔新建层</button><button id="redactToggleLayer" class="text-button" type="button">显示 / 隐藏</button><button id="redactRemoveLayer" class="text-button" type="button">删除此层</button></div>
+          <div class="manual-selection-actions"><button id="redactClear" class="text-button" type="button">清除全部遮盖</button><button id="redactDone" class="button subtle" type="button">完成</button></div>
+          <p id="redactStatus" class="control-note" aria-live="polite">导入照片后可用。每笔松开应用，Esc 取消，支持撤销。</p>
+          <p class="control-note">只分享检查后的导出副本，不分享含原件的工程。裁剪／旋转／留白／形变后不能复用旧遮盖，请先撤销或清除。缩小和 JPEG 重编码会改变边缘像素，导出后请再次核对。</p>
+        </div></details>
+        <details id="manualSection" class="parameter-section manual-section"><summary><span>手动选区与推拉 <b class="mini-tag">传统</b></span><span class="section-index">MANUAL</span></summary><div class="section-content">
+          <p id="manualViewStatus" class="control-note">关闭工具时显示完整结果，包括背景处理和自动塑形。</p>
+          <div class="manual-tool-buttons"><button id="selectionBrushTool" class="button subtle" type="button" aria-pressed="false" disabled>选区画笔</button><button id="selectionLassoTool" class="button subtle" type="button" aria-pressed="false" disabled>自由套索</button></div>
+          <div class="local-name-row"><label for="selectionMode">选区操作</label><select id="selectionMode" disabled><option value="add">增加选区</option><option value="subtract">减去选区</option></select></div>
+          <div class="control"><div class="control-label"><label for="selectionRadius">选区画笔半径</label><output id="selectionRadiusValue">3.0%</output></div><input id="selectionRadius" type="range" min="0.2" max="30" step="0.2" value="3" disabled></div>
+          <div class="control"><div class="control-label"><label for="selectionFeather">选区羽化</label><output id="selectionFeatherValue">0.0%</output></div><input id="selectionFeather" type="range" min="0" max="10" step="0.1" value="0" disabled></div>
+          <div class="manual-selection-actions"><button id="selectionInvert" class="text-button" type="button" disabled>反选</button><button id="selectionEmpty" class="text-button" type="button" disabled>全不选</button><button id="selectionClear" class="text-button" type="button" disabled>清除选区限制</button></div>
+          <p id="manualSelectionStatus" class="control-note" aria-live="polite">导入照片后可使用；不需要检测到人脸。</p>
+          <button id="selectionToLayer" class="button full subtle" type="button" disabled>选区建为调整层</button>
+          <p class="control-note">青色表示选中范围，颜色不导出。空选区保护全图；清除限制后可编辑全图。先选区建层局部调色，再推形、修复；已有手动笔触时不能新建选区层。后续选区不改变已有笔触的选区快照。</p>
+          <div class="manual-tool-buttons"><button id="liquifyPushTool" class="button subtle" type="button" aria-pressed="false" disabled>推拉</button><button id="liquifyRestoreTool" class="button subtle" type="button" aria-pressed="false" disabled>恢复形变</button></div>
+          <div class="control"><div class="control-label"><label for="liquifyRadius">推拉半径</label><output id="liquifyRadiusValue">8.0%</output></div><input id="liquifyRadius" type="range" min="0.2" max="40" step="0.2" value="8" disabled></div>
+          <div class="control"><div class="control-label"><label for="liquifyStrength">推拉 / 恢复强度</label><output id="liquifyStrengthValue">35%</output></div><input id="liquifyStrength" type="range" min="1" max="100" step="1" value="35" disabled></div>
+          <div class="manual-repair-panel">
+            <h3>涂抹修复 / 仿制图章</h3>
+            <div class="manual-tool-buttons"><button id="repairHealTool" class="button subtle" type="button" aria-pressed="false" disabled>修复涂抹</button><button id="repairCloneTool" class="button subtle" type="button" aria-pressed="false" disabled>仿制图章</button></div>
+            <div class="manual-selection-actions"><button id="repairSampleTool" class="button subtle" type="button" aria-pressed="false" disabled>选择取样点</button><button id="clearRepairSample" class="text-button" type="button" disabled>清除取样点</button></div>
+            <p id="repairSampleStatus" class="control-note" aria-live="polite">先点击干净、相近纹理的取样位置，再涂抹小瑕疵。</p>
+            <div class="control"><div class="control-label"><label for="repairRadius">修复半径</label><output id="repairRadiusValue">1.4%</output></div><input id="repairRadius" type="range" min="0.3" max="8" step="0.1" value="1.4" disabled></div>
+            <div class="control"><div class="control-label"><label for="repairHardness">边缘硬度</label><output id="repairHardnessValue">60%</output></div><input id="repairHardness" type="range" min="0" max="100" step="1" value="60" disabled></div>
+            <div class="control"><div class="control-label"><label for="repairStrength">修复强度</label><output id="repairStrengthValue">80%</output></div><input id="repairStrength" type="range" min="1" max="100" step="1" value="80" disabled></div>
+            <button id="clearRepair" class="text-button" type="button" disabled>清除涂抹修复 <span id="repairCount">(0)</span></button>
+            <p class="control-note">修复保留取样纹理并匹配周边颜色；仿制直接复制纹理。手动取样，不自动识别痘痘。每笔固定取样偏移，下一笔重新从标记点取样；短笔处理小瑕疵，勿跨眼眉唇、毛发或脸部边界。先推形再修复；已有修复需先撤销/清除才能推形。这是传统纹理修补，不是生成式去物或专业精修保证。</p>
+          </div>
+          <div class="manual-selection-actions"><button id="clearLiquify" class="text-button" type="button" disabled>清除手动推拉 <span id="liquifyCount">(0)</span></button><button id="manualDone" class="button subtle" type="button" disabled>完成 · 看完整效果</button></div>
+          <p class="control-note">按住拖动，松开后应用一笔；Esc、失去焦点或取消触摸不会应用。恢复只减弱先前手动推拉，不还原调色。透明或半透明原图不能推拉/恢复，请使用不透明原图，先推形再抠图；不会自动铺底。手动推拉要求原始背景、自动塑形归零，不能叠加使用原图定位的自动塑形/抠图。半径与羽化按照片短边百分比，预览/导出使用同一原图归一化坐标。传统局部形变，不是学习模型精修。</p>
+        </div></details>
+        <details id="shapeSection" class="parameter-section"><summary><span>自然塑形</span><span class="section-index">03</span></summary><div class="section-content" id="shapeControls"></div></details>
+        <details id="healSection" class="parameter-section"><summary><span>旧版单点柔化</span><span class="section-index">04</span></summary><div class="section-content"><button class="button full subtle" id="healBtn" disabled><svg><use href="#i-brush"/></svg>开启点修画笔</button><div class="control"><div class="control-label"><label for="brushSize">画笔半径</label><output id="brushSizeValue">1.8%</output></div><input id="brushSize" type="range" min="4" max="60" value="18"></div><p class="control-note">旧版单点周边颜色柔化，不是取样修复画笔。最多64处；不自动识别痘痘。</p><button class="text-button" id="clearSpots" disabled>清除点修 <span id="spotCount">(0)</span></button></div></details>
+        <details id="backgroundSection" class="parameter-section"><summary><span>背景处理</span><span class="section-index">05</span></summary><div class="section-content"><div id="backgroundModes" class="background-modes"><button data-bg="original" class="active">原始</button><button data-bg="blur">虚化</button><button data-bg="color">纯色</button><button data-bg="transparent">透明</button></div><div id="backgroundExtra"></div><p class="control-note" id="backgroundNote">保留原始背景，不修改人物边缘。</p></div></details>
+        <details id="localSection" class="parameter-section local-section"><summary><span>局部调整图层</span><span class="section-index">LOCAL</span></summary><div class="section-content">
+          <p class="control-note">原图坐标，先调色后叠加，最多8层。每层独立开关、强度与撤销；不跨照片同步。</p>
+          <div class="local-add-buttons"><button id="addRadialLayer" class="button subtle" type="button">＋ 径向</button><button id="addLinearLayer" class="button subtle" type="button">＋ 渐变</button></div>
+          <p id="localEmpty" class="control-note">用柔和径向提亮面部，或用渐变平衡画面。不会自动识别人种或更换面部。</p><div id="localLayerList" class="local-layer-list" aria-label="局部图层，由上到下应用"></div>
+          <div id="localLayerEditor" hidden><div class="local-name-row"><label for="localLayerName">名称</label><input id="localLayerName" type="text" maxlength="80"></div>
+          <div class="local-layer-actions"><label><input id="localEnabled" type="checkbox">启用</label><button type="button" id="localLayerUp" class="text-button">上移</button><button type="button" id="localLayerDown" class="text-button">下移</button><button type="button" id="removeLocalLayer" class="text-button">删除</button></div>
+          <label class="learned-check"><input id="localInspect" type="checkbox">查看范围（原图坐标，临时显示原图）</label>
+          <p class="control-note">关闭范围查看调整后效果。塑形后的位置会移动，范围只在未塑形的原图上显示。</p>
+          <div class="control"><div class="control-label"><label for="localOpacity">图层强度</label><output id="localOpacityValue">100%</output></div><input id="localOpacity" type="range" min="0" max="100" value="100"></div>
+          <div class="control"><div class="control-label"><label for="localExposure">局部曝光</label><output id="localExposureValue">0</output></div><input id="localExposure" type="range" min="-100" max="100" value="0"></div><div class="control"><div class="control-label"><label for="localContrast">局部对比</label><output id="localContrastValue">0</output></div><input id="localContrast" type="range" min="-100" max="100" value="0"></div><div class="control"><div class="control-label"><label for="localSaturation">局部饱和</label><output id="localSaturationValue">0</output></div><input id="localSaturation" type="range" min="-100" max="100" value="0"></div><div class="control"><div class="control-label"><label for="localTemperature">局部色温</label><output id="localTemperatureValue">0</output></div><input id="localTemperature" type="range" min="-100" max="100" value="0"></div>
+          <div class="local-name-row"><label for="localKind">范围</label><select id="localKind"><option value="radial">径向柔光</option><option value="linear">线性渐变</option><option value="selection" disabled>选区快照</option></select></div><p id="localSelectionSummary" class="control-note" hidden></p>
+          <div id="localRadialFields" class="local-coordinate-grid"><label for="localCx">中心 X %<input id="localCx" type="number" min="0" max="100" step="0.5"></label><label for="localCy">中心 Y %<input id="localCy" type="number" min="0" max="100" step="0.5"></label><label for="localRx">半径 X %<input id="localRx" type="number" min="0.5" max="100" step="0.5"></label><label for="localRy">半径 Y %<input id="localRy" type="number" min="0.5" max="100" step="0.5"></label><label for="localFeather">羽化 %<input id="localFeather" type="number" min="5" max="100" step="0.5"></label></div><div id="localLinearFields" hidden><div class="local-coordinate-grid"><label for="localX0">起点 X %<input id="localX0" type="number" min="0" max="100" step="0.5"></label><label for="localY0">起点 Y %<input id="localY0" type="number" min="0" max="100" step="0.5"></label><label for="localX1">终点 X %<input id="localX1" type="number" min="0" max="100" step="0.5"></label><label for="localY1">终点 Y %<input id="localY1" type="number" min="0" max="100" step="0.5"></label></div><label class="learned-check"><input id="localReverse" type="checkbox">反转渐变</label></div>
+          </div></div></details>
+        <details id="learnedSection" class="parameter-section learned-section"><summary><span>本地学习模型 <b class="mini-tag">候选</b></span><span class="section-index">AI</span></summary><div class="section-content">
+          <p id="learnedSelectionSummary" class="learned-summary">先在“本地模型与设备”检查并选择可用模型。</p>
+          <button id="learnedConfigure" class="text-button">选择模型与执行设备</button>
+          <div class="learned-face-row"><label for="learnedFaceSelect">分析人脸</label><select id="learnedFaceSelect" disabled><option value="">等待检测人脸</option></select></div>
+          <label class="learned-check"><input type="checkbox" id="learnedFaceBoxes">显示人脸编号</label>
+          <button id="learnedParseBtn" class="button full subtle" disabled>SegFace · 分析所选人脸</button>
+          <p class="control-note">只显示学习得到的皮肤/保护区诊断蒙版，不会调用学习型修肤，也不参与导出。</p>
+          <div class="learned-overlay-row"><label class="learned-check"><input type="checkbox" id="learnedOverlay" disabled>显示诊断蒙版</label><select id="learnedOverlayKind" disabled aria-label="诊断蒙版类型"><option value="skin">皮肤 · 青绿色</option><option value="protected">保护区 · 橙色</option></select></div>
+          <button id="learnedMatteBtn" class="button full subtle" disabled>BiRefNet · 生成并使用人物蒙版</button>
+          <label class="learned-check"><input type="checkbox" id="learnedMatteEnabled" disabled>使用已缓存的学习型人物蒙版</label>
+          <label class="learned-check"><input type="checkbox" id="learnedMatteInspect" disabled>检查人物蒙版（原图坐标）</label>
+          <label class="learned-check"><input type="checkbox" id="learnedRawMatte" disabled>仅查看模型原始蒙版（不含修正）</label>
+          <details class="learned-correction"><summary>实验性蒙版修正</summary><div class="mask-brush-buttons"><button id="matteKeepTool" class="button subtle" disabled>＋ 保留画笔</button><button id="matteRemoveTool" class="button subtle" disabled>− 去除画笔</button></div>
+          <div class="control"><div class="control-label"><label for="matteRadius">原图画笔半径</label><output id="matteRadiusValue">24 px</output></div><input type="range" id="matteRadius" min="1" max="256" value="24" disabled></div>
+          <div class="control"><div class="control-label"><label for="matteHardness">硬度</label><output id="matteHardnessValue">80%</output></div><input type="range" id="matteHardness" min="0" max="100" value="80" disabled></div>
+          <div class="control"><div class="control-label"><label for="matteOpacity">强度</label><output id="matteOpacityValue">100%</output></div><input type="range" id="matteOpacity" min="1" max="100" value="100" disabled></div>
+          <p class="control-note">原图坐标绘制，松开鼠标应用。青绿表示保留，橙色表示去除。最多64笔、每笔512点；不改变模型原始蒙版。修正会用于预览与导出。</p><button id="clearMatteStrokes" class="text-button" disabled>清除修正 <span id="matteStrokeCount">(0)</span></button></details>
+          <p id="learnedMatteNote" class="control-note">只有显式运行成功才替换背景蒙版；失败不会改用其他模型。人物蒙版用于背景处理，不修改原图。</p>
+          <div id="learnedProgress" class="learned-progress" hidden><span class="small-spinner"></span><span id="learnedProgressText" role="status">准备运行…</span><button id="learnedCancel" class="text-button">取消</button></div>
+          <p id="learnedError" class="learned-error" role="alert" hidden></p>
+          <p id="learnedProvenance" class="learned-provenance"></p>
+        </div></details>
+      </div>
+      <div class="right-footer"><span class="status-dot"></span><span>非破坏性编辑 · 原图始终保留</span></div>
+    </aside>
+  </main>
+  <footer class="status-bar"><div><span id="globalStatus">准备就绪</span><span id="imageDimensions"></span></div><div><span id="reductionNotice"></span><span class="footer-local"><svg><use href="#i-lock"/></svg>OFFLINE FIRST</span></div></footer>
+</div>
+<input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple hidden>
+<div id="toast" class="toast" role="status" hidden></div>
+<dialog id="exportDialog" class="dialog export-dialog">
+  <form id="exportForm"><div class="dialog-heading"><div><span class="eyebrow">READY TO GO</span><h2 id="exportTitle">导出你的作品</h2></div><button type="button" class="icon-button" id="closeExport" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div>
+  <p class="dialog-description">导出独立副本，不覆盖原图。默认原尺寸，不自动缩小。每项显示输出尺寸与处理结果。</p>
+  <div class="form-row"><label for="exportScope">导出范围</label><select id="exportScope"><option value="selected">选中的照片</option><option value="all">全部照片（包括筛选隐藏）</option><option value="current">当前照片</option></select></div>
+  <p id="exportScopeCounts" class="review-scope-counts" aria-live="polite"></p>
+  <div class="form-row"><label for="exportMode">处理基准</label><select id="exportMode"><option value="original">原尺寸 · 不自动缩小</option><option value="working">工作尺寸 · 最长边4096</option></select></div>
+  <p id="exportModeNote" class="control-note"></p>
+  <div class="form-row"><label for="exportOutputMode">最终文件尺寸</label><select id="exportOutputMode"><option value="unchanged">保持处理后的尺寸</option><option value="long-edge">指定精确长边 · 仅缩小</option></select></div>
+  <div class="form-row"><label for="exportLongEdge">目标长边 px</label><input id="exportLongEdge" type="number" min="1" max="16384" step="1" value="1280" disabled></div>
+  <p id="exportOutputNote" class="control-note">最后缩小发生在构图、留白与文字之后，不重新排字，不绕过原图处理预算。不放大；小于目标长边的照片逐项报错。</p>
+  <div id="exportPlan" class="export-plan" aria-label="导出尺寸预告"></div>
+  <div class="form-row"><label for="exportFormat">文件格式</label><select id="exportFormat"><option value="jpeg">JPG · 通用照片</option><option value="png">PNG · 保留透明度</option></select></div>
+  <div class="control export-quality"><div class="control-label"><label for="exportQuality">JPG 画质</label><output id="exportQualityValue">94%</output></div><input type="range" id="exportQuality" min="60" max="100" value="94"></div>
+  <div class="export-note" id="exportNote"><svg><use href="#i-info"/></svg><span>每张照片使用各自的调整参数。原尺寸只保留像素尺寸；输出重新编码为8位 sRGB，不保留原图 EXIF。JPG 的透明区域填充为白色；项目中的原图文件保持不变。</span></div>
+  <div class="export-destination" id="exportDestination">选择导出后，请指定保存文件夹。</div>
+  <div id="exportProgress" class="export-progress" hidden><div><span id="exportProgressText">准备导出…</span><strong id="exportProgressPercent">0%</strong></div><progress id="exportProgressBar" value="0" max="100"></progress></div>
+  <p id="exportQueueMeta" class="control-note"></p><ol id="exportQueueList" class="export-queue-list" aria-label="逐文件导出结果"></ol>
+  <div class="dialog-actions"><button type="button" class="button secondary" id="retryExport" hidden>重试失败/未完成</button><button type="button" class="button secondary" id="cancelExport">取消</button><button type="submit" class="button primary" id="startExport"><svg><use href="#i-export"/></svg><span>选择文件夹并导出</span></button></div></form>
+</dialog>
+<dialog id="syncDialog" class="dialog small-dialog"><div class="dialog-heading"><h2>同步当前照片的参数</h2><button class="icon-button" id="closeSync" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div><p class="dialog-description">同步基础调色、明暗/白平衡、色阶、曲线/HSL、肤质、塑形与背景参数。选区、手动推拉/修复、局部图层、点修和学习模型蒙版不会跨照片复制；各照片保留自己的构图、局部图层与蒙版。每张照片都可以单独撤销。</p><div class="form-row"><label for="syncScope">应用到</label><select id="syncScope"><option value="selected">其他选中的照片</option><option value="all">其他全部照片</option></select></div><div class="dialog-actions"><button class="button secondary" id="cancelSync">取消</button><button class="button primary" id="applySync">同步参数</button></div></dialog>
+<dialog id="recoveryDialog" class="dialog recovery-dialog" aria-labelledby="recoveryTitle"><div class="dialog-heading"><div><span class="eyebrow">LOCAL RECOVERY · OPT IN</span><h2 id="recoveryTitle">本地恢复草稿</h2></div><button class="icon-button" id="closeRecovery" aria-label="关闭恢复设置"><svg><use href="#i-close"/></svg></button></div>
+<p class="control-note">默认关闭。开启后，稳定且已提交的编辑停留 30 秒才在本机记录。草稿包含原图、配方、蒙版缓存与撤销记录，不上传，不自动打开照片，也不等于正式保存项目。</p>
+<div class="recovery-preferences"><label><input id="recoveryEnabled" type="checkbox"> 我同意在本机保存恢复草稿</label><label>每代容量 <select id="recoveryBudget"><option value="64">64 MiB</option><option value="128" selected>128 MiB</option><option value="256">256 MiB</option><option value="512">512 MiB</option></select></label></div>
+<p class="control-note">应用专用位置：<span id="recoveryLocation">尚未读取</span></p><p id="recoveryStorage" class="control-note"></p><p class="control-note">只保留最新与上一代两个固定文件。关闭功能不删除草稿；调低容量不会删除旧大文件。写入失败或超限不会被当作成功。临时写入也需要磁盘空间，崩溃遗留文件可能额外占用空间。恢复后仍是未保存项目，需要正式另存。</p>
+<div id="recoveryHold" class="recovery-warning" hidden><p>发现既有恢复机会。未明确选择前，自动覆盖暂停。关闭此窗口不会开始覆盖。</p><button class="button secondary" id="recoveryStart">开始本次记录，允许后续轮换已有草稿</button></div>
+<div class="recovery-slots"><div><p id="recovery-latest">最新一代：暂无草稿</p><button id="recoveryRestore-latest" class="button secondary">恢复最新一代</button></div><div><p id="recovery-previous">上一代：暂无草稿</p><button id="recoveryRestore-previous" class="button secondary">恢复上一代</button></div></div>
+<p id="recoveryFallback" class="recovery-warning" role="status" hidden></p><p id="recoveryMessage" role="status" class="control-note"></p><div class="recovery-actions"><button class="button secondary" id="recoveryRefresh">刷新状态</button><button class="button secondary" id="recoveryCancel" disabled>取消并暂停记录</button><button class="button primary" id="recoverySaveNow" disabled>立即记录 / 重试</button></div></dialog>
+
+<dialog id="helpDialog" class="dialog help-dialog"><div class="dialog-heading"><div><span class="eyebrow">A LITTLE GUIDE</span><h2>更顺手的人像工作流</h2></div><button class="icon-button" id="closeHelp" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div><div class="help-steps"><div><b>1</b><p><strong>导入与选择</strong>支持 JPG、PNG、WebP，最多 100 张，单张 80 MB、会话合计 400 MB。点击缩略图编辑；勾选照片用于批量同步与导出。</p></div><div><b>2</b><p><strong>精修与对比</strong>人像功能需要本地模型检测到人脸或人物。拖动对比分隔线看差异；点修画笔用于小范围瑕疵。</p></div><div><b>3</b><p><strong>导出独立副本</strong>原图不变。默认原图像素尺度，按构图输出。超限逐项报错；选择工作尺寸才会等比缩小到4096长边/1600万像素。可重试失败与未完成项，不重复成功项。PNG 支持透明背景。</p></div></div><div class="shortcut-grid"><span>导入照片 <kbd>Ctrl + O</kbd></span><span>打开项目 <kbd>Ctrl + Shift + O</kbd></span><span>保存项目 <kbd>Ctrl + S</kbd></span><span>撤销 <kbd>Ctrl + Z</kbd></span><span>重做 <kbd>Ctrl + Shift + Z</kbd></span><span>查看原图 <kbd>按住空格</kbd></span><span>放大 / 缩小 <kbd>+ / −</kbd></span><span>适合画布 <kbd>F</kbd></span><span>当前照片评级 <kbd>0–5</kbd></span><span>精选 / 未标记 / 拒绝 <kbd>P / U / X</kbd></span><span>浏览可见照片 <kbd>← / →</kbd></span></div><p class="control-note">照片只在本机处理，不上传。桌面版可保存 .mintproj 项目，包含原始压缩照片、调整、蒙版与撤销记录；关闭前请保存项目。导出照片不等于保存项目。测试版不支持 RAW、16位处理、软打样或完整色彩管理。原尺寸导出有独立的像素与效果上限，不会自动降为工作尺寸。预览最长边 1280，导出使用原图重新计算。学习模型只接受不超过4096长边、1600万像素的原尺寸图；超限会拒绝，绝不把预览当原图。浏览器预览版通过下载保存文件。</p></dialog>
+<dialog id="backendDialog" class="dialog backend-dialog"><div class="dialog-heading"><h2>本地模型与设备</h2><button class="icon-button" id="backendClose" aria-label="关闭">×</button></div><p id="backendSummary" class="dialog-description">尚未检查</p><div class="form-row"><label for="backendDevice">执行设备</label><select id="backendDevice" disabled><option>尚未检查</option></select></div><div class="form-row"><label for="backendModel">人脸解析模型</label><select id="backendModel" disabled><option>尚未检查</option></select></div><div class="form-row"><label for="backendMatteModel">人物抠图模型</label><select id="backendMatteModel" disabled><option>尚未检查</option></select></div><div id="backendModels" class="backend-models"></div><p class="control-note">模型未安装、未审核或设备不支持时会明确停止，不使用伪装的 AI 回退。当前是未发布的集成候选。SegFace 只做解析诊断；BiRefNet 只在显式运行成功后用于背景。传统修肤没有升级为学习型修肤。</p><p class="control-note">可选 API 尚未启用。不会上传照片、保存密钥或产生费用。</p><div class="dialog-actions"><button id="backendRefresh" class="button secondary">重新检查</button></div></dialog>
+<script src="recovery-controller.cjs"></script><script src="preview-pixel-inspector.cjs"></script><script src="reference-compare.cjs"></script><script src="geometry.cjs"></script><script src="straighten.cjs"></script>
+  <script src="perspective.cjs"></script><script src="sharpness.cjs"></script><script src="canvas-padding.cjs"></script><script src="text-overlay.cjs"></script><script src="text-layers.cjs"></script><script src="text-layer-renderer.cjs"></script><script src="light-balance.cjs"></script><script src="levels.cjs"></script><script src="advanced-tone.cjs"></script><script src="preset-codec.cjs"></script><script src="export-size.cjs"></script><script src="export-resize.cjs"></script><script src="image-overlay.cjs"></script><script src="image-assets.cjs"></script><script src="image-layers.cjs"></script><script src="image-layer-session.cjs"></script><script src="image-layer-panel.cjs"></script><script src="export-queue.cjs"></script><script src="manual-tools.cjs"></script><script src="repair-brush-core.cjs"></script><script src="manual-pipeline.cjs"></script><script src="local-adjustments.cjs"></script><script src="learned-analysis.cjs"></script><script src="photo-review.cjs"></script><script src="redact-core.cjs"></script><script src="portrait-engine.cjs"></script><script src="portrait-people.cjs"></script><script src="portrait-people-desktop.cjs"></script><script src="redaction-layers.cjs"></script><script src="paint-layer.cjs"></script><script src="paint-layers.cjs"></script><script src="paint-layer-renderer.cjs"></script><script src="project-document.cjs"></script><script src="backend-panel.js"></script><script src="ui-shell.js"></script><script type="module" src="app.js"></script>
+</body>
+</html>

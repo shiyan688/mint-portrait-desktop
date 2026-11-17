@@ -1,0 +1,8 @@
+{
+  "comparison": "same1024 float32 vs explicit mixed-bfloat16; NOT reference-alpha accuracy or2048 fidelity",
+  "MAD": 0.0008429076406173408,
+  "maxAbs": 0.053649574518203735,
+  "p99Abs": 0.018729517236351967,
+  "softAlphaMAD": 0.004456938710063696,
+  "softCount": 126688
+}

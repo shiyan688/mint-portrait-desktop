@@ -1,0 +1,93 @@
+{
+  "environment": "Cloud Linux CPU only; no Windows or4060 measurement",
+  "width": 5001,
+  "height": 3300,
+  "pixels": 16503300,
+  "aboveWorkingEdge4096": true,
+  "abovePortraitLimit16MP": true,
+  "scaled": false,
+  "actualPngCodecAndWorkerBytesMatch": true,
+  "originalEncodedBytesUnchanged": true,
+  "originalPixelBytesUnchanged": true,
+  "wallMilliseconds": 3624,
+  "sourcePngSha256": "930481e8141501766ffacba5275bfba58adb2f2966f935094402ea89b1f493b7",
+  "outputPngSha256": "2cf3a977847e504cc495e813ebaef2c9fe607f93b74b059712f20a3022211331",
+  "recipe": {
+    "version": 1,
+    "enabled": true,
+    "strength": 1,
+    "curveMode": "monotone",
+    "curves": {
+      "rgb": [
+        0,
+        0.23,
+        0.52,
+        0.77,
+        1
+      ],
+      "red": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "green": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "blue": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ]
+    },
+    "hsl": [
+      {
+        "hue": 0,
+        "saturation": 0,
+        "luminance": 0
+      },
+      {
+        "hue": 0,
+        "saturation": 0,
+        "luminance": 0
+      },
+      {
+        "hue": 0,
+        "saturation": 0,
+        "luminance": 0
+      },
+      {
+        "hue": 0,
+        "saturation": 0,
+        "luminance": 0
+      },
+      {
+        "hue": 0,
+        "saturation": 0,
+        "luminance": 0
+      },
+      {
+        "hue": -10,
+        "saturation": -20,
+        "luminance": -8
+      },
+      {
+        "hue": 0,
+        "saturation": 0,
+        "luminance": 0
+      },
+      {
+        "hue": 0,
+        "saturation": 0,
+        "luminance": 0
+      }
+    ]
+  }
+}

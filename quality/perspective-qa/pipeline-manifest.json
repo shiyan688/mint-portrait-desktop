@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "scope": "Synthetic local Node/VM/Sharp fixtures; not actual browser, Electron UI, Windows, GPU or device acceptance",
+  "coreSha256": "3a3b57ea8da4ce4a7c99b180a454e9f00a4242a0460621d267ad5487fbe66557",
+  "settings": {
+    "exposure": 0,
+    "contrast": 0,
+    "saturation": 0,
+    "temperature": 0,
+    "smooth": 0,
+    "brighten": 0,
+    "warmth": 0,
+    "slim": 0,
+    "eyes": 0,
+    "nose": 0,
+    "jaw": 0,
+    "bgMode": "original",
+    "bgBlur": 18,
+    "bgColor": "#e9eee9",
+    "bgFeather": 2,
+    "spots": [],
+    "underEye": 0,
+    "redness": 0,
+    "lip": 0,
+    "blush": 0,
+    "palette": "natural",
+    "localLayers": [],
+    "manualSelection": null,
+    "manualLiquify": [],
+    "manualRepair": [],
+    "lightBalance": null,
+    "levels": null,
+    "advancedTone": null,
+    "sharpness": null,
+    "framing": {
+      "version": 1,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "quarterTurns": 1,
+      "flipX": true,
+      "flipY": false
+    },
+    "straighten": {
+      "version": 1,
+      "angle": 13,
+      "mode": "expand"
+    },
+    "perspective": {
+      "version": 1,
+      "quad": [
+        {
+          "x": 0.1,
+          "y": 0.2
+        },
+        {
+          "x": 0.7,
+          "y": 0.1
+        },
+        {
+          "x": 0.8,
+          "y": 0.7
+        },
+        {
+          "x": 0.2,
+          "y": 0.8
+        }
+      ],
+      "outputFraction": {
+        "width": 0.8,
+        "height": 0.7
+      }
+    },
+    "canvasPadding": {
+      "version": 1,
+      "top": 0.1,
+      "right": 0,
+      "bottom": 0,
+      "left": 0.15,
+      "color": "#234953",
+      "opacity": 0.8
+    },
+    "textLayers": [],
+    "imageLayers": [],
+    "paintLayers": null,
+    "redactions": null,
+    "faceAdjustments": null
+  },
+  "independentDimensions": {
+    "postStraighten": {
+      "width": 123,
+      "height": 147
+    },
+    "perspective": {
+      "width": 98,
+      "height": 103
+    }
+  },
+  "perspectiveReceipt": {
+    "version": 1,
+    "recipe": {
+      "version": 1,
+      "quad": [
+        {
+          "x": 0.1,
+          "y": 0.2
+        },
+        {
+          "x": 0.7,
+          "y": 0.1
+        },
+        {
+          "x": 0.8,
+          "y": 0.7
+        },
+        {
+          "x": 0.2,
+          "y": 0.8
+        }
+      ],
+      "outputFraction": {
+        "width": 0.8,
+        "height": 0.7
+      }
+    },
+    "inputWidth": 123,
+    "inputHeight": 147,
+    "outputWidth": 98,
+    "outputHeight": 103,
+    "kind": "resample",
+    "resampling": "linear-light-premultiplied-alpha-mip-anisotropic-bilinear"
+  },
+  "details": {
+    "codec": "sharp-0.35.5",
+    "color": "8-bit sRGB",
+    "embeddedProfile": "sRGB",
+    "sourceExifPreserved": false,
+    "sourceBytesUnchanged": true,
+    "resampling": "straighten-linear-light-premultiplied-alpha-bilinear+perspective-linear-light-premultiplied-alpha-mip-anisotropic-bilinear+explicit-final-output-lanczos3",
+    "perspective": "linear-light-premultiplied-alpha-mip-anisotropic-bilinear",
+    "perspectiveReceipt": {
+      "version": 1,
+      "recipe": {
+        "version": 1,
+        "quad": [
+          {
+            "x": 0.1,
+            "y": 0.2
+          },
+          {
+            "x": 0.7,
+            "y": 0.1
+          },
+          {
+            "x": 0.8,
+            "y": 0.7
+          },
+          {
+            "x": 0.2,
+            "y": 0.8
+          }
+        ],
+        "outputFraction": {
+          "width": 0.8,
+          "height": 0.7
+        }
+      },
+      "inputWidth": 123,
+      "inputHeight": 147,
+      "outputWidth": 98,
+      "outputHeight": 103,
+      "kind": "resample",
+      "resampling": "linear-light-premultiplied-alpha-mip-anisotropic-bilinear"
+    },
+    "straighten": "linear-light-premultiplied-alpha-bilinear",
+    "straightenRecipe": {
+      "version": 1,
+      "angle": 13,
+      "mode": "expand"
+    },
+    "framing": "integer-crop-quarter-turn-flip",
+    "retouch": "classical-explicit-not-SOTA",
+    "localLayers": 0,
+    "paintLayers": 0,
+    "textLayers": 0
+  },
+  "files": {
+    "pipeline-source.png": {
+      "width": 128,
+      "height": 96,
+      "sha256": "a1262d02d3bf5918d80b6fddb824ddb08a94a685610e532fdd6c72af2a93659c",
+      "rgbaSha256": "551f32bffa9a721f4465178973ddfa8900d938a4144a39d73e2d078d8f3c87ee"
+    },
+    "pipeline-post-straighten.png": {
+      "width": 123,
+      "height": 147,
+      "sha256": "b11ca27c421f8e0cf5d7c4dbcdef086212748da403fb54c6d62a4f3876418ac7",
+      "rgbaSha256": "fd2b81bcd37d550b7df6c204d2a75b75c73259031b92616f10a7075768218dcd"
+    },
+    "pipeline-perspective-photo.png": {
+      "width": 98,
+      "height": 103,
+      "sha256": "9707e600e0b9535e5ab2cc0b09a369d33ecbd0277cf2ec029e2036da75a1b2f2",
+      "rgbaSha256": "032725370b10a0d5d233565ee94e82d5993018c0937330e9046fbe57abb6cb08"
+    },
+    "pipeline-composition.png": {
+      "width": 113,
+      "height": 113,
+      "sha256": "17f718989f0a4041794ee17f9dbde2945eb2671a4ed895c64d4e9fef271a6832",
+      "rgbaSha256": "4359e22ced8b3af5b8ed6000483a2b7ba5b9166998ae1709e99fd7d8e6153ad1"
+    },
+    "pipeline-wrong-padding-first.png": {
+      "width": 113,
+      "height": 111,
+      "sha256": "6275638f8184991816ed2d1673ea2ef21722bc9d61e04bf6995ce9a86a508c6f",
+      "rgbaSha256": "b0cd7eff0e22e88672255884eb53008841cce315f94b96b90f5f9a0d3f9cbca1"
+    },
+    "pipeline-native-final.png": {
+      "width": 79,
+      "height": 79,
+      "sha256": "dc1d271ddd540fc36d35d37ee038e18b644799419eb90c03ff4b905ffaef6b6b"
+    }
+  }
+}

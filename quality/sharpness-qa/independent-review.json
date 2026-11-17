@@ -1,0 +1,25 @@
+{
+  "reviewedUTC": "2026-10-22T18:45:17.498Z",
+  "scope": "Actual saved PNG sheets inspected with local image viewer after source thumbnails were corrected to fit their columns. This is visual QA of the pixels shown, not a browser, Windows, phone or installer review.",
+  "outputs": [
+    {
+      "path": "quality/sharpness-qa/independent-victor-amounts.png",
+      "sha256": "e9e0a77ed39fd5b917652e8b6e76bd12b6d6e40bedf5d4b3c7867edc20d76ef4"
+    },
+    {
+      "path": "quality/sharpness-qa/independent-mukai-amounts.png",
+      "sha256": "96341fadfe7016ff293a3e1b624bd244cbe46d7abb7c0df0105a3a2bc99f7065"
+    },
+    {
+      "path": "quality/sharpness-qa/independent-noise-edge-counterexample.png",
+      "sha256": "051735184c60a1d7c242eed6ec2264a46aba127e32682fae38efb61729be51e7"
+    }
+  ],
+  "observations": [
+    "All columns have legible recipe labels, identical source crop coordinates and non-overlapping overview thumbnails. Victor and Mukai amounts0/25/50/100 atR1/T3 look intentionally very similar, without obvious bright edge fringes or flattened skin at displayed1:1 crops.",
+    "Aggressive100/R3/T0 makes seeded gray noise visibly coarser and Mukai eye/skin microtexture slightly harsher. This is a negative control, not a recommendation for portraits. Positive threshold12 suppresses this synthetic low-level noise but is not an adaptive denoiser.",
+    "The softened edge gets a restrained contrast increase without black/white ringing in the displayed strip; numerical local-luminance and quantization-envelope tests provide the stronger bound evidence.",
+    "No restored source pixel file or provenance file was modified. NASA attribution and private/informational-only restrictions are retained in sheets and README."
+  ],
+  "qualification": "Visual inspection is subjective and limited to these samples and display crops. It does not establish broad quality superiority or restoration of missing detail."
+}

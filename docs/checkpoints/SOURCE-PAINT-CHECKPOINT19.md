@@ -1,0 +1,16 @@
+# Desktop paint checkpoint 19 (unreleased)
+
+Production code now includes four independent transparent paint layers, layer-only erasure, 8-bit preview picking, frozen source selections transported through final geometry/padding, cancellation and history, project v12 reading v1–11, and original-preserving native PNG/JPEG export. Paint runs after text and before redaction. Presets/synchronization retain per-photo layers instead of transplanting strokes. See docs/PAINT-DESKTOP-UI.md and PAINT-LAYERS-CONTRACT.md.
+
+Verified in cloud: 2461/2461 aggregate JavaScript tests, 0 skips; included 27 direct project/export integration checks, 52 independent real-app-code DOM/NativeCanvas workflow checks and 31 adapter/service checks. Separate shared-core regression is172/172 and independent core QA123/123, all requiring NativeCanvas. Archive safety tests23/23. Initial two new integration test errors (wrong dimensions-object shape and unchanged-geometry supposed negative) were corrected without weakening production validation. A discovered usability trap was fixed: existing layer erasure always uses its visible locked selection snapshot, while only a new layer captures current selection.
+
+Evidence is synthetic, not private/public portraits. The contact sheet is labeled current development code, not shipped. No Windows, Chromium, Electron interaction, GPU, cross-platform raster equivalence or SOTA acceptance is asserted. Logical-buffer limits are not process-RSS limits; the app yields/disposes between native layers. One high-resolution tiled-AA comparison has observed edge differences, not a universal bound.
+
+Current delivered Setup remains0.2.5: online Library libfile_44379f7c7100819199aca804f7e6403c v5, SHA256 d8bf73b9d280db9fcc9d8a7482c05fb8e3ed7140b86f06ae0ef829ae0c733917; offline alternate libfile_ef80df086da48191aa7f8e30c963c4fd v5, SHA256 b94d88116c0fe9a9ee7c7f3ff1e2c706637d7545698c3d214d63c91a4b5b5da5. Parent recorded delivery Sentinel_3ec49286be6c8191b23f1435753e7d1b. This drawing source has not replaced those install bytes.
+
+Restore base libfile_409356280a8c8191a5bf3fd3cbdffe91 v1, overlay this source, then restore the exact separate QA ZIP named in QA-RESTORE.json. No node_modules, model weights, Electron/installer payloads or new fonts are included. Main source remains small; old archive revisions and QA remain preserved. Project files retain originals/history; do not share projects as sanitized pictures.
+
+
+## Actual restoration check
+
+The base plus this source overlay restored 734 source entries and all113 QA binary hashes. All110 painting integration/adapter/UI checks passed from the restored source. Running the whole source suite without installer binaries deliberately failed the two packaged-runtime inventory checks;2459 other checks passed. After restoring the retained0.2.5 payload and matching dist/app.asar fixtures (excluded from source by design), all15 focused package checks passed. The full2461 aggregate passed on the development working tree; the restored-source checks are reported separately, not falsely as a single complete restored run. This checks the older retained package fixture, not a new painting installer. No binary was executed.

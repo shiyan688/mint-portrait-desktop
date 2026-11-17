@@ -1,0 +1,22 @@
+{
+  "fixture": "suni",
+  "sourceSha256": "42b9345231e1a01fead8be823dc7912858e9f4c9f3b34defa5580131b1de6327",
+  "networkSize": 1024,
+  "precision": "bfloat16",
+  "profile": "diagnostic-not-HR-quality",
+  "wallSeconds": 35.1285317389993,
+  "childPeakRSSKiB": 2889380,
+  "sourceWidth": 795,
+  "sourceHeight": 900,
+  "alphaStats": {
+    "minimum": 7.082994216034422e-06,
+    "maximum": 0.999798059463501,
+    "mean": 0.8370120525360107,
+    "softPixelCount": 128390,
+    "pixelCount": 715500,
+    "outputSha256": "5ab6fdfff82e7b1624a3ec4c8b450a749cc5653540ed53b82b217879d1610dda"
+  },
+  "groundTruthAvailable": false,
+  "foregroundDecontamination": false,
+  "modelSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55"
+}

@@ -1,0 +1,207 @@
+{
+  "scope": "Synthetic image; shipped app in authored DOM/IPC shell; installed NativeCanvas text; actual native worker Sharp PNGs. Non-text preview is an adapter to the actual pixel core.",
+  "nativeCanvas": {
+    "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas",
+    "version": "0.1.100",
+    "fonts": [
+      {
+        "file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+        "family": "sans-serif",
+        "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+      },
+      {
+        "file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+        "family": "sans-serif",
+        "sha256": "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb"
+      },
+      {
+        "file": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+        "family": "serif",
+        "sha256": "5d9c31a059600193c9d7968a998bde886ccdc77e934006ad243b41794c496a7d"
+      },
+      {
+        "file": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
+        "family": "serif",
+        "sha256": "1505ee3b9c0890fae6302ee0e9c6fd74d690f4a55a6ace1d9944f3f6352d622d"
+      },
+      {
+        "file": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+        "family": "monospace",
+        "sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8"
+      }
+    ]
+  },
+  "sharp": "0.35.5",
+  "source": {
+    "width": 900,
+    "height": 640,
+    "pngSHA256": "4a99d77069af10d04c8e26c372875c4c16f7b271841e504b9ea33477534e3791",
+    "sourceCanvasSHA256": "fd67ab6b68188594ecaecc9519c7b03c9bdf4e3f5166c9e3a4d0128cf7774b52"
+  },
+  "composition": {
+    "width": 634,
+    "height": 851,
+    "decodedRGBA_SHA256": "a0faa1e11f42d95b2f713e27c413134ddf4e1e60c5d75e57fab5250fc3dbd62b",
+    "scalarSourceOverSHA256": "a0faa1e11f42d95b2f713e27c413134ddf4e1e60c5d75e57fab5250fc3dbd62b",
+    "textRGBA_SHA256": "f1659fac1bd011724be6b421162f7697353a9456e654dd003e25c10e0c39e8b0",
+    "glyphPixelsInBottomPadding": 2447
+  },
+  "final": {
+    "width": 276,
+    "height": 371,
+    "pngSHA256": "90f383eff06ec76b49c0f1078cacf20128cbdd484398c95f56ba0155ff7afe49",
+    "decodedRGBA_SHA256": "4113da002a085d02ce7715e426affa4b0689a60ca7d30357701687fe65a8ee4d",
+    "finishedCompositionResampleSHA256": "4113da002a085d02ce7715e426affa4b0689a60ca7d30357701687fe65a8ee4d",
+    "incorrectRelayoutSHA256": "27708039b90d352e5e189806bdd4ed7e7c5180a90f2e31d423501708f2cd8854",
+    "incorrectRelayoutDifference": {
+      "channels": 37101,
+      "max": 157
+    }
+  },
+  "preview": {
+    "width": 634,
+    "height": 851,
+    "textBasisWidth": 634,
+    "textBasisHeight": 851
+  },
+  "outputSize": {
+    "version": 1,
+    "mode": "long-edge",
+    "longEdge": 371
+  },
+  "settings": {
+    "exposure": 9,
+    "contrast": 0,
+    "saturation": 0,
+    "temperature": 0,
+    "smooth": 0,
+    "brighten": 0,
+    "warmth": 0,
+    "slim": 0,
+    "eyes": 0,
+    "nose": 0,
+    "jaw": 0,
+    "bgMode": "original",
+    "bgBlur": 18,
+    "bgColor": "#e9eee9",
+    "bgFeather": 2,
+    "spots": [],
+    "underEye": 0,
+    "redness": 0,
+    "lip": 0,
+    "blush": 0,
+    "palette": "natural",
+    "localLayers": [],
+    "manualSelection": null,
+    "manualLiquify": [],
+    "manualRepair": [],
+    "lightBalance": null,
+    "levels": null,
+    "advancedTone": null,
+    "sharpness": null,
+    "framing": {
+      "version": 1,
+      "crop": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.82,
+        "h": 0.8
+      },
+      "quarterTurns": 1,
+      "flipX": true,
+      "flipY": false
+    },
+    "straighten": null,
+    "perspective": null,
+    "canvasPadding": {
+      "version": 1,
+      "top": 0.08,
+      "right": 0.12,
+      "bottom": 0.14,
+      "left": 0.12,
+      "color": "#16362e",
+      "opacity": 1
+    },
+    "textLayers": [
+      {
+        "id": "title",
+        "enabled": true,
+        "recipe": {
+          "version": 1,
+          "text": "薄荷人像\nMINT PORTRAIT",
+          "x": 0.5,
+          "y": 0.21,
+          "size": 0.085,
+          "boxWidth": 0.9,
+          "rotation": -6,
+          "align": "center",
+          "fontFamily": "sans",
+          "bold": true,
+          "italic": false,
+          "lineHeight": 1.25,
+          "color": "#ffffff",
+          "opacity": 1,
+          "outlineWidth": 0.04,
+          "outlineColor": "#103526",
+          "shadow": true
+        }
+      },
+      {
+        "id": "body",
+        "enabled": true,
+        "recipe": {
+          "version": 1,
+          "text": "完整排版 · 最后缩小\nCompose first. Resize last.",
+          "x": 0.5,
+          "y": 0.57,
+          "size": 0.058,
+          "boxWidth": 0.9,
+          "rotation": 5,
+          "align": "center",
+          "fontFamily": "serif",
+          "bold": true,
+          "italic": true,
+          "lineHeight": 1.25,
+          "color": "#8ff5c7",
+          "opacity": 1,
+          "outlineWidth": 0,
+          "outlineColor": "#000000",
+          "shadow": true
+        }
+      },
+      {
+        "id": "footer",
+        "enabled": true,
+        "recipe": {
+          "version": 1,
+          "text": "SOURCE → CROP → PADDING\nTEXT → FINAL SIZE",
+          "x": 0.5,
+          "y": 0.96,
+          "size": 0.03,
+          "boxWidth": 0.9,
+          "rotation": 0,
+          "align": "center",
+          "fontFamily": "mono",
+          "bold": false,
+          "italic": false,
+          "lineHeight": 1.2,
+          "color": "#c9e4d9",
+          "opacity": 1,
+          "outlineWidth": 0,
+          "outlineColor": "#000000",
+          "shadow": false
+        }
+      }
+    ],
+    "imageLayers": [],
+    "paintLayers": null,
+    "redactions": null,
+    "faceAdjustments": null
+  },
+  "limitations": [
+    "No Electron/browser screenshot or Windows installer executed.",
+    "Authored DOM and IPC shell, with actual app logic and native pixels.",
+    "Same installed Sharp Lanczos3 is used for the independent sequencing oracle, not a separately implemented kernel.",
+    "No new dependencies, fonts, models, network, API calls or private images."
+  ]
+}

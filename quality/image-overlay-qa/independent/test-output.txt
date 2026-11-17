@@ -1,0 +1,30 @@
+✔ independent dimension-bound IDs match the asset codec and dimensions cannot be relabelled (3.409643ms)
+✔ real PNG source-over matches an independent integer oracle at aligned opaque and partial-alpha coverage (711.468611ms)
+✔ actual PNG, native replay and actual VM pixel worker equal staged transformed/mipped layers without modifying originals (233.734658ms)
+✔ disabled and zero-opacity layers preserve exact legacy PNG/JPEG bytes and metadata, and native/VM pixels (705.760528ms)
+✔ native pipeline enforces tone→framing→straighten→padding→image→text→paint→redaction→final downsize (337.463728ms)
+✔ installed NativeCanvas glyph raster lands after image overlay in actual PNG output (176.29908ms)
+✔ hidden source/asset RGB cannot leak into visible pixels and actual PNG export sanitizes every zero-alpha pixel (266.242142ms)
+✔ native boundary rejects missing/extra/duplicate/malformed/wrong-hash assets and unsafe getters before worker creation (10.292282ms)
+✔ asset payloads and settings are immutable snapshots across validation and worker transfer (3.699825ms)
+✔ tiny final output cannot bypass source/edge/final image-overlay caps or combined retained budget before source copy (8.006531ms)
+✔ direct and native cancellation do not mutate input or publish stale bytes, and the next image export succeeds (227.666275ms)
+✔ forged active or neutral image provenance cannot pass native worker result validation (9.630671ms)
+✔ browser preflight snapshots image assets without readback; real pixel-worker output matches native replay (21.74765ms)
+✔ browser forged/stale image envelopes are rejected before Canvas allocation (39.864484ms)
+✔ browser overlay jobs serialize, queued cancellation avoids readback and late publication cannot replace the next render (18.714086ms)
+✔ browser source/manual/white-balance inputs omit image overlays while memory overflow rejects before readback (11.431558ms)
+✔ explicit working reduction and final downsize remain separate image-overlay coordinate stages (361.241754ms)
+✔ native image placement uses EXIF-oriented original canvas and strips source orientation on output (162.318045ms)
+✔ native JPEG equals explicit white-flatten encoding after image compositing (141.380604ms)
+✔ four independently addressed layers render in order; fifth layers and relabelled dimensions fail before worker creation (163.036175ms)
+✔ late native worker publication after cancellation cannot settle or contaminate the replacement export (4.254884ms)
+✔ preview final-canvas and combined four-layer work admission reject before readback or worker allocation (3.936695ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4074.411098

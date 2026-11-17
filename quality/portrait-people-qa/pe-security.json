@@ -1,0 +1,2154 @@
+{
+  "release": "0.2.6",
+  "generatedAt": "2026-10-22T17:43:21.477421+00:00",
+  "checksDescription": "Fresh standard-library PE32/PE32+ header, section, resource-tree, VS_VERSION_INFO fixed/string resource and XML application-manifest parsing. Targets were not executed or loaded.",
+  "status": "pass",
+  "checks": {
+    "allPEParsed": true,
+    "onlineInstallerX86Gui": true,
+    "offlineInstallerPresent": true,
+    "allPresentInstallersX86Gui": true,
+    "allPresentInstallersVersion026": true,
+    "allPresentInstallersAsInvoker": true,
+    "packagedLauncherX64Version026": true,
+    "payloadLauncherX64Electron45": true,
+    "payloadLauncherExactPinnedRuntime": true,
+    "threeSharpNativePEsX64": true,
+    "allStaticAslrDepFlags": true,
+    "allCertificateDirectoriesEmpty": true
+  },
+  "unsigned": true,
+  "windowsExecutionTested": false,
+  "windowsNativeDllLoadingTested": false,
+  "runtimeVersionNote": "Installer payload launcher is the exact electron.exe member of the pinned Electron 45.0.0 runtime ZIP; its 45.0.0 resource metadata is expected. The separate Electron Packager launcher is patched to app 0.2.6. The installed app version is in app.asar and Setup resources.",
+  "runtimeVerification": {
+    "runtimeZipFound": true,
+    "path": "/tmp/mint-electron-cache/f22ed746d6afe4413723c1ec95408e33d6635bf7d817a70edb1df9220a236ab0/electron-v45.0.0-win32-x64.zip",
+    "bytes": 158223852,
+    "sha256": "ae53887a23bb640369c93dbd38c408a2af5c0deb86f2fa76c6c244cb444b7f47",
+    "expectedSha256": "ae53887a23bb640369c93dbd38c408a2af5c0deb86f2fa76c6c244cb444b7f47",
+    "zipHashVerified": true,
+    "electronExeSha256": "8e84549b05d27d444da2957653200d1e0ac287eff0fc5722b92835b9e0821a59",
+    "payloadLauncherEqualsElectronZipMember": true
+  },
+  "files": [
+    {
+      "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/installer/out/MintPortrait-Development-0.2.6-Setup.exe",
+      "bytes": 13890191,
+      "sha256": "6940ece584d3c38bf2df6900dbca98b49dfaf460b3d7379d63a545cda177fdc3",
+      "machine": "0x14c",
+      "architecture": "x86",
+      "optionalHeaderMagic": "0x10b",
+      "subsystem": 2,
+      "subsystemName": "Windows GUI",
+      "coffCharacteristics": "0x30f",
+      "dllCharacteristics": "0x8540",
+      "aslr": true,
+      "dep": true,
+      "highEntropyVa": false,
+      "cfgFlagPresent": false,
+      "certificateDirectory": [
+        0,
+        0
+      ],
+      "authenticodeSignaturePresent": false,
+      "versionResources": [
+        {
+          "resourcePath": [
+            16,
+            1,
+            2052
+          ],
+          "file": "0.2.6.0",
+          "product": "0.2.6.0",
+          "fileFlagsMask": "0x0",
+          "fileFlags": "0x0",
+          "fileOS": "0x4",
+          "fileType": 1,
+          "strings": {
+            "VS_VERSION_INFO/StringFileInfo/080404b0/FileDescription": "薄荷人像 Desktop Setup",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/FileVersion": "0.2.6.0",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/LegalCopyright": "Mint Portrait",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/ProductName": "薄荷人像安装程序",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/ProductVersion": "0.2.6"
+          }
+        }
+      ],
+      "manifests": [
+        {
+          "resourcePath": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1061,
+          "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2",
+          "requestedExecutionLevels": [
+            {
+              "level": "asInvoker",
+              "uiAccess": "false"
+            }
+          ],
+          "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"><assemblyIdentity version=\"1.0.0.0\" processorArchitecture=\"*\" name=\"Nullsoft.NSIS.exehead\" type=\"win32\"/><description>Nullsoft Install System v3.11-1</description><dependency><dependentAssembly><assemblyIdentity type=\"win32\" name=\"Microsoft.Windows.Common-Controls\" version=\"6.0.0.0\" processorArchitecture=\"*\" publicKeyToken=\"6595b64144ccf1df\" language=\"*\" /></dependentAssembly></dependency><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\"><security><requestedPrivileges><requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"/></requestedPrivileges></security></trustInfo><compatibility xmlns=\"urn:schemas-microsoft-com:compatibility.v1\"><application><supportedOS Id=\"{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}\"/><supportedOS Id=\"{1f676c76-80e1-4239-95bb-83d0f6d0da78}\"/><supportedOS Id=\"{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}\"/><supportedOS Id=\"{35138b9a-5d96-4fbd-8e2d-a2440225f93a}\"/></application></compatibility></assembly>"
+        }
+      ],
+      "installerExecutionLevel": "asInvoker",
+      "resourceInventory": [
+        {
+          "path": [
+            2,
+            110,
+            1033
+          ],
+          "bytes": 1638,
+          "sha256": "0e90a9e4b8f3a5bf990e8aadfd8096ad7aeaf1a4e032ac7b6395ce191d61c142"
+        },
+        {
+          "path": [
+            3,
+            1,
+            1033
+          ],
+          "bytes": 4264,
+          "sha256": "d442adb90ba296c7e617d2f58d6fa6f308bcd8ef65e5e9c66db4dd27f93fcfbe"
+        },
+        {
+          "path": [
+            3,
+            2,
+            1033
+          ],
+          "bytes": 3752,
+          "sha256": "50279c9885b490e74b49ac0273940b6e0891b62fc9ffb5c52e35422a694f248b"
+        },
+        {
+          "path": [
+            3,
+            3,
+            1033
+          ],
+          "bytes": 2216,
+          "sha256": "9da1013c864092e49c2676b3ba68a0d4513457d77d251730ed73cc5f4a4813b1"
+        },
+        {
+          "path": [
+            3,
+            4,
+            1033
+          ],
+          "bytes": 1384,
+          "sha256": "61f762babde9942f43ee97154b8734efeed0632a6ea778dc395793ae3e3e7507"
+        },
+        {
+          "path": [
+            3,
+            5,
+            1033
+          ],
+          "bytes": 1128,
+          "sha256": "69e6579a37fcaec037634e7fecbfc6a26093ea81dc4bd555d8a12187d2cd0866"
+        },
+        {
+          "path": [
+            3,
+            6,
+            1033
+          ],
+          "bytes": 744,
+          "sha256": "ff06189b43a5c1d6cc5d1b7cbf6ab56b1157ec52807945d652274a211462cba5"
+        },
+        {
+          "path": [
+            3,
+            7,
+            1033
+          ],
+          "bytes": 296,
+          "sha256": "491e52ded039ec6684277e6f1f820e288763ae6d20e682bcfffb6cee4518ac23"
+        },
+        {
+          "path": [
+            5,
+            103,
+            1033
+          ],
+          "bytes": 304,
+          "sha256": "7d256f5d76bc52ec3b05d3c4a1b26dd3bd14ba7df6f16c93708a7f9805ea71df"
+        },
+        {
+          "path": [
+            5,
+            104,
+            1033
+          ],
+          "bytes": 336,
+          "sha256": "311942ea193e7dd0c614b48be27a9331769d94e9cfa4d9eae21d6869b618dc0a"
+        },
+        {
+          "path": [
+            5,
+            105,
+            1033
+          ],
+          "bytes": 554,
+          "sha256": "e502086038bd072c90060202651011524b40a0dbf222f84ebd39096f8240a853"
+        },
+        {
+          "path": [
+            5,
+            106,
+            1033
+          ],
+          "bytes": 240,
+          "sha256": "8bec95cdc0c8dbab7674b2e376399f0fd92d68c97a2c5226b97d99b1d5b16d0d"
+        },
+        {
+          "path": [
+            5,
+            107,
+            1033
+          ],
+          "bytes": 140,
+          "sha256": "8ec647f9650b79179d5afc3e2bd8ecaa4b4617ada8c69c22382321a16f2153e0"
+        },
+        {
+          "path": [
+            5,
+            111,
+            1033
+          ],
+          "bytes": 218,
+          "sha256": "c53f8150b6af1f60fd252048650f3406f021642e6f64fde00722c24203526009"
+        },
+        {
+          "path": [
+            14,
+            103,
+            1033
+          ],
+          "bytes": 104,
+          "sha256": "fed46e06346fb8f64b14c18408a82caf955929ac0e65151630539dc5bd194584"
+        },
+        {
+          "path": [
+            16,
+            1,
+            2052
+          ],
+          "bytes": 512,
+          "sha256": "44893144c7f26a4e91a7928d3659815db31b79902d8f2299bf1f865cc8a5fbb6"
+        },
+        {
+          "path": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1061,
+          "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2"
+        }
+      ],
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtualSize": 37596,
+          "rawSize": 37888,
+          "rawPointer": 1024
+        },
+        {
+          "name": ".data",
+          "rva": 45056,
+          "virtualSize": 224,
+          "rawSize": 512,
+          "rawPointer": 38912
+        },
+        {
+          "name": ".rdata",
+          "rva": 49152,
+          "virtualSize": 52408,
+          "rawSize": 52736,
+          "rawPointer": 39424
+        },
+        {
+          "name": ".bss",
+          "rva": 102400,
+          "virtualSize": 128576,
+          "rawSize": 0,
+          "rawPointer": 0
+        },
+        {
+          "name": ".idata",
+          "rva": 233472,
+          "virtualSize": 5040,
+          "rawSize": 5120,
+          "rawPointer": 92160
+        },
+        {
+          "name": ".ndata",
+          "rva": 241664,
+          "virtualSize": 212992,
+          "rawSize": 512,
+          "rawPointer": 97280
+        },
+        {
+          "name": ".rsrc",
+          "rva": 454656,
+          "virtualSize": 19888,
+          "rawSize": 19968,
+          "rawPointer": 97792
+        }
+      ]
+    },
+    {
+      "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/installer/out/MintPortrait-Development-0.2.6-Offline-Setup.exe",
+      "bytes": 125666051,
+      "sha256": "97fb490dcaf5105eb756c7309fb187d883a72b1e89302a0a55ed9f2bb91ab85b",
+      "machine": "0x14c",
+      "architecture": "x86",
+      "optionalHeaderMagic": "0x10b",
+      "subsystem": 2,
+      "subsystemName": "Windows GUI",
+      "coffCharacteristics": "0x30f",
+      "dllCharacteristics": "0x8540",
+      "aslr": true,
+      "dep": true,
+      "highEntropyVa": false,
+      "cfgFlagPresent": false,
+      "certificateDirectory": [
+        0,
+        0
+      ],
+      "authenticodeSignaturePresent": false,
+      "versionResources": [
+        {
+          "resourcePath": [
+            16,
+            1,
+            2052
+          ],
+          "file": "0.2.6.0",
+          "product": "0.2.6.0",
+          "fileFlagsMask": "0x0",
+          "fileFlags": "0x0",
+          "fileOS": "0x4",
+          "fileType": 1,
+          "strings": {
+            "VS_VERSION_INFO/StringFileInfo/080404b0/FileDescription": "薄荷人像 Desktop Setup",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/FileVersion": "0.2.6.0",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/LegalCopyright": "Mint Portrait",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/ProductName": "薄荷人像安装程序",
+            "VS_VERSION_INFO/StringFileInfo/080404b0/ProductVersion": "0.2.6"
+          }
+        }
+      ],
+      "manifests": [
+        {
+          "resourcePath": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1061,
+          "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2",
+          "requestedExecutionLevels": [
+            {
+              "level": "asInvoker",
+              "uiAccess": "false"
+            }
+          ],
+          "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"><assemblyIdentity version=\"1.0.0.0\" processorArchitecture=\"*\" name=\"Nullsoft.NSIS.exehead\" type=\"win32\"/><description>Nullsoft Install System v3.11-1</description><dependency><dependentAssembly><assemblyIdentity type=\"win32\" name=\"Microsoft.Windows.Common-Controls\" version=\"6.0.0.0\" processorArchitecture=\"*\" publicKeyToken=\"6595b64144ccf1df\" language=\"*\" /></dependentAssembly></dependency><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\"><security><requestedPrivileges><requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"/></requestedPrivileges></security></trustInfo><compatibility xmlns=\"urn:schemas-microsoft-com:compatibility.v1\"><application><supportedOS Id=\"{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}\"/><supportedOS Id=\"{1f676c76-80e1-4239-95bb-83d0f6d0da78}\"/><supportedOS Id=\"{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}\"/><supportedOS Id=\"{35138b9a-5d96-4fbd-8e2d-a2440225f93a}\"/></application></compatibility></assembly>"
+        }
+      ],
+      "installerExecutionLevel": "asInvoker",
+      "resourceInventory": [
+        {
+          "path": [
+            2,
+            110,
+            1033
+          ],
+          "bytes": 1638,
+          "sha256": "0e90a9e4b8f3a5bf990e8aadfd8096ad7aeaf1a4e032ac7b6395ce191d61c142"
+        },
+        {
+          "path": [
+            3,
+            1,
+            1033
+          ],
+          "bytes": 4264,
+          "sha256": "d442adb90ba296c7e617d2f58d6fa6f308bcd8ef65e5e9c66db4dd27f93fcfbe"
+        },
+        {
+          "path": [
+            3,
+            2,
+            1033
+          ],
+          "bytes": 3752,
+          "sha256": "50279c9885b490e74b49ac0273940b6e0891b62fc9ffb5c52e35422a694f248b"
+        },
+        {
+          "path": [
+            3,
+            3,
+            1033
+          ],
+          "bytes": 2216,
+          "sha256": "9da1013c864092e49c2676b3ba68a0d4513457d77d251730ed73cc5f4a4813b1"
+        },
+        {
+          "path": [
+            3,
+            4,
+            1033
+          ],
+          "bytes": 1384,
+          "sha256": "61f762babde9942f43ee97154b8734efeed0632a6ea778dc395793ae3e3e7507"
+        },
+        {
+          "path": [
+            3,
+            5,
+            1033
+          ],
+          "bytes": 1128,
+          "sha256": "69e6579a37fcaec037634e7fecbfc6a26093ea81dc4bd555d8a12187d2cd0866"
+        },
+        {
+          "path": [
+            3,
+            6,
+            1033
+          ],
+          "bytes": 744,
+          "sha256": "ff06189b43a5c1d6cc5d1b7cbf6ab56b1157ec52807945d652274a211462cba5"
+        },
+        {
+          "path": [
+            3,
+            7,
+            1033
+          ],
+          "bytes": 296,
+          "sha256": "491e52ded039ec6684277e6f1f820e288763ae6d20e682bcfffb6cee4518ac23"
+        },
+        {
+          "path": [
+            5,
+            103,
+            1033
+          ],
+          "bytes": 304,
+          "sha256": "7d256f5d76bc52ec3b05d3c4a1b26dd3bd14ba7df6f16c93708a7f9805ea71df"
+        },
+        {
+          "path": [
+            5,
+            104,
+            1033
+          ],
+          "bytes": 336,
+          "sha256": "311942ea193e7dd0c614b48be27a9331769d94e9cfa4d9eae21d6869b618dc0a"
+        },
+        {
+          "path": [
+            5,
+            105,
+            1033
+          ],
+          "bytes": 554,
+          "sha256": "e502086038bd072c90060202651011524b40a0dbf222f84ebd39096f8240a853"
+        },
+        {
+          "path": [
+            5,
+            106,
+            1033
+          ],
+          "bytes": 240,
+          "sha256": "8bec95cdc0c8dbab7674b2e376399f0fd92d68c97a2c5226b97d99b1d5b16d0d"
+        },
+        {
+          "path": [
+            5,
+            107,
+            1033
+          ],
+          "bytes": 140,
+          "sha256": "8ec647f9650b79179d5afc3e2bd8ecaa4b4617ada8c69c22382321a16f2153e0"
+        },
+        {
+          "path": [
+            5,
+            111,
+            1033
+          ],
+          "bytes": 218,
+          "sha256": "c53f8150b6af1f60fd252048650f3406f021642e6f64fde00722c24203526009"
+        },
+        {
+          "path": [
+            14,
+            103,
+            1033
+          ],
+          "bytes": 104,
+          "sha256": "fed46e06346fb8f64b14c18408a82caf955929ac0e65151630539dc5bd194584"
+        },
+        {
+          "path": [
+            16,
+            1,
+            2052
+          ],
+          "bytes": 512,
+          "sha256": "44893144c7f26a4e91a7928d3659815db31b79902d8f2299bf1f865cc8a5fbb6"
+        },
+        {
+          "path": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1061,
+          "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2"
+        }
+      ],
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtualSize": 37596,
+          "rawSize": 37888,
+          "rawPointer": 1024
+        },
+        {
+          "name": ".data",
+          "rva": 45056,
+          "virtualSize": 224,
+          "rawSize": 512,
+          "rawPointer": 38912
+        },
+        {
+          "name": ".rdata",
+          "rva": 49152,
+          "virtualSize": 52408,
+          "rawSize": 52736,
+          "rawPointer": 39424
+        },
+        {
+          "name": ".bss",
+          "rva": 102400,
+          "virtualSize": 128576,
+          "rawSize": 0,
+          "rawPointer": 0
+        },
+        {
+          "name": ".idata",
+          "rva": 233472,
+          "virtualSize": 5040,
+          "rawSize": 5120,
+          "rawPointer": 92160
+        },
+        {
+          "name": ".ndata",
+          "rva": 241664,
+          "virtualSize": 212992,
+          "rawSize": 512,
+          "rawPointer": 97280
+        },
+        {
+          "name": ".rsrc",
+          "rva": 454656,
+          "virtualSize": 19888,
+          "rawSize": 19968,
+          "rawPointer": 97792
+        }
+      ]
+    },
+    {
+      "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/dist/Mint Portrait-win32-x64/MintPortrait.exe",
+      "bytes": 249797632,
+      "sha256": "e33c6e8d565d19972ef92b5ef105ecde87c6d0fd36f99b3170cd51308363bc8d",
+      "machine": "0x8664",
+      "architecture": "x64",
+      "optionalHeaderMagic": "0x20b",
+      "subsystem": 2,
+      "subsystemName": "Windows GUI",
+      "coffCharacteristics": "0x22",
+      "dllCharacteristics": "0xc160",
+      "aslr": true,
+      "dep": true,
+      "highEntropyVa": true,
+      "cfgFlagPresent": true,
+      "certificateDirectory": [
+        0,
+        0
+      ],
+      "authenticodeSignaturePresent": false,
+      "versionResources": [
+        {
+          "resourcePath": [
+            16,
+            1,
+            1033
+          ],
+          "file": "0.2.6.0",
+          "product": "0.2.6.0",
+          "fileFlagsMask": "0x3f",
+          "fileFlags": "0x0",
+          "fileOS": "0x40004",
+          "fileType": 1,
+          "strings": {
+            "VS_VERSION_INFO/StringFileInfo/040904b0/CompanyName": "Mint Portrait",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/FileDescription": "薄荷人像 Desktop 开发候选版",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/FileVersion": "0.2.6",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/InternalName": "Mint Portrait",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/LegalCopyright": "Copyright (C) 2015 GitHub, Inc. All rights reserved.",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/OriginalFilename": "MintPortrait.exe",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/ProductName": "薄荷人像",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/ProductVersion": "0.2.6",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/SquirrelAwareVersion": "1"
+          }
+        }
+      ],
+      "manifests": [
+        {
+          "resourcePath": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1425,
+          "sha256": "2545f65ac7e70afeeb7850081070f14be63a078172236e206237dce3f3574d65",
+          "requestedExecutionLevels": [
+            {
+              "level": "asInvoker",
+              "uiAccess": "false"
+            }
+          ],
+          "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\">\n<asmv3:application xmlns:asmv3=\"urn:schemas-microsoft-com:asm.v3\"><asmv3:windowsSettings xmlns=\"http://schemas.microsoft.com/SMI/2005/WindowsSettings\"><disableWindowFiltering xmlns=\"http://schemas.microsoft.com/SMI/2011/WindowsSettings\">true</disableWindowFiltering></asmv3:windowsSettings><asmv3:windowsSettings xmlns=\"http://schemas.microsoft.com/SMI/2005/WindowsSettings\"><dpiAware>true/pm</dpiAware></asmv3:windowsSettings></asmv3:application><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\"><security><requestedPrivileges><requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"/></requestedPrivileges></security></trustInfo><dependency><dependentAssembly><assemblyIdentity type=\"win32\" name=\"Microsoft.Windows.Common-Controls\" version=\"6.0.0.0\" processorArchitecture=\"*\" publicKeyToken=\"6595b64144ccf1df\" language=\"*\"/></dependentAssembly></dependency><compatibility xmlns=\"urn:schemas-microsoft-com:compatibility.v1\"><application><supportedOS Id=\"{e2011457-1546-43c5-a5fe-008deee3d3f0}\"/><supportedOS Id=\"{35138b9a-5d96-4fbd-8e2d-a2440225f93a}\"/><supportedOS Id=\"{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}\"/><supportedOS Id=\"{1f676c76-80e1-4239-95bb-83d0f6d0da78}\"/><supportedOS Id=\"{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}\"/><maxversiontested Id=\"10.0.18362.0\"/></application></compatibility></assembly>\n"
+        }
+      ],
+      "installerExecutionLevel": "asInvoker",
+      "resourceInventory": [
+        {
+          "path": [
+            "INTEGRITY",
+            "ELECTRONASAR",
+            1033
+          ],
+          "bytes": 122,
+          "sha256": "6b944a9fdb36a07f9c54fc0346e60ea0dfd1ea308825c75bd5dab3cdc865f5ed"
+        },
+        {
+          "path": [
+            1,
+            1,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "8c5a126b0e59e2927158fe5008c375aeef5396adb797c682e07578d13c283a3f"
+        },
+        {
+          "path": [
+            1,
+            2,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "06db3222f267c74b72573a349de6a24bcfbb4bba9656d3dd6b50f4f64326e156"
+        },
+        {
+          "path": [
+            1,
+            3,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "91baaad720c63aaff01b902deda14e2c8b355c31159b71c481dc6fb67bcbb4cf"
+        },
+        {
+          "path": [
+            1,
+            4,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "2d2aea139c8f41675322a459ce75295ac168eb0e925ed5a75c0981b3693069aa"
+        },
+        {
+          "path": [
+            1,
+            5,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "a4319fd1d9a81d7a6dc9ef1818d85dc68ded85342754d2f5768e01d0edf46780"
+        },
+        {
+          "path": [
+            1,
+            6,
+            0
+          ],
+          "bytes": 3244,
+          "sha256": "ff8ccb25e747ead631922be99ebc2004a97295b0b606f40e83f15c2dc2bbbc81"
+        },
+        {
+          "path": [
+            1,
+            7,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "860a680c92db087b12dd6bf2ef581979c08ac13ed9657403dab974f387420555"
+        },
+        {
+          "path": [
+            1,
+            8,
+            0
+          ],
+          "bytes": 3244,
+          "sha256": "5edad8d3d744070cb51e4dfdb02053a15101c8c954f952e4dfe57a4d7659e5b2"
+        },
+        {
+          "path": [
+            1,
+            9,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "3bd84b82f6e6a2cb156d881bdc1f29567d5712ad81d2da33b0ff9cd8a5a9981f"
+        },
+        {
+          "path": [
+            1,
+            10,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "d87015c12fb89d2c54c2b1ea0b5f0feaf50bba50cddcf546668c62316597bf2f"
+        },
+        {
+          "path": [
+            1,
+            11,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "c7988ba08e9df9a1eee74d2ed9ecda968a384dd1ac105125b95dee98cc663c19"
+        },
+        {
+          "path": [
+            1,
+            12,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "744c1f78a1a9d3ec04ad6358c2bdbd89b8a1cfa9d850c1ee4ecfa4b3f256ff26"
+        },
+        {
+          "path": [
+            1,
+            13,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "cbb310244272c36ea589f9257476e6c19b1eb6be0cd5193cd5901efd4d184c35"
+        },
+        {
+          "path": [
+            1,
+            14,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "302d274cf49db7ebc8f97dd4320489781da8a44447cbb2a7346ccff84b1b944b"
+        },
+        {
+          "path": [
+            1,
+            15,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "bc19a3937fe7fb79cf877d2bea8d1ab4ea30d1a05f4c60d42cf57142c81290e9"
+        },
+        {
+          "path": [
+            1,
+            16,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "9534fac9229e10c53a85e5a6deb4224d12a7a3024b7ff9ccc1cb8717ffd7acaa"
+        },
+        {
+          "path": [
+            1,
+            17,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "faf155f58e17b8e1a98cc26aaa92597c62dc87ff98555cd708f6684eb8243d4c"
+        },
+        {
+          "path": [
+            1,
+            18,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "f4bcc6750981e15e3fc8c751997156f4df9055cece8d16944e4dea2ce4bc911b"
+        },
+        {
+          "path": [
+            1,
+            19,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "787dc2d9d3f4034a91bd222034d01eafb01e1053ac3579a0fd033f141dcccb69"
+        },
+        {
+          "path": [
+            1,
+            20,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "236462dd2d629d67ff18c41f41cfa739549aff2933f7df2bd51630790b4d424e"
+        },
+        {
+          "path": [
+            1,
+            21,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "3eba69eaec7cef56d2c964dee1f9c0226a365b3ae869a402690d548c82c16ba3"
+        },
+        {
+          "path": [
+            1,
+            22,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "2a53b434f3ab8d37381a5461163027d2a256f0bda3ea8f65795ed6d2c66b4e30"
+        },
+        {
+          "path": [
+            1,
+            23,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "5b4c85e7d881d8c74760c07f9e4fe3d7427a72bed0e379aed6a78f7cbeca3199"
+        },
+        {
+          "path": [
+            3,
+            1,
+            1033
+          ],
+          "bytes": 747,
+          "sha256": "9809e0cd01cd1a898e42a34c9763a0453c54f0fcefcbdc256b62b76856deb900"
+        },
+        {
+          "path": [
+            3,
+            2,
+            1033
+          ],
+          "bytes": 1707,
+          "sha256": "59e1ab205011374ebe52d879411386fbb74a71681130f0ea6e0620b43eaac392"
+        },
+        {
+          "path": [
+            3,
+            3,
+            1033
+          ],
+          "bytes": 2646,
+          "sha256": "13ea1688daee5597e6ecd62db042b84bfcacb7c3f8412d36b008508cbb24c196"
+        },
+        {
+          "path": [
+            3,
+            4,
+            1033
+          ],
+          "bytes": 3544,
+          "sha256": "de23615ada2a3a04264df1f2fe36b3fd31674baacc43455a1467bb85c88360b6"
+        },
+        {
+          "path": [
+            3,
+            5,
+            1033
+          ],
+          "bytes": 6705,
+          "sha256": "b885d8340fef145d651552b22b7c224c1795cc697551d6cb4436eb209eb5bc33"
+        },
+        {
+          "path": [
+            3,
+            6,
+            1033
+          ],
+          "bytes": 2383,
+          "sha256": "ab92b50b2fce010ec7f3cce3be27094b0c9a2869cab95aa33e356342ee677e0d"
+        },
+        {
+          "path": [
+            12,
+            49920,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "c53efa8085835ba129c1909beaff8a67b45f50837707f22dfff0f24d8cd26710"
+        },
+        {
+          "path": [
+            12,
+            49921,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "b07e022f8ef0a8e5fd3f56986b2e5bf06df07054e9ea9177996b0a6c27d74d7c"
+        },
+        {
+          "path": [
+            12,
+            49922,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "43f40dd5140804309a4c901ec3c85b54481316e67a6fe18beb9d5c0ce3a42c3a"
+        },
+        {
+          "path": [
+            12,
+            49923,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "ff47a48c11c234903a7d625cb8b62101909f735ad84266c98dd4834549452c39"
+        },
+        {
+          "path": [
+            12,
+            49924,
+            0
+          ],
+          "bytes": 34,
+          "sha256": "f75e551324504a3c9caa453a4b0fd424884291acdb82f0549e7bb0b48ce01647"
+        },
+        {
+          "path": [
+            12,
+            49925,
+            0
+          ],
+          "bytes": 34,
+          "sha256": "770a19a2be0c18daf7fb714c6f78e5fecde900b9fda29a6c4691c369253f6f0f"
+        },
+        {
+          "path": [
+            12,
+            49926,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "7662c77c89bc776c64acfbc6ac7f22f56a631304205ac1a00d1d6c876ff1574d"
+        },
+        {
+          "path": [
+            12,
+            49927,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "c7f15e3e69f8bad21f5f9c9546b129828d66e90b38a8fe9cf33cf23846e62700"
+        },
+        {
+          "path": [
+            12,
+            49928,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "fd27224dee56e50f926e0c003d1bdb8c31db4d1f0a089280d0f55b79ff45c1e7"
+        },
+        {
+          "path": [
+            12,
+            49929,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "2c57fbd554735f2b8ff46f26b3d2d58a5a5e4152a02043e7fd6c552a43a3ceee"
+        },
+        {
+          "path": [
+            12,
+            49930,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "1133ff27d25ac052e4a0570865c18ce0e07a3afbb89577bc52af61435a91b8cc"
+        },
+        {
+          "path": [
+            12,
+            49931,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "5907a1ab79be2dae328a84248db9750607aeb7b802af582f974a5ae59fb3c37c"
+        },
+        {
+          "path": [
+            12,
+            49932,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "d19508d8742527d523aa3ef78e1091ce417bec079e9632181cdc8ff245c53ce9"
+        },
+        {
+          "path": [
+            12,
+            49933,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "1dac0833fe30898ce2c1df2c70b09d62d51f8f765ae0ffd90b811067e875ae98"
+        },
+        {
+          "path": [
+            12,
+            49934,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "5fa51d73b8ea1316fb0c8f11c3740c6f755a8499a135e4e18ef6b823aad3ad70"
+        },
+        {
+          "path": [
+            12,
+            49935,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "7794cf070f4c99cd9ec27a43faa84daab8d19e765f0489c981a9ef28468a3899"
+        },
+        {
+          "path": [
+            12,
+            49936,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "4c9fe467bd0250366713a2a43f5162e5ec2e7cd566ea218f7a6545e0ad878184"
+        },
+        {
+          "path": [
+            12,
+            49937,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "b328fe22a904a2e7e1341a95dbf00e2fdffc9ab350bc64c5ee348d3007c2b479"
+        },
+        {
+          "path": [
+            12,
+            49938,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "8f51832638675f16ec5f251ab59251b3f85d84e5129025d44c45b3191b331c58"
+        },
+        {
+          "path": [
+            12,
+            49939,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "6c2ef97bca5cdc6aa6de65b1f1ae8328bcb3494a16025eee870231d991e2cd56"
+        },
+        {
+          "path": [
+            12,
+            49940,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "1085b7390dbd2b2006f85619521047c6ca58a8b274196eeed48e74ad8a1b746a"
+        },
+        {
+          "path": [
+            14,
+            1,
+            1033
+          ],
+          "bytes": 90,
+          "sha256": "b9124c73f85e33b49f8997d9d2daaa5c56530b49f6fb630d5cd20572122e56b1"
+        },
+        {
+          "path": [
+            16,
+            1,
+            1033
+          ],
+          "bytes": 828,
+          "sha256": "6c8e2b1c398e2ef69e0146f0d1eccb49ee30090b84af079c2bc6e7c56c95f147"
+        },
+        {
+          "path": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1425,
+          "sha256": "2545f65ac7e70afeeb7850081070f14be63a078172236e206237dce3f3574d65"
+        }
+      ],
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtualSize": 196010992,
+          "rawSize": 196011008,
+          "rawPointer": 1536
+        },
+        {
+          "name": ".rdata",
+          "rva": 196018176,
+          "virtualSize": 45720928,
+          "rawSize": 45721088,
+          "rawPointer": 196012544
+        },
+        {
+          "name": ".data",
+          "rva": 241741824,
+          "virtualSize": 2414520,
+          "rawSize": 1013248,
+          "rawPointer": 241733632
+        },
+        {
+          "name": ".pdata",
+          "rva": 244158464,
+          "virtualSize": 5720064,
+          "rawSize": 5720064,
+          "rawPointer": 242746880
+        },
+        {
+          "name": ".eh_fram",
+          "rva": 249880576,
+          "virtualSize": 120,
+          "rawSize": 512,
+          "rawPointer": 248466944
+        },
+        {
+          "name": ".fptable",
+          "rva": 249884672,
+          "virtualSize": 256,
+          "rawSize": 512,
+          "rawPointer": 248467456
+        },
+        {
+          "name": ".rodata",
+          "rva": 249888768,
+          "virtualSize": 2336,
+          "rawSize": 2560,
+          "rawPointer": 248467968
+        },
+        {
+          "name": ".tls",
+          "rva": 249892864,
+          "virtualSize": 2218,
+          "rawSize": 2560,
+          "rawPointer": 248470528
+        },
+        {
+          "name": "CPADinfo",
+          "rva": 249896960,
+          "virtualSize": 56,
+          "rawSize": 512,
+          "rawPointer": 248473088
+        },
+        {
+          "name": "LZMADEC",
+          "rva": 249901056,
+          "virtualSize": 4593,
+          "rawSize": 4608,
+          "rawPointer": 248473600
+        },
+        {
+          "name": "_RDATA",
+          "rva": 249909248,
+          "virtualSize": 1092,
+          "rawSize": 1536,
+          "rawPointer": 248478208
+        },
+        {
+          "name": "malloc_h",
+          "rva": 249913344,
+          "virtualSize": 1931,
+          "rawSize": 2048,
+          "rawPointer": 248479744
+        },
+        {
+          "name": "prot",
+          "rva": 249917440,
+          "virtualSize": 155,
+          "rawSize": 512,
+          "rawPointer": 248481792
+        },
+        {
+          "name": ".rsrc",
+          "rva": 249921536,
+          "virtualSize": 80202,
+          "rawSize": 99328,
+          "rawPointer": 248482304
+        },
+        {
+          "name": ".reloc",
+          "rva": 250003456,
+          "virtualSize": 1215668,
+          "rawSize": 1216000,
+          "rawPointer": 248581632
+        }
+      ]
+    },
+    {
+      "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/installer/payload/MintPortrait.exe",
+      "bytes": 249797632,
+      "sha256": "8e84549b05d27d444da2957653200d1e0ac287eff0fc5722b92835b9e0821a59",
+      "machine": "0x8664",
+      "architecture": "x64",
+      "optionalHeaderMagic": "0x20b",
+      "subsystem": 2,
+      "subsystemName": "Windows GUI",
+      "coffCharacteristics": "0x22",
+      "dllCharacteristics": "0xc160",
+      "aslr": true,
+      "dep": true,
+      "highEntropyVa": true,
+      "cfgFlagPresent": true,
+      "certificateDirectory": [
+        0,
+        0
+      ],
+      "authenticodeSignaturePresent": false,
+      "versionResources": [
+        {
+          "resourcePath": [
+            16,
+            1,
+            1033
+          ],
+          "file": "45.0.0.0",
+          "product": "45.0.0.0",
+          "fileFlagsMask": "0x3f",
+          "fileFlags": "0x0",
+          "fileOS": "0x40004",
+          "fileType": 1,
+          "strings": {
+            "VS_VERSION_INFO/StringFileInfo/040904b0/CompanyName": "GitHub, Inc.",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/FileDescription": "Electron",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/FileVersion": "45.0.0",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/InternalName": "electron.exe",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/LegalCopyright": "Copyright (C) 2015 GitHub, Inc. All rights reserved.",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/OriginalFilename": "electron.exe",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/ProductName": "Electron",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/ProductVersion": "45.0.0",
+            "VS_VERSION_INFO/StringFileInfo/040904b0/SquirrelAwareVersion": "1"
+          }
+        }
+      ],
+      "manifests": [
+        {
+          "resourcePath": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1425,
+          "sha256": "2545f65ac7e70afeeb7850081070f14be63a078172236e206237dce3f3574d65",
+          "requestedExecutionLevels": [
+            {
+              "level": "asInvoker",
+              "uiAccess": "false"
+            }
+          ],
+          "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\">\n<asmv3:application xmlns:asmv3=\"urn:schemas-microsoft-com:asm.v3\"><asmv3:windowsSettings xmlns=\"http://schemas.microsoft.com/SMI/2005/WindowsSettings\"><disableWindowFiltering xmlns=\"http://schemas.microsoft.com/SMI/2011/WindowsSettings\">true</disableWindowFiltering></asmv3:windowsSettings><asmv3:windowsSettings xmlns=\"http://schemas.microsoft.com/SMI/2005/WindowsSettings\"><dpiAware>true/pm</dpiAware></asmv3:windowsSettings></asmv3:application><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\"><security><requestedPrivileges><requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"/></requestedPrivileges></security></trustInfo><dependency><dependentAssembly><assemblyIdentity type=\"win32\" name=\"Microsoft.Windows.Common-Controls\" version=\"6.0.0.0\" processorArchitecture=\"*\" publicKeyToken=\"6595b64144ccf1df\" language=\"*\"/></dependentAssembly></dependency><compatibility xmlns=\"urn:schemas-microsoft-com:compatibility.v1\"><application><supportedOS Id=\"{e2011457-1546-43c5-a5fe-008deee3d3f0}\"/><supportedOS Id=\"{35138b9a-5d96-4fbd-8e2d-a2440225f93a}\"/><supportedOS Id=\"{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}\"/><supportedOS Id=\"{1f676c76-80e1-4239-95bb-83d0f6d0da78}\"/><supportedOS Id=\"{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}\"/><maxversiontested Id=\"10.0.18362.0\"/></application></compatibility></assembly>\n"
+        }
+      ],
+      "installerExecutionLevel": "asInvoker",
+      "resourceInventory": [
+        {
+          "path": [
+            1,
+            1,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "8c5a126b0e59e2927158fe5008c375aeef5396adb797c682e07578d13c283a3f"
+        },
+        {
+          "path": [
+            1,
+            2,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "06db3222f267c74b72573a349de6a24bcfbb4bba9656d3dd6b50f4f64326e156"
+        },
+        {
+          "path": [
+            1,
+            3,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "91baaad720c63aaff01b902deda14e2c8b355c31159b71c481dc6fb67bcbb4cf"
+        },
+        {
+          "path": [
+            1,
+            4,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "2d2aea139c8f41675322a459ce75295ac168eb0e925ed5a75c0981b3693069aa"
+        },
+        {
+          "path": [
+            1,
+            5,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "a4319fd1d9a81d7a6dc9ef1818d85dc68ded85342754d2f5768e01d0edf46780"
+        },
+        {
+          "path": [
+            1,
+            6,
+            0
+          ],
+          "bytes": 3244,
+          "sha256": "ff8ccb25e747ead631922be99ebc2004a97295b0b606f40e83f15c2dc2bbbc81"
+        },
+        {
+          "path": [
+            1,
+            7,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "860a680c92db087b12dd6bf2ef581979c08ac13ed9657403dab974f387420555"
+        },
+        {
+          "path": [
+            1,
+            8,
+            0
+          ],
+          "bytes": 3244,
+          "sha256": "5edad8d3d744070cb51e4dfdb02053a15101c8c954f952e4dfe57a4d7659e5b2"
+        },
+        {
+          "path": [
+            1,
+            9,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "3bd84b82f6e6a2cb156d881bdc1f29567d5712ad81d2da33b0ff9cd8a5a9981f"
+        },
+        {
+          "path": [
+            1,
+            10,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "d87015c12fb89d2c54c2b1ea0b5f0feaf50bba50cddcf546668c62316597bf2f"
+        },
+        {
+          "path": [
+            1,
+            11,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "c7988ba08e9df9a1eee74d2ed9ecda968a384dd1ac105125b95dee98cc663c19"
+        },
+        {
+          "path": [
+            1,
+            12,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "744c1f78a1a9d3ec04ad6358c2bdbd89b8a1cfa9d850c1ee4ecfa4b3f256ff26"
+        },
+        {
+          "path": [
+            1,
+            13,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "cbb310244272c36ea589f9257476e6c19b1eb6be0cd5193cd5901efd4d184c35"
+        },
+        {
+          "path": [
+            1,
+            14,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "302d274cf49db7ebc8f97dd4320489781da8a44447cbb2a7346ccff84b1b944b"
+        },
+        {
+          "path": [
+            1,
+            15,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "bc19a3937fe7fb79cf877d2bea8d1ab4ea30d1a05f4c60d42cf57142c81290e9"
+        },
+        {
+          "path": [
+            1,
+            16,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "9534fac9229e10c53a85e5a6deb4224d12a7a3024b7ff9ccc1cb8717ffd7acaa"
+        },
+        {
+          "path": [
+            1,
+            17,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "faf155f58e17b8e1a98cc26aaa92597c62dc87ff98555cd708f6684eb8243d4c"
+        },
+        {
+          "path": [
+            1,
+            18,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "f4bcc6750981e15e3fc8c751997156f4df9055cece8d16944e4dea2ce4bc911b"
+        },
+        {
+          "path": [
+            1,
+            19,
+            0
+          ],
+          "bytes": 4268,
+          "sha256": "787dc2d9d3f4034a91bd222034d01eafb01e1053ac3579a0fd033f141dcccb69"
+        },
+        {
+          "path": [
+            1,
+            20,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "236462dd2d629d67ff18c41f41cfa739549aff2933f7df2bd51630790b4d424e"
+        },
+        {
+          "path": [
+            1,
+            21,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "3eba69eaec7cef56d2c964dee1f9c0226a365b3ae869a402690d548c82c16ba3"
+        },
+        {
+          "path": [
+            1,
+            22,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "2a53b434f3ab8d37381a5461163027d2a256f0bda3ea8f65795ed6d2c66b4e30"
+        },
+        {
+          "path": [
+            1,
+            23,
+            0
+          ],
+          "bytes": 308,
+          "sha256": "5b4c85e7d881d8c74760c07f9e4fe3d7427a72bed0e379aed6a78f7cbeca3199"
+        },
+        {
+          "path": [
+            3,
+            1,
+            1033
+          ],
+          "bytes": 1320,
+          "sha256": "a91b53dfa548aadf54a17a7178fc0468929675aba3b7c63ececc67aa98067297"
+        },
+        {
+          "path": [
+            3,
+            2,
+            1033
+          ],
+          "bytes": 5160,
+          "sha256": "ebddfa9d9e5eb4c41480849d8c2668a142e73dc72d853e11e90576249f276534"
+        },
+        {
+          "path": [
+            3,
+            3,
+            1033
+          ],
+          "bytes": 11560,
+          "sha256": "b6631bf131a080cb0b632a6ed3cb684a4555498fa26492fd2a9f43073e179d9e"
+        },
+        {
+          "path": [
+            3,
+            4,
+            1033
+          ],
+          "bytes": 18963,
+          "sha256": "f6d386ce78023523091cd810437c7994531c4b739712841e69572487f36fb43b"
+        },
+        {
+          "path": [
+            12,
+            49920,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "c53efa8085835ba129c1909beaff8a67b45f50837707f22dfff0f24d8cd26710"
+        },
+        {
+          "path": [
+            12,
+            49921,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "b07e022f8ef0a8e5fd3f56986b2e5bf06df07054e9ea9177996b0a6c27d74d7c"
+        },
+        {
+          "path": [
+            12,
+            49922,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "43f40dd5140804309a4c901ec3c85b54481316e67a6fe18beb9d5c0ce3a42c3a"
+        },
+        {
+          "path": [
+            12,
+            49923,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "ff47a48c11c234903a7d625cb8b62101909f735ad84266c98dd4834549452c39"
+        },
+        {
+          "path": [
+            12,
+            49924,
+            0
+          ],
+          "bytes": 34,
+          "sha256": "f75e551324504a3c9caa453a4b0fd424884291acdb82f0549e7bb0b48ce01647"
+        },
+        {
+          "path": [
+            12,
+            49925,
+            0
+          ],
+          "bytes": 34,
+          "sha256": "770a19a2be0c18daf7fb714c6f78e5fecde900b9fda29a6c4691c369253f6f0f"
+        },
+        {
+          "path": [
+            12,
+            49926,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "7662c77c89bc776c64acfbc6ac7f22f56a631304205ac1a00d1d6c876ff1574d"
+        },
+        {
+          "path": [
+            12,
+            49927,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "c7f15e3e69f8bad21f5f9c9546b129828d66e90b38a8fe9cf33cf23846e62700"
+        },
+        {
+          "path": [
+            12,
+            49928,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "fd27224dee56e50f926e0c003d1bdb8c31db4d1f0a089280d0f55b79ff45c1e7"
+        },
+        {
+          "path": [
+            12,
+            49929,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "2c57fbd554735f2b8ff46f26b3d2d58a5a5e4152a02043e7fd6c552a43a3ceee"
+        },
+        {
+          "path": [
+            12,
+            49930,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "1133ff27d25ac052e4a0570865c18ce0e07a3afbb89577bc52af61435a91b8cc"
+        },
+        {
+          "path": [
+            12,
+            49931,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "5907a1ab79be2dae328a84248db9750607aeb7b802af582f974a5ae59fb3c37c"
+        },
+        {
+          "path": [
+            12,
+            49932,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "d19508d8742527d523aa3ef78e1091ce417bec079e9632181cdc8ff245c53ce9"
+        },
+        {
+          "path": [
+            12,
+            49933,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "1dac0833fe30898ce2c1df2c70b09d62d51f8f765ae0ffd90b811067e875ae98"
+        },
+        {
+          "path": [
+            12,
+            49934,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "5fa51d73b8ea1316fb0c8f11c3740c6f755a8499a135e4e18ef6b823aad3ad70"
+        },
+        {
+          "path": [
+            12,
+            49935,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "7794cf070f4c99cd9ec27a43faa84daab8d19e765f0489c981a9ef28468a3899"
+        },
+        {
+          "path": [
+            12,
+            49936,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "4c9fe467bd0250366713a2a43f5162e5ec2e7cd566ea218f7a6545e0ad878184"
+        },
+        {
+          "path": [
+            12,
+            49937,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "b328fe22a904a2e7e1341a95dbf00e2fdffc9ab350bc64c5ee348d3007c2b479"
+        },
+        {
+          "path": [
+            12,
+            49938,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "8f51832638675f16ec5f251ab59251b3f85d84e5129025d44c45b3191b331c58"
+        },
+        {
+          "path": [
+            12,
+            49939,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "6c2ef97bca5cdc6aa6de65b1f1ae8328bcb3494a16025eee870231d991e2cd56"
+        },
+        {
+          "path": [
+            12,
+            49940,
+            0
+          ],
+          "bytes": 20,
+          "sha256": "1085b7390dbd2b2006f85619521047c6ca58a8b274196eeed48e74ad8a1b746a"
+        },
+        {
+          "path": [
+            14,
+            1,
+            1033
+          ],
+          "bytes": 62,
+          "sha256": "75b7680e845a939e94bf6f846e24177c4c0f7bb49651b1063cf211fe0b39e91f"
+        },
+        {
+          "path": [
+            16,
+            1,
+            1033
+          ],
+          "bytes": 816,
+          "sha256": "d56e040ba1794fe165df427df5fb3c15f94c9a0a17a49a69e8943e270ef0e5cd"
+        },
+        {
+          "path": [
+            24,
+            1,
+            1033
+          ],
+          "bytes": 1425,
+          "sha256": "2545f65ac7e70afeeb7850081070f14be63a078172236e206237dce3f3574d65"
+        }
+      ],
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtualSize": 196010992,
+          "rawSize": 196011008,
+          "rawPointer": 1536
+        },
+        {
+          "name": ".rdata",
+          "rva": 196018176,
+          "virtualSize": 45720928,
+          "rawSize": 45721088,
+          "rawPointer": 196012544
+        },
+        {
+          "name": ".data",
+          "rva": 241741824,
+          "virtualSize": 2414520,
+          "rawSize": 1013248,
+          "rawPointer": 241733632
+        },
+        {
+          "name": ".pdata",
+          "rva": 244158464,
+          "virtualSize": 5720064,
+          "rawSize": 5720064,
+          "rawPointer": 242746880
+        },
+        {
+          "name": ".eh_fram",
+          "rva": 249880576,
+          "virtualSize": 120,
+          "rawSize": 512,
+          "rawPointer": 248466944
+        },
+        {
+          "name": ".fptable",
+          "rva": 249884672,
+          "virtualSize": 256,
+          "rawSize": 512,
+          "rawPointer": 248467456
+        },
+        {
+          "name": ".rodata",
+          "rva": 249888768,
+          "virtualSize": 2336,
+          "rawSize": 2560,
+          "rawPointer": 248467968
+        },
+        {
+          "name": ".tls",
+          "rva": 249892864,
+          "virtualSize": 2218,
+          "rawSize": 2560,
+          "rawPointer": 248470528
+        },
+        {
+          "name": "CPADinfo",
+          "rva": 249896960,
+          "virtualSize": 56,
+          "rawSize": 512,
+          "rawPointer": 248473088
+        },
+        {
+          "name": "LZMADEC",
+          "rva": 249901056,
+          "virtualSize": 4593,
+          "rawSize": 4608,
+          "rawPointer": 248473600
+        },
+        {
+          "name": "_RDATA",
+          "rva": 249909248,
+          "virtualSize": 1092,
+          "rawSize": 1536,
+          "rawPointer": 248478208
+        },
+        {
+          "name": "malloc_h",
+          "rva": 249913344,
+          "virtualSize": 1931,
+          "rawSize": 2048,
+          "rawPointer": 248479744
+        },
+        {
+          "name": "prot",
+          "rva": 249917440,
+          "virtualSize": 155,
+          "rawSize": 512,
+          "rawPointer": 248481792
+        },
+        {
+          "name": ".rsrc",
+          "rva": 249921536,
+          "virtualSize": 99072,
+          "rawSize": 99328,
+          "rawPointer": 248482304
+        },
+        {
+          "name": ".reloc",
+          "rva": 250023936,
+          "virtualSize": 1215668,
+          "rawSize": 1216000,
+          "rawPointer": 248581632
+        }
+      ]
+    },
+    {
+      "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/installer/payload/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll",
+      "bytes": 19018240,
+      "sha256": "06dab07cc386748513337a31672b1d5269fbc770a14ff403080575665bf0813f",
+      "machine": "0x8664",
+      "architecture": "x64",
+      "optionalHeaderMagic": "0x20b",
+      "subsystem": 3,
+      "subsystemName": "Windows CUI",
+      "coffCharacteristics": "0x2022",
+      "dllCharacteristics": "0x160",
+      "aslr": true,
+      "dep": true,
+      "highEntropyVa": true,
+      "cfgFlagPresent": false,
+      "certificateDirectory": [
+        0,
+        0
+      ],
+      "authenticodeSignaturePresent": false,
+      "versionResources": [],
+      "manifests": [],
+      "installerExecutionLevel": null,
+      "resourceInventory": [],
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtualSize": 13268390,
+          "rawSize": 13268480,
+          "rawPointer": 1024
+        },
+        {
+          "name": ".rdata",
+          "rva": 13275136,
+          "virtualSize": 4908900,
+          "rawSize": 4909056,
+          "rawPointer": 13269504
+        },
+        {
+          "name": ".buildid",
+          "rva": 18186240,
+          "virtualSize": 142,
+          "rawSize": 512,
+          "rawPointer": 18178560
+        },
+        {
+          "name": ".data",
+          "rva": 18190336,
+          "virtualSize": 2442112,
+          "rawSize": 422400,
+          "rawPointer": 18179072
+        },
+        {
+          "name": ".pdata",
+          "rva": 20635648,
+          "virtualSize": 327708,
+          "rawSize": 328192,
+          "rawPointer": 18601472
+        },
+        {
+          "name": ".tls",
+          "rva": 20967424,
+          "virtualSize": 648,
+          "rawSize": 1024,
+          "rawPointer": 18929664
+        },
+        {
+          "name": ".reloc",
+          "rva": 20971520,
+          "virtualSize": 87392,
+          "rawSize": 87552,
+          "rawPointer": 18930688
+        }
+      ]
+    },
+    {
+      "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/installer/payload/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.7.dll",
+      "bytes": 333312,
+      "sha256": "25001dbd05305a0a29119ab49933622c70b4a20ea12ef1d5d20ca40181db53bf",
+      "machine": "0x8664",
+      "architecture": "x64",
+      "optionalHeaderMagic": "0x20b",
+      "subsystem": 2,
+      "subsystemName": "Windows GUI",
+      "coffCharacteristics": "0x2022",
+      "dllCharacteristics": "0x160",
+      "aslr": true,
+      "dep": true,
+      "highEntropyVa": true,
+      "cfgFlagPresent": false,
+      "certificateDirectory": [
+        0,
+        0
+      ],
+      "authenticodeSignaturePresent": false,
+      "versionResources": [],
+      "manifests": [
+        {
+          "resourcePath": [
+            24,
+            2,
+            1033
+          ],
+          "bytes": 381,
+          "sha256": "4bb79dcea0a901f7d9eac5aa05728ae92acb42e0cb22e5dd14134f4421a3d8df",
+          "requestedExecutionLevels": [
+            {
+              "level": "asInvoker",
+              "uiAccess": "false"
+            }
+          ],
+          "xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n"
+        }
+      ],
+      "installerExecutionLevel": "asInvoker",
+      "resourceInventory": [
+        {
+          "path": [
+            24,
+            2,
+            1033
+          ],
+          "bytes": 381,
+          "sha256": "4bb79dcea0a901f7d9eac5aa05728ae92acb42e0cb22e5dd14134f4421a3d8df"
+        }
+      ],
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtualSize": 204880,
+          "rawSize": 205312,
+          "rawPointer": 1024
+        },
+        {
+          "name": ".rdata",
+          "rva": 212992,
+          "virtualSize": 106458,
+          "rawSize": 106496,
+          "rawPointer": 206336
+        },
+        {
+          "name": ".data",
+          "rva": 319488,
+          "virtualSize": 7368,
+          "rawSize": 3584,
+          "rawPointer": 312832
+        },
+        {
+          "name": ".pdata",
+          "rva": 327680,
+          "virtualSize": 13680,
+          "rawSize": 13824,
+          "rawPointer": 316416
+        },
+        {
+          "name": ".fptable",
+          "rva": 344064,
+          "virtualSize": 256,
+          "rawSize": 512,
+          "rawPointer": 330240
+        },
+        {
+          "name": ".rsrc",
+          "rva": 348160,
+          "virtualSize": 480,
+          "rawSize": 512,
+          "rawPointer": 330752
+        },
+        {
+          "name": ".reloc",
+          "rva": 352256,
+          "virtualSize": 1872,
+          "rawSize": 2048,
+          "rawPointer": 331264
+        }
+      ]
+    },
+    {
+      "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/installer/payload/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.5.node",
+      "bytes": 443904,
+      "sha256": "971048779f9c8598df14641dfc03c625885c93f473a788e65ca2deb50d0b083e",
+      "machine": "0x8664",
+      "architecture": "x64",
+      "optionalHeaderMagic": "0x20b",
+      "subsystem": 2,
+      "subsystemName": "Windows GUI",
+      "coffCharacteristics": "0x2022",
+      "dllCharacteristics": "0x160",
+      "aslr": true,
+      "dep": true,
+      "highEntropyVa": true,
+      "cfgFlagPresent": false,
+      "certificateDirectory": [
+        0,
+        0
+      ],
+      "authenticodeSignaturePresent": false,
+      "versionResources": [],
+      "manifests": [
+        {
+          "resourcePath": [
+            24,
+            2,
+            1033
+          ],
+          "bytes": 381,
+          "sha256": "4bb79dcea0a901f7d9eac5aa05728ae92acb42e0cb22e5dd14134f4421a3d8df",
+          "requestedExecutionLevels": [
+            {
+              "level": "asInvoker",
+              "uiAccess": "false"
+            }
+          ],
+          "xml": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n"
+        }
+      ],
+      "installerExecutionLevel": "asInvoker",
+      "resourceInventory": [
+        {
+          "path": [
+            24,
+            2,
+            1033
+          ],
+          "bytes": 381,
+          "sha256": "4bb79dcea0a901f7d9eac5aa05728ae92acb42e0cb22e5dd14134f4421a3d8df"
+        }
+      ],
+      "sections": [
+        {
+          "name": ".text",
+          "rva": 4096,
+          "virtualSize": 314908,
+          "rawSize": 315392,
+          "rawPointer": 1024
+        },
+        {
+          "name": ".rdata",
+          "rva": 319488,
+          "virtualSize": 105540,
+          "rawSize": 105984,
+          "rawPointer": 316416
+        },
+        {
+          "name": ".data",
+          "rva": 425984,
+          "virtualSize": 8652,
+          "rawSize": 4608,
+          "rawPointer": 422400
+        },
+        {
+          "name": ".pdata",
+          "rva": 438272,
+          "virtualSize": 12936,
+          "rawSize": 13312,
+          "rawPointer": 427008
+        },
+        {
+          "name": ".fptable",
+          "rva": 454656,
+          "virtualSize": 256,
+          "rawSize": 512,
+          "rawPointer": 440320
+        },
+        {
+          "name": ".rsrc",
+          "rva": 458752,
+          "virtualSize": 480,
+          "rawSize": 512,
+          "rawPointer": 440832
+        },
+        {
+          "name": ".reloc",
+          "rva": 462848,
+          "virtualSize": 2212,
+          "rawSize": 2560,
+          "rawPointer": 441344
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "ASLR/DEP/CFG fields are static opt-in flags, not proof of runtime effectiveness or exploit mitigation.",
+    "Empty certificate directories establish that these files contain no embedded Authenticode signature; this does not assess catalog signatures, reputation, malware or Windows security acceptance.",
+    "PE parse and source parity do not establish successful installation, execution, DLL loading or uninstallation."
+  ]
+}

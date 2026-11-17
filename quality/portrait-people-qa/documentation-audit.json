@@ -1,0 +1,21 @@
+{
+  "release": "0.2.6",
+  "generatedAt": "2026-10-22T17:43:21.520038+00:00",
+  "status": "pass",
+  "checks": {
+    "generatedReadmeEqualsSourceLiteral": true,
+    "currentProjectVersionMatches": true,
+    "obsoleteV11ParagraphRemoved": true,
+    "unsignedAndWindowsUntestedDisclosure": true,
+    "stopOnSecurityBlockDisclosure": true
+  },
+  "readme": {
+    "file": "/workspace/scratch/902a42ed06ad/installer-feedback/MintPortrait-Source/installer/payload/使用说明.txt",
+    "bytes": 8904,
+    "sha256": "767f03d361f7f071b06843a92010ecc90ab26773709acacc2cacf2c6da6f4c4e"
+  },
+  "currentProjectVersion": 13,
+  "sourceLiteralReadStatically": true,
+  "issue": "Removed stale v11 claims after independent audit reported a contradiction with v13.",
+  "limitations": "Installer-extracted readme parity is covered by the owner’s independent extraction/hash checks."
+}

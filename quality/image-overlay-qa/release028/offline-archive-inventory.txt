@@ -1,0 +1,893 @@
+
+7-Zip (z) 26.05 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit locale=C.UTF-8 Threads:9 OPEN_MAX:16384, ASM
+
+Scanning the drive for archives:
+1 file, 125696680 bytes (120 MiB)
+
+Listing archive: /workspace/scratch/902a42ed06ad/release-0.2.8/MintPortrait-Development-0.2.8-Offline-Setup.exe
+
+--
+Path = /workspace/scratch/902a42ed06ad/release-0.2.8/MintPortrait-Development-0.2.8-Offline-Setup.exe
+Type = Nsis
+Physical Size = 125696680
+Method = LZMA:26
+Solid = +
+Headers Size = 88276
+Embedded Stub Size = 117760
+SubType = NSIS-3 Unicode
+
+----------
+Path = $PLUGINSDIR/modern-wizard.bmp
+Size = 26494
+Packed Size = 125578916
+Modified = 2025-03-29 08:32:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 0
+
+Path = $PLUGINSDIR/nsDialogs.dll
+Size = 14336
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 26498
+
+Path = $PLUGINSDIR/System.dll
+Size = 28672
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 40838
+
+Path = $PLUGINSDIR/nsProcess.dll
+Size = 4608
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 69514
+
+Path = $_55_/INSTALLER-NOTICES.txt
+Size = 28598
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 74126
+
+Path = $_55_/LICENSE
+Size = 1096
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 102728
+
+Path = $_55_/LICENSES.chromium.html
+Size = 5705935
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 103828
+
+Path = $_55_/MintPortrait.exe
+Size = 249797632
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 5809767
+
+Path = $_55_/MintPortrait.ico
+Size = 17834
+Packed Size = 
+Modified = 2026-10-22 01:26:34.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 255607403
+
+Path = $_55_/NSIS-LICENSES.txt
+Size = 20591
+Packed Size = 
+Modified = 2026-10-22 01:26:34.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 255625241
+
+Path = $_55_/chrome_100_percent.pak
+Size = 568418
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 255645836
+
+Path = $_55_/chrome_200_percent.pak
+Size = 927757
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 256214258
+
+Path = $_55_/d3dcompiler_47.dll
+Size = 4753864
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 257142019
+
+Path = $_55_/dxcompiler.dll
+Size = 25779712
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 261895887
+
+Path = $_55_/electron_wer.dll
+Size = 425472
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 287675603
+
+Path = $_55_/ffmpeg.dll
+Size = 3097600
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 288101079
+
+Path = $_55_/icudtl.dat
+Size = 10824432
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 291198683
+
+Path = $_55_/resources.pak
+Size = 13371538
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 302023119
+
+Path = $_55_/snapshot_blob.bin
+Size = 374096
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 315394661
+
+Path = $_55_/v8_context_snapshot.bin
+Size = 753112
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 315768761
+
+Path = $_55_/version
+Size = 6
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 316521877
+
+Path = $_55_/vk_swiftshader.dll
+Size = 5453312
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 316521887
+
+Path = $_55_/vk_swiftshader_icd.json
+Size = 106
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 321975203
+
+Path = $_55_/vulkan-1.dll
+Size = 957440
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 321975313
+
+Path = $_55_/使用说明.txt
+Size = 11877
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 322932757
+
+Path = $_55_/locales/af.pak
+Size = 641339
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 322944638
+
+Path = $_55_/locales/am.pak
+Size = 1037302
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 323585981
+
+Path = $_55_/locales/ar.pak
+Size = 1143075
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 324623287
+
+Path = $_55_/locales/bg.pak
+Size = 1189898
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 325766366
+
+Path = $_55_/locales/bn.pak
+Size = 1526566
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 326956268
+
+Path = $_55_/locales/ca.pak
+Size = 724869
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 328482838
+
+Path = $_55_/locales/cs.pak
+Size = 753878
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 329207711
+
+Path = $_55_/locales/da.pak
+Size = 674463
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 329961593
+
+Path = $_55_/locales/de.pak
+Size = 728057
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 330636060
+
+Path = $_55_/locales/el.pak
+Size = 1309811
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 331364121
+
+Path = $_55_/locales/en-GB.pak
+Size = 585046
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 332673936
+
+Path = $_55_/locales/en-US.pak
+Size = 592299
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 333258986
+
+Path = $_55_/locales/es-419.pak
+Size = 714496
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 333851289
+
+Path = $_55_/locales/es.pak
+Size = 710842
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 334565789
+
+Path = $_55_/locales/et.pak
+Size = 649737
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 335276635
+
+Path = $_55_/locales/fa.pak
+Size = 1078263
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 335926376
+
+Path = $_55_/locales/fi.pak
+Size = 663455
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 337004643
+
+Path = $_55_/locales/fil.pak
+Size = 748590
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 337668102
+
+Path = $_55_/locales/fr.pak
+Size = 774154
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 338416696
+
+Path = $_55_/locales/gu.pak
+Size = 1508809
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 339190854
+
+Path = $_55_/locales/he.pak
+Size = 941003
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 340699667
+
+Path = $_55_/locales/hi.pak
+Size = 1601863
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 341640674
+
+Path = $_55_/locales/hr.pak
+Size = 724777
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 343242541
+
+Path = $_55_/locales/hu.pak
+Size = 775366
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 343967322
+
+Path = $_55_/locales/id.pak
+Size = 642959
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 344742692
+
+Path = $_55_/locales/it.pak
+Size = 700983
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 345385655
+
+Path = $_55_/locales/ja.pak
+Size = 853537
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 346086642
+
+Path = $_55_/locales/kn.pak
+Size = 1738870
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 346940183
+
+Path = $_55_/locales/ko.pak
+Size = 730396
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 348679057
+
+Path = $_55_/locales/lt.pak
+Size = 785117
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 349409457
+
+Path = $_55_/locales/lv.pak
+Size = 782864
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 350194578
+
+Path = $_55_/locales/ml.pak
+Size = 1785503
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 350977446
+
+Path = $_55_/locales/mr.pak
+Size = 1481173
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 352762953
+
+Path = $_55_/locales/ms.pak
+Size = 677751
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 354244130
+
+Path = $_55_/locales/nb.pak
+Size = 643919
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 354921885
+
+Path = $_55_/locales/nl.pak
+Size = 671754
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 355565808
+
+Path = $_55_/locales/pl.pak
+Size = 751664
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 356237566
+
+Path = $_55_/locales/pt-BR.pak
+Size = 705541
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 356989234
+
+Path = $_55_/locales/pt-PT.pak
+Size = 708355
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 357694779
+
+Path = $_55_/locales/ro.pak
+Size = 733934
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 358403138
+
+Path = $_55_/locales/ru.pak
+Size = 1212098
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 359137076
+
+Path = $_55_/locales/sk.pak
+Size = 766425
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 360349178
+
+Path = $_55_/locales/sl.pak
+Size = 729966
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 361115607
+
+Path = $_55_/locales/sr.pak
+Size = 1124220
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 361845577
+
+Path = $_55_/locales/sv.pak
+Size = 654595
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 362969801
+
+Path = $_55_/locales/sw.pak
+Size = 692169
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 363624400
+
+Path = $_55_/locales/ta.pak
+Size = 1773876
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 364316573
+
+Path = $_55_/locales/te.pak
+Size = 1648207
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 366090453
+
+Path = $_55_/locales/th.pak
+Size = 1377527
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 367738664
+
+Path = $_55_/locales/tr.pak
+Size = 706657
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 369116195
+
+Path = $_55_/locales/uk.pak
+Size = 1225347
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 369822856
+
+Path = $_55_/locales/ur.pak
+Size = 1060438
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 371048207
+
+Path = $_55_/locales/vi.pak
+Size = 839397
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 372108649
+
+Path = $_55_/locales/zh-CN.pak
+Size = 599993
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 372948050
+
+Path = $_55_/locales/zh-TW.pak
+Size = 592033
+Packed Size = 
+Modified = 2026-10-22 13:22:48.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 373548047
+
+Path = $_55_/resources/app.asar
+Size = 47210796
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 374140084
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/LICENSE.md
+Size = 4433
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421350884
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/README.md
+Size = 562
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421355321
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/color.cjs
+Size = 45136
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421355887
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/index.cjs
+Size = 49
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421401027
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/index.d.ts
+Size = 21569
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421401080
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/colour/package.json
+Size = 1515
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421422653
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/LICENSE
+Size = 10464
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421424172
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/README.md
+Size = 4913
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421434640
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/index.cjs
+Size = 62
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421439557
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/package.json
+Size = 888
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421439623
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/versions.json
+Size = 596
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421440515
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll
+Size = 19018240
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 421441115
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.7.dll
+Size = 333312
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 440459359
+
+Path = $_55_/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.5.node
+Size = 443904
+Packed Size = 
+Modified = 2026-10-22 13:22:46.0000000
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 440792675
+
+Path = $PLUGINSDIR/StdUtils.dll
+Size = 102400
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 441236583
+
+Path = $_55_/Uninstall.exe
+Size = 
+Packed Size = 
+Modified = 
+Attributes = 
+Method = LZMA:26
+Solid = +
+Offset = 441338987
+

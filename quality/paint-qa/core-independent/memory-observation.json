@@ -1,0 +1,99 @@
+{
+  "scope": "Fresh Linux Node process, @napi-rs/canvas 0.1.100. Explicit GC is diagnostic only, not an app capability or device-memory guarantee.",
+  "samples": [
+    {
+      "stage": "baseline",
+      "rss": 75681792,
+      "heapTotal": 12578816,
+      "heapUsed": 7105808,
+      "external": 3761343,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 0",
+      "rss": 343322624,
+      "heapTotal": 12316672,
+      "heapUsed": 7213384,
+      "external": 11791558,
+      "arrayBuffers": 146559,
+      "wallMs": 236.58149100000003
+    },
+    {
+      "stage": "released then explicit GC 0",
+      "rss": 215298048,
+      "heapTotal": 12316672,
+      "heapUsed": 7175288,
+      "external": 11791558,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 1",
+      "rss": 484048896,
+      "heapTotal": 12316672,
+      "heapUsed": 5811528,
+      "external": 59788740,
+      "arrayBuffers": 146559,
+      "wallMs": 211.139592
+    },
+    {
+      "stage": "released then explicit GC 1",
+      "rss": 351838208,
+      "heapTotal": 12316672,
+      "heapUsed": 5761112,
+      "external": 59788740,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 2",
+      "rss": 620634112,
+      "heapTotal": 12316672,
+      "heapUsed": 5819240,
+      "external": 59788740,
+      "arrayBuffers": 146559,
+      "wallMs": 200.3244800000001
+    },
+    {
+      "stage": "released then explicit GC 2",
+      "rss": 488554496,
+      "heapTotal": 12316672,
+      "heapUsed": 5768960,
+      "external": 59788740,
+      "arrayBuffers": 146559
+    },
+    {
+      "stage": "rendered 3",
+      "rss": 759042048,
+      "heapTotal": 12316672,
+      "heapUsed": 5828240,
+      "external": 59788740,
+      "arrayBuffers": 146559,
+      "wallMs": 201.17670700000008
+    },
+    {
+      "stage": "released then explicit GC 3",
+      "rss": 626962432,
+      "heapTotal": 12316672,
+      "heapUsed": 5777544,
+      "external": 59788740,
+      "arrayBuffers": 146559
+    }
+  ],
+  "resourceUsage": {
+    "userCPUTime": 1216369,
+    "systemCPUTime": 285846,
+    "maxRSS": 741252,
+    "sharedMemorySize": 0,
+    "unsharedDataSize": 0,
+    "unsharedStackSize": 0,
+    "minorPageFault": 156899,
+    "majorPageFault": 0,
+    "swappedOut": 0,
+    "fsRead": 0,
+    "fsWrite": 0,
+    "ipcSent": 0,
+    "ipcReceived": 0,
+    "signalsCount": 0,
+    "voluntaryContextSwitches": 502,
+    "involuntaryContextSwitches": 20
+  }
+}

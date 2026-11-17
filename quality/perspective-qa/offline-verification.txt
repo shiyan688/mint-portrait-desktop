@@ -1,0 +1,2 @@
+{"file": "MintPortrait-Offline-Setup.exe", "installerVersion": "0.2.9", "applicationVersion": "0.2.9", "bytes": 125735431, "sha256": "9f87ef13300e7a30f0af4655b9ba58d74a2dfb28ca303d0812f92a45cbd30890", "peFixedAndStringVersionsVerified": true, "signed": false, "executionLevel": "asInvoker", "offline": true, "appAsarSha256": "29df72c3ded9ffc7858b70cf4342c21b17c9561ba1c124b53dc88779cac186cf", "archiveIntegrityTest": "passed", "windowsExecutionTested": false, "qualityStatus": "development candidate, not accepted SOTA remake"}
+Verified embedded files: 91

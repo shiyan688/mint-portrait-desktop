@@ -1,0 +1,91 @@
+{
+  "scope": "Native Sharp export plus independent pixel oracle; no real-browser or installer execution",
+  "source": {
+    "width": 193,
+    "height": 117
+  },
+  "output": {
+    "width": 119,
+    "height": 194
+  },
+  "settings": {
+    "exposure": 0,
+    "contrast": 0,
+    "saturation": 0,
+    "temperature": 0,
+    "smooth": 0,
+    "brighten": 0,
+    "warmth": 0,
+    "slim": 0,
+    "eyes": 0,
+    "nose": 0,
+    "jaw": 0,
+    "bgMode": "original",
+    "bgBlur": 18,
+    "bgColor": "#e9eee9",
+    "bgFeather": 2,
+    "spots": [],
+    "underEye": 0,
+    "redness": 0,
+    "lip": 0,
+    "blush": 0,
+    "palette": "natural",
+    "localLayers": [],
+    "manualSelection": null,
+    "manualLiquify": [],
+    "manualRepair": [],
+    "lightBalance": null,
+    "levels": null,
+    "advancedTone": null,
+    "sharpness": null,
+    "framing": {
+      "version": 1,
+      "crop": {
+        "x": 0.12,
+        "y": 0.1,
+        "w": 0.8,
+        "h": 0.8
+      },
+      "quarterTurns": 1,
+      "flipX": true,
+      "flipY": false
+    },
+    "straighten": null,
+    "perspective": null,
+    "canvasPadding": {
+      "version": 1,
+      "top": 0.12,
+      "right": 0.2,
+      "bottom": 0.3,
+      "left": 0.08,
+      "color": "#4279c3",
+      "opacity": 0.5
+    },
+    "textLayers": [],
+    "imageLayers": [],
+    "paintLayers": null,
+    "redactions": null,
+    "faceAdjustments": null
+  },
+  "coreSha256": "91412cfaefd331c6fc5fffb8f9f58256dd25eb6306de6511cdec1cd2a2deb995",
+  "pngDecodedRgbaSha256": "24f9f05c017f0d3941b25432d002930872329221b57e9d444a321675474e2763",
+  "oracleRgbaSha256": "24f9f05c017f0d3941b25432d002930872329221b57e9d444a321675474e2763",
+  "files": {
+    "synthetic-source.png": {
+      "bytes": 84617,
+      "sha256": "127f1a205d972fda2d04e9c35624b3547ad82c2ddc8d73821f0b91252df23a38"
+    },
+    "oracle-padded.png": {
+      "bytes": 46484,
+      "sha256": "3aaa9909c8df00ce3e753c6ae62a5af85efee658bd4035420e753752d0cf1505"
+    },
+    "native-padded.png": {
+      "bytes": 46815,
+      "sha256": "8f492223129d4fdd02f7a4cfbc377beef06570bbbd7851d10637bc8c03f2c2d0"
+    },
+    "native-padded.jpg": {
+      "bytes": 45829,
+      "sha256": "06f8ad0d2f13bd37f7b624505f727ae87b95359eefded6aae674f713d1d2c056"
+    }
+  }
+}

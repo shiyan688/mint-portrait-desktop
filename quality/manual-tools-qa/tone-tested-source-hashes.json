@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-10-22T09:58:13Z",
+  "independent_tests": 88,
+  "failed": 0,
+  "skipped": 0,
+  "scope": "Current source, pure pixels/state, Worker/native and actual PNG. Not Windows/device/UI validation.",
+  "files": {
+    "src/advanced-tone.cjs": "bf2d10e8044856fbdaabcc24d4c6c43cf3d818a25127fc50c6299fa93eb61628",
+    "src/manual-tools.cjs": "d28e4cef2a7f589a667e89b691bad72d31f0907d40ed47fe897f564d3dd12762",
+    "src/repair-brush-core.cjs": "65fcb57a9732be8200089c1577a6b63cfaaa3edf67bdbe13beeea24b1e4c9171",
+    "src/manual-pipeline.cjs": "acbff3ca3fb2088fcb08594be9192881335fe07ddfc686deb4d755809e7879d3",
+    "src/pixel-worker.js": "a7c812c1cfa68dc1ffbdbc716f687e8cadf57a0fbc0e4e4d2ada2b58f7ff481d",
+    "tests/manual-qa/advanced-independent.test.cjs": "fb3c18ceca5588cd051c3127278e2ab68c9c90844d37cbe5389e7e14d923b580",
+    "tests/manual-qa/pipeline-independent.test.cjs": "16a15e1937b644be0506fbbd1986ddf5ab88a86341627bf16b4a3bafe0e44263",
+    "tests/manual-qa/repair-independent.test.cjs": "0c4bc023b4ef4c90338c2d6b0323b93c2dff140da0facc134ea16d7479ebe236",
+    "tests/manual-qa/selection-liquify-independent.test.cjs": "f72287d2d29f9ffc554dfbbc638d09d6004c083b33eec5d373d6bc5209e44a88",
+    "tests/manual-qa/tone-independent.test.cjs": "3993fddead1ae45351f7061b5ba4a53283fb21deb63ffce8209c8315b931f783",
+    "src/local-adjustments.cjs": "1fff1c416893849296fbd6cca6bad0ab854766a819017ce7990486f05eda7757",
+    "src/project-document.cjs": "76c8cd1129934dfbdcd203915329110e4eaad81a4256478abfa7cdad9b621b69",
+    "export-render-core.cjs": "e3a5b0a0e31023d97c29a4334d0ece08aa072ee4d272f279e24dfd16e601fb48",
+    "export-renderer.cjs": "98a60f659ed9f073a0660df35e8025a91c2df8407da3268ef98ee1e9d6510aa2"
+  }
+}

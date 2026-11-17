@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22T08:44:33.706Z",
+  "inputBasename": "04_yamazaki.jpg",
+  "sourceSha256": "00cae456fcf5e76a9ac74678669ad440b500d44384720ca21243eba40a802ce2",
+  "sourceFileUnchanged": true,
+  "inputBytes": 6311233,
+  "width": 5412,
+  "height": 7216,
+  "outputBytes": 65364165,
+  "outputSha256": "634a99d1b9377907ce00d4a8f474faf50a0f8bb0b72d69483f094a8b86b8ede6",
+  "outputScaled": false,
+  "seconds": 3.483856466,
+  "changedPixels": 1611230,
+  "outsideMaskChangedPixels": 0,
+  "alphaChangedPixels": 0,
+  "details": {
+    "codec": "sharp-0.35.5",
+    "color": "8-bit sRGB",
+    "embeddedProfile": "sRGB",
+    "sourceExifPreserved": false,
+    "sourceBytesUnchanged": true,
+    "resampling": "none",
+    "retouch": "classical-explicit-not-SOTA",
+    "localLayers": 1
+  },
+  "scope": "Private informational public-photo QA only, not marketing, model training, SOTA or beauty acceptance. Original picture credit and rights: NASA/JSC, https://www.nasa.gov/nasa-brand-center/images-and-media/.",
+  "windowsExecuted": false,
+  "browserExecuted": false,
+  "cudaExecuted": false
+}

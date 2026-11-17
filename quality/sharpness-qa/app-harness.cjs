@@ -1,0 +1,7 @@
+'use strict';
+// Current production application logic in an authored DOM/IPC shell; actual
+// installed NativeCanvas/Sharp pixels. Not a browser-layout or Windows claim.
+const vm=require('node:vm'),base=require('../straighten-qa/app-harness.cjs'),core=require('../../src/sharpness.cjs');
+function compatible(value){return Object.fromEntries(Object.entries(value).map(([key,fn])=>[key,typeof fn==='function'?(...args)=>fn(...args.map(arg=>{if(arg&&typeof arg.shouldCancel==='function'){const {shouldCancel,...data}=arg;return {...structuredClone(data),shouldCancel};}return structuredClone(arg);})):fn]));}
+function harness(overrides={}){const h=base.harness(overrides);const render=h.pipeline.render;h.pipeline.render=(canvas,settings,analysis,options={})=>render(canvas,(options.manualEditing||options.sourceView)?{...settings,sharpness:null}:settings,analysis,options);h.context.window.MintSharpness=overrides.sharpnessCore===false?null:compatible(core);h.pipeline.preflightRender=overrides.pipeline?.preflightRender||base.productionPipeline(h).preflightRender;vm.runInContext('Object.assign(audit,{updateSharpnessControls,applySharpnessForm,cancelSharpnessDraft,sharpnessActive,sharpnessAvailable,sharpnessDraftCurrent,exportDimensions,sharpnessState:()=>({sharpnessDraft,acceptedRender,renderPending,renderFailure})})',h.context);h.api.updateControls();return h;}
+module.exports={...base,harness};

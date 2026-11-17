@@ -1,0 +1,49 @@
+{
+  "scope": "Specific fixture replay equality, not SOTA/beauty acceptance or UI/Windows test. NASA private informational QA only; no endorsement/product asset.",
+  "width": 897,
+  "height": 1000,
+  "fixture": "quality/manual-tools-qa/fixtures/05_mukai",
+  "landmarkCount": 478,
+  "recipeFile": "qa-five-groups.mintpreset.json",
+  "recipeVersion": 3,
+  "recipeSha256": "a493a02696f520740a36c12869717e8c647b39196da3df7cd25035e5f2927061",
+  "activeGroups": [
+    "beauty",
+    "basic",
+    "lightBalance",
+    "levels",
+    "advancedTone"
+  ],
+  "pipelineOrder": [
+    "beauty",
+    "basic",
+    "lightBalance",
+    "levels",
+    "advancedTone"
+  ],
+  "sourceRgbaSha256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+  "outputRgbaSha256": "63a27a4dfef6e425923241e9ac8d642b19f5100890b88cd46ace31230fde3162",
+  "nativePngReadbackExact": true,
+  "sourceUnchanged": true,
+  "mobileReplayVerified": true,
+  "sharedCoreHashes": {
+    "portrait-engine.cjs": "5cde7dcd60aab1d68e1ec5fb026c6396c2f395c1597dd03113c34674ba57d524",
+    "local-adjustments.cjs": "1fff1c416893849296fbd6cca6bad0ab854766a819017ce7990486f05eda7757",
+    "light-balance.cjs": "bfd8cb0be2fbdaea50ce59b5646cf6a99ae3a980fdb97cd554a901761860dac1",
+    "levels.cjs": "1e454e275c24e2e99b7b6e32bad3569a3ce996e73e2d8cc895c00aea5daf327f",
+    "advanced-tone.cjs": "bf2d10e8044856fbdaabcc24d4c6c43cf3d818a25127fc50c6299fa93eb61628",
+    "preset-codec.cjs": "b03d59aab2fa6b32639ceb1ddc0d22e680adde21a2834aece6cea9e79645e5d6"
+  },
+  "mobileAttestation": {
+    "source": "Android task report 2026-10-22 15:26 UTC",
+    "methods": [
+      "actual mobile pure adapter",
+      "independent stages",
+      "production editor original-size replay",
+      "PNG encode/decode"
+    ],
+    "rgbaSha256": "63a27a4dfef6e425923241e9ac8d642b19f5100890b88cd46ace31230fde3162",
+    "immutableOriginalAndUndoRedo": true,
+    "limits": "Reported by Android worker; not Windows, browser/WebView or aesthetic acceptance."
+  }
+}

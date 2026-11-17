@@ -1,0 +1,148 @@
+{
+  "artifacts": {
+    "independent-test.log": "aeb197fca97868656d7e9f504f5164681eb73cf473a066f8816937a970243452",
+    "pixel-evidence.json": "435b90b3b71c0e5539d4a227842d76aa590d200812e2be766a3af780e5470767",
+    "native-export-parity.json": "569299a3b82db80955ca797103b875f3ba60cc12bb2b6b74bb00b4b9c5a4a48a",
+    "history-native-png-parity.json": "e8e50f081d243bc1cb7e28e3f9bea316b023e250e54ce68dea4def512a5b2043",
+    "native-export-public-two.png": "90816486837cb994f1b3c73da8817cbf3b1781a57b3592df72b81811d2fbfb99",
+    "app-overlay-authored-native.png": "f3f759892b2b56c99fb9d6203b14f63d4e085e2926162b47ff2c80d37a06c880",
+    "public-2-comparison.png": "987289fad2c07ec9f91bba662153b003b5c12aa3352f7ef1a351c00cbd3800b2",
+    "public-5-comparison.png": "d75768e9862d7cdce0d2e25e411a9d11b57b5deff160d749dab173d90426293b"
+  },
+  "createdUtc": "2026-10-22T17:15:02.809Z",
+  "scope": "Development application only; shipped version 0.2.5 and installer are not validated or replaced.",
+  "tests": {
+    "passed": 45,
+    "failed": 0,
+    "skipped": 0,
+    "log": "independent-test.log"
+  },
+  "sources": {
+    "src/portrait-people.cjs": "0de2c158f3a23c6e4de8326e7474ad809e02d41ccc2931a5ccfba76505a02b3a",
+    "src/portrait-people-desktop.cjs": "e7387a6cc1634640fa4a58a5c681c033dc3f1a29b75222921a23790a9e0b49fc",
+    "src/app.js": "b7859415b99658fe651906e0126ed82e802fe010c09aa08ff03f79506edaa0f6",
+    "src/index.html": "9ec1c3ffd410bcf756db3df00dd3aa3a85c52841f9993d1ee80685de67a25b29",
+    "src/pipeline.js": "9b3ec95705cdf141e21ace97b2dd318d3db18f35bc3e2d8e991eafe427ba29b6",
+    "src/pixel-worker.js": "4faae071d679352158a9d3c9a482aa0694e2419d734574fb2ccf5c08bf199634",
+    "src/project-document.cjs": "6c4773623917ce99333c1aa811f3fb43d0411015764d3ae2dfea602dff09e977",
+    "src/redaction-layers.cjs": "57c8a04497806fe4e50ef250144ae2abbcd71379fb5900d0ed655a221178a6bd",
+    "src/paint-layers.cjs": "439748b7cbf58bd39a0e99bbb59103649e8b1d2a050a6df77c0bcb9f4bb2c460",
+    "export-render-core.cjs": "e0b7c8137d615a7565b40033088b9bdfcc22a095616f8f3d1d35a0be5635a9f5",
+    "export-render-worker.cjs": "3af6947f01bd4898069eec53e0885cfe3613266169e2e48b243e08613d350913",
+    "export-renderer.cjs": "7e72bb4aa746e8e76270007e549400789318c515e5e319ce1ebf593c220bfc2c",
+    "tests/portrait-people-workflow-independent.test.cjs": "918fffc33890b4a11fbea72f054e0e2148ac794bb56aaebdc53e88aefc2b6fad",
+    "quality/portrait-people-qa/fixtures.cjs": "d7e9b83dba3d5771a0c2307d18629227dc65817aca401cd45780513e385065d1",
+    "quality/portrait-people-qa/app-harness.cjs": "01981ffe0070acb051b69f9702da4b9a59c1c3698729a840606e36b5c8ce36e8",
+    "quality/portrait-people-qa/render-evidence.cjs": "41375de89070b64f6fa907f9ac5081acd76d605058d50de2ac9d2e0cfbe606bb"
+  },
+  "inputs": {
+    "synthetic-2-adults-900.png": "7cd86c7757c5c3d7e12d075acdbbabf6e52b6f6520ad5accbbcd295346246e9d",
+    "synthetic-2-adults-900.landmarks.json": "a8ad7c084ed67f34aa9d4436b92ae8c8c970d7d9e2569b2122648832f991838d",
+    "synthetic-5-adults-900.png": "9002f7b832558e4d8c9689b4f903ac1cd48f5dbdbec547c7de51bc9dbab1c035",
+    "synthetic-5-adults-900.landmarks.json": "45a803fc2159840d5ea9d9977c6b87774aee8eadab2b97bb7d9632b4c2de569a",
+    "host-inference-evidence.json": "6d7aed67f1d73f27e04a870e0dce70bf0f242568484a3c026809c99c002f65c9"
+  },
+  "pixels": [
+    {
+      "count": 2,
+      "phase": "beauty",
+      "changedPixelsPerFace": [
+        51431,
+        48676
+      ],
+      "protectedInactivePixels": 0,
+      "inputSha256": "0df158c8d5ecab8c90a83de4b7a7dc3667c44782f04463f7ea793e934a859a0b",
+      "outputSha256": "f8c533be92ad1794f3900f90ef83988d9515f270fde9d678e87f922142744819"
+    },
+    {
+      "count": 2,
+      "phase": "reshape",
+      "changedPixelsPerFace": [
+        8801,
+        13929
+      ],
+      "protectedInactivePixels": 0,
+      "inputSha256": "0df158c8d5ecab8c90a83de4b7a7dc3667c44782f04463f7ea793e934a859a0b",
+      "outputSha256": "bdf3ebaa50af49de7118c545e6cc11c1b2e23121b762dd4d5f7d2b953e42cb1d"
+    },
+    {
+      "count": 2,
+      "phase": "one-active-beauty",
+      "protectedInactivePixels": 91553,
+      "inputSha256": "0df158c8d5ecab8c90a83de4b7a7dc3667c44782f04463f7ea793e934a859a0b",
+      "outputSha256": "eba0263ec33361907a1a3f0b14ee5986dab7b561f01aba89db00b8221d3b41a8"
+    },
+    {
+      "count": 5,
+      "phase": "beauty",
+      "changedPixelsPerFace": [
+        17502,
+        0,
+        22264,
+        0,
+        21318
+      ],
+      "protectedInactivePixels": 79261,
+      "inputSha256": "f9c42742603f203977756fb40e7b133c46c17843601c5c7ee8ebc9ae9accab74",
+      "outputSha256": "e82c7ef475d940b79f7baaaec7b7c81a672d0c748565a710d0a6306a143197df"
+    },
+    {
+      "count": 5,
+      "phase": "reshape",
+      "changedPixelsPerFace": [
+        4773,
+        0,
+        5938,
+        0,
+        4875
+      ],
+      "protectedInactivePixels": 79261,
+      "inputSha256": "f9c42742603f203977756fb40e7b133c46c17843601c5c7ee8ebc9ae9accab74",
+      "outputSha256": "187a6a6d252bead923967eb2ece5f13b73d165b74d5c9c408b633bd88dfc3d2b"
+    },
+    {
+      "count": 5,
+      "phase": "one-active-beauty",
+      "protectedInactivePixels": 157913,
+      "inputSha256": "f9c42742603f203977756fb40e7b133c46c17843601c5c7ee8ebc9ae9accab74",
+      "outputSha256": "a3ad2a026df1efbae8d0fce7adb2e1d3eba9a257cc01cd7d4183b17b70052962"
+    }
+  ],
+  "parity": {
+    "nativeExportRgbaSha256": "3129a261b746183a1e625cd4b8624a753999ff7225475b2a83bb56bb9a8b1110",
+    "actualPixelWorkerRgbaSha256": "3129a261b746183a1e625cd4b8624a753999ff7225475b2a83bb56bb9a8b1110",
+    "independentEngineMergeRgbaSha256": "3129a261b746183a1e625cd4b8624a753999ff7225475b2a83bb56bb9a8b1110",
+    "sourceEncodedSha256": "7cd86c7757c5c3d7e12d075acdbbabf6e52b6f6520ad5accbbcd295346246e9d",
+    "sourceUnchanged": true,
+    "pixelsUnchanged": true,
+    "details": {
+      "codec": "sharp-0.35.5",
+      "color": "8-bit sRGB",
+      "embeddedProfile": "sRGB",
+      "sourceExifPreserved": false,
+      "sourceBytesUnchanged": true,
+      "resampling": "none",
+      "framing": "none",
+      "retouch": "classical-explicit-not-SOTA",
+      "localLayers": 0,
+      "paintLayers": 0,
+      "textLayers": 0
+    }
+  },
+  "findingsResolved": [
+    "Source-coordinate person boxes were not reached by diagnostic draw path.",
+    "Pending slider commit reset requested selected-face ID before event handler read it.",
+    "Late redetection did not compare sourceRevision/edit revision.",
+    "Named preset could commit an overlapping-support batch before render rejected.",
+    "Export UI budget plan ignored active per-face controls.",
+    "Manual liquify UI did not detect active per-face reshape."
+  ],
+  "limitations": [
+    "Actual app.js with authored DOM/IPC/preview pipeline shell and real NativeCanvas, not an actual browser or Windows desktop GUI.",
+    "Actual pixel-worker.js executed in a VM; no browser Worker transport claim. Native export uses actual Node worker_threads and Sharp.",
+    "Reuses previously recorded actual MediaPipe CPU-host landmark inference; no new model/inference/download/network/private photograph.",
+    "Public NASA adult synthetic QA composites, not actual group photos, and no ethnicity inferred. For internal informational QA, not endorsement, model training, marketing or installer assets.",
+    "Independent geometry/pixel integrity and workflow tests do not establish learned/SOTA retouch quality or subjective style acceptance.",
+    "64MP neutral/resource tests are allocation-free planning checks, not measured 64MP native export/RSS or Windows performance. Active processing may hit resource bounds below 16MP."
+  ]
+}

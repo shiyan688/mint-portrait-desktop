@@ -1,0 +1,190 @@
+{
+  "evidenceType": "Synthetic native Skia pixel readback and pure-helper QA. NOT an app screenshot or browser/Electron acceptance.",
+  "width": 256,
+  "height": 256,
+  "testedPixels": 65536,
+  "distinctAlphaValues": 256,
+  "nativeCanvasVersion": "0.1.100",
+  "sharpVersion": "0.35.5",
+  "acceptedReadbackRgbaSha256": "f7fa4d238d6483c05946e2b7fb67dcdf68b6782318c55f4efc5418d15396ec68",
+  "pngSha256": "2c62cd3f670afe9bea860416a21db72f0c1a5bb209078a36dcdf3be5f9ab1fd4",
+  "decodedPngRgbaSha256": "f7fa4d238d6483c05946e2b7fb67dcdf68b6782318c55f4efc5418d15396ec68",
+  "pngMatchesReadbackExactly": true,
+  "note": "Native premultiplied storage may quantize authored partial-alpha RGB. The authoritative values tested are the actual uncomposited getImageData bytes, not pre-storage authored values or checkerboard colors.",
+  "points": [
+    {
+      "authored": [
+        0,
+        255,
+        0,
+        0
+      ],
+      "readout": {
+        "x": 0,
+        "y": 0,
+        "r": null,
+        "g": null,
+        "b": null,
+        "a": 0,
+        "alphaMode": "transparent",
+        "zeroChannels": [],
+        "fullChannels": []
+      }
+    },
+    {
+      "authored": [
+        255,
+        0,
+        239,
+        0
+      ],
+      "readout": {
+        "x": 255,
+        "y": 0,
+        "r": null,
+        "g": null,
+        "b": null,
+        "a": 0,
+        "alphaMode": "transparent",
+        "zeroChannels": [],
+        "fullChannels": []
+      }
+    },
+    {
+      "authored": [
+        0,
+        255,
+        3,
+        1
+      ],
+      "readout": {
+        "x": 0,
+        "y": 1,
+        "r": 0,
+        "g": 255,
+        "b": 0,
+        "a": 1,
+        "alphaMode": "partial",
+        "zeroChannels": [
+          "R",
+          "B"
+        ],
+        "fullChannels": [
+          "G"
+        ]
+      }
+    },
+    {
+      "authored": [
+        255,
+        0,
+        242,
+        1
+      ],
+      "readout": {
+        "x": 255,
+        "y": 1,
+        "r": 255,
+        "g": 0,
+        "b": 255,
+        "a": 1,
+        "alphaMode": "partial",
+        "zeroChannels": [
+          "G"
+        ],
+        "fullChannels": [
+          "R",
+          "B"
+        ]
+      }
+    },
+    {
+      "authored": [
+        17,
+        238,
+        225,
+        64
+      ],
+      "readout": {
+        "x": 17,
+        "y": 64,
+        "r": 16,
+        "g": 239,
+        "b": 223,
+        "a": 64,
+        "alphaMode": "partial",
+        "zeroChannels": [],
+        "fullChannels": []
+      }
+    },
+    {
+      "authored": [
+        255,
+        0,
+        111,
+        128
+      ],
+      "readout": {
+        "x": 255,
+        "y": 128,
+        "r": 255,
+        "g": 0,
+        "b": 112,
+        "a": 128,
+        "alphaMode": "partial",
+        "zeroChannels": [
+          "G"
+        ],
+        "fullChannels": [
+          "R"
+        ]
+      }
+    },
+    {
+      "authored": [
+        0,
+        255,
+        253,
+        255
+      ],
+      "readout": {
+        "x": 0,
+        "y": 255,
+        "r": 0,
+        "g": 255,
+        "b": 253,
+        "a": 255,
+        "alphaMode": "opaque",
+        "zeroChannels": [
+          "R"
+        ],
+        "fullChannels": [
+          "G"
+        ]
+      }
+    },
+    {
+      "authored": [
+        255,
+        0,
+        236,
+        255
+      ],
+      "readout": {
+        "x": 255,
+        "y": 255,
+        "r": 255,
+        "g": 0,
+        "b": 236,
+        "a": 255,
+        "alphaMode": "opaque",
+        "zeroChannels": [
+          "G"
+        ],
+        "fullChannels": [
+          "R"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "source": {
+    "width": 121,
+    "height": 79,
+    "rgbaSHA256": "8d137eb1fccc7c39c4c2479e2e7fbb3c7e7e7d179fde5df1e35d6df43195b4eb",
+    "hiddenMagentaPixels": 6303
+  },
+  "output": {
+    "width": 47,
+    "height": 31,
+    "zeroAlphaPixels": 817,
+    "decodedRGBA_SHA256": "942fe8ee92f06ef096891dc19310adc9c332dab7524c9f53477c98412b623ed6",
+    "jpegDecodedRGBA_SHA256": "e658b829da6b5514bd96c034caf9aea8eff21d0082ff24ea28e1090c99b4d36d"
+  },
+  "hiddenRGBInvariant": true,
+  "jpegFinalWhiteFlattenExact": true
+}

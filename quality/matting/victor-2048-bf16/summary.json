@@ -1,0 +1,22 @@
+{
+  "fixture": "victor",
+  "sourceSha256": "790bf7eee26069ce2a9222af8cebcf8782fc801beedf52ef46f2b3169f07cffe",
+  "networkSize": 2048,
+  "precision": "bfloat16",
+  "profile": "HR-2048",
+  "wallSeconds": 111.22597166499963,
+  "childPeakRSSKiB": 7353464,
+  "sourceWidth": 646,
+  "sourceHeight": 900,
+  "alphaStats": {
+    "minimum": 3.2491007004864514e-06,
+    "maximum": 1.0,
+    "mean": 0.6223626732826233,
+    "softPixelCount": 10011,
+    "pixelCount": 581400,
+    "outputSha256": "6738db74f281cb289c32d3779e137ebca95887777e8f925ec2a0baad21e73607"
+  },
+  "groundTruthAvailable": false,
+  "foregroundDecontamination": false,
+  "modelSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55"
+}

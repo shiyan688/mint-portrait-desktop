@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-22T12:19:18.111Z",
+  "algorithm": "Conventional 8-bit gamma-encoded sRGB Levels; master then channel float mapping; one strength blend; one half-up rounding; alpha retained.",
+  "environment": "Node v24.19.0, Sharp 0.35.5, actual production native export worker threads plus independent Sharp readback; no browser, Windows app, GPU or model run.",
+  "outputsAreNotUIScreenshots": true,
+  "notNaturalBeautyDefault": true,
+  "sourceHashes": {
+    "src/levels.cjs": "1e454e275c24e2e99b7b6e32bad3569a3ce996e73e2d8cc895c00aea5daf327f",
+    "src/pixel-worker.js": "9d292ad7fc6b15ff7571546aa531ff2b7d841ef9b114cb79dd9e561d4a1f6c14",
+    "export-render-core.cjs": "4a418a36208ac73353da6dbee7851cb29a93be19db51080e2b7dadf6d0465f99",
+    "export-render-worker.cjs": "e2df68c1e6e8ccb7d3fd5d03fdb75676be411a0a45fb192c06d70f065fe0334d",
+    "src/project-document.cjs": "a0490c7734d681d68d41853260422da93e49e55f8eb34f9cc3796f7fc8953379",
+    "src/preset-codec.cjs": "30b4f98139e9fef2d4e3b6dffc2cf0d4594862039623fa02c3877cacfc6fe5ab"
+  },
+  "sourceAttribution": {
+    "fixture": "existing quality/fixtures/victor.png",
+    "album": [
+      "Artemis_Team_Astronauts"
+    ],
+    "center": "HQ",
+    "date_created": "2020-09-15T00:00:00Z",
+    "description": "NASA astronaut Victor Glover poses for a portrait, Tuesday, Sept. 15, 2020, in the Blue Flight Control Room at NASA’s Johnson Space Center in Houston. Photo Credit: (NASA/Bill Ingalls)",
+    "keywords": [
+      "Artemis",
+      "Astronaut",
+      "Blue Flight Control Room",
+      "Houston",
+      "Johnson Space Center (JSC)",
+      "Mission Control Center (MCC)",
+      "Texas",
+      "Victor Glover"
+    ],
+    "location": "NASA's Johnson Space Center",
+    "media_type": "image",
+    "nasa_id": "NHQ202009150002",
+    "photographer": "NASA/Bill Ingalls",
+    "title": "Portrait - Astronaut Victor Glover",
+    "id": "victor",
+    "source_api": "https://images-api.nasa.gov/search?nasa_id=NHQ202009150002",
+    "source_page": "https://images.nasa.gov/details/NHQ202009150002",
+    "source_file": "https://images-assets.nasa.gov/image/NHQ202009150002/NHQ202009150002~orig.jpg",
+    "sha256": "99df35026020072bd4e8abdecea056bd84f5ed30ffa15f5c5b9d52b483449b47",
+    "usage_guidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "usage": "Non-commercial factual software-testing illustration. Source NASA; no endorsement. Edited comparisons are software output, not NASA images. Do not reuse as promotional material or product assets."
+  },
+  "portraits": [
+    {
+      "name": "original",
+      "label": "Original pixels",
+      "recipe": null,
+      "filename": "victor-original.png",
+      "width": 646,
+      "height": 900,
+      "nativeWorkerPngSha256": "8a7bca546361e7e506d458d184d198327633c84749e252c8a929621fd2e7aaf6",
+      "readbackRgbaSha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+      "sourceDelta": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    },
+    {
+      "name": "neutral",
+      "label": "Neutral: exact identity",
+      "recipe": {
+        "version": 1,
+        "strength": 1,
+        "channels": {
+          "rgb": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "red": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "green": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "blue": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          }
+        }
+      },
+      "filename": "victor-neutral.png",
+      "width": 646,
+      "height": 900,
+      "nativeWorkerPngSha256": "8a7bca546361e7e506d458d184d198327633c84749e252c8a929621fd2e7aaf6",
+      "readbackRgbaSha256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+      "sourceDelta": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    },
+    {
+      "name": "moderate",
+      "label": "User RGB + channel adjustment",
+      "recipe": {
+        "version": 1,
+        "strength": 0.65,
+        "channels": {
+          "rgb": {
+            "inputBlack": 12,
+            "inputWhite": 244,
+            "gamma": 1.12,
+            "outputBlack": 4,
+            "outputWhite": 249
+          },
+          "red": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 0.98,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "green": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "blue": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1.03,
+            "outputBlack": 0,
+            "outputWhite": 251
+          }
+        }
+      },
+      "filename": "victor-moderate.png",
+      "width": 646,
+      "height": 900,
+      "nativeWorkerPngSha256": "ab2b93da0ab3d03d88bf4dbddb5f1d5325bb48f801988fdf79951bcf864ecd0b",
+      "readbackRgbaSha256": "1454ed3066517dbc25651e4214aae06bea373dd1c90e9a11580a24e259edd550",
+      "sourceDelta": {
+        "changedPixels": 581306,
+        "changedBytes": 1687910,
+        "alphaChanged": 0,
+        "maxCodeError": 6
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    },
+    {
+      "name": "extreme",
+      "label": "Endpoint stress: NOT a default",
+      "recipe": {
+        "version": 1,
+        "strength": 1,
+        "channels": {
+          "rgb": {
+            "inputBlack": 90,
+            "inputWhite": 160,
+            "gamma": 0.4,
+            "outputBlack": 25,
+            "outputWhite": 220
+          },
+          "red": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "green": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 2,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "blue": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 42,
+            "outputWhite": 255
+          }
+        }
+      },
+      "filename": "victor-extreme.png",
+      "width": 646,
+      "height": 900,
+      "nativeWorkerPngSha256": "2bb797be6ef76cf038e84401de43404b04c5b9c892f45fdef1e3b50f0406b098",
+      "readbackRgbaSha256": "5d28cb8bef0fcde9b30aaf155cbd9423995e1c26c8a8ccb33bf209ad627a4290",
+      "sourceDelta": {
+        "changedPixels": 581400,
+        "changedBytes": 1728076,
+        "alphaChanged": 0,
+        "maxCodeError": 79
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    }
+  ],
+  "synthetic": [
+    {
+      "name": "original",
+      "label": "Original pixels",
+      "recipe": null,
+      "filename": "ramp-original.png",
+      "width": 768,
+      "height": 200,
+      "nativeWorkerPngSha256": "808a123fb4af27419ebed53fdf893926ba24f621396ee932f42b57235e9a9587",
+      "readbackRgbaSha256": "d7f0e187280b7740ae8742e7e891da932c8fdda8a92a877a55eb85c9b2a3fdee",
+      "sourceDelta": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    },
+    {
+      "name": "neutral",
+      "label": "Neutral: exact identity",
+      "recipe": {
+        "version": 1,
+        "strength": 1,
+        "channels": {
+          "rgb": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "red": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "green": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "blue": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          }
+        }
+      },
+      "filename": "ramp-neutral.png",
+      "width": 768,
+      "height": 200,
+      "nativeWorkerPngSha256": "808a123fb4af27419ebed53fdf893926ba24f621396ee932f42b57235e9a9587",
+      "readbackRgbaSha256": "d7f0e187280b7740ae8742e7e891da932c8fdda8a92a877a55eb85c9b2a3fdee",
+      "sourceDelta": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    },
+    {
+      "name": "moderate",
+      "label": "User RGB + channel adjustment",
+      "recipe": {
+        "version": 1,
+        "strength": 0.65,
+        "channels": {
+          "rgb": {
+            "inputBlack": 12,
+            "inputWhite": 244,
+            "gamma": 1.12,
+            "outputBlack": 4,
+            "outputWhite": 249
+          },
+          "red": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 0.98,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "green": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "blue": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1.03,
+            "outputBlack": 0,
+            "outputWhite": 251
+          }
+        }
+      },
+      "filename": "ramp-moderate.png",
+      "width": 768,
+      "height": 200,
+      "nativeWorkerPngSha256": "32eb10393656aed985497a8598ae7757c755bff2fd1ff57c4c51c8ccab138b67",
+      "readbackRgbaSha256": "781053e4230b300dfe798cf159f711f72152c3e740b9db00f68a59f11442e00d",
+      "sourceDelta": {
+        "changedPixels": 152400,
+        "changedBytes": 427840,
+        "alphaChanged": 0,
+        "maxCodeError": 6
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    },
+    {
+      "name": "extreme",
+      "label": "Endpoint stress: NOT a default",
+      "recipe": {
+        "version": 1,
+        "strength": 1,
+        "channels": {
+          "rgb": {
+            "inputBlack": 90,
+            "inputWhite": 160,
+            "gamma": 0.4,
+            "outputBlack": 25,
+            "outputWhite": 220
+          },
+          "red": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "green": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 2,
+            "outputBlack": 0,
+            "outputWhite": 255
+          },
+          "blue": {
+            "inputBlack": 0,
+            "inputWhite": 255,
+            "gamma": 1,
+            "outputBlack": 42,
+            "outputWhite": 255
+          }
+        }
+      },
+      "filename": "ramp-extreme.png",
+      "width": 768,
+      "height": 200,
+      "nativeWorkerPngSha256": "7a57621739277afaad86d8561795f426aa5c04a0e2f24006f3134d40353bdb8f",
+      "readbackRgbaSha256": "fc3b9d9309f3975f48d680bc3284b78f93952f4e4a85fa13189feec58e82cfb3",
+      "sourceDelta": {
+        "changedPixels": 153600,
+        "changedBytes": 456120,
+        "alphaChanged": 0,
+        "maxCodeError": 80
+      },
+      "scalarOracleVsNativeReadback": {
+        "changedPixels": 0,
+        "changedBytes": 0,
+        "alphaChanged": 0,
+        "maxCodeError": 0
+      },
+      "sourceBytesUnchanged": true,
+      "sourceRgbaUnchanged": true
+    }
+  ],
+  "contacts": [
+    {
+      "filename": "portrait-levels-contact.png",
+      "width": 1280,
+      "height": 602,
+      "pngSha256": "693ddce0830f1aeba72936d8dbcf6fd1f67a072b9f8b17f675020d475d420df3",
+      "decodedRgbaSha256": "555cb996f592e5b35160e18eeaa6ac5e3e889be4d87cdb04947f50defaf9b4b3"
+    },
+    {
+      "filename": "synthetic-levels-contact.png",
+      "width": 1536,
+      "height": 550,
+      "pngSha256": "639b88922fcbea04ce0b6760175df992afb090feb223a41d7999bce51a229852",
+      "decodedRgbaSha256": "1026d82a4a8333640d735e4ccb5b8dab8a6d81b8ac1df8ee3d56dae835746b9c"
+    }
+  ],
+  "disclosures": [
+    "This is user-requested conventional color processing, not learned retouch, natural-beauty default, RAW/HDR detail recovery or an aesthetic-quality benchmark.",
+    "The portrait was already present locally. It is private non-commercial factual software QA, not a product asset or evidence of endorsement.",
+    "Neutral pixel identity does not mean encoded PNG files are identical: the production exporter embeds its own sRGB profile.",
+    "Native PNG output intentionally zeroes invisible alpha-zero RGB for privacy. The pure Levels core preserves those hidden source bytes; separate tests verify both contracts."
+  ]
+}

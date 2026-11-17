@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "kind": "matte",
+  "width": 646,
+  "height": 900,
+  "provenance": {
+    "jobId": "public-victor-2048",
+    "task": "matting",
+    "modelId": "ZhengPeng7/BiRefNet_HR-matting",
+    "modelVersion": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+    "weightsSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55",
+    "kind": "model",
+    "device": {
+      "kind": "cpu",
+      "name": "CPU (x86_64)"
+    },
+    "executionProfile": {
+      "adapter": "birefnet",
+      "inputSize": 2048,
+      "precision": "mixed-bfloat16",
+      "threads": 4,
+      "qualityProfile": "hr-2048",
+      "operatorPrecision": {
+        "deformConv2d": "float32",
+        "weights": "float32"
+      }
+    }
+  },
+  "payloadBytes": 2325600
+}

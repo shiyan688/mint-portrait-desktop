@@ -1,0 +1,81 @@
+{
+  "id": "suni",
+  "roi": {
+    "x": 163,
+    "y": 61,
+    "width": 471,
+    "height": 612
+  },
+  "maskPolicy": {
+    "version": "segface-conservative-v1",
+    "kind": "deterministic-mask-postprocessing-not-a-retouch-model",
+    "maskClasses": {
+      "skin": [
+        "skin",
+        "nose"
+      ],
+      "protected": [
+        "background",
+        "neck",
+        "cloth",
+        "l_ear",
+        "r_ear",
+        "l_brow",
+        "r_brow",
+        "l_eye",
+        "r_eye",
+        "mouth",
+        "l_lip",
+        "u_lip",
+        "hair",
+        "eye_g",
+        "hat",
+        "ear_r",
+        "neck_l"
+      ]
+    },
+    "classIds": {
+      "skin": [
+        2,
+        10
+      ],
+      "protected": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "guard": {
+      "method": "separable-square-minimum",
+      "radiusPx": 3,
+      "units": "original-roi-pixels",
+      "outsideRoi": "fully-protected"
+    },
+    "confidence": {
+      "low": 0.65,
+      "full": 0.95,
+      "curve": "smoothstep-clamped-to-guarded-probability"
+    },
+    "protectedIncludes": "other-model-classes-plus-boundary-margin-and-uncertainty",
+    "limitation": "Cannot repair confident misclassification or separately identify beard/moustache."
+  },
+  "maskComputationMs": 119.438489,
+  "rawUnionOverHalf": 85176,
+  "conservativeOverHalf": 73977,
+  "probabilityIncreasePixels": 0,
+  "complementMaxError": 2.9802322387695312e-8
+}

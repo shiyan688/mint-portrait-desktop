@@ -1,0 +1,470 @@
+{
+  "generatedUTC": "2026-10-22T18:49:30.944Z",
+  "scope": "CURRENT UNRELEASED CANDIDATE. Cloud Node / installed NativeCanvas / actual Sharp export workers. Not browser, Electron GUI, Windows, installer or learned-model QA.",
+  "restrictions": "Private informational QA only; no endorsement; altered software-test output, not NASA original. Not cleared for commercial/marketing/app-sample/training reuse. No model release.",
+  "coreSHA256": "44e95137e818d4157370975a795364ee6e303d719c0db4456f71d5e08bc6d707",
+  "actualSourceInspection": "Victor, Sunita Williams and Chiaki Mukai pixels inspected before first sharpening on 2026-10-22.",
+  "sources": [
+    {
+      "file": "quality/fixtures/victor.png",
+      "sha256": "790bf7eee26069ce2a9222af8cebcf8782fc801beedf52ef46f2b3169f07cffe",
+      "credit": "NASA/Bill Ingalls",
+      "sourceURL": "https://images.nasa.gov/details/NHQ202009150002",
+      "provenance": "quality/fixtures/manifest.json",
+      "width": 646,
+      "height": 900,
+      "rgbaSHA256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd"
+    },
+    {
+      "file": "quality/manual-tools-qa/fixtures/05_mukai.rgba.gz",
+      "metadata": "quality/manual-tools-qa/fixtures/05_mukai.json",
+      "sha256": "e6ac891c5600d42e5c9f9c6c0bda7bcef2e14d0ad0294f796b93c87c692bddb9",
+      "credit": "NASA",
+      "sourceURL": "https://images-assets.nasa.gov/image/S97-00568/metadata.json",
+      "provenance": "quality/manual-tools-qa/fixtures/PROVENANCE.json",
+      "width": 897,
+      "height": 1000,
+      "rgbaSHA256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b"
+    },
+    {
+      "file": "quality/fixtures/suni.png",
+      "sha256": "42b9345231e1a01fead8be823dc7912858e9f4c9f3b34defa5580131b1de6327",
+      "credit": "Mark Sowa",
+      "sourceURL": "https://images.nasa.gov/details/jsc2005e02663",
+      "provenance": "quality/fixtures/manifest.json",
+      "width": 795,
+      "height": 900,
+      "rgbaSHA256": "6bd04d4edf100a6e64d1fcc192b7a410b086dc840c66a8aa8d6513c505b7c9d7"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "quality/sharpness-qa/independent-victor-amounts.png",
+      "bytes": 603111,
+      "sha256": "e9e0a77ed39fd5b917652e8b6e76bd12b6d6e40bedf5d4b3c7867edc20d76ef4",
+      "width": 1240,
+      "height": 1030
+    },
+    {
+      "path": "quality/sharpness-qa/independent-mukai-amounts.png",
+      "bytes": 602074,
+      "sha256": "96341fadfe7016ff293a3e1b624bd244cbe46d7abb7c0df0105a3a2bc99f7065",
+      "width": 1240,
+      "height": 1030
+    },
+    {
+      "path": "quality/sharpness-qa/independent-noise-edge-counterexample.png",
+      "bytes": 607051,
+      "sha256": "051735184c60a1d7c242eed6ec2264a46aba127e32682fae38efb61729be51e7",
+      "width": 1240,
+      "height": 1070
+    }
+  ],
+  "portraits": [
+    {
+      "id": "victor",
+      "crops": [
+        {
+          "x": 155,
+          "y": 220,
+          "w": 300,
+          "h": 200
+        },
+        {
+          "x": 96,
+          "y": 385,
+          "w": 300,
+          "h": 200
+        }
+      ],
+      "results": [
+        {
+          "amount": 0,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "8a7bca546361e7e506d458d184d198327633c84749e252c8a929621fd2e7aaf6",
+          "rgbaSHA256": "bd1e2d71d7c17fdc1e450c7f9ee73ec713b3b7c10d20fe5472af7962ebdd59bd",
+          "dimensions": [
+            646,
+            900
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00015176379530140163,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 0,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0,
+            "maxRGBChange": 0,
+            "changedChannels": 0
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0,
+            "maxRGBChange": 0,
+            "changedChannels": 0
+          }
+        },
+        {
+          "amount": 25,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "3497997faed18f6f00139ffaf093188b724bbc608ad9c64fc39456831096ebd6",
+          "rgbaSHA256": "3652736d80d7d2f042c6f9bae97dcd747a70066403afd03e7e09bf6cc9e41ceb",
+          "dimensions": [
+            646,
+            900
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00015176379530140163,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 1.9999782804919448,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0.004005555555555556,
+            "maxRGBChange": 2,
+            "changedChannels": 673
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0.010883333333333333,
+            "maxRGBChange": 2,
+            "changedChannels": 1947
+          }
+        },
+        {
+          "amount": 50,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "815eef327613242be685f2687c7220941a7684ee70d135b8603441fd38f59503",
+          "rgbaSHA256": "861fe98a4cfe4b996eb417c77811b6eb6babdeaaacbf07b8ba014837d53485eb",
+          "dimensions": [
+            646,
+            900
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00015176379530140163,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 3.997511122987987,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0.010594444444444445,
+            "maxRGBChange": 4,
+            "changedChannels": 1543
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0.030822222222222223,
+            "maxRGBChange": 3,
+            "changedChannels": 5031
+          }
+        },
+        {
+          "amount": 100,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "f492316fe08512a0b54156d3700dfe0e7c61dfa2099e893122b1b521fda9cd9b",
+          "rgbaSHA256": "8335b40b72b40fb661081bc5aa9f3d7beabc9e25f157180be84522b28b5beaa5",
+          "dimensions": [
+            646,
+            900
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00015176379530140163,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 6.995715125613003,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0.023355555555555556,
+            "maxRGBChange": 7,
+            "changedChannels": 2915
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0.06349444444444445,
+            "maxRGBChange": 6,
+            "changedChannels": 8767
+          }
+        }
+      ]
+    },
+    {
+      "id": "mukai",
+      "crops": [
+        {
+          "x": 252,
+          "y": 300,
+          "w": 300,
+          "h": 200
+        },
+        {
+          "x": 228,
+          "y": 492,
+          "w": 300,
+          "h": 200
+        }
+      ],
+      "results": [
+        {
+          "amount": 0,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "faa8d27f65c468ccced771c0b96f89767b287821b0a754c50b6dd2004d5b69bb",
+          "rgbaSHA256": "fb04f53789a6c982dea47d47b745c82346e61776fe9affb55b67c6a08021fb6b",
+          "dimensions": [
+            897,
+            1000
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00015303138094714718,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 0,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0,
+            "maxRGBChange": 0,
+            "changedChannels": 0
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0,
+            "maxRGBChange": 0,
+            "changedChannels": 0
+          }
+        },
+        {
+          "amount": 25,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "4ee51d392c4e2be182bc8d6ffebd9c60be2d91c5a2ec6628f34b75e016ce3924",
+          "rgbaSHA256": "e053e1b95b51661041abe570335a513e4ec5591b0a5499aa068b0ef0840a3d45",
+          "dimensions": [
+            897,
+            1000
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00015303138094714718,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 1.9999349353577145,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0.013977777777777778,
+            "maxRGBChange": 2,
+            "changedChannels": 2460
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0.006172222222222222,
+            "maxRGBChange": 2,
+            "changedChannels": 1097
+          }
+        },
+        {
+          "amount": 50,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "ff69784449ae9097dd3ef3769b5f86715343fa48d47c5a4e722f99ccdff59d12",
+          "rgbaSHA256": "fd2c686df3a1abb987fedec5614247b6c6171223dc2d81674e7b2074a9bb5fc2",
+          "dimensions": [
+            897,
+            1000
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00015303138094714718,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 3.999356632410411,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0.03473333333333333,
+            "maxRGBChange": 4,
+            "changedChannels": 5459
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0.017655555555555556,
+            "maxRGBChange": 4,
+            "changedChannels": 2881
+          }
+        },
+        {
+          "amount": 100,
+          "radius": 1,
+          "threshold": 3,
+          "pngSHA256": "d8d463daf832102b07327abce1f8645615a0b0457de51810624321cdf852b8fa",
+          "rgbaSHA256": "00754beeab8b4aeab3bfc1224a4ad0595aeddab1576e790ae3492f66e7b355b2",
+          "dimensions": [
+            897,
+            1000
+          ],
+          "nativePixelExact": true,
+          "scalarSafety": {
+            "minQuantizationIntervalMargin": 0.00012776790512357417,
+            "localLuminanceBoundViolations": 0,
+            "maxScalarLuminanceCodeChange": 6.997685026502779,
+            "alphaChanges": 0,
+            "hiddenChanges": 0
+          },
+          "eyeRegion": {
+            "meanAbsoluteRGBChange": 0.06867222222222222,
+            "maxRGBChange": 7,
+            "changedChannels": 8674
+          },
+          "skinRegion": {
+            "meanAbsoluteRGBChange": 0.03733888888888889,
+            "maxRGBChange": 6,
+            "changedChannels": 5162
+          }
+        }
+      ]
+    }
+  ],
+  "negativeControls": {
+    "metrics": [
+      {
+        "recipe": {
+          "version": 1,
+          "amount": 0,
+          "radius": 1,
+          "threshold": 3
+        },
+        "noiseVariance": 13.858140347188964,
+        "noisePNG_SHA256": "3438b18b9c43db4a1e2e957dd623cdfab9997a88b122106a3e6cab19fef64e2c",
+        "portraitPNG_SHA256": "faa8d27f65c468ccced771c0b96f89767b287821b0a754c50b6dd2004d5b69bb",
+        "edgePNG_SHA256": "2cbeae4976dd9defe9ee2a01f98e020b236374c869d36d4461334339275fa028",
+        "edgeContrastAt398And402": 59,
+        "edgeSafety": {
+          "minQuantizationIntervalMargin": 0.0005945536515911468,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 0,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        },
+        "noiseSafety": {
+          "minQuantizationIntervalMargin": 0.0017213238416359244,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 0,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        }
+      },
+      {
+        "recipe": {
+          "version": 1,
+          "amount": 100,
+          "radius": 1,
+          "threshold": 3
+        },
+        "noiseVariance": 13.858140347188964,
+        "noisePNG_SHA256": "3438b18b9c43db4a1e2e957dd623cdfab9997a88b122106a3e6cab19fef64e2c",
+        "portraitPNG_SHA256": "d8d463daf832102b07327abce1f8645615a0b0457de51810624321cdf852b8fa",
+        "edgePNG_SHA256": "2cbeae4976dd9defe9ee2a01f98e020b236374c869d36d4461334339275fa028",
+        "edgeContrastAt398And402": 59,
+        "edgeSafety": {
+          "minQuantizationIntervalMargin": 0.0005945536515911468,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 0,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        },
+        "noiseSafety": {
+          "minQuantizationIntervalMargin": 0.0017213238416359244,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 0,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        }
+      },
+      {
+        "recipe": {
+          "version": 1,
+          "amount": 100,
+          "radius": 3,
+          "threshold": 0
+        },
+        "noiseVariance": 17.673139316462766,
+        "noisePNG_SHA256": "141fbd7aaeb2315255ef98a093e5086ae958a08b0957252eea0e74674f5c3424",
+        "portraitPNG_SHA256": "6a5398b699a14abad5851c0ec1ff84a847ca7a0dfc0629fe1ffdc6aa68c1d294",
+        "edgePNG_SHA256": "0a4d712f40f7a26992c4d4beba68bfe50f30e737d51df0ff007a78a7ad3f9e10",
+        "edgeContrastAt398And402": 65,
+        "edgeSafety": {
+          "minQuantizationIntervalMargin": 0.0005945536515911468,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 3.0000000000000284,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        },
+        "noiseSafety": {
+          "minQuantizationIntervalMargin": 0.0017213238416359244,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 2.0000000000000284,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        }
+      },
+      {
+        "recipe": {
+          "version": 1,
+          "amount": 100,
+          "radius": 3,
+          "threshold": 12
+        },
+        "noiseVariance": 13.858140347188964,
+        "noisePNG_SHA256": "3438b18b9c43db4a1e2e957dd623cdfab9997a88b122106a3e6cab19fef64e2c",
+        "portraitPNG_SHA256": "48a7182283cdee40564e44c14ac932e021771a5c79f5af0cf7adf059ee6e3008",
+        "edgePNG_SHA256": "2cbeae4976dd9defe9ee2a01f98e020b236374c869d36d4461334339275fa028",
+        "edgeContrastAt398And402": 59,
+        "edgeSafety": {
+          "minQuantizationIntervalMargin": 0.0005945536515911468,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 0,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        },
+        "noiseSafety": {
+          "minQuantizationIntervalMargin": 0.0017213238416359244,
+          "localLuminanceBoundViolations": 0,
+          "maxScalarLuminanceCodeChange": 0,
+          "alphaChanges": 0,
+          "hiddenChanges": 0
+        }
+      }
+    ],
+    "noiseThresholdZeroAmplifies": true,
+    "thresholdTwelveExactNoiseIdentity": true,
+    "sharpnessIsNotDenoising": true
+  },
+  "additionalPortrait": {
+    "id": "suni",
+    "recipe": {
+      "version": 1,
+      "amount": 100,
+      "radius": 3,
+      "threshold": 0
+    },
+    "nativePixelExact": true,
+    "pngSHA256": "9ee8b9a5413c49854022bb21a54316b271f0e13a67fafa86c2ba9557e704fb4d",
+    "rgbaSHA256": "106ddad6abcabd29833d230e84b15be65158687c8b788a965135bed29aeebcea",
+    "safety": {
+      "minQuantizationIntervalMargin": 0,
+      "localLuminanceBoundViolations": 0,
+      "maxScalarLuminanceCodeChange": 8.22685858963527,
+      "alphaChanges": 0,
+      "hiddenChanges": 0
+    }
+  },
+  "pngBytes": 1812236
+}

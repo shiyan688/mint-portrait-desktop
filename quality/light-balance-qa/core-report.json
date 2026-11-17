@@ -1,0 +1,12 @@
+{
+  "status": "Promoted ratio-preserving reconstruction; historical report retained unchanged.",
+  "currentCoreSha256": "bfd8cb0be2fbdaea50ce59b5646cf6a99ae3a980fdb97cd554a901761860dac1",
+  "currentReport": "chroma-report.json",
+  "currentComparison": "chroma-comparison.png",
+  "historicalReport": "desaturating-core-report.json",
+  "historicalRamps": [
+    "synthetic-ramps.png",
+    "desaturating-synthetic-ramps.png"
+  ],
+  "note": "Historical ramp images show the rejected intermediate white-mix reconstruction, not current output. All candidate and negative-control code is reproducible; none is a shipped fallback."
+}

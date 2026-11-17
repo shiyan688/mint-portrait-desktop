@@ -1,0 +1,172 @@
+{
+  "kind": "deterministic-saved-output-replay",
+  "noNewModelExecution": true,
+  "width": 725,
+  "height": 900,
+  "originalModelProvenance": {
+    "jobId": "73140e9f-f22d-4f29-9c97-0290324b0022",
+    "task": "matting",
+    "modelId": "ZhengPeng7/BiRefNet_HR-matting",
+    "modelVersion": "5d6b6f8adcb5b417c871b1d84ceaae9871355b7f",
+    "weightsSha256": "a5a4de698739ea5e0e8bbab28e1b293dde95092b87a442d566cbc585c53cef55",
+    "kind": "model",
+    "device": {
+      "kind": "cpu",
+      "name": "CPU (x86_64)"
+    },
+    "executionProfile": {
+      "adapter": "birefnet",
+      "inputSize": 2048,
+      "precision": "mixed-bfloat16",
+      "threads": 4,
+      "qualityProfile": "hr-2048",
+      "operatorPrecision": {
+        "deformConv2d": "float32",
+        "weights": "float32"
+      }
+    },
+    "foregroundRefinement": {
+      "kind": "classical-color-estimation",
+      "implementation": "pymatting",
+      "version": "1.1.16",
+      "method": "estimate_foreground_ml",
+      "settings": {
+        "workingColorSpace": "linear-srgb",
+        "regularization": 0.00001,
+        "n_small_iterations": 10,
+        "n_big_iterations": 2,
+        "small_size": 32,
+        "gradient_weight": 1,
+        "opaqueProtection": "correction weight min(1,20*(1-alpha))",
+        "sourceAlphaPolicy": "original alpha bytes preserved; RGB unchanged where source alpha < 255"
+      },
+      "alphaModified": false,
+      "alphaDigest": "af3a7bf1d7e8f3c32ff7d77f561e1a9cf0f26240430d6f72c9e8349dd3de56f4",
+      "sourceDigest": "717951a5ffdf6105a4a93e5df3fd7d60ffe39e4a8d7164cfbc9bd3784e546acd"
+    }
+  },
+  "sourceAndAlphaDigestsRevalidated": true,
+  "semantics": "Straight-sRGB output with original*matte alpha. Optional foreground color strength 0/.5/1 blended in linear light; zero preserves original RGB, not original alpha.",
+  "outcomes": [
+    {
+      "foregroundStrength": 0,
+      "file": "composited-strength-0.rgba",
+      "sha256": "a1d09f9cd17d721d9c28c7e3a1755086f30c90ab09b4010463db4640dc878a3f",
+      "changedRgbChannels": 0,
+      "alphaMatchesRoundedOriginalTimesSavedMatte": true,
+      "provenance": {
+        "jobId": "session-1-job-1",
+        "task": "matting",
+        "modelId": "saved-real-output-replay",
+        "modelVersion": "1",
+        "weightsSha256": "test-double:no-weights",
+        "kind": "test-double",
+        "device": {
+          "kind": "cpu",
+          "name": "deterministic saved-output replay; no model execution"
+        },
+        "foregroundRefinement": {
+          "kind": "classical-color-estimation",
+          "implementation": "pymatting",
+          "version": "1.1.16",
+          "method": "estimate_foreground_ml",
+          "settings": {
+            "workingColorSpace": "linear-srgb",
+            "regularization": 0.00001,
+            "n_small_iterations": 10,
+            "n_big_iterations": 2,
+            "small_size": 32,
+            "gradient_weight": 1,
+            "opaqueProtection": "correction weight min(1,20*(1-alpha))",
+            "sourceAlphaPolicy": "original alpha bytes preserved; RGB unchanged where source alpha < 255"
+          },
+          "alphaModified": false,
+          "alphaDigest": "af3a7bf1d7e8f3c32ff7d77f561e1a9cf0f26240430d6f72c9e8349dd3de56f4",
+          "sourceDigest": "717951a5ffdf6105a4a93e5df3fd7d60ffe39e4a8d7164cfbc9bd3784e546acd"
+        },
+        "foregroundApplied": false,
+        "foregroundStrength": 0
+      }
+    },
+    {
+      "foregroundStrength": 0.5,
+      "file": "composited-strength-0.5.rgba",
+      "sha256": "e2fc707ac3086871e2b8b5d397ec84f8a6e1df3662ff1dd1dc81842c7fe00fbd",
+      "changedRgbChannels": 107172,
+      "alphaMatchesRoundedOriginalTimesSavedMatte": true,
+      "provenance": {
+        "jobId": "session-1-job-2",
+        "task": "matting",
+        "modelId": "saved-real-output-replay",
+        "modelVersion": "1",
+        "weightsSha256": "test-double:no-weights",
+        "kind": "test-double",
+        "device": {
+          "kind": "cpu",
+          "name": "deterministic saved-output replay; no model execution"
+        },
+        "foregroundRefinement": {
+          "kind": "classical-color-estimation",
+          "implementation": "pymatting",
+          "version": "1.1.16",
+          "method": "estimate_foreground_ml",
+          "settings": {
+            "workingColorSpace": "linear-srgb",
+            "regularization": 0.00001,
+            "n_small_iterations": 10,
+            "n_big_iterations": 2,
+            "small_size": 32,
+            "gradient_weight": 1,
+            "opaqueProtection": "correction weight min(1,20*(1-alpha))",
+            "sourceAlphaPolicy": "original alpha bytes preserved; RGB unchanged where source alpha < 255"
+          },
+          "alphaModified": false,
+          "alphaDigest": "af3a7bf1d7e8f3c32ff7d77f561e1a9cf0f26240430d6f72c9e8349dd3de56f4",
+          "sourceDigest": "717951a5ffdf6105a4a93e5df3fd7d60ffe39e4a8d7164cfbc9bd3784e546acd"
+        },
+        "foregroundApplied": true,
+        "foregroundStrength": 0.5
+      }
+    },
+    {
+      "foregroundStrength": 1,
+      "file": "composited-strength-1.rgba",
+      "sha256": "3f5d4b18da90be75adf07dcdebcad27d2482109f5eddeccaa234c85aaa7599f4",
+      "changedRgbChannels": 133016,
+      "alphaMatchesRoundedOriginalTimesSavedMatte": true,
+      "provenance": {
+        "jobId": "session-1-job-3",
+        "task": "matting",
+        "modelId": "saved-real-output-replay",
+        "modelVersion": "1",
+        "weightsSha256": "test-double:no-weights",
+        "kind": "test-double",
+        "device": {
+          "kind": "cpu",
+          "name": "deterministic saved-output replay; no model execution"
+        },
+        "foregroundRefinement": {
+          "kind": "classical-color-estimation",
+          "implementation": "pymatting",
+          "version": "1.1.16",
+          "method": "estimate_foreground_ml",
+          "settings": {
+            "workingColorSpace": "linear-srgb",
+            "regularization": 0.00001,
+            "n_small_iterations": 10,
+            "n_big_iterations": 2,
+            "small_size": 32,
+            "gradient_weight": 1,
+            "opaqueProtection": "correction weight min(1,20*(1-alpha))",
+            "sourceAlphaPolicy": "original alpha bytes preserved; RGB unchanged where source alpha < 255"
+          },
+          "alphaModified": false,
+          "alphaDigest": "af3a7bf1d7e8f3c32ff7d77f561e1a9cf0f26240430d6f72c9e8349dd3de56f4",
+          "sourceDigest": "717951a5ffdf6105a4a93e5df3fd7d60ffe39e4a8d7164cfbc9bd3784e546acd"
+        },
+        "foregroundApplied": true,
+        "foregroundStrength": 1
+      }
+    }
+  ]
+}

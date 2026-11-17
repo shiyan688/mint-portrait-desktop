@@ -1,0 +1,806 @@
+{
+  "mode": "offline",
+  "status": "pass",
+  "file": "MintPortrait-Development-0.2.8-Offline-Setup.exe",
+  "bytes": 125696680,
+  "sha256": "99be15c186acc799634a7dfb2760ba2abc23714cbcd25bc02e4f185c31ebaf8f",
+  "payloadManifestSha256": "5821bc43931986eba18f05cde6aa056490bdd446ec0df47c3717229dcd6e2644",
+  "productFileCount": 91,
+  "productFiles": [
+    {
+      "path": "INSTALLER-NOTICES.txt",
+      "bytes": 28598,
+      "sha256": "0781a9e466a1a7ee0c6b55b119931a39e8de76f34e199c64971f498d1c99501d"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1096,
+      "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d"
+    },
+    {
+      "path": "LICENSES.chromium.html",
+      "bytes": 5705935,
+      "sha256": "7dac8267ac6da8d959cfe88f5f055b18a397f10230380b5329125e167bf5639b"
+    },
+    {
+      "path": "MintPortrait.exe",
+      "bytes": 249797632,
+      "sha256": "8e84549b05d27d444da2957653200d1e0ac287eff0fc5722b92835b9e0821a59"
+    },
+    {
+      "path": "MintPortrait.ico",
+      "bytes": 17834,
+      "sha256": "a42f31d443eeece3f0e73b90e61661d2071961cc08aa9cf19d3c49bcc5c8df74"
+    },
+    {
+      "path": "NSIS-LICENSES.txt",
+      "bytes": 20591,
+      "sha256": "d2b03d11801736ff4fda2a1e215a13c324dca7fd76eb948ae7d835000fe339d3"
+    },
+    {
+      "path": "chrome_100_percent.pak",
+      "bytes": 568418,
+      "sha256": "8e865e7cd40faabcbfb4cd2be16ee290023c3a28796c4f95451440d80174225d"
+    },
+    {
+      "path": "chrome_200_percent.pak",
+      "bytes": 927757,
+      "sha256": "352baed89a9051dc959dfa8e73024212ef98e173e37d0fc064887013748fcdca"
+    },
+    {
+      "path": "d3dcompiler_47.dll",
+      "bytes": 4753864,
+      "sha256": "f5c95e919b4ffa1ac71049cd45b9f986d2965e6888395ca2806337985334fa56"
+    },
+    {
+      "path": "dxcompiler.dll",
+      "bytes": 25779712,
+      "sha256": "6af17f483f97ca18b579da8475855469dde1b69b7e7872cae13bcbacc2d33200"
+    },
+    {
+      "path": "electron_wer.dll",
+      "bytes": 425472,
+      "sha256": "234b9aba3c2c5bb545dedb26783692ec90313a3e17a532ae7c514f8058adf117"
+    },
+    {
+      "path": "ffmpeg.dll",
+      "bytes": 3097600,
+      "sha256": "cdf2b70f0f0a97c9840af1466dd86a90e564c98f6892d783635cf9c3b303d613"
+    },
+    {
+      "path": "icudtl.dat",
+      "bytes": 10824432,
+      "sha256": "02a01b3188b6a41a756f7322fdb5e6b5ca6573b327b01dfc8ed662d571a6f769"
+    },
+    {
+      "path": "locales/af.pak",
+      "bytes": 641339,
+      "sha256": "10121e47f8fe41355dd8f4475907be7adea7f5b25459aa53c9f3ef07dafef05c"
+    },
+    {
+      "path": "locales/am.pak",
+      "bytes": 1037302,
+      "sha256": "5150bc6cfc63844816e305b9645cb8e15587ff826a2be1d8639f2087bfb0a5da"
+    },
+    {
+      "path": "locales/ar.pak",
+      "bytes": 1143075,
+      "sha256": "2e92d1b3098b03c88b5265a1ecdd1e303a936540c8fa9107a846b02df751aed8"
+    },
+    {
+      "path": "locales/bg.pak",
+      "bytes": 1189898,
+      "sha256": "3f9d18988748118895dc026e4f56a442f078d3a5d564000d177a52ce934346b7"
+    },
+    {
+      "path": "locales/bn.pak",
+      "bytes": 1526566,
+      "sha256": "e2d4d1c81b0218849880b01c896d1d92c2a28347860cb4d5f37d4c777e4aa7cb"
+    },
+    {
+      "path": "locales/ca.pak",
+      "bytes": 724869,
+      "sha256": "17c4e990fd021755b01cb96b0bce8c7c443d41397b56ad084f81761ca580e7ac"
+    },
+    {
+      "path": "locales/cs.pak",
+      "bytes": 753878,
+      "sha256": "cdd8eb041d9e2231e737c5cacae51034d3e3935e2c33d31d216caa17e5d941ff"
+    },
+    {
+      "path": "locales/da.pak",
+      "bytes": 674463,
+      "sha256": "cdf0ea6c9f400af2374c88e50e0cd0a33d9a1ee58db797ad15f7b1ad99890a96"
+    },
+    {
+      "path": "locales/de.pak",
+      "bytes": 728057,
+      "sha256": "e2616265df1c57101339cde08a704a5f212a5c7446b187227a26326dc939a2be"
+    },
+    {
+      "path": "locales/el.pak",
+      "bytes": 1309811,
+      "sha256": "f8e4cc68aed45935d7311bd98627fce5934ffcc151d109093de689696c890ec0"
+    },
+    {
+      "path": "locales/en-GB.pak",
+      "bytes": 585046,
+      "sha256": "e2cf3bd4d2ec7f900c710346362b03bdedf0a46285fd32d9cf6b8fab373b2f20"
+    },
+    {
+      "path": "locales/en-US.pak",
+      "bytes": 592299,
+      "sha256": "de43db43fe0072543ab225f6d762cce3656a1639bf9e25f371fe0e80d9eabba7"
+    },
+    {
+      "path": "locales/es-419.pak",
+      "bytes": 714496,
+      "sha256": "9abcee391a295fa79e389b16c6843e42884bfa548fbdd62a85a18a321e4b317f"
+    },
+    {
+      "path": "locales/es.pak",
+      "bytes": 710842,
+      "sha256": "a15d9687d249228faf9953f2da7dd946ab6caaec0e477a692a57ec2150fdfc86"
+    },
+    {
+      "path": "locales/et.pak",
+      "bytes": 649737,
+      "sha256": "9a8f5574c2a9931e6bd2eb2c021e2132d39a6f569e8fdc40a8475e5a8c0a776a"
+    },
+    {
+      "path": "locales/fa.pak",
+      "bytes": 1078263,
+      "sha256": "eda1e584f110cacb61fbe38ddecdb8247ed8a1e4cb7e5f5cfa39e4d8e84387f5"
+    },
+    {
+      "path": "locales/fi.pak",
+      "bytes": 663455,
+      "sha256": "a3e8bcb525568ba1e1908e8cc57b9e05b3ee3d9245cd74894d0fb485eb79a9a7"
+    },
+    {
+      "path": "locales/fil.pak",
+      "bytes": 748590,
+      "sha256": "808d6f4620a9c4fee771dfcf39f382db42e83f1e66fe206f93797b86c22dea24"
+    },
+    {
+      "path": "locales/fr.pak",
+      "bytes": 774154,
+      "sha256": "fd3963fe1811d3107d0ce8fe217211d67b201ecc24d0bf9e95d30071e16d6923"
+    },
+    {
+      "path": "locales/gu.pak",
+      "bytes": 1508809,
+      "sha256": "71d29958f321c014b0d36625c9e7d5af7e42e5ab2d753ecd6bceaf02b64d652d"
+    },
+    {
+      "path": "locales/he.pak",
+      "bytes": 941003,
+      "sha256": "7edfc0e9033ad6e451e175e14d2fba4a158129cbbf45c768314d86c6e1f1b207"
+    },
+    {
+      "path": "locales/hi.pak",
+      "bytes": 1601863,
+      "sha256": "e55d2c94104b5e4329c5f254cf670caa6414ca1137af260e86adeff986f4292f"
+    },
+    {
+      "path": "locales/hr.pak",
+      "bytes": 724777,
+      "sha256": "96506f22e560e838ae740bfd72e07ad7a484d4af2d52816a64b9b35742dbf5b3"
+    },
+    {
+      "path": "locales/hu.pak",
+      "bytes": 775366,
+      "sha256": "0d44b7669e37805786b3fe637f2291654c2698b8ec8b57ddec17c1cf4bea5857"
+    },
+    {
+      "path": "locales/id.pak",
+      "bytes": 642959,
+      "sha256": "7111a5623ece2362e16be5a785030a9a628937ab680db34c9dbab6ae7926d0e6"
+    },
+    {
+      "path": "locales/it.pak",
+      "bytes": 700983,
+      "sha256": "b78bca99c590f45b660ce446a0a094e3d7a101c987965ac4e697f79685c230c9"
+    },
+    {
+      "path": "locales/ja.pak",
+      "bytes": 853537,
+      "sha256": "239445223165dd02d8f1a048a7740e5b8cd845491965f17b92ccf57eea29ba66"
+    },
+    {
+      "path": "locales/kn.pak",
+      "bytes": 1738870,
+      "sha256": "cc9903cb7a98ac81c08b33d3f88e88f35b290eaf0f5eaa8fab67395b330d88f0"
+    },
+    {
+      "path": "locales/ko.pak",
+      "bytes": 730396,
+      "sha256": "d3d22df64bab98e36e5a5635e98b33323af0a4b7f1a649bc049e1a753cd70ccb"
+    },
+    {
+      "path": "locales/lt.pak",
+      "bytes": 785117,
+      "sha256": "2fe1400fc3e0010f30955171124c9c8bf0fbab6aaddfce967b997bdc31fa2977"
+    },
+    {
+      "path": "locales/lv.pak",
+      "bytes": 782864,
+      "sha256": "3ed091a6dbba7b8a5a4beff7191918f84ee0a7de23004d76f57826104094f02b"
+    },
+    {
+      "path": "locales/ml.pak",
+      "bytes": 1785503,
+      "sha256": "6e3480887885349cd3198c2f608da25bc7722dbad7c1fba695f95e0e6d564b36"
+    },
+    {
+      "path": "locales/mr.pak",
+      "bytes": 1481173,
+      "sha256": "7bb875ecd2f725eb037758e261dea1d53c2c6668ccbc6b10fedbb427d0947b8d"
+    },
+    {
+      "path": "locales/ms.pak",
+      "bytes": 677751,
+      "sha256": "e0a46e0f40cf0c197c2a1fcb2adca421a93d2ade3d1333b99489f8b7d4a335d3"
+    },
+    {
+      "path": "locales/nb.pak",
+      "bytes": 643919,
+      "sha256": "754820b5f3ec2a19f5a0177026541654bba2a9394a665cd3006e049edd71881d"
+    },
+    {
+      "path": "locales/nl.pak",
+      "bytes": 671754,
+      "sha256": "a319007b406469b5625f9e69ae4d29d9433540cd2c648e5b3b780249088e84a1"
+    },
+    {
+      "path": "locales/pl.pak",
+      "bytes": 751664,
+      "sha256": "364ac77a3f7f3aed3f42016b12a4c140dc7e89b0ff197cddfa968269a414cb62"
+    },
+    {
+      "path": "locales/pt-BR.pak",
+      "bytes": 705541,
+      "sha256": "03dc65858e45cebd064587e612d2fdcc1d4d2ead6a28aced2f6734e5c6862cb8"
+    },
+    {
+      "path": "locales/pt-PT.pak",
+      "bytes": 708355,
+      "sha256": "c850250976d474f43cd425d8a371c0a3c075490b21221a3e51797ab2cf9d950d"
+    },
+    {
+      "path": "locales/ro.pak",
+      "bytes": 733934,
+      "sha256": "c8bac592c3f94d10da90e072ef6940108916d18c3fd6782a182635707435393b"
+    },
+    {
+      "path": "locales/ru.pak",
+      "bytes": 1212098,
+      "sha256": "88d2779bbe1c8b8427ca9d78d23c53663e506910435dbdf88a949dc4ca91964b"
+    },
+    {
+      "path": "locales/sk.pak",
+      "bytes": 766425,
+      "sha256": "15e26d007f346410e90ef313c4d09b1c02b11808eeb018559c7ae7b3ef77812d"
+    },
+    {
+      "path": "locales/sl.pak",
+      "bytes": 729966,
+      "sha256": "4e9d2aa291c653c0b3a92c973e1d5d1ecd1b6c1cc64b569c0ae37a28b6d46bcd"
+    },
+    {
+      "path": "locales/sr.pak",
+      "bytes": 1124220,
+      "sha256": "fee1debf9c49f2beea7990258cb55483eb30841642c2e7c0ea540472682cf2f0"
+    },
+    {
+      "path": "locales/sv.pak",
+      "bytes": 654595,
+      "sha256": "5cd184cc67d1fa6d4f8c82f0809d803bb8f4c61d07d676e54808e6ced09e9b68"
+    },
+    {
+      "path": "locales/sw.pak",
+      "bytes": 692169,
+      "sha256": "813bd56c6c8e0b13b61f15efe8bc7d14d0e670c0dce93efdda3cc428cf989e63"
+    },
+    {
+      "path": "locales/ta.pak",
+      "bytes": 1773876,
+      "sha256": "6ef6497441c04f7dcc18caa552d961c5f22e8b369c97a6632bca6b57d6bd7876"
+    },
+    {
+      "path": "locales/te.pak",
+      "bytes": 1648207,
+      "sha256": "301a6b26e82540bc6079c1e210f575950b1dbd8c03437a7817d8446c06c755e7"
+    },
+    {
+      "path": "locales/th.pak",
+      "bytes": 1377527,
+      "sha256": "acf2778d5abda266d91a534d8ceb14cfe2fe34bc41a157c4b7a2058ba778ccbb"
+    },
+    {
+      "path": "locales/tr.pak",
+      "bytes": 706657,
+      "sha256": "e3b2168d566124c306d8ecff00b1ba0e54c282958ec8d5bcf9d94cbe638008f6"
+    },
+    {
+      "path": "locales/uk.pak",
+      "bytes": 1225347,
+      "sha256": "e9d26214e799ec895304952223dd3a5d13d3041e3984378c710fef5626d4d880"
+    },
+    {
+      "path": "locales/ur.pak",
+      "bytes": 1060438,
+      "sha256": "f4d5f15daf9f3dd422f52421b93f0b5f6791a9928facb0e1b6dfd894a3814281"
+    },
+    {
+      "path": "locales/vi.pak",
+      "bytes": 839397,
+      "sha256": "9836065474cd9f4e0f351f472361fda7de790a6e27f5e67f8dc564465b8df029"
+    },
+    {
+      "path": "locales/zh-CN.pak",
+      "bytes": 599993,
+      "sha256": "37abf1eacd32c638866147e9517b2a555d8a7dd2c0c79c05d09f877d9373b09a"
+    },
+    {
+      "path": "locales/zh-TW.pak",
+      "bytes": 592033,
+      "sha256": "56b39b119f9dc0e38e8c67a556a02cbe877d9e00833c8922f05d8faee80bcb13"
+    },
+    {
+      "path": "resources/app.asar",
+      "bytes": 47210796,
+      "sha256": "108ffadbf3bd4e11a658ced310da98dfcbccc728f053b19462cb085b4f036a20"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/LICENSE.md",
+      "bytes": 4433,
+      "sha256": "e2eaa4603c14cb26f301e88648c12a853fa3f0f5da6d4b0972958c666e7f2ab8"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/README.md",
+      "bytes": 562,
+      "sha256": "be7edf3bc6467f761168cef3bb2b9b3def2532c98a86249848376ea00338ad1d"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/color.cjs",
+      "bytes": 45136,
+      "sha256": "f7c3efcf482624007f2019fffee3e1dec56b8cb893faa9a420b2832805888dce"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/index.cjs",
+      "bytes": 49,
+      "sha256": "e6e93e7fb209420a20fdf2ec676e9c67413be8d5ace99eec64f9468480f0368d"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/index.d.ts",
+      "bytes": 21569,
+      "sha256": "2467b00d963828f540f4acd7910f4c04cfe4b489550e6bb682212f65583bca5b"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/colour/package.json",
+      "bytes": 1515,
+      "sha256": "bc38c5097693ed53b91c32f35fb0a52569736c7854ba2eb6d080f3252071f75c"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/LICENSE",
+      "bytes": 10464,
+      "sha256": "dc1f5d2d43c5531dfe0acaf4e950ea5dbe3e61e1850cf0e983bda7efc10d6693"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/README.md",
+      "bytes": 4913,
+      "sha256": "3d083ada5ebafe1e6c227daa7b061d4254b61df4a3901c359ffdeac817ce5866"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/index.cjs",
+      "bytes": 62,
+      "sha256": "6ecbd583f45e914233410fe83a614e4f5ff1a6875a7eb828b03b7258e8ba6944"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll",
+      "bytes": 19018240,
+      "sha256": "06dab07cc386748513337a31672b1d5269fbc770a14ff403080575665bf0813f"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.7.dll",
+      "bytes": 333312,
+      "sha256": "25001dbd05305a0a29119ab49933622c70b4a20ea12ef1d5d20ca40181db53bf"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.5.node",
+      "bytes": 443904,
+      "sha256": "971048779f9c8598df14641dfc03c625885c93f473a788e65ca2deb50d0b083e"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/package.json",
+      "bytes": 888,
+      "sha256": "697b3d89590e3b988b51764bd22dfd6f4a1b35cd4eb12c664eca7987e8ee6115"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/versions.json",
+      "bytes": 596,
+      "sha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4"
+    },
+    {
+      "path": "resources.pak",
+      "bytes": 13371538,
+      "sha256": "a7b40d37892f0bb380b6735bdd9382ee69e9ca24dad1119bde5b53d55edb9b2b"
+    },
+    {
+      "path": "snapshot_blob.bin",
+      "bytes": 374096,
+      "sha256": "008725a9d014f3942dd22b0b7ddbf01347576a1f92217b4de03bcac178a83427"
+    },
+    {
+      "path": "v8_context_snapshot.bin",
+      "bytes": 753112,
+      "sha256": "2fc28f6396a571fb6490504aff0b0f767bce24105cad2489dcc3d53396df8a38"
+    },
+    {
+      "path": "version",
+      "bytes": 6,
+      "sha256": "281bb838d2512560c34bab2ceb5106a62f0fb0fe05f076896952a6153d007d94"
+    },
+    {
+      "path": "vk_swiftshader.dll",
+      "bytes": 5453312,
+      "sha256": "00d703c0557b54edf35c284b15cb0063de1653edef71d33c698a64d2e74073c9"
+    },
+    {
+      "path": "vk_swiftshader_icd.json",
+      "bytes": 106,
+      "sha256": "32d83ff113fef532a9f97e0d2831f8656628ab1c99e9060f0332b1532839afd9"
+    },
+    {
+      "path": "vulkan-1.dll",
+      "bytes": 957440,
+      "sha256": "0802c28ebf8226fccaef45fc44b528873eb4814f714a817b01cc2f6ab49c24da"
+    },
+    {
+      "path": "使用说明.txt",
+      "bytes": 11877,
+      "sha256": "2bb957486084a08da8f7533ac6c4fa6f34c05776f477b5d9308758d1d48a5619"
+    }
+  ],
+  "exactProductAndAuxiliaryInventory": true,
+  "appAsarSha256": "108ffadbf3bd4e11a658ced310da98dfcbccc728f053b19462cb085b4f036a20",
+  "plugins": [
+    {
+      "path": "StdUtils.dll",
+      "bytes": 102400,
+      "sha256": "b72e9013a6204e9f01076dc38dabbf30870d44dfc66962adbf73619d4331601e",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/resources/plugins/x86-unicode/StdUtils.dll"
+      ]
+    },
+    {
+      "path": "System.dll",
+      "bytes": 28672,
+      "sha256": "54167ae0968e05910ef8dcd8bbc345afe3dad810fd3c9d2d3f47ad4caffc456d",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/root/usr/share/nsis/Plugins/x86-unicode/System.dll"
+      ]
+    },
+    {
+      "path": "modern-wizard.bmp",
+      "bytes": 26494,
+      "sha256": "3ad2dc318056d0a2024af1804ea741146cfc18cc404649a44610cbf8b2056cf2",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/root/usr/share/nsis/Contrib/Graphics/Wizard/win.bmp"
+      ]
+    },
+    {
+      "path": "nsDialogs.dll",
+      "bytes": 14336,
+      "sha256": "3564ce8b510acfe456f7135e0c1ac1f71cfa39c787909192be8f8ed40dcbe305",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/root/usr/share/nsis/Plugins/x86-unicode/nsDialogs.dll"
+      ]
+    },
+    {
+      "path": "nsProcess.dll",
+      "bytes": 4608,
+      "sha256": "30c6c3dd3cc7fcea6e6081ce821adc7b2888542dae30bf00e881c0a105eb4d11",
+      "matchesCachedCompilerFiles": [
+        "tools/nsis/resources/plugins/x86-unicode/nsProcess.dll"
+      ]
+    }
+  ],
+  "uninstaller": {
+    "file": "embedded/Uninstall.exe",
+    "bytes": 143480,
+    "sha256": "18835ae2730e2a67b55b659b4d1d048e528336b10ed5658943078294adf59d05",
+    "machine": "0x14c",
+    "architecture": "x86",
+    "optionalHeaderMagic": "0x10b",
+    "subsystem": 2,
+    "subsystemName": "Windows GUI",
+    "coffCharacteristics": "0x30f",
+    "dllCharacteristics": "0x8540",
+    "aslr": true,
+    "dep": true,
+    "highEntropyVa": false,
+    "cfgFlagPresent": false,
+    "certificateDirectory": [
+      0,
+      0
+    ],
+    "authenticodeSignaturePresent": false,
+    "versionResources": [
+      {
+        "resourcePath": [
+          16,
+          1,
+          2052
+        ],
+        "file": "0.2.8.0",
+        "product": "0.2.8.0",
+        "fileFlagsMask": "0x0",
+        "fileFlags": "0x0",
+        "fileOS": "0x4",
+        "fileType": 1,
+        "strings": {
+          "VS_VERSION_INFO/StringFileInfo/080404b0/FileDescription": "薄荷人像 Desktop Setup",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/FileVersion": "0.2.8.0",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/LegalCopyright": "Mint Portrait",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/ProductName": "薄荷人像安装程序",
+          "VS_VERSION_INFO/StringFileInfo/080404b0/ProductVersion": "0.2.8"
+        }
+      }
+    ],
+    "manifests": [
+      {
+        "resourcePath": [
+          24,
+          1,
+          1033
+        ],
+        "bytes": 1061,
+        "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2",
+        "requestedExecutionLevels": [
+          {
+            "level": "asInvoker",
+            "uiAccess": "false"
+          }
+        ],
+        "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"><assemblyIdentity version=\"1.0.0.0\" processorArchitecture=\"*\" name=\"Nullsoft.NSIS.exehead\" type=\"win32\"/><description>Nullsoft Install System v3.11-1</description><dependency><dependentAssembly><assemblyIdentity type=\"win32\" name=\"Microsoft.Windows.Common-Controls\" version=\"6.0.0.0\" processorArchitecture=\"*\" publicKeyToken=\"6595b64144ccf1df\" language=\"*\" /></dependentAssembly></dependency><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\"><security><requestedPrivileges><requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"/></requestedPrivileges></security></trustInfo><compatibility xmlns=\"urn:schemas-microsoft-com:compatibility.v1\"><application><supportedOS Id=\"{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}\"/><supportedOS Id=\"{1f676c76-80e1-4239-95bb-83d0f6d0da78}\"/><supportedOS Id=\"{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}\"/><supportedOS Id=\"{35138b9a-5d96-4fbd-8e2d-a2440225f93a}\"/></application></compatibility></assembly>"
+      }
+    ],
+    "installerExecutionLevel": "asInvoker",
+    "resourceInventory": [
+      {
+        "path": [
+          2,
+          110,
+          1033
+        ],
+        "bytes": 1638,
+        "sha256": "0e90a9e4b8f3a5bf990e8aadfd8096ad7aeaf1a4e032ac7b6395ce191d61c142"
+      },
+      {
+        "path": [
+          3,
+          1,
+          1033
+        ],
+        "bytes": 4264,
+        "sha256": "3d81391786527a7bb826c610931a09ab676ef08f6ca4f8069dd73afdde6e821b"
+      },
+      {
+        "path": [
+          3,
+          2,
+          1033
+        ],
+        "bytes": 3752,
+        "sha256": "50ebb1f16e0a5484a18ce67e679060d24527e7fdf3b4e998f4c93fff72674ae4"
+      },
+      {
+        "path": [
+          3,
+          3,
+          1033
+        ],
+        "bytes": 2216,
+        "sha256": "c9af85f7939a39d7fccbb9a8df5fe94a8ce6a7b0036c931513ece6ec2879139e"
+      },
+      {
+        "path": [
+          3,
+          4,
+          1033
+        ],
+        "bytes": 1384,
+        "sha256": "f4d09e2edf48980e560244647c25a2760216919139535428e4ab4ba1c71b6e6a"
+      },
+      {
+        "path": [
+          3,
+          5,
+          1033
+        ],
+        "bytes": 1128,
+        "sha256": "1d4117209387f9c222d04c115e94d00ddac34e95be4d9b820d1c1e7802389f69"
+      },
+      {
+        "path": [
+          3,
+          6,
+          1033
+        ],
+        "bytes": 744,
+        "sha256": "9e401c9627f5c86827ad2829f63af7fcd46bab500b6bb3249fb3fb04ae7e9c05"
+      },
+      {
+        "path": [
+          3,
+          7,
+          1033
+        ],
+        "bytes": 296,
+        "sha256": "fd63eb5bf40c281b1e1063990235ce71f0f222b35b622c687765d126fbd99a9c"
+      },
+      {
+        "path": [
+          5,
+          103,
+          1033
+        ],
+        "bytes": 304,
+        "sha256": "7d256f5d76bc52ec3b05d3c4a1b26dd3bd14ba7df6f16c93708a7f9805ea71df"
+      },
+      {
+        "path": [
+          5,
+          104,
+          1033
+        ],
+        "bytes": 336,
+        "sha256": "311942ea193e7dd0c614b48be27a9331769d94e9cfa4d9eae21d6869b618dc0a"
+      },
+      {
+        "path": [
+          5,
+          105,
+          1033
+        ],
+        "bytes": 554,
+        "sha256": "e502086038bd072c90060202651011524b40a0dbf222f84ebd39096f8240a853"
+      },
+      {
+        "path": [
+          5,
+          106,
+          1033
+        ],
+        "bytes": 240,
+        "sha256": "8bec95cdc0c8dbab7674b2e376399f0fd92d68c97a2c5226b97d99b1d5b16d0d"
+      },
+      {
+        "path": [
+          5,
+          107,
+          1033
+        ],
+        "bytes": 140,
+        "sha256": "8ec647f9650b79179d5afc3e2bd8ecaa4b4617ada8c69c22382321a16f2153e0"
+      },
+      {
+        "path": [
+          5,
+          111,
+          1033
+        ],
+        "bytes": 218,
+        "sha256": "c53f8150b6af1f60fd252048650f3406f021642e6f64fde00722c24203526009"
+      },
+      {
+        "path": [
+          14,
+          103,
+          1033
+        ],
+        "bytes": 104,
+        "sha256": "fed46e06346fb8f64b14c18408a82caf955929ac0e65151630539dc5bd194584"
+      },
+      {
+        "path": [
+          16,
+          1,
+          2052
+        ],
+        "bytes": 512,
+        "sha256": "d941abce530587eb29cf71314b4797dc5c3b5f4a31d4737ff59979d81d82a526"
+      },
+      {
+        "path": [
+          24,
+          1,
+          1033
+        ],
+        "bytes": 1061,
+        "sha256": "c7830433daf13e70c74faacad8ea367c7a3995ada47b732684fb898941b860c2"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtualSize": 37596,
+        "rawSize": 37888,
+        "rawPointer": 1024
+      },
+      {
+        "name": ".data",
+        "rva": 45056,
+        "virtualSize": 224,
+        "rawSize": 512,
+        "rawPointer": 38912
+      },
+      {
+        "name": ".rdata",
+        "rva": 49152,
+        "virtualSize": 52408,
+        "rawSize": 52736,
+        "rawPointer": 39424
+      },
+      {
+        "name": ".bss",
+        "rva": 102400,
+        "virtualSize": 128576,
+        "rawSize": 0,
+        "rawPointer": 0
+      },
+      {
+        "name": ".idata",
+        "rva": 233472,
+        "virtualSize": 5040,
+        "rawSize": 5120,
+        "rawPointer": 92160
+      },
+      {
+        "name": ".ndata",
+        "rva": 241664,
+        "virtualSize": 212992,
+        "rawSize": 512,
+        "rawPointer": 97280
+      },
+      {
+        "name": ".rsrc",
+        "rva": 454656,
+        "virtualSize": 19888,
+        "rawSize": 19968,
+        "rawPointer": 97792
+      }
+    ]
+  },
+  "compiledNsisHeader": {
+    "sha256": "ead367aeb191da6c22166a028993feb48678453b3ed6212c26f276a32d8cf800",
+    "bytes": 88276,
+    "solidLzmaDictionaryBytes": 67108864,
+    "commonStringsVerified": {
+      "GetFullPathNameW": true,
+      "GetFileAttributesW": true,
+      "MintPortrait.Desktop": true,
+      "0.2.8": true,
+      "SHA2-256": true
+    },
+    "forbiddenSecurityBypassStringsAbsent": [
+      "/WEAKSECURITY",
+      "--no-sandbox",
+      "ExecutionPolicy",
+      "_KillProcess",
+      "_CloseProcess"
+    ],
+    "onlineRuntimeAndCancellationStringsPresent": false,
+    "offlineDownloaderStringsAbsent": true
+  },
+  "unsigned": true,
+  "installedReadme": {
+    "bytes": 11877,
+    "sha256": "2bb957486084a08da8f7533ac6c4fa6f34c05776f477b5d9308758d1d48a5619",
+    "overlaysAndProject16AndEightBitColorFixDisclosed": true
+  },
+  "windowsExecuted": false
+}
